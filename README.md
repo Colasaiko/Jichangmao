@@ -53,12 +53,48 @@
 
 | 栏目 | URL 路径 | 用途：用户来到这里可以找到什么？ |
 |---|---|---|
-| **首页** | `/` | 网站的总入口，展示核心导航、最新文章及特色服务推荐。 |
-| **机场测评** | `/evaluations/` | 每个服务商的独立资料页，包含品牌介绍、套餐价格、线路详情与节点协议。 |
-| **客户端指南** | `/clients/` | 针对 Windows, macOS, iOS, Android 各大系统的主流代理软件配置教程。 |
-| **工具与资源** | `/tools/`, `/download/` | 常用代理客户端下载引导与网络辅助测试工具。 |
-| **长文博客** | `/blog/` | 涵盖网络知识普及、疑难杂症排查以及 AI 工具高效使用指南的长篇文章。 |
-| **网站说明** | `/about/`, `/privacy/` | 网站关于我们、评测方法论、隐私权与免责声明等基础建设信息。 |
+| **首页** | [jichangmao.com/](https://jichangmao.com/) | 网站的总入口，展示核心导航、最新文章及特色服务推荐。 |
+| **机场测评** | [jichangmao.com/evaluations/](https://jichangmao.com/evaluations/) | 每个服务商的独立资料页，包含品牌介绍、套餐价格、线路详情与节点协议。 |
+| **客户端指南** | [jichangmao.com/clients/](https://jichangmao.com/clients/) | 针对 Windows, macOS, iOS, Android 各大系统的主流代理软件配置教程。 |
+| **工具与资源** | [jichangmao.com/tools/](https://jichangmao.com/tools/) | 常用代理客户端下载引导与网络辅助测试工具。 |
+| **长文博客** | [jichangmao.com/blog/](https://jichangmao.com/blog/) | 涵盖网络知识普及、疑难杂症排查以及 AI 工具高效使用指南的长篇文章。 |
+| **网站说明** | [jichangmao.com/about/](https://jichangmao.com/about/) | 网站关于我们、评测方法论、隐私权与免责声明等基础建设信息。 |
+
+---
+
+## ⚡ 机场品牌与价格速览 (Brand & Pricing Quick Reference)
+
+Jichangmao 目前收录了以下主流机场与代理服务商，以下是为您整理的快速索引与月付起步价格表：
+
+| 机场品牌 | 月付起步价 | 协议 | 线路特征 | 测评链接 |
+|---|---|---|---|---|
+| **微风网络** | ¥11.00/月 | SS | 全IPLC, 不限设备 | [查看详情](https://jichangmao.com/evaluations/review-weifeng) |
+| **firefly** | ¥25.00/月 | SS | IPLC, 不限速 | [查看详情](https://jichangmao.com/evaluations/review-firefly) |
+| **跨界云** | ¥20.00/月 | SS | IPLC, x1倍率 | [查看详情](https://jichangmao.com/evaluations/review-kuajie) |
+| **闪跃** | ¥24.00/月 | SS | 原生IP, 全IPLC | [查看详情](https://jichangmao.com/evaluations/review-shanyue) |
+| **无忧** | ¥19.00/月 | SS | 纯IPLC, 4K秒开 | [查看详情](https://jichangmao.com/evaluations/review-wuyou) |
+| **灵猫** | ¥25.00/月 | SS | 全IPLC, 原生IP | [查看详情](https://jichangmao.com/evaluations/review-lingmao) |
+| **BitzNet** | ¥69.99/月 | SS | IEPL, 深东 | [查看详情](https://jichangmao.com/evaluations/review-bitznet) |
+| **飞猫云** | ¥25.00/月 | SS | 2.5Gbps, 全IPLC | [查看详情](https://jichangmao.com/evaluations/review-feimao) |
+| **sogo云** | ¥25.00/月 | VLESS | IEPL, VLESS | [查看详情](https://jichangmao.com/evaluations/review-sogo) |
+| **暮光加速** | ¥20.00/月 | SS | BGP调度, 不限速 | [查看详情](https://jichangmao.com/evaluations/review-muguang) |
+| **星岛梦** | ¥25.00/月 | SS | 全IEPL, 多并发 | [查看详情](https://jichangmao.com/evaluations/review-xingdao) |
+| **唯兔云** | ¥19.90/月 | VLESS | IPLC, vless | [查看详情](https://jichangmao.com/evaluations/review-weitu) |
+| **光速云** | ¥23.00/月 | SS | IPLC, 高带宽 | [查看详情](https://jichangmao.com/evaluations/review-guangsu) |
+| **U1S1** | ¥20.00/月 | SS | IEPL出口, 不限设备 | [查看详情](https://jichangmao.com/evaluations/review-u1s1) |
+| **极连云** | ¥18.00/月 | SS | 全IPLC, 原生IP | [查看详情](https://jichangmao.com/evaluations/review-jilian) |
+| **光年梯** | ¥18.00/月 | SS | 全程IPLC, 原生IP | [查看详情](https://jichangmao.com/evaluations/review-guangnian) |
+| **一翻云** | ¥20.00/月 | SS | 解锁AI, 自研客户端 | [查看详情](https://jichangmao.com/evaluations/review-yifan) |
+| **二猫云** | ¥20.00/月 | SS | 全IEPL, 低延迟 | [查看详情](https://jichangmao.com/evaluations/review-ermao) |
+| **边缘节点** | ¥15.00/月 | SS | 全IPLC, 超高性价比 | [查看详情](https://jichangmao.com/evaluations/review-edge) |
+| **可信云** | ¥15.00/月 | SS | 全IEPL, 不限设备 | [查看详情](https://jichangmao.com/evaluations/review-kexin) |
+| **速界机场** | ¥15.00/月 | SS | 全IPLC, 性价比 | [查看详情](https://jichangmao.com/evaluations/review-sujie) |
+| **快狸** | ¥15.00/月 | SS | 全IEPL, 低延迟 | [查看详情](https://jichangmao.com/evaluations/review-kuaili) |
+| **飞V** | ¥25.00/月 | SS | 全链路专线, 多链路优化 | [查看详情](https://jichangmao.com/evaluations/review-flyv) |
+| **梯子云** | ¥25.00/月 | SS | 智能调度, 全程不限速 | [查看详情](https://jichangmao.com/evaluations/review-tizi) |
+| **WaveNet** | ¥30.00/月 | SS | 纯专线出口, 独占带宽 | [查看详情](https://jichangmao.com/evaluations/review-wavenet) |
+| **灵动云** | ¥20.00/月 | SS | 流媒体, 原生IP | [查看详情](https://jichangmao.com/evaluations/review-lingdong) |
+| **隐形人** | ¥24.00/月 | SS | 全链路专线, 开发者之选 | [查看详情](https://jichangmao.com/evaluations/review-yinren) |
 
 ---
 
