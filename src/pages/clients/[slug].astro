@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('clients');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout title={`${post.data.title} | 机场猫`} description={`${post.data.os} 平台的极速配置指引`}>
+  <main class="w-full relative z-10 flex flex-col items-center bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
+    <div class="max-w-3xl px-4 sm:px-6 w-full">
+      
+      <!-- Back Button -->
+      <a href="/clients/" class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 mb-8 transition-colors">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        返回客户端大厅
+      </a>
+
+      <!-- Header -->
+      <header class="mb-10 border-b border-slate-200 dark:border-slate-800 pb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{post.data.os}</span>
+          <span class="text-sm text-slate-500">更新于 {new Date(post.data.updatedDate).toLocaleDateString('zh-CN')}</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight mb-4">{post.data.title}</h1>
+      </header>
+
+      <!-- MDX Content -->
+      <div class="prose prose-slate dark:prose-invert prose-lg max-w-none 
+                  prose-headings:font-bold prose-headings:text-slate-900 dark:prose-headings:text-white
+                  prose-a:text-indigo-600 dark:prose-a:text-indigo-400 prose-a:no-underline hover:prose-a:underline
+                  prose-img:rounded-2xl prose-img:shadow-sm">
+        <Content />
+      </div>
+
+    </div>
+  </main>
+</BaseLayout>

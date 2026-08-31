@@ -1,0 +1,57 @@
+﻿---
+// src/components/SubpageNav.astro
+export interface Props {
+  exclude: 'brands' | 'guides' | 'blog' | 'ai';
+}
+
+const { exclude } = Astro.props;
+
+const menus = [
+  { name: '机场推荐', url: '/reviews/', slug: 'brands', 
+    articles: [
+      { title: '2026 稳定机场推荐', desc: '为您精选性价比极高、晚高峰稳定、解锁流媒体的机场', url: '/reviews/' },
+      { title: '如何挑选合适的节点？', desc: '一文带你理解如何挑选适合自己的专线/直连机场', url: '/guides/' }
+    ]
+  },
+  { name: '知识指南', url: '/guides/', slug: 'guides',
+    articles: [
+      { title: '各平台客户端下载', desc: 'Windows / Mac / iOS / Android 必备翻墙工具', url: '/clients/' },
+      { title: '什么是代理模式？', desc: '深入理解全局、规则分流、TUN 模式的区别', url: '/blog/guide-03/' }
+    ]
+  },
+  { name: '网络工具', url: '/tools/', slug: 'tools',
+    articles: [
+      { title: '极简 IP 查询', desc: '快速查询本机公网 IP 与归属地，检测原生度', url: '/tools/#minimal-ip' },
+      { title: '网络连通性检测', desc: '在线 Ping 与节点带宽极限测速工具合集', url: '/tools/#connectivity' }
+    ]
+  }
+].filter(m => m.slug !== exclude);
+---
+
+<div class="mt-8 mb-12 w-full">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {menus.map(menu => (
+      <div class="flex flex-col gap-4">
+        <!-- Main Button -->
+        <a href={menu.url} class="group relative inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-white dark:bg-slate-800 text-slate-800 dark:text-white font-bold text-base transition-all duration-300 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-900/30 dark:hover:text-primary-400 shadow-sm hover:shadow-md border border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-700">
+          {menu.name}
+          <span class="absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">&rarr;</span>
+        </a>
+        
+        <!-- Article Text Frames -->
+        <div class="grid grid-cols-2 gap-3 h-full">
+          {menu.articles.map(article => (
+            <a href={article.url} class="group flex flex-col p-4 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-700/50 rounded-xl hover:border-primary-400 dark:hover:border-primary-500 hover:bg-white dark:hover:bg-slate-800 transition-all duration-200 hover:shadow-sm">
+              <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 line-clamp-2 leading-snug mb-1.5 transition-colors">
+                {article.title}
+              </h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-3 leading-relaxed">
+                {article.desc}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

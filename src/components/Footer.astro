@@ -1,0 +1,61 @@
+---
+const today = new Date();
+---
+
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 mt-20 transition-colors">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12 border-b border-slate-200 dark:border-slate-800 pb-12">
+      <!-- 机场推荐 -->
+      <div>
+        <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">机场推荐</h3>
+        <ul class="space-y-3">
+          <li><a href="/reviews/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">机场推荐</a></li>
+          <li><a href="/evaluations/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">机场测评</a></li>
+          <li><a href="/reviews/#compare" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">机场价格对比</a></li>
+        </ul>
+      </div>
+
+      <!-- 使用教程 -->
+      <div>
+        <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">使用教程</h3>
+        <ul class="space-y-3">
+          <li><a href="/guides/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Clash 教程</a></li>
+          <li><a href="/guides/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">节点教程</a></li>
+          <li><a href="/clients/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">客户端教程</a></li>
+          <li><a href="/reviews/#faq" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">常见问题</a></li>
+        </ul>
+      </div>
+
+      <!-- 网络工具 -->
+      <div>
+        <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">网络工具</h3>
+        <ul class="space-y-3">
+          <li><a href="/tools/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">网络测速</a></li>
+          <li><a href="/tools/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">IP 查询</a></li>
+          <li><a href="/tools/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">DNS 检测</a></li>
+          <li><a href="/tools/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">网络工具</a></li>
+        </ul>
+      </div>
+
+      <!-- 关于本站 -->
+      <div>
+        <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">关于本站</h3>
+        <ul class="space-y-3">
+          <li><a href="/about/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">关于机场猫</a></li>
+          <li><a href="/methodology/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">评测方法</a></li>
+          <li><a href="/privacy/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">隐私政策</a></li>
+          <li><a href="/disclaimer/" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">免责声明</a></li>
+          <li><a href="/sitemap-index.xml" class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">网站地图</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 dark:text-slate-400">
+      <div class="flex items-center gap-2 mb-4 md:mb-0">
+        <span class="font-black text-xl text-blue-600 dark:text-blue-500">机场猫</span>
+        <span>&copy; {today.getFullYear()} 版权所有</span>
+      </div>
+      <p class="text-xs text-center md:text-right max-w-md leading-relaxed">本站提供内容仅供参考，不代表任何品牌的官方立场，也不构成购买建议。</p>
+    </div>
+  </div>
+</footer>

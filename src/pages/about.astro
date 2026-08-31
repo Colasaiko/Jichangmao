@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+---
+<BaseLayout title="关于机场猫的深度测评逻辑 | Clash节点甄别 - 机场猫" description="担心被无良虚假宣传欺骗？了解机场猫作为全景式测速平台的评测逻辑与初心。我们专注于发掘稳定专线网络，并提供详细的Clash进阶教程。点击阅读我们的测评准则！" keywords="全景式测速平台的评测逻辑,专注于发掘稳定专线网络,提供详细的进阶排错教程">
+  <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
+    <div class="max-w-4xl mx-auto px-4 w-full">
+      <div class="mb-12 text-center">
+        <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">关于机场猫</h1>
+        <p class="text-xl text-slate-600 dark:text-slate-400">第三方视角的信息整理与实际测试平台</p>
+      </div>
+      
+      <div class="prose prose-slate dark:prose-invert prose-lg max-w-none bg-white dark:bg-slate-900 p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <h3>我们是谁？</h3>
+        <p><strong>机场猫</strong> 是一个专注整理网络代理服务（俗称“机场”）、节点线路、客户端使用教程以及相关网络工具信息的第三方评测网站。我们的初衷是帮助广大用户在信息繁杂的网络服务市场中，找到最适合自己需求的工具。</p>
+        
+        <h3>我们的定位</h3>
+        <p>我们始终坚持<strong>“第三方视角的信息整理与实际测试平台”</strong>的定位：</p>
+        <p>
+          本站部分或全部收录品牌与本站运营方存在商业或所有权关联。本站内容以公开资料、实际订阅测试、节点测速及编辑记录为基础进行整理。测试结果仅代表特定时间、网络环境及测试设备下的实际表现，不代表所有用户在任何情况下都能获得相同结果。
+        </p>
+        
+        <h3>我们的内容原则</h3>
+        <p>我们尽量区分品牌公开信息与本站测试结果，不将品牌宣传直接当作本站结论。我们会明确区分：</p>
+        <ul>
+          <li>哪些数据是<strong>「官方公开信息」</strong>（如成立时间、价格列表）。</li>
+          <li>哪些数据是<strong>「机场猫实测」</strong>（如晚高峰带宽、流媒体解锁状态）。</li>
+        </ul>
+        <p>通过这种透明的信息架构，我们希望每一位用户都能在机场猫获得最真实、最直观的选购参考。想深入了解我们的具体测试标准，请阅读我们的<a href="/methodology/">评测方法 (Methodology)</a>。</p>
+      </div>
+    </div>
+    <div class="mt-12">
+      <BottomMenuNav />
+    </div>
+  </main>
+</BaseLayout>

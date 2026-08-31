@@ -1,0 +1,426 @@
+?---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allBlogs = await getCollection('blog');
+
+
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jichangmao.com/#website",
+      "url": "https://jichangmao.com/",
+      "name": "机场猫",
+      "description": "2026机场推荐与专线测评 | Clash节点 - 机场猫"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://jichangmao.com/#organization",
+      "name": "机场猫",
+      "url": "https://jichangmao.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://jichangmao.com/logo.jpg"
+      }
+    }
+  ]
+});
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Filter out reviews to only show guide articles
+const guidePosts = posts.filter(post => {
+  return post.data.category !== '品牌介绍' && post.data.category !== '机场测评' && !post.data.title.includes('测评');
+});
+const latestPosts = guidePosts.slice(0, 3);
+
+// Fetch evaluations for the new section
+const allEvals: any[] = []; // disabled evaluations query to fix build
+const latestEvals = allEvals.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
+  const getPostUrl = (post: any) => {
+    const isReview = post.data.category === '品牌介绍' || post.data.category === '机场测评' || post.data.title.includes('测评');
+    return isReview ? `/evaluations/${post.slug}/` : `/blog/${post.slug}/`;
+  };
+
+---
+
+<BaseLayout title="2026机场推荐与专线测评 | Clash节点 - 机场猫" description="不知道如何配置优质节点？机场猫为您带来2026最新高性价比机场横评。提供真实的专线测速、流媒体解锁分析，完美兼容Clash客户端。点击获取进阶防封锁指南！" keywords="最新高性价比优质机场专线横评,提供真实的专线测速解锁分析,完美兼容全平台客户端" jsonLd={jsonLd}>
+  
+  <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950/50 min-h-screen">
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-32 lg:pb-16 overflow-hidden">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center relative z-10">
+        <div class="reveal-el flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15] drop-shadow-sm">
+            机场推荐与网络服务指南</h1>
+          <img src="/logo.jpg" alt="机场猫 Logo" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl border-4 border-white dark:border-slate-800 rotate-3 hover:rotate-0 transition-transform duration-300 flex-shrink-0" />
+        </div>
+        <p class="reveal-el reveal-delay-100 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
+          独立整理网络服务、节点线路、客户端教程与网络工具，帮助你更方便地选择适合自己的服务。        </p>
+        <div class="reveal-el reveal-delay-200 flex flex-wrap items-center justify-center gap-4 mt-8">
+          <a href="/reviews/" class="px-8 py-3.5 rounded-xl bg-primary-600 text-white font-bold text-lg hover:bg-primary-700 transition-colors shadow-sm">机场推荐</a>
+          <a href="/guides/" class="px-8 py-3.5 rounded-xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm">新手教程</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- 重点入口与温馨提示 (两栏布局) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10 mb-16 mt-8">
+      <div class="flex flex-col lg:flex-row gap-8 items-start">
+        
+            <!-- 左侧：重点入口 (30秒选方向) -->
+        <div class="w-full lg:flex-1">
+            <div class="mb-4 flex items-start gap-3">
+                <div class="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center text-xl shadow-sm border border-slate-200 dark:border-slate-700 flex-shrink-0">
+                    🧭
+                </div>
+                <div>
+                    <h2 class="text-xl font-black text-slate-900 dark:text-white mb-1">30 秒先选方向</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">别在八个分类里盲猜；先确定您现在主要想解决什么问题。</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Card 1 -->
+                <a href="/reviews/" class="block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-primary-300 dark:hover:border-primary-700 transition-all group">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl grayscale group-hover:grayscale-0 transition-all opacity-80 group-hover:opacity-100 mt-1">✈️</div>
+                        <div>
+                            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-1">科学上网订阅</h3>
+                            <div class="text-primary-600 dark:text-primary-400 font-bold text-xs mb-1 group-hover:underline">去机场推荐&rarr;</div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">先试用或月付，对照各品牌测速与风险状态再做决定。</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="/guides/" class="block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-blue-300 dark:hover:border-blue-700 transition-all group">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl grayscale group-hover:grayscale-0 transition-all opacity-80 group-hover:opacity-100 mt-1">📚</div>
+                        <div>
+                  <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-1">还不懂怎么买？</h3>
+                            <div class="text-blue-600 dark:text-blue-400 font-bold text-xs mb-1 group-hover:underline">从新手教程学起 &rarr;</div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">3天上手课表：基础概念 &rarr; 防坑指南 &rarr; 客户端傻瓜式配置。</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="/guides/" class="block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-emerald-300 dark:hover:border-emerald-700 transition-all group">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl grayscale group-hover:grayscale-0 transition-all opacity-80 group-hover:opacity-100 mt-1">🧠</div>
+                        <div>
+                            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-1">专线网络科普</h3>
+                            <div class="text-emerald-600 dark:text-emerald-400 font-bold text-xs mb-1 group-hover:underline">查阅知识库 &rarr;</div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">深入了解 IPLC / IEPL 原理与流媒体原生解锁的底层逻辑。</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="/tools/" class="block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-amber-300 dark:hover:border-amber-700 transition-all group">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl grayscale group-hover:grayscale-0 transition-all opacity-80 group-hover:opacity-100 mt-1">🛠️</div>
+                        <div>
+                            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-1">日常检测辅助</h3>
+                            <div class="text-amber-600 dark:text-amber-400 font-bold text-xs mb-1 group-hover:underline">使用网络工具 &rarr;</div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">日常常用功能，包括 IP 纯净度检测、WebRTC 泄漏与 DNS 污染排查。</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- 右侧：温馨提示 -->
+        <div class="w-full lg:w-80 xl:w-96 flex-shrink-0 lg:mt-12">
+          <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-2xl p-5 flex flex-col items-start gap-3 shadow-sm">
+            <div class="flex items-center gap-2 text-amber-600 dark:text-amber-500">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <h3 class="text-base font-bold text-amber-800 dark:text-amber-400">温馨提醒</h3>
+            </div>
+            <p class="text-amber-700 dark:text-amber-200/80 leading-relaxed text-xs">
+            本站（机场猫）致力于提供客观的网络工具测评与技术教程。评测数据受不同网络环境影响，仅供参考，不构成绝对购买建议。遇到网络连接问题，建议您优先查阅「知识指南」或使用「网络工具」进行排障排查。请务必遵守当地法律法规，合理使用网络资源。            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    
+    
+    <!-- 核心频道导览 -->
+    <section class="max-w-7xl mx-auto px-4 w-full mb-24">
+      <div class="flex items-center justify-between mb-8 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">全站核心频道导览</h2>
+          </div>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 sm:ml-11">快速定位最新榜单、测评数据与网络排障工具箱</div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1: 机场推荐 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex flex-col group">
+           <div class="flex justify-between items-start mb-6">
+             <div class="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-2xl">🏆</div>
+             <span class="px-3 py-1 bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 text-xs font-bold rounded-full">精选榜单</span>
+           </div>
+           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">机场推荐汇总</h3>
+           <p class="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed flex-grow">剔除跑路风险，筛选出最具性价比与稳定性的宝藏机场，流媒体全解锁。</p>
+           <a href="/reviews/" class="text-blue-600 dark:text-blue-400 font-bold text-sm inline-flex items-center group-hover:underline mt-auto">查看机场推荐 &rarr;</a>
+        </div>
+        
+        <!-- Card 2: 机场测评 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex flex-col group">
+           <div class="flex justify-between items-start mb-6">
+             <div class="w-12 h-12 bg-amber-50 dark:bg-amber-900/30 rounded-2xl flex items-center justify-center text-2xl">✈️</div>
+             <span class="px-3 py-1 bg-amber-50 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400 text-xs font-bold rounded-full">首轮实测</span>
+           </div>
+           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">机场测评汇总</h3>
+           <p class="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed flex-grow">晚高峰、解锁、客户端兼容、售后与备用方案，单线程极限测速全公开。</p>
+           <a href="/evaluations/" class="text-amber-600 dark:text-amber-400 font-bold text-sm inline-flex items-center group-hover:underline mt-auto">查看机场测评 &rarr;</a>
+        </div>
+
+        <!-- Card 3: 网络工具 -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex flex-col group">
+           <div class="flex justify-between items-start mb-6">
+             <div class="w-12 h-12 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center text-2xl">🧰</div>
+             <span class="px-3 py-1 bg-emerald-50 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400 text-xs font-bold rounded-full">自动化测试</span>
+           </div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">网络工具汇总</h3>
+           <p class="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed flex-grow">节点连通性、IP纯净度、DNS防泄露检测，排障体检必备外部工具集。</p>
+           <a href="/tools/" class="text-emerald-600 dark:text-emerald-400 font-bold text-sm inline-flex items-center group-hover:underline mt-auto">查看网络工具 &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 推荐文章 -->
+    <section class="max-w-7xl mx-auto px-4 w-full mb-24">
+      <div class="flex items-center justify-between mb-8 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">精选知识指南</h2>
+          </div>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 sm:ml-11">精选涵盖基础使用、进阶配置与防坑避雷的全面知识指南</p>
+        </div>
+        <a href="/guides/" class="text-primary-600 font-bold hover:text-primary-700 hover:underline text-sm">查看全部指南 &rarr;</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {latestPosts.map(post => (
+          <a href={getPostUrl(post)} class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col h-full">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-bold text-primary-700 bg-primary-50 dark:bg-primary-900/30 dark:text-primary-400 px-2.5 py-1 rounded-md">{post.data.category || '推荐'}</span>
+                <span class="text-xs text-slate-500 font-medium">{new Date(post.data.pubDate).toLocaleDateString('zh-CN')}</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary-600 transition-colors line-clamp-2 leading-snug">{post.data.title}</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-3 mb-6 flex-grow leading-relaxed">{post.data.description}</p>
+              <div class="mt-auto flex items-center text-primary-600 dark:text-primary-400 text-sm font-bold">
+                阅读全文 <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- 新手从这里开始 -->
+    <section class="max-w-7xl mx-auto px-4 w-full mb-24 overflow-visible">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-3">新手从这里开始</h2>
+        <p class="text-lg text-slate-600 dark:text-slate-400 mt-1">第一次接触此类工具？不用怕，跟着这里的 4 步走，轻松搞定网络配置。</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+        
+        <!-- 步骤 1 -->
+        <div class="relative group">
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 lg:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-blue-500 transition-all flex flex-col h-full z-10 relative">
+            <div class="w-12 h-12 bg-blue-100 text-blue-600 dark:bg-blue-900/40 dark:text-blue-400 rounded-2xl flex items-center justify-center font-black text-xl mb-6">1</div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 group-hover:text-blue-600 transition-colors">了解基础</h3>
+            <ul class="space-y-3.5 flex-grow text-slate-600 dark:text-slate-400 text-sm font-medium">
+              <li><a href="/blog/what-is-airport-proxy/" class="hover:text-blue-600 dark:hover:text-blue-400 block transition-colors">&bull; 什么是机场？</a></li>
+                <li><a href="/blog/what-is-node/" class="hover:text-blue-600 dark:hover:text-blue-400 block transition-colors">&bull; 什么是节点？</a></li>
+                <li><a href="/blog/what-is-subscription/" class="hover:text-blue-600 dark:hover:text-blue-400 block transition-colors">&bull; 什么是订阅链接？</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex absolute top-1/2 -right-4 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center text-slate-300 dark:text-slate-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+          <div class="flex lg:hidden absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 w-8 h-8 items-center justify-center text-slate-300 dark:text-slate-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+          </div>
+        </div>
+
+        <!-- 步骤 2 -->
+        <div class="relative group">
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 lg:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-emerald-500 transition-all flex flex-col h-full z-10 relative">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400 rounded-2xl flex items-center justify-center font-black text-xl mb-6">2</div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 group-hover:text-emerald-600 transition-colors">选择客户端</h3>
+            <ul class="space-y-3.5 flex-grow text-slate-600 dark:text-slate-400 text-sm font-medium">
+              <li><a href="/blog/windows-v2rayn-guide/" class="hover:text-emerald-600 dark:hover:text-emerald-400 block transition-colors">&bull; Windows 客户端推荐</a></li>
+              <li><a href="/blog/mac-clash-verge-rev-guide/" class="hover:text-emerald-600 dark:hover:text-emerald-400 block transition-colors">&bull; macOS 客户端推荐</a></li>
+              <li><a href="/blog/v2rayng-guide/" class="hover:text-emerald-600 dark:hover:text-emerald-400 block transition-colors">&bull; Android 客户端推荐</a></li>
+              <li><a href="/blog/shadowrocket-guide/" class="hover:text-emerald-600 dark:hover:text-emerald-400 block transition-colors">&bull; iOS 客户端推荐</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex absolute top-1/2 -right-4 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center text-slate-300 dark:text-slate-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+          <div class="flex md:hidden absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 w-8 h-8 items-center justify-center text-slate-300 dark:text-slate-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+          </div>
+        </div>
+
+        <!-- 步骤 3 -->
+        <div class="relative group">
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 lg:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-amber-500 transition-all flex flex-col h-full z-10 relative">
+            <div class="w-12 h-12 bg-amber-100 text-amber-600 dark:bg-amber-900/40 dark:text-amber-400 rounded-2xl flex items-center justify-center font-black text-xl mb-6">3</div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 group-hover:text-amber-600 transition-colors">开始使用</h3>
+            <ul class="space-y-3.5 flex-grow text-slate-600 dark:text-slate-400 text-sm font-medium">
+              <li><a href="/blog/how-to-choose-an-airport-guide/" class="hover:text-amber-600 dark:hover:text-amber-400 block transition-colors">&bull; 如何挑选机场节点</a></li>
+              <li><a href="/blog/first-time-proxy-guide/" class="hover:text-amber-600 dark:hover:text-amber-400 block transition-colors">&bull; 首次配置防坑指南</a></li>
+              <li><a href="/blog/what-is-tun-mode/" class="hover:text-amber-600 dark:hover:text-amber-400 block transition-colors">&bull; 什么是虚拟网卡 TUN？</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex absolute top-1/2 -right-4 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center text-slate-300 dark:text-slate-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+          <div class="flex lg:hidden absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 w-8 h-8 items-center justify-center text-slate-300 dark:text-slate-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+          </div>
+        </div>
+
+        <!-- 步骤 4 -->
+        <div class="relative group">
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 lg:p-8 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-red-500 transition-all flex flex-col h-full z-10 relative">
+            <div class="w-12 h-12 bg-red-100 text-red-600 dark:bg-red-900/40 dark:text-red-400 rounded-2xl flex items-center justify-center font-black text-xl mb-6">4</div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 group-hover:text-red-600 transition-colors">遇到问题</h3>
+            <ul class="space-y-3.5 flex-grow text-slate-600 dark:text-slate-400 text-sm font-medium">
+              <li><a href="/guides/" class="hover:text-red-600 dark:hover:text-red-400 block transition-colors">&bull; 节点连不上怎么办？</a></li>
+              <li><a href="/guides/" class="hover:text-red-600 dark:hover:text-red-400 block transition-colors">&bull; 游戏延迟突然变高？</a></li>
+              <li><a href="/guides/" class="hover:text-red-600 dark:hover:text-red-400 block transition-colors">&bull; 为什么测速很快但刷网页慢？</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  
+    
+    
+    <!-- AEO FAQ Section -->
+    <section class="max-w-7xl mx-auto px-4 w-full mb-16">
+      <div class="mb-8 text-center">
+        <h2 class="text-3xl font-bold text-slate-900 dark:text-white">常见问题与新手指南 (FAQ)</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">什么是“机场”？</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            “机场”是网友对提供基于 SS/SSR/V2Ray/Trojan 等代理协议的网络服务商的俗称。因为早期的 Shadowsocks 客户端图标是一个纸飞机，所以提供大量此类节点的服务商就被称为“机场”。主要用于突破网络封锁、访问国际互联网。          </p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">怎么判断机场速度和稳定性？</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            判断速度不要只看官方宣传。最可靠的方法是查看晚高峰时段（晚上8点-11点）的物理机测速图或连通性图。重点关注晚高峰的延迟波动情况、下载速率，以及是否使用了独享的 IPLC/IEPL 专线，专线通常比公网中转更稳定。          </p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">什么是 IPLC / IEPL 专线？</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            IPLC (国际私用出租线路) 和 IEPL (国际以太网专线)  是物理级别的跨境专线网络。它们不过长城防火墙 (GFW)，因此不受公网封锁影响，延迟极低且极度稳定。通常，全 IPLC 专线套餐的价格会略高于普通的中转隧道。          </p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">机场价格怎么看？买多久合适？</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            对比价格时，应换算为“月均成本”。比如一个套餐年付 120元，折合下来只要 10元/月。但为了防范服务商随时关停的“跑路”风险，强烈建议新手先购买 1个月套餐体验，确认晚高峰速度满足需求后，再考虑季付或年付。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 站点信息与快捷导航 (Pre-footer) -->
+    <section class="max-w-7xl mx-auto px-4 w-full mb-12">
+      <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 lg:p-12 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors">
+        
+        <!-- 装饰性背景光效 -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary-600/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-blue-600/10 blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 relative z-10">
+          
+          <!-- 左侧：关于与特点 -->
+          <div class="lg:col-span-7 flex flex-col">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 transition-colors">关于机场猫</h2>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl text-sm sm:text-base transition-colors">
+              机场猫致力于消除网络信息差，为您提供客观、真实的机场节点评测、代理客户端配置教程以及实用的网络测试工具。我们关注节点性能、线路质量与解锁能力，帮助新手小白少走弯路，快速畅游国际网络。
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-auto">
+              <!-- 特点 1 -->
+              <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-2xl p-4 flex flex-col items-start hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-500/20 text-red-600 dark:text-red-400 flex items-center justify-center mb-3 transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm mb-1 transition-colors">严选推荐</h4>
+                <p class="text-xs text-slate-500">实际订阅测试，真实测速</p>
+              </div>
+              
+              <!-- 特点 2 -->
+              <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-2xl p-4 flex flex-col items-start hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-3 transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm mb-1 transition-colors">工具集成</h4>
+                <p class="text-xs text-slate-500">一站式测速与查询</p>
+              </div>
+              
+              <!-- 特点 3 -->
+              <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-2xl p-4 flex flex-col items-start hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-3 transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm mb-1 transition-colors">完全免费</h4>
+                <p class="text-xs text-slate-500">内容永久开放阅读</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 右侧：导航与社区 -->
+          <div class="lg:col-span-5 flex flex-col lg:pl-6 relative">
+            <!-- 桌面端竖向分隔线 -->
+            <div class="hidden lg:block w-px bg-slate-200 dark:bg-slate-800 absolute -left-4 top-0 bottom-0 transition-colors"></div>
+
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-4 transition-colors">热门资源导航</h3>
+            <div class="flex flex-wrap gap-2.5 mb-10">
+              <a href="/evaluations/" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 text-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition-colors border border-slate-200 dark:border-slate-700/50">专线测速中心</a>
+              <a href="/clients/" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 text-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition-colors border border-slate-200 dark:border-slate-700/50">客户端下载</a>
+              <a href="/guides/" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 text-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition-colors border border-slate-200 dark:border-slate-700/50">新手入门教程</a>
+              <a href="/tools/my-ip" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 text-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition-colors border border-slate-200 dark:border-slate-700/50">IP查询/工具箱</a>
+            </div>
+
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  
+</main>
+</BaseLayout>

@@ -1,0 +1,444 @@
+---
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Tools Database
+const toolCategories = [
+  {
+    id: 'minimal-ip',
+    icon: '📍',
+    title: '极简 IP 查询',
+    color: 'blue',
+    tools: [
+      { name: 'Ping0.cc', desc: '【强力推荐】极简 IP 查询，涵盖欺诈度、原生属性等。', url: 'https://ping0.cc/', domain: 'ping0.cc' },
+      { name: 'IPinfo.io', desc: '【最知名 IP 库】极具权威的 IP 信息查询。', url: 'https://ipinfo.io/', domain: 'ipinfo.io' },
+      { name: 'IP.SKK', desc: '极简好用，同时显示多个数据库的 IP 归属地。', url: 'https://ip.skk.moe/', domain: 'ip.skk.moe' },
+      { name: 'IP111', desc: '经典全网查询，同时显示国内外出口 IP。', url: 'https://ip111.cn/', domain: 'ip111.cn' },
+      { name: 'IP.SB', desc: '极简风格，显示当前 IP 的运营商及 ASN。', url: 'https://ip.sb/', domain: 'ip.sb' },
+      { name: 'IP.me', desc: '纯净 IP 查询，简单快捷。', url: 'https://ip.me/', domain: 'ip.me' },
+      { name: 'MyIP', desc: '快速查询 IP 归属地与物理位置。', url: 'https://myip.la/', domain: 'myip.la' },
+      { name: 'CIP.cc', desc: '终端命令行最爱查询工具，支持 curl。', url: 'http://cip.cc/', domain: 'cip.cc' }
+    ]
+  },
+  {
+    id: 'deep-ip',
+    icon: '📚',
+    title: '深度 IP 数据库',
+    color: 'indigo',
+    tools: [
+      { name: 'IPData', desc: '包含 2000 多万个 IP 的商业级威胁情报与归属地数据。', url: 'https://ipdata.co/', domain: 'ipdata.co' },
+      { name: 'IPwho.is', desc: '无限制使用的免费 IP 地理位置与 ASN API。', url: 'https://ipwho.is/', domain: 'ipwho.is' },
+      { name: 'IPLocation', desc: '一键聚合查询多个主流 IP 地理位置数据库。', url: 'https://www.iplocation.net/', domain: 'iplocation.net' },
+      { name: 'DB-IP', desc: '提供免费下载的全球 IP 地理位置数据库。', url: 'https://db-ip.com/', domain: 'db-ip.com' },
+      { name: 'IPIP.net', desc: '国内极具权威的 IP 归属地与网络查询工具。', url: 'https://www.ipip.net/', domain: 'ipip.net' },
+      { name: 'IP2Location', desc: '老牌且精准的商业级地理位置定位服务。', url: 'https://www.ip2location.com/', domain: 'ip2location.com' }
+    ]
+  },
+  {
+    id: 'bgp-asn',
+    icon: '📡',
+    title: 'BGP 路由与 ASN 分析',
+    color: 'fuchsia',
+    tools: [
+      { name: 'BGP.Tools', desc: '【强力推荐】极速 BGP & ASN 信息查询，数据更新最快。', url: 'https://bgp.tools/', domain: 'bgp.tools' },
+      { name: 'Cloudflare Radar', desc: '【权威视角】CF 官方全球流量分析与互联网洞察。', url: 'https://radar.cloudflare.com/', domain: 'radar.cloudflare.com' },
+      { name: 'RIPEstat', desc: 'RIPE 官方工具，可查询 ASN 路由传播与历史记录。', url: 'https://stat.ripe.net/', domain: 'stat.ripe.net' },
+      { name: 'PeeringDB', desc: '全球互联网络数据库，查 IXP 及 Peering 信息的必备。', url: 'https://www.peeringdb.com/', domain: 'peeringdb.com' },
+      { name: 'HE BGP', desc: 'Hurricane Electric 权威 BGP 查询站，数据完整。', url: 'https://bgp.he.net/', domain: 'bgp.he.net' },
+      { name: 'Radar Qrator', desc: '监控全球路由异常与 BGP 劫持事件。', url: 'https://radar.qrator.net/', domain: 'radar.qrator.net' }
+    ]
+  },
+  {
+    id: 'fraud-check',
+    icon: '🛡️',
+    title: '欺诈度 & 纯净度检测',
+    color: 'purple',
+    tools: [
+      { name: 'Scamalytics', desc: '著名的 IP 欺诈度评分库，防风控与解锁必备检查。', url: 'https://scamalytics.com/', domain: 'scamalytics.com' },
+      { name: 'AbuseIPDB', desc: '社区驱动的黑名单库，检查 IP 是否有过恶意攻击记录。', url: 'https://www.abuseipdb.com/', domain: 'abuseipdb.com' },
+      { name: 'IPQS', desc: '提供代理、VPN 与欺诈得分的高级检测。', url: 'https://www.ipqualityscore.com/', domain: 'ipqualityscore.com' },
+      { name: 'Whoer', desc: '老牌全面匿名度检测工具，检测代理/VPN 伪装程度。', url: 'https://whoer.net/', domain: 'whoer.net' },
+      { name: 'Spur.us', desc: '专业分析 IP 住宅/机房属性，甄别是否为原生住宅。', url: 'https://spur.us/', domain: 'spur.us' }
+    ]
+  },
+  {
+    id: 'privacy-check',
+    icon: '🔐',
+    title: '隐私 & DNS 泄露检测',
+    color: 'pink',
+    tools: [
+      { name: 'IPLeak', desc: '【最全面】一站式检测 WebRTC/DNS/IPv6 等多种泄露问题。', url: 'https://ipleak.net/', domain: 'ipleak.net' },
+      { name: 'BrowserScan', desc: '【用户端】强大的指纹浏览器检测，测试你的伪装环境。', url: 'https://browserscan.net/', domain: 'browserscan.net' },
+      { name: 'BrowserLeaks', desc: '极具深度的浏览器隐私技术与泄露漏洞分析。', url: 'https://browserleaks.com/', domain: 'browserleaks.com' },
+      { name: 'Cloudflare ECH Test', desc: 'Cloudflare 提供的 ESNI / ECH 客户端加密握手检测。', url: 'https://www.cloudflare.com/ssl/encrypted-sni/', domain: 'cloudflare.com' },
+      { name: 'DNS Leak Test', desc: '专门测试您的代理网络是否会泄露本地真实 DNS。', url: 'https://www.dnsleaktest.com/', domain: 'dnsleaktest.com' }
+    ]
+  },
+  {
+    id: 'connectivity',
+    icon: '⚡',
+    title: '网络连通性 & 测速工具',
+    color: 'rose',
+    tools: [
+      { name: 'ITDOG', desc: '【强力推荐】国内好用的在线 Ping 和路由追踪工具。', url: 'https://www.itdog.cn/', domain: 'itdog.cn' },
+      { name: 'Ping.pe', desc: '全球多节点并发 Ping 与 TCP 连通性测试。', url: 'https://ping.pe/', domain: 'ping.pe' },
+      { name: 'Cloudflare Speed', desc: '无缓存的真实浏览器网络质量测速。', url: 'https://speed.cloudflare.com/', domain: 'speed.cloudflare.com' },
+      { name: 'Fast.com', desc: 'Netflix 官方提供的极简测速工具，专测流媒体带宽。', url: 'https://fast.com/', domain: 'fast.com' },
+      { name: 'SSL Labs', desc: '权威的 SSL/TLS 配置评级工具，检测证书安全性。', url: 'https://www.ssllabs.com/ssltest/', domain: 'ssllabs.com' },
+      { name: 'WhatsMyDNS', desc: '全球 DNS 传播查询，检测域名解析是否在全球生效。', url: 'https://www.whatsmydns.net/', domain: 'whatsmydns.net' }
+    ]
+  },
+  {
+    id: 'port-scan',
+    icon: '🔍',
+    title: '公网暴露面与服务识别',
+    color: 'emerald',
+    tools: [
+      { name: 'Shodan', desc: '极负盛名的网络空间搜索引擎，发现暴露的端口与设备。', url: 'https://www.shodan.io/', domain: 'shodan.io' },
+      { name: 'Censys', desc: '面向安全研究人员的扫描器，可用于追溯泄露资产。', url: 'https://censys.io/', domain: 'censys.io' }
+    ]
+  }
+];
+
+---
+
+<BaseLayout title="2026最新网络诊断工具 | Clash排错 - 机场猫" description="节点经常超时无法连接？使用机场猫免费网络检测工具箱，快速进行Ping延迟测试、端口扫描与IP归属地查询。配合进阶教程，点击开始深度诊断排错！" keywords="免费网络检测工具箱深度诊断,快速进行延迟测试与端口扫描,IP归属地查询配合进阶教程">
+  <!-- Hero Section -->
+  <section class="pt-0 pb-2 px-4 md:px-8 text-center relative overflow-hidden bg-white dark:bg-slate-950">
+    <div class="container max-w-[1440px] mx-auto">
+      <div class="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs font-bold rounded-full mb-3 tracking-wide">
+        在线实用工具合集
+      </div>
+      <h1 class="max-w-5xl mx-auto text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight leading-tight">
+        网络辅助 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">工具箱</span>
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed mb-2">
+        精心收集的网络诊断、IP 查询、路由分析与连通性测试工具合集。
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 pb-20">
+    <!-- Header Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 text-left mt-0 mb-12 max-w-5xl mx-auto">
+      
+      <!-- Left Column (Nav + 4 Frameworks) -->
+      <div class="md:col-span-3 flex flex-col gap-5">
+        
+        <!-- Quick Navigation -->
+        <div class="bg-white dark:bg-slate-900/30 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="font-black text-lg text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+            <span class="w-1.5 h-6 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full inline-block"></span>
+            全站快捷游览
+          </h3>
+          <div class="grid grid-cols-3 gap-3">
+            <a href="/guides" class="relative flex flex-col items-center text-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-blue-400 hover:shadow-md transition-all group">
+              <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">📖</span>
+              <span class="text-[13px] font-bold text-slate-800 dark:text-slate-200 group-hover:text-blue-600">知识指南</span>
+            </a>
+            <a href="/evaluations" class="relative flex flex-col items-center text-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-indigo-400 hover:shadow-md transition-all group">
+              <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">✈️</span>
+              <span class="text-[13px] font-bold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600">机场评测</span>
+            </a>
+            <a href="/clients" class="relative flex flex-col items-center text-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-purple-400 hover:shadow-md transition-all group">
+              <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">💻</span>
+              <span class="text-[13px] font-bold text-slate-800 dark:text-slate-200 group-hover:text-purple-600">客户端下载</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Frameworks Grid (Selected from H2s) -->
+        <div class="bg-white dark:bg-slate-900/30 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm h-full">
+          <h3 class="font-black text-lg text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+            <span class="w-1.5 h-6 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full inline-block"></span>
+            小白精选游览
+          </h3>
+          
+          <div class="grid grid-cols-2 gap-4">
+            
+            <!-- Block 1 -->
+            <div class="relative flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 text-sm flex items-center justify-center shrink-0">📍</span>
+                <h2 class="font-bold text-slate-900 dark:text-slate-100 text-[14px] leading-tight">极简 IP 查询</h2>
+              </div>
+              <ul class="space-y-2 text-[12px] flex-grow ml-0.5">
+                <li><a href="https://ping0.cc/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>Ping0 (综合 IP 查询)</a></li>
+                <li><a href="https://ip.skk.moe/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>IP.SKK (极简归属地)</a></li>
+              </ul>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="relative flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 text-sm flex items-center justify-center shrink-0">⚡</span>
+                <h2 class="font-bold text-slate-900 dark:text-slate-100 text-[14px] leading-tight">连通性与测速</h2>
+              </div>
+              <ul class="space-y-2 text-[12px] flex-grow ml-0.5">
+                <li><a href="https://www.itdog.cn/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>ITDOG (路由与延迟)</a></li>
+                <li><a href="https://speed.cloudflare.com/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>CF 节点极限测速</a></li>
+              </ul>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="relative flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 text-sm flex items-center justify-center shrink-0">🛡️</span>
+                <h2 class="font-bold text-slate-900 dark:text-slate-100 text-[14px] leading-tight">欺诈与纯净度</h2>
+              </div>
+              <ul class="space-y-2 text-[12px] flex-grow ml-0.5">
+                <li><a href="https://scamalytics.com/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>Scamalytics 风险分</a></li>
+                <li><a href="https://spur.us/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>Spur.us (原生鉴定)</a></li>
+              </ul>
+            </div>
+
+            <!-- Block 4 -->
+            <div class="relative flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-lg bg-pink-100 dark:bg-pink-900/50 text-pink-600 dark:text-pink-400 text-sm flex items-center justify-center shrink-0">🔐</span>
+                <h2 class="font-bold text-slate-900 dark:text-slate-100 text-[14px] leading-tight">隐私与防泄露</h2>
+              </div>
+              <ul class="space-y-2 text-[12px] flex-grow ml-0.5">
+                <li><a href="https://ipleak.net/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>IPLeak (综合泄露检测)</a></li>
+                <li><a href="https://browserscan.net/" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 font-medium flex items-center gap-1.5 transition-colors"><div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600 shrink-0"></div>BrowserScan (指纹)</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column (Warm Tips) -->
+      <div class="md:col-span-2 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-7 text-white shadow-lg relative overflow-hidden flex flex-col h-full">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-black/10 rounded-full blur-2xl pointer-events-none"></div>
+        
+        <h3 class="font-black text-xl mb-4 relative z-10 flex items-center gap-2">
+          <span class="bg-white/20 p-2 rounded-xl">💡</span> 温馨小提示
+        </h3>
+        
+        <div class="space-y-3 text-blue-50 text-[14px] leading-relaxed relative z-10 flex-grow">
+          <p>欢迎来到网络工具箱！</p>
+          <p>这里为您汇集了节点圈内最具权威性的<strong class="text-white font-bold bg-white/10 px-1.5 py-0.5 rounded">外部在线检测站点</strong>。</p>
+          <ul class="space-y-1.5 mt-2 pl-2">
+            <li>🎯 <strong>查原生节点？</strong> 用 <span class="bg-white/20 px-1 rounded">Ping0</span> 测欺诈度。</li>
+            <li>🚀 <strong>测网速丢包？</strong> 用 <span class="bg-white/20 px-1 rounded">ITDOG</span> 追踪节点质量。</li>
+            <li>🕵️ <strong>怕隐私泄露？</strong> 用 <span class="bg-white/20 px-1 rounded">IPLeak</span> 排查 DNS/WebRTC。</li>
+          </ul>
+          <p class="mt-3">所有工具点击即跳转官网，全部在您的浏览器本地安全运行！小白可直接点击左侧“精选游览”快速开始排障。</p>
+        </div>
+        
+        <div class="mt-8 relative z-10 flex justify-end">
+          <span class="text-blue-200 opacity-50"><svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></span>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <!-- Sticky H2 Navigation Bar -->
+    <div class="sticky top-[72px] z-40 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-y border-slate-200 dark:border-slate-800 py-3 mb-10 -mx-4 px-4 sm:mx-0 sm:rounded-2xl shadow-sm">
+      <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center sm:justify-start gap-2">
+        {toolCategories.map((category) => (
+          <a href={`#${category.id}`} class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <span class={`text-${category.color}-500`}>{category.icon}</span> 
+            {category.title}
+          </a>
+        ))}
+        <!-- Additional hardcoded links -->
+        <a href="#changelog" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          <span class="text-blue-500">🕒</span> 工具箱更新记录
+        </a>
+        <a href="#health-check" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          <span class="text-yellow-500">🏆</span> 5 步 IP 体检
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content: The 7 H2 Categories Loop -->
+    <div class="max-w-6xl mx-auto space-y-16">
+      
+      {toolCategories.map((category) => (
+        <section id={category.id} class="scroll-mt-40">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+            <span class={`text-${category.color}-500`}>{category.icon}</span> {category.title}
+          </h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {category.tools.map((tool) => (
+              <a href={tool.url} target="_blank" rel="noopener noreferrer" class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col h-full relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-3 relative z-10">
+                  <div class="w-10 h-10 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center border border-slate-100 dark:border-slate-700 shadow-sm shrink-0 overflow-hidden group-hover:scale-110 transition-transform">
+                    <img src={`https://icon.horse/icon/${tool.domain}`} alt={tool.name} class="w-6 h-6 object-contain" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMCAxM3YtMnEwLTEuNSAxLTEuNXQxIDEuNXYyIj48L3BhdGg+PHBhdGggZD0iTTExIDE3aC4wMSI+PC9wYXRoPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgeD0iMyIgeT0iMyIgcng9IjIiPjwvcmVjdD48L3N2Zz4='"/>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 text-base">{tool.name}</h4>
+                    <span class="text-[11px] text-slate-400 font-mono mt-0.5 block truncate max-w-[150px]">{tool.domain}</span>
+                  </div>
+                </div>
+                <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed relative z-10 flex-grow">{tool.desc}</p>
+                <div class="mt-4 flex justify-end relative z-10">
+                  <span class="text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold">
+                    立即使用 <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+
+    
+      <!-- Additional Section 1: Changelog -->
+      <section id="changelog" class="scroll-mt-40 mt-20 pt-10 border-t border-slate-200 dark:border-slate-800">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <div class="text-blue-600 dark:text-blue-400 font-bold text-sm mb-1">工具透明度</div>
+            <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">IP 工具箱更新记录</h2>
+          </div>
+          <p class="text-sm text-slate-500 dark:text-slate-400 max-w-lg md:text-right">
+            这里集中记录 IP 查询、欺诈检测、BGP、隐私泄露和网络连通工具的新上、下架与展示调整。检测结果会随网络和数据源变化，建议多工具交叉验证。
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Timeline Card 1 -->
+          <div class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-sm font-medium text-slate-500">2026-08-27 · 页面大重构</span>
+              <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold rounded-full">3 条记录</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">全面升级为动态网络测试库</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">移除了旧版静态占位符，引入了 7 大分类超 30 款专业网络排障工具，并自动集成官方图标获取。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="p-4 rounded-xl border border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-400 text-[10px] font-bold rounded border border-emerald-200 dark:border-emerald-800">● 新上</span>
+                  <span class="text-xs text-slate-400 ml-auto flex gap-1"><span class="border border-slate-200 dark:border-slate-700 rounded px-1">Shodan</span> <span class="border border-slate-200 dark:border-slate-700 rounded px-1">Censys</span></span>
+                </div>
+                <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200 mb-1">新增公网暴露面分类</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">引入了顶级的网络空间资产搜索引擎，用于核对自身节点是否开放了不安全端口或暴露了真实 IP。</p>
+              </div>
+
+              <div class="p-4 rounded-xl border border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="px-2 py-0.5 bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400 text-[10px] font-bold rounded border border-blue-200 dark:border-blue-800">● 调整</span>
+                  <span class="text-xs text-slate-400 ml-auto flex gap-1"><span class="border border-slate-200 dark:border-slate-700 rounded px-1">小白精选</span></span>
+                </div>
+                <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200 mb-1">重构顶部导览逻辑</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">优化了小白精选框架的宽度与紧凑度，并且全部采用真实的外链工具，实现点击即用。</p>
+              </div>
+
+              <div class="p-4 rounded-xl border border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="px-2 py-0.5 bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-400 text-[10px] font-bold rounded border border-rose-200 dark:border-rose-800">● 下架</span>
+                  <span class="text-xs text-slate-400 ml-auto flex gap-1"><span class="border border-slate-200 dark:border-slate-700 rounded px-1">废弃工具</span></span>
+                </div>
+                <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200 mb-1">清理失效链接</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">移除了原本处于占位状态或测试过时的临时分类内容，统一为 100% 严选的 7 大核心类目。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional Section 2: 5 Steps IP Health Check -->
+      <section id="health-check" class="scroll-mt-40 mt-16 mb-10">
+        <div class="bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/30 rounded-3xl p-6 md:p-10">
+          <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white mb-3">
+              🏆 购机后必做的 5 步 IP 体检
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              ChatGPT 降智、注册被拒、代理不稳？大概率是 IP 脏了。用这 5 步快速排查。
+            </p>
+          </div>
+
+          <!-- 5 Steps Flow -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 relative">
+            
+            <!-- Step 1 -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm border border-slate-100 dark:border-slate-700 relative z-10 flex flex-col items-center">
+              <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center mb-3">1</div>
+              <div class="text-xl mb-2">🔍</div>
+              <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">查 IP 类型</h4>
+              <a href="https://ping0.cc/" target="_blank" class="text-blue-500 text-xs font-bold hover:underline mb-2">Ping0.cc</a>
+              <p class="text-[10px] text-slate-500">机房/住宅/ISP？风控值高不高？</p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm border border-slate-100 dark:border-slate-700 relative z-10 flex flex-col items-center">
+              <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 font-bold flex items-center justify-center mb-3">2</div>
+              <div class="text-xl mb-2">🛡️</div>
+              <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">交叉看风险信号</h4>
+              <a href="https://scamalytics.com/" target="_blank" class="text-emerald-500 text-xs font-bold hover:underline mb-2">Scamalytics</a>
+              <p class="text-[10px] text-slate-500">记录评分来源与时间，不过通吃各站</p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm border border-slate-100 dark:border-slate-700 relative z-10 flex flex-col items-center">
+              <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-600 font-bold flex items-center justify-center mb-3">3</div>
+              <div class="text-xl mb-2">📜</div>
+              <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">查历史灰度</h4>
+              <a href="https://www.abuseipdb.com/" target="_blank" class="text-amber-500 text-xs font-bold hover:underline mb-2">AbuseIPDB</a>
+              <p class="text-[10px] text-slate-500">是否曾被举报滥用攻击？</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm border border-slate-100 dark:border-slate-700 relative z-10 flex flex-col items-center">
+              <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 font-bold flex items-center justify-center mb-3">4</div>
+              <div class="text-xl mb-2">📡</div>
+              <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">查路由与上游</h4>
+              <a href="https://bgp.tools/" target="_blank" class="text-purple-500 text-xs font-bold hover:underline mb-2">BGP.Tools</a>
+              <p class="text-[10px] text-slate-500">ASN 关系是线索，看网络是否绕路</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm border border-slate-100 dark:border-slate-700 relative z-10 flex flex-col items-center">
+              <div class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 font-bold flex items-center justify-center mb-3">5</div>
+              <div class="text-xl mb-2">⚡</div>
+              <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">查国内延迟</h4>
+              <a href="https://www.itdog.cn/" target="_blank" class="text-rose-500 text-xs font-bold hover:underline mb-2">ITDOG</a>
+              <p class="text-[10px] text-slate-500">三网延迟、同网路由全测一遍</p>
+            </div>
+
+          </div>
+
+          <!-- Bottom Warning Box -->
+          <div class="mt-8 text-center text-sm font-medium text-slate-600 dark:text-slate-400 bg-white/50 dark:bg-slate-900/30 py-3 px-6 rounded-full inline-block mx-auto">
+            ⚡ 5 步都通过 = IP 质量合格。如果步骤 2/3 评分很差，建议联系服务商更换 IP 或更换机器。
+          </div>
+        </div>
+
+        
+        <div class="mt-6 text-center text-[12px] text-slate-500 flex items-center justify-center gap-2">
+          <span class="text-amber-500">💡</span> 
+          <strong>检测结果受网络环境影响：</strong> 建议在「直连」和「开启代理」两种状态下各测一次，对比结果。直连测的是本机宽带 IP，代理状态测的是出口节点 IP。
+        </div>
+
+        </section>
+
+    </div>
+  </div>
+  <BottomMenuNav />
+</BaseLayout>
+
+
+<style>
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Smooth scroll for the page so anchors jump nicely */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

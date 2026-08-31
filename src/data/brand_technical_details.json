@@ -1,0 +1,623 @@
+{
+  "weifeng": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "firefly": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "kuajie": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "shanyue": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "高比例配置原生IP，支持流媒体解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "wuyou": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "高度兼容原生 AI IP，无视封禁风控",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "lingmao": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "高比例配置原生IP，支持流媒体解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "bitznet": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "feimao": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "sogo": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "VLESS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "muguang": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "xingdao": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "weitu": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "VLESS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "guangsu": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "u1s1": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "jilian": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "高比例配置原生IP，支持流媒体解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "guangnian": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "高比例配置原生IP，支持流媒体解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "yifan": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "高度兼容原生 AI IP，无视封禁风控",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "ermao": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "edge": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "kexin": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "sujie": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "kuaili": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "全天候绿波状态，罕见掉线"
+    },
+    "connectivity": {
+      "latency": "全线极低延迟，媲美国内网站体感",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "flyv": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "tizi": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "wavenet": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "lingdong": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "高比例配置原生IP，支持流媒体解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  },
+  "yinren": {
+    "nodes": {
+      "count": "80 - 150+ 节点区间（依据套餐不同）",
+      "protocol": "SS",
+      "coverage": "香港、台湾、日本、新加坡、美国等核心地区",
+      "native": "重点地区提供原生节点解锁",
+      "anomalies": "晚高峰部分普通节点有偶发波动"
+    },
+    "connectivity": {
+      "latency": "常规低延迟，网页文字加载无阻力",
+      "ai": "常规解锁主流 AI (ChatGPT/Claude)",
+      "video": "晚高峰 4K 视频秒开，拖拽无缓冲",
+      "dev": "GitHub、NPM 代理测速拉满",
+      "ecommerce": "TikTok / Amazon 跨区访问稳定无跳窗"
+    },
+    "risk": {
+      "ippure": "评分优良，极少落入高风险黑名单区间",
+      "ipinfo": "ASN 归属地精准匹配，非廉价广播 IP",
+      "ipcheck": "风控欺诈指数极低，可放心作为日常主用",
+      "claude": "100% 绕过封号监测机制，对话长连接稳定",
+      "notes": "各别偏远地区节点可能随时间被阻断，建议以港日美新节点为主力长期使用。"
+    }
+  }
+}

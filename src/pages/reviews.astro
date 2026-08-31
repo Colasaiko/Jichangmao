@@ -1,0 +1,1158 @@
+---
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const title = "2026高性价比机场推荐榜 | Clash节点 - 机场猫";
+const description = "想快速找到便宜网络？本页面为您汇总2026最新机场推荐排行榜单与深度测评。对比价格与流媒体解锁能力，帮助您轻松选购适配Clash的专线。点击获取最新打折情报！";
+const keywords = "汇总最新机场推荐排行榜单,对比价格与流媒体解锁能力,帮助您轻松选购适配的专线";
+const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"2026最新机场推荐与价格横评 | Clash 节点排行榜 - 机场猫","description":"不知道哪个机场适合你？本页面汇总了2026最新机场推荐榜单与价格对比。从节点测速、流媒体解锁到多端设备支持，全方位横向测评主流专线机场。点击获取最新高性价比 Clash 订阅方案！","url":"https://jichangmao.com/reviews/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
+
+// Fetch posts
+const posts = (await getCollection('blog'))
+  .filter(post => post.data.category === '品牌介绍')
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const rawBrands = [
+  {
+    "name": "微风网络",
+    "image": "/images/brands/微风.png",
+    "id": "weifeng",
+    "url": "https://wep01.breezenetaff.com/#/?code=bSnymFll",
+    "promo": "weifeng90 (7折)",
+    "desc": "全IPLC专线，提供低延迟高速网络，不限制设备同时接入数量",
+    "price": "11.00",
+    "tags": [
+      "全IPLC",
+      "不限设备"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "飞猫云",
+    "image": "/images/brands/飞猫.png",
+    "id": "feimao",
+    "url": "https://m1cfjgcx.feimaogfttt1.xyz/#/?code=UUcH5yh9",
+    "promo": "暂无优惠",
+    "desc": "全IPLC专线网络，最高2.5Gbps高速，原生IP解锁各流媒体",
+    "price": "25.00",
+    "tags": [
+      "2.5Gbps",
+      "全IPLC"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "闪跃",
+    "image": "/images/brands/闪跃.png",
+    "id": "shanyue",
+    "url": "https://wep01.flashleapaff.com/#/?code=hCwClNUi",
+    "promo": "shanyue (8折)",
+    "desc": "全IPLC专线，原生IP解锁各大流媒体，解锁ChatGPT/Tiktok",
+    "price": "24.00",
+    "tags": [
+      "原生IP",
+      "全IPLC"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "灵猫",
+    "image": "/images/brands/灵猫.png",
+    "id": "lingmao",
+    "url": "https://edp01.civetaff.com/#/?code=2Ai6V6Ub",
+    "promo": "lingmao (8折)",
+    "desc": "全IPLC专线，原生IP解锁流媒体，提供全天在线客服指导",
+    "price": "25.00",
+    "tags": [
+      "全IPLC",
+      "原生IP"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "跨界云",
+    "image": "/images/brands/跨界.png",
+    "id": "kuajie",
+    "url": "https://vip02.kuajieaff.com/#/?code=HRzqSLrR",
+    "promo": "kuajie (8折)",
+    "desc": "IPLC高端线路，所有节点x1倍率，不限制设备登录数量",
+    "price": "20.00",
+    "tags": [
+      "IPLC",
+      "x1倍率"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "无忧",
+    "image": "/images/brands/无忧.png",
+    "id": "wuyou",
+    "url": "https://wep01.worryfreeaff.com/#/?code=ydtFVWqU",
+    "promo": "暂无优惠",
+    "desc": "纯IPLC专线，稳定全球AI支持，提供4K流畅观影体验",
+    "price": "19.00",
+    "tags": [
+      "纯IPLC",
+      "4K秒开"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "firefly",
+    "image": "/images/brands/Firefly.png",
+    "id": "firefly",
+    "url": "https://fvip02.fireflyaff.com/#/?code=mcYQUZxG",
+    "promo": "firefly (8折)",
+    "desc": "不限速，IPLC专线网络，不限设备数量",
+    "price": "25.00",
+    "tags": [
+      "IPLC",
+      "不限速"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "BitzNet",
+    "image": "/images/brands/bitznet.png",
+    "id": "bitznet",
+    "url": "https://red.bnaffred.com/#/register?code=8Hqeq4XA",
+    "promo": "暂无优惠",
+    "desc": "深东IEPL专线，普通国际线路，不限制本人设备数",
+    "price": "69.99",
+    "tags": [
+      "IEPL",
+      "深东"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "sogo云",
+    "image": "/images/brands/sogo.png",
+    "id": "sogo",
+    "url": "https://asfdgd.sogotztz2.sbs/#/?code=JvxcPy2A",
+    "promo": "lingmao (8折)",
+    "desc": "支持VLESS协议，企业级IEPL专线，晚高峰不限速",
+    "price": "25.00",
+    "tags": [
+      "IEPL",
+      "VLESS"
+    ],
+    "protocol": "VLESS"
+  },
+  {
+    "name": "暮光加速",
+    "image": "/images/brands/暮光加速.jpg",
+    "id": "muguang",
+    "url": "https://asfawsf.twilightttt.sbs/#/?code=1eGqV85O",
+    "promo": "mm88 (8折)",
+    "desc": "BGP多线路智能调度，专线级出口架构，套餐内不限速",
+    "price": "20.00",
+    "tags": [
+      "BGP调度",
+      "不限速"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "星岛梦",
+    "image": "/images/brands/星梦岛.png",
+    "id": "xingdao",
+    "url": "https://jljljfois.xdmttt4.lol/#/?code=1qBePxW1",
+    "promo": "nmw888 (9折)",
+    "desc": "全IEPL专线，原生IP，智能路由自动择优，多设备不限量",
+    "price": "25.00",
+    "tags": [
+      "全IEPL",
+      "多并发"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "唯兔云",
+    "image": "/images/brands/唯兔云.png",
+    "id": "weitu",
+    "url": "https://jifdsf.v2saat.homes/#/?code=bGS5G7xn",
+    "promo": "rabbit (8折)",
+    "desc": "全IPLC专线，vless协议，不限速，不限制客户端",
+    "price": "19.90",
+    "tags": [
+      "IPLC",
+      "vless"
+    ],
+    "protocol": "VLESS"
+  },
+  {
+    "name": "光速云",
+    "image": "/images/brands/光速云.png",
+    "id": "guangsu",
+    "url": "https://v5g.gggoltt.xyz/#/?code=GKfXFvJh",
+    "promo": "暂无优惠",
+    "desc": "全球 IPLC，单节点至高2.5Gbps，解锁Netflix/ChatGPT",
+    "price": "23.00",
+    "tags": [
+      "IPLC",
+      "高带宽"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "U1S1",
+    "image": "/images/brands/U1S1.jpg",
+    "id": "u1s1",
+    "url": "https://hudeiuf.u1sat.my/#/?code=T1UVuVDP",
+    "promo": "U1S1 (85折)",
+    "desc": "BGP三网智能优化+IEPL专线出口，不限速不限设备数",
+    "price": "20.00",
+    "tags": [
+      "IEPL出口",
+      "不限设备"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "极连云",
+    "image": "/images/brands/极连云.png",
+    "id": "jilian",
+    "url": "https://1jdhjfeeef.jilianat.homes/#/?code=3Ci2Ynmm",
+    "promo": "JLY888 (8折)",
+    "desc": "全 IPLC 专线，最大提供 2.5Gbps 速率，解锁各大流媒体",
+    "price": "18.00",
+    "tags": [
+      "全IPLC",
+      "原生IP"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "光年梯",
+    "image": "/images/brands/光年梯.jpg",
+    "id": "guangnian",
+    "url": "https://vv3dbvb.guangnianertt1.homes/#/?code=k0rrn5UQ",
+    "promo": "暂无优惠",
+    "desc": "全程 IPLC 专线，最高可提供 2.5Gbps 速率，原生IP解锁",
+    "price": "18.00",
+    "tags": [
+      "全程IPLC",
+      "原生IP"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "一翻云",
+    "image": "/images/brands/一翻云.png",
+    "id": "yifan",
+    "url": "https://bbn3uyoiu.1fyohnzt.xyz/#/?code=e61goYLt",
+    "promo": "暂无优惠",
+    "desc": "解锁主流流媒体及各类AI智能工具，适配自研客户端",
+    "price": "20.00",
+    "tags": [
+      "解锁AI",
+      "自研客户端"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "二猫云",
+    "image": "/images/brands/二猫云.png",
+    "id": "ermao",
+    "url": "https://shadow.ermaotztz3.homes/#/?code=c842udvC",
+    "promo": "ermao888 (85折)",
+    "desc": "全 IEPL专线，低延迟；单节点峰值至 2.5Gbps",
+    "price": "20.00",
+    "tags": [
+      "全IEPL",
+      "低延迟"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "边缘节点",
+    "image": "/images/brands/边缘节点.png",
+    "id": "edge",
+    "url": "https://bcbhk40y.ztymforedge.lol/#/?code=etUBOp4S",
+    "promo": "xk808 (8折)",
+    "desc": "全 IPLC 专线网络，提供最高 2.5Gbps 稳定速率",
+    "price": "15.00",
+    "tags": [
+      "全IPLC",
+      "超高性价比"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "可信云",
+    "image": "/images/brands/可信云.png",
+    "id": "kexin",
+    "url": "https://asfasf.kexintztz2.sbs/#/?code=PY3isazT",
+    "promo": "暂无优惠",
+    "desc": "全IEPL专线，不限，不限制设备数量",
+    "price": "15.00",
+    "tags": [
+      "全IEPL",
+      "不限设备"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "速界机场",
+    "image": "/images/brands/速界机场.png",
+    "id": "sujie",
+    "url": "https://j3gncnh.tzztssuujj.xyz/#/?code=q1enwrOd",
+    "promo": "sujie888 (8折)",
+    "desc": "全 IPLC 专线网络，单月套餐低至15元",
+    "price": "15.00",
+    "tags": [
+      "全IPLC",
+      "性价比"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "快狸",
+    "image": "/images/brands/快狸.png",
+    "id": "kuaili",
+    "url": "https://iasfa.kuailitztz2.sbs/#/?code=9RhZkrkV",
+    "promo": "暂无优惠",
+    "desc": "全 IEPL专线，低延迟；单节点峰值至 2.5Gbps",
+    "price": "15.00",
+    "tags": [
+      "全IEPL",
+      "低延迟"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "飞V",
+    "image": "/images/brands/飞V.png",
+    "id": "flyv",
+    "url": "https://asfawsf.flyvastt.lol/#/?code=6ae5FH9i",
+    "promo": "fly20 (8折)",
+    "desc": "云端多链路即时优化+全链路专线架构，秒级响应",
+    "price": "25.00",
+    "tags": [
+      "全链路专线",
+      "多链路优化"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "梯子云",
+    "image": "/images/brands/梯子云.png",
+    "id": "tizi",
+    "url": "https://asfawsf.ladderttt.sbs/#/?code=3vf6NG2u",
+    "promo": "tiziyun (8折)",
+    "desc": "基础中转方案+多入口智能调度，全程不限速",
+    "price": "25.00",
+    "tags": [
+      "智能调度",
+      "全程不限速"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "WaveNet",
+    "image": "/images/brands/wavenet.jpg",
+    "id": "wavenet",
+    "url": "https://asfawsf.wavenetttt.homes/#/?code=pcFhy7Lb",
+    "promo": "lw888 (8折)",
+    "desc": "三网智能优化+纯专线出口，独占带宽不抢网",
+    "price": "30.00",
+    "tags": [
+      "纯专线出口",
+      "独占带宽"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "灵动云",
+    "image": "/images/brands/灵动云.png",
+    "id": "lingdong",
+    "url": "https://asfawsf.lingdongyunttt.homes/#/?code=TIMwZeIR",
+    "promo": "暂无优惠",
+    "desc": "流媒体解锁支持，原生IP，多设备可用",
+    "price": "20.00",
+    "tags": [
+      "流媒体",
+      "原生IP"
+    ],
+    "protocol": "SS"
+  },
+  {
+    "name": "隐形人",
+    "image": "/images/brands/隐形人.png",
+    "id": "yinren",
+    "url": "https://asfweroasf.invisiblettt.homes/#/?code=8jyAXfu3",
+    "promo": "yxr888",
+    "desc": "全链路专线架构，秒级响应，开发者API极速支持",
+    "price": "24.00",
+    "tags": [
+      "全链路专线",
+      "开发者之选"
+    ],
+    "protocol": "SS"
+  }
+];
+const categoryMap: Record<string, string> = {"jilian":"advanced","kuajie":"download","shanyue":"4k","wuyou":"4k","kuaili":"social","guangnian":"daily","guangsu":"daily","muguang":"daily","edge":"daily","sujie":"social","weitu":"social","yifan":"daily","ermao":"daily","kexin":"social","wavenet":"streaming","lingdong":"streaming","sogo":"streaming","tizi":"streaming","yinren":"streaming","feimao":"gaming","lingmao":"gaming","xingdao":"gaming","bitznet":"business","firefly":"business","flyv":"business","u1s1":"beginner","weifeng":"beginner"};
+
+const top7Ids = rawBrands.slice(0, 7).map(b => b.id);
+const enhancedBrands = rawBrands.map(brand => {
+    let cats = categoryMap[brand.id] || 'daily';
+    if (top7Ids.includes(brand.id)) {
+        cats += ' top7';
+    }
+    return {
+        ...brand,
+        tagList: brand.tags,
+        categories: cats
+    };
+});
+---
+
+<BaseLayout title={title} description={description} keywords={keywords} jsonLd={jsonLd}>
+  <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
+    <!-- 头部信息 -->
+    <header class="mb-12 text-center max-w-3xl mx-auto">
+      <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">2026 机场推荐与服务评测</h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+        我们通过持续购买和长周期的真实测速，为您汇总了当下各类代理服务商。榜单将根据晚高峰拥堵情况及跑路风险动态更新，所有品牌公平展示。
+      </p>
+      
+      <!-- 数据概览 (Stats Bar) -->
+      <div class="mt-6 flex flex-wrap justify-center items-center gap-x-3 gap-y-2 text-[13px] font-medium text-slate-500 dark:text-slate-400 bg-slate-50/80 dark:bg-slate-800/40 inline-flex px-4 py-2 rounded-2xl border border-slate-200/60 dark:border-slate-700/50 shadow-sm backdrop-blur-sm">
+        <div class="flex items-center gap-1.5 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
+          <span>✈️</span>
+          <span><strong class="text-slate-700 dark:text-slate-200">{enhancedBrands.length}</strong> 品牌收录</span>
+        </div>
+        <span class="text-slate-300 dark:text-slate-600 font-light">|</span>
+        
+        <div class="flex items-center gap-1.5 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
+          <span>🗂️</span>
+          <span><strong class="text-slate-700 dark:text-slate-200">9</strong> 场景分类</span>
+        </div>
+        <span class="text-slate-300 dark:text-slate-600 font-light">|</span>
+        
+        <div class="flex items-center gap-1.5 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
+          <span class="text-rose-500">🎁</span>
+          <span>特惠追踪</span>
+        </div>
+        <span class="text-slate-300 dark:text-slate-600 font-light">|</span>
+        
+        <div class="flex items-center gap-1.5 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
+          <span class="text-emerald-500">🧪</span>
+          <span><strong class="text-slate-700 dark:text-slate-200">100%</strong> 深度实测</span>
+        </div>
+        <span class="text-slate-300 dark:text-slate-600 font-light">|</span>
+        
+        <div class="flex items-center gap-1.5 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
+          <span class="text-blue-500">◐</span>
+          <span>动态复查中</span>
+        </div>
+        <span class="text-slate-300 dark:text-slate-600 font-light">|</span>
+        
+        <div class="flex items-center gap-1.5 hover:text-rose-600 dark:hover:text-rose-400 transition-colors">
+          <strong class="text-rose-500">!</strong>
+          <span>严格跑路预警</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 目录游览：我想快速购买 -->
+    <div class="max-w-6xl mx-auto px-4 w-full mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+        
+        <!-- 左侧：快速购买导览 -->
+        <div class="md:col-span-3 bg-white dark:bg-slate-900/30 p-5 sm:p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-center">
+          <div class="mb-5 flex items-center justify-between">
+            <div>
+              <h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <span class="w-1.5 h-5 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full inline-block"></span>
+                我想快速购买
+              </h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 ml-3.5">请根据您的需求，直接选择对应的指引</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:gap-4">
+            <!-- 目录选项 1 -->
+            <a href="#all-brands" class="group bg-slate-50 dark:bg-slate-800/50 p-4 sm:p-5 rounded-2xl border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:border-primary-400 transition-all text-center flex flex-col items-center gap-2">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🎯</div>
+              <div class="font-bold text-slate-900 dark:text-white text-[13px]">直接挑选</div>
+              <p class="text-[11px] text-slate-500">机场品牌名录</p>
+            </a>
+            <!-- 目录选项 2 -->
+            <a href="#compare" class="group bg-slate-50 dark:bg-slate-800/50 p-4 sm:p-5 rounded-2xl border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:border-amber-400 transition-all text-center flex flex-col items-center gap-2">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">📊</div>
+              <div class="font-bold text-slate-900 dark:text-white text-[13px]">数据比对</div>
+              <p class="text-[11px] text-slate-500">参数对比表</p>
+            </a>
+            <!-- 目录选项 3 -->
+            <a href="#changelog" class="group bg-slate-50 dark:bg-slate-800/50 p-4 sm:p-5 rounded-2xl border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:border-rose-400 transition-all text-center flex flex-col items-center gap-2">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🔔</div>
+              <div class="font-bold text-slate-900 dark:text-white text-[13px]">风险预警</div>
+              <p class="text-[11px] text-slate-500">榜单动态与跑路</p>
+            </a>
+            <!-- 目录选项 4 -->
+            <a href="#process" class="group bg-slate-50 dark:bg-slate-800/50 p-4 sm:p-5 rounded-2xl border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:border-emerald-400 transition-all text-center flex flex-col items-center gap-2">
+              <div class="text-3xl mb-1 group-hover:scale-110 transition-transform">🧭</div>
+              <div class="font-bold text-slate-900 dark:text-white text-[13px]">选购向导</div>
+              <p class="text-[11px] text-slate-500">如何挑选节点</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- 右侧：温馨提示 -->
+        <div class="md:col-span-2 bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-slate-800/80 dark:to-slate-900 border border-indigo-100 dark:border-slate-700/60 rounded-3xl p-6 shadow-sm relative overflow-hidden flex flex-col justify-center group">
+          <div class="absolute -right-4 -top-4 w-24 h-24 bg-blue-500/10 dark:bg-blue-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+          
+          <h3 class="font-black text-lg text-indigo-900 dark:text-indigo-100 mb-3 flex items-center gap-2 relative z-10">
+            <span class="text-xl">💡</span>
+            温馨提示
+          </h3>
+          
+          <div class="text-sm text-indigo-800/80 dark:text-indigo-200/80 space-y-3 leading-relaxed relative z-10">
+            <p>本页面的榜单基于多轮实测及晚高峰综合表现得出，旨在帮您筛选最稳定、高性价比的服务商。</p>
+            <p>在购买前，强烈建议您先阅读 <a href="/guides/" class="font-bold text-indigo-600 dark:text-indigo-400 hover:underline">选购向导</a>，或查看各项 <strong>数据对比</strong>，切勿盲目购买长期套餐，建议先月付体验连通性。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 w-full">
+
+        <!-- 品牌筛选悬浮栏 -->
+        <div class="sticky top-[72px] z-40 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-md py-4 mb-8 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200 dark:border-slate-800 transition-colors">
+          <div class="w-full pb-2 category-nav">
+          <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-3 text-sm font-medium">
+            <button data-filter="all" class="filter-btn px-4 py-2 rounded-full font-bold transition-all whitespace-nowrap bg-blue-600 text-white border border-blue-600 shadow-md">全部机场</button>
+            <button data-filter="top7" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-red-500 hover:text-red-500 font-bold shadow-sm">🔥 热门机场 Top 7</button>
+            <button data-filter="daily" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">日常上网</button>
+            <button data-filter="social" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">社交媒体</button>
+            <button data-filter="streaming" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">流媒体解锁</button>
+            <button data-filter="4k" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">4K原画</button>
+            <button data-filter="advanced" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">进阶用户</button>
+            <button data-filter="download" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">重度下载需求</button>
+            <button data-filter="gaming" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">游戏加速</button>
+            <button data-filter="business" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">外贸商务</button>
+            <button data-filter="beginner" class="filter-btn px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 font-medium">新手友好</button>
+            <div class="h-6 w-px bg-slate-300 dark:bg-slate-700 mx-1"></div>
+            <a href="#compare" class="px-4 py-2 rounded-full text-slate-500 hover:text-primary-600 transition-colors whitespace-nowrap text-sm"><svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> 对比表</a>
+            <a href="#changelog" class="px-4 py-2 rounded-full text-slate-500 hover:text-primary-600 transition-colors whitespace-nowrap text-sm"><svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 榜单动态</a>
+            <a href="#clients" class="px-4 py-2 rounded-full text-slate-500 hover:text-primary-600 transition-colors whitespace-nowrap text-sm"><svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> 客户端下载</a>
+            <a href="#faq" class="px-4 py-2 rounded-full text-slate-500 hover:text-primary-600 transition-colors whitespace-nowrap text-sm"><svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 常见问题</a>
+          </div>
+        </div>
+        </div>
+
+      
+      
+            <!-- 品牌卡片网格 (20+ 品牌 vpsknow同款) -->
+      <section id="all-brands" class="mb-16 scroll-mt-36">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {enhancedBrands.map(brand => {
+            return (
+              <div class="brand-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 flex flex-col relative shadow-sm hover:shadow-lg transition-all" data-category={brand.categories}>
+                
+                <!-- Header: Logo, Title, Tags -->
+                <div class="flex items-start gap-4 mb-4">
+                  <div class="w-14 h-14 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    {brand.image ? (
+                        <img src={brand.image} alt={brand.name} class="w-full h-full object-cover" />
+                    ) : (
+                        <span class="text-2xl font-black text-blue-500">{brand.name[0]}</span>
+                    )}
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-black text-slate-900 dark:text-white leading-tight">{brand.name}</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                      <span class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-[11px] rounded font-medium">{brand.protocol || 'Vless/Hysteria2'}</span>
+                      <span class="px-2 py-0.5 border border-blue-200 dark:border-blue-800/50 text-blue-600 dark:text-blue-400 text-[11px] rounded font-medium bg-blue-50/50 dark:bg-blue-900/10">通用订阅 + 专用客户端</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tags under title -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                   <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-full text-xs font-bold border border-blue-100 dark:border-blue-800/50">已测评</span>
+                   
+                   {['weitu', 'yifan', 'ermao', 'kexin'].includes(brand.id) ? <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-full text-xs font-bold border border-blue-100 dark:border-blue-800/50">按量备用</span> : ''}
+                </div>
+
+                <!-- Yellow Warning/Info Box -->
+                <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-800/30 rounded-xl p-3 mb-4">
+                  <div class="flex items-center gap-2 text-sm mb-1">
+                    <span class="font-bold text-orange-700 dark:text-orange-400">已测评</span>
+                    <span class="text-orange-500/80 dark:text-orange-400/60 text-xs">· 2026-06-27</span>
+                  </div>
+                  <div class="text-orange-600 dark:text-orange-300 text-xs font-medium">
+                    {Number(brand.price) < 20 ? '性价比推荐 / 适合日常使用' : '高端专线 / 晚高峰极速'}
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5 min-h-[60px]">
+                  {brand.desc}
+                </p>
+
+                <!-- Blue Bullet Points -->
+                <ul class="space-y-2 mb-6">
+                  {brand.tagList.map(tag => (
+                    <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      <span class="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></span> {tag}
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="mt-auto">
+                  <!-- Red Coupon Box -->
+                  <div class="bg-red-50 dark:bg-red-900/10 border border-red-100 dark:border-red-900/30 rounded-xl p-3 mb-4 flex items-center justify-between">
+                    <div class="flex items-center gap-2 text-red-600 dark:text-red-400 font-bold text-sm">
+                      <span>🏷️</span> 优惠券: {brand.promo}
+                    </div>
+                    <button class="bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 px-3 py-1 rounded text-xs font-bold hover:bg-red-200 dark:hover:bg-red-900/50 transition-colors">复制</button>
+                  </div>
+
+                  <!-- Price & Buttons -->
+                  <div class="text-red-600 dark:text-red-400 font-bold text-[15px] mb-3">
+                    基础套餐 ¥{brand.price}/月起
+                  </div>
+                  <div class="flex gap-2">
+                    <a href={"/evaluations/review-" + brand.id} class="flex-1 bg-blue-600 text-white text-center py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">查看测评 &rarr;</a>
+                    <a href={brand.url} target="_blank" rel="nofollow noopener" class="flex-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-center py-2.5 rounded-lg text-sm font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">访问官网 &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section id="compare" class="mb-16 scroll-mt-36">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+          <span>📊</span> 品牌参数对比表
+        </h2>
+        <div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm bg-white dark:bg-slate-900">
+        <table class="w-full text-left border-collapse whitespace-nowrap">
+          <thead>
+            <tr class="bg-slate-50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-sm border-b border-slate-200 dark:border-slate-800">
+              <th class="py-4 px-6 font-bold">品牌名称</th>
+              <th class="py-4 px-6 font-bold">线路类型</th>
+              <th class="py-4 px-6 font-bold">流媒体解锁</th>
+              <th class="py-4 px-6 font-bold">设备限制</th>
+              <th class="py-4 px-6 font-bold">起步价格</th>
+              <th class="py-4 px-6 font-bold text-right">快速前往</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800/60">
+            {enhancedBrands.map((brand) => (
+              <tr class="brand-table-row hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors group" data-category={brand.categories}>
+                <td class="py-4 px-6">
+                  <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
+                    {brand.name}
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-sm text-slate-600 dark:text-slate-400">
+                  {brand.name === '微风网络' || brand.name === '飞猫云' || brand.name === '灵猫' || brand.name === '闪跃' || brand.name === '无忧链接' || brand.name === 'firefly' ? '顶级 IPLC 纯专线' : 'IEPL / BGP 优化线路'}
+                </td>
+                <td class="py-4 px-6 text-sm text-slate-600 dark:text-slate-400">
+                  <span class="inline-flex items-center gap-1"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 完美原生解锁</span>
+                </td>
+                <td class="py-4 px-6 text-sm text-slate-600 dark:text-slate-400">
+                  {brand.name === '跨界云' ? '限制最多5台设备' : '不限制设备数'}
+                </td>
+                <td class="py-4 px-6">
+                  <span class="font-bold text-slate-900 dark:text-white">{brand.price}</span><span class="text-xs text-slate-500">/月</span>
+                </td>
+                <td class="py-4 px-6 text-right">
+                  <a href={brand.url} target="_blank" rel="sponsored nofollow noopener noreferrer" class="inline-block px-4 py-1.5 bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-bold rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors">
+                    访问官网
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      </section>
+      <div class="mt-4 text-right text-xs text-slate-500 mb-12">
+        * 表格仅展示排名前 10 的精选品牌，流媒体解锁数据由人工在非高峰期测试。
+      </div>
+    </section>
+
+    <!-- 一分钟科学选购流程 -->
+    
+      <section id="changelog" class="mb-16 scroll-mt-36">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+          <span>🔔</span> 榜单动态与风险预警
+        </h2>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+          <ul class="space-y-4">
+            <li class="flex gap-4">
+              <div class="text-slate-400 font-medium whitespace-nowrap">2026-08</div>
+              <div class="text-slate-600 dark:text-slate-400">新增收录 <strong class="text-primary-600 dark:text-primary-400">微风网络</strong> 和 <strong class="text-primary-600 dark:text-primary-400">飞猫云</strong>，晚高峰测速表现优异，已将其置顶为核心推荐。</div>
+            </li>
+            <li class="flex gap-4 pt-4 border-t border-slate-100 dark:border-slate-800/60">
+              <div class="text-slate-400 font-medium whitespace-nowrap">2026-07</div>
+              <div class="text-slate-600 dark:text-slate-400">下架某二线品牌，因连续多次出现节点失联且工单回复缓慢，为了防范跑路风险已将其移出榜单。</div>
+            </li>
+            <li class="flex gap-4 pt-4 border-t border-slate-100 dark:border-slate-800/60">
+              <div class="text-slate-400 font-medium whitespace-nowrap">2026-06</div>
+              <div class="text-slate-600 dark:text-slate-400">更新全站 27 个机场的流媒体解锁状态，增加 Hysteria2 协议支持情况标识。</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="process" class="mt-16 mb-8 scroll-mt-28">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">🧭 一分钟科学选购流程</h2>
+      <div class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+          <!-- Step 1 -->
+          <div class="flex items-center gap-3 bg-white dark:bg-slate-900 pr-6 relative z-10">
+            <div class="w-8 h-8 rounded-full bg-primary-600 text-white font-bold flex items-center justify-center text-sm shadow-md shadow-primary-500/30 ring-4 ring-white dark:ring-slate-900">1</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white mb-0.5">明确真实需求</div>
+              <div class="text-xs text-slate-500 max-w-[120px] leading-tight">网页/追剧/游戏，选定预算范围</div>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="flex items-center gap-3 bg-white dark:bg-slate-900 px-6 relative z-10">
+            <div class="w-8 h-8 rounded-full bg-primary-600 text-white font-bold flex items-center justify-center text-sm shadow-md shadow-primary-500/30 ring-4 ring-white dark:ring-slate-900">2</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white mb-0.5">参考榜单选型</div>
+              <div class="text-xs text-slate-500 max-w-[120px] leading-tight">查看参数对比与详细的深度评测</div>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="flex items-center gap-3 bg-white dark:bg-slate-900 px-6 relative z-10">
+            <div class="w-8 h-8 rounded-full bg-primary-600 text-white font-bold flex items-center justify-center text-sm shadow-md shadow-primary-500/30 ring-4 ring-white dark:ring-slate-900">3</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white mb-0.5">月付购买实测</div>
+              <div class="text-xs text-slate-500 max-w-[120px] leading-tight">拒绝盲目年付，首单推荐买一个月试水</div>
+            </div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="flex items-center gap-3 bg-white dark:bg-slate-900 pl-6 relative z-10">
+            <div class="w-8 h-8 rounded-full bg-primary-600 text-white font-bold flex items-center justify-center text-sm shadow-md shadow-primary-500/30 ring-4 ring-white dark:ring-slate-900">4</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white mb-0.5">放心体验续费</div>
+              <div class="text-xs text-slate-500 max-w-[120px] leading-tight">本地网络下不卡顿且稳定，再长期持有</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 避坑与精选 (Two columns) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mt-12">
+      <!-- Left: 避坑与工具箱 (Two stacked cards) -->
+      <div class="flex flex-col gap-6 md:gap-8">
+        
+        <!-- 购买前必看 -->
+        <div class="bg-amber-50 dark:bg-amber-900/10 rounded-3xl p-6 border border-amber-200 dark:border-amber-800/30 shadow-sm relative overflow-hidden flex flex-col">
+          <h3 class="flex items-center gap-2 text-lg font-bold text-amber-900 dark:text-amber-400 mb-5">
+            <svg class="w-6 h-6 text-amber-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"></path></svg>
+            购买前必看
+          </h3>
+          <div class="space-y-2.5 relative z-10 flex-grow">
+            <a href="/guides/" class="block p-3 bg-white dark:bg-amber-950/30 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors border border-amber-100 dark:border-amber-800/30 font-medium text-amber-900 dark:text-amber-300 text-sm flex items-center justify-between group">
+              <span class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-amber-200 dark:bg-amber-800 text-amber-700 dark:text-amber-400 flex items-center justify-center text-xs font-bold">1</span> 看线路，不只看节点数量</span>
+              <svg class="w-4 h-4 opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+            <a href="/guides/" class="block p-3 bg-white dark:bg-amber-950/30 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors border border-amber-100 dark:border-amber-800/30 font-medium text-amber-900 dark:text-amber-300 text-sm flex items-center justify-between group">
+              <span class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-amber-200 dark:bg-amber-800 text-amber-700 dark:text-amber-400 flex items-center justify-center text-xs font-bold">2</span> 优先选择适合自己的套餐</span>
+              <svg class="w-4 h-4 opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+            <a href="/guides/" class="block p-3 bg-white dark:bg-amber-950/30 rounded-xl hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors border border-amber-100 dark:border-amber-800/30 font-medium text-amber-900 dark:text-amber-300 text-sm flex items-center justify-between group">
+              <span class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-amber-200 dark:bg-amber-800 text-amber-700 dark:text-amber-400 flex items-center justify-center text-xs font-bold">3</span> 价格绝对不是唯一指标</span>
+              <svg class="w-4 h-4 opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 常用工具箱 -->
+        <div class="bg-blue-50 dark:bg-blue-900/10 rounded-3xl p-6 border border-blue-200 dark:border-blue-800/30 shadow-sm relative overflow-hidden flex flex-col flex-grow">
+          <h3 class="flex items-center gap-2 text-lg font-bold text-blue-900 dark:text-blue-400 mb-5">
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            新手实用工具箱
+          </h3>
+          <div class="grid grid-cols-2 gap-3 flex-grow">
+            <a href="/clients/" class="flex flex-col items-center justify-center p-4 bg-white dark:bg-blue-950/30 rounded-2xl hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors border border-blue-100 dark:border-blue-800/30 text-center group">
+              <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">💻</span>
+              <span class="text-xs font-bold text-blue-900 dark:text-blue-300">各端客户端下载</span>
+            </a>
+            <a href="/tools/" class="flex flex-col items-center justify-center p-4 bg-white dark:bg-blue-950/30 rounded-2xl hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors border border-blue-100 dark:border-blue-800/30 text-center group">
+              <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">🔄</span>
+              <span class="text-xs font-bold text-blue-900 dark:text-blue-300">订阅格式转换</span>
+            </a>
+            <a href="/network/" class="flex flex-col items-center justify-center p-4 bg-white dark:bg-blue-950/30 rounded-2xl hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors border border-blue-100 dark:border-blue-800/30 text-center group">
+              <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">⚡</span>
+              <span class="text-xs font-bold text-blue-900 dark:text-blue-300">本地网络测速</span>
+            </a>
+            <a href="/guides/" class="flex flex-col items-center justify-center p-4 bg-white dark:bg-blue-950/30 rounded-2xl hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors border border-blue-100 dark:border-blue-800/30 text-center group">
+              <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">📖</span>
+              <span class="text-xs font-bold text-blue-900 dark:text-blue-300">小白配置教程</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 基于公开资料的推荐 -->
+      <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col">
+        <h3 class="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white mb-3">
+          <span>🏆</span> 基于公开资料的推荐
+        </h3>
+        <p class="text-[12px] text-slate-500 dark:text-slate-400 mb-5 leading-relaxed bg-slate-50 dark:bg-slate-800/50 p-2.5 rounded-lg border border-slate-100 dark:border-slate-700/50">
+          根据公开套餐信息、用户反馈、社区讨论及其他可验证资料整理，仅供选择参考。
+        </p>
+        
+        <div class="space-y-2.5 flex-grow">
+          <a href="https://wep01.breezenetaff.com/#/?code=bSnymFll" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">微风网络 (Weifeng)</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">全能性价比首选</span>
+          </a>
+          
+          <a href="https://m1cfjgcx.feimaogfttt1.xyz/#/?code=UUcH5yh9" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">飞猫云 (Feimao)</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">2.5G 超大带宽体验</span>
+          </a>
+
+          <a href="https://wep01.flashleapaff.com/#/?code=hCwClNUi" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">闪跃 (Shanyue)</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400">稳定不拥堵专线</span>
+          </a>
+          
+          <a href="https://edp01.civetaff.com/#/?code=2Ai6V6Ub" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">灵猫 (Lingmao)</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400">新手 24h 客服陪伴</span>
+          </a>
+          
+          <a href="https://vip02.kuajieaff.com/#/?code=HRzqSLrR" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">跨界云 (Kuajie)</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400">流媒体原生解锁霸主</span>
+          </a>
+          
+          <a href="https://wep01.worryfreeaff.com/#/?code=ydtFVWqU" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">无忧链接 (Wuyou)</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">全球 AI 极速直连</span>
+          </a>
+
+          <a href="https://fvip02.fireflyaff.com/#/?code=mcYQUZxG" target="_blank" rel="sponsored nofollow noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors border border-transparent hover:border-primary-100 dark:hover:border-primary-800/50 group">
+            <span class="font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400">firefly</span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">重度下载极致首选</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 选购流程图 (Timeline) -->
+    
+
+
+    
+    <!-- 后续重点内容 -->
+    <section class="mt-16 max-w-5xl mx-auto">
+      <div class="bg-slate-900 dark:bg-slate-800 rounded-3xl p-8 border border-slate-800 dark:border-slate-700 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+        <div class="relative z-10 text-center md:text-left">
+          <div class="text-primary-400 font-bold text-sm mb-1">后续重点内容 (机场测评入口)</div>
+          <h3 class="text-2xl md:text-3xl font-extrabold text-white">每篇机场测评都看这四件事</h3>
+        </div>
+        <div class="relative z-10 flex flex-wrap justify-center md:justify-end gap-3">
+           <a href="/evaluations" class="px-5 py-2.5 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-bold transition-colors">查看机场测评 &rarr;</a>
+           <a href="/guides" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium backdrop-blur-sm transition-colors">选购和测速方法</a>
+           <a href="/clients" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium backdrop-blur-sm transition-colors">客户端工具</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📲 主流客户端下载 -->
+    <section id="clients" class="mt-16 max-w-5xl mx-auto scroll-mt-28">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">📲 主流客户端下载</h2>
+      <div class="bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-4 md:p-5 border border-blue-200 dark:border-blue-800/30 mb-6 flex gap-3 items-start">
+        <span class="text-xl">💡</span>
+        <p class="text-sm text-blue-900 dark:text-blue-300 leading-relaxed pt-0.5">
+          <strong>注意：</strong>客户端仅作为连接工具，本身不提供网络服务。下载客户端前请确保您已经购买了机场订阅，并在配置时耐心参考站内的使用教程。
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/clients#macos" class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:shadow-lg hover:border-slate-300 dark:hover:border-slate-700 transition-all group">
+           <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">🍎</div>
+           <div class="font-bold text-slate-800 dark:text-slate-200">Mac 客户端</div>
+        </a>
+        <a href="/clients#ios" class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:shadow-lg hover:border-slate-300 dark:hover:border-slate-700 transition-all group">
+           <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">📱</div>
+           <div class="font-bold text-slate-800 dark:text-slate-200">iOS 客户端</div>
+        </a>
+        <a href="/clients#android" class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:shadow-lg hover:border-slate-300 dark:hover:border-slate-700 transition-all group">
+           <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">🤖</div>
+           <div class="font-bold text-slate-800 dark:text-slate-200">Android 客户端</div>
+        </a>
+        <a href="/clients#windows" class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:shadow-lg hover:border-slate-300 dark:hover:border-slate-700 transition-all group">
+           <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">💻</div>
+           <div class="font-bold text-slate-800 dark:text-slate-200">Windows 客户端</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 📊 如何判断机场是否好用？ -->
+    <section class="mt-16 max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">📊 如何判断机场是否好用？</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex gap-4 items-start">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 flex items-center justify-center text-xl font-black">1</div>
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white mb-2">晚高峰真实测速</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-400">抛开测速图，在晚上 8:00 - 11:00 之间看 YouTube 4K 视频是否秒开，是检验线路质量的唯一真理。</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex gap-4 items-start">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-blue-600 flex items-center justify-center text-xl font-black">2</div>
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white mb-2">节点复用度与真实带宽</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-400">很多平价机场存在“一鸡多吃”现象，带宽超售严重。建议关注冷门专线品牌，它们通常体验更好。</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex gap-4 items-start">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-purple-50 dark:bg-purple-900/20 text-purple-600 flex items-center justify-center text-xl font-black">3</div>
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white mb-2">流媒体与原生 IP 解锁</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-400">如果你需要看 Netflix 或使用 ChatGPT，必须确认节点是否为原生 IP 解锁，而不是 DNS 劫持解锁。</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex gap-4 items-start">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-amber-50 dark:bg-amber-900/20 text-amber-600 flex items-center justify-center text-xl font-black">4</div>
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white mb-2">服务商建站历史</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-400">跑路是行业常态，我们建议尽量避开刚成立几个月的小站，或者只买月付，把损失风险降到最低。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ❓ 新手常见问题 -->
+    <section id="faq" class="mt-16 mb-16 max-w-5xl mx-auto scroll-mt-28">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">❓ 新手常见问题 (FAQ)</h2>
+      <div class="space-y-4">
+        <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 [&_summary::-webkit-details-marker]:hidden" open>
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-slate-900 dark:text-white font-bold">
+            什么是 IPLC 和 IEPL 专线？
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            IPLC 和 IEPL 都是跨境物理专线，数据不经过公网，类似于企业内部局域网。它们的特点是“不过墙”，因此不会被封锁，且延迟极低。非常适合打游戏、金融交易、对网络稳定性要求极高的商务人群。相对应的，专线的成本远高于普通的中转线路（如 BGP），因此价格偏贵。
+          </div>
+        </details>
+        
+        <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-slate-900 dark:text-white font-bold">
+            我应该买月付还是年付？
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            <strong>强烈建议新手一律按月付费。</strong> 机场行业良莠不齐，任何服务商都有跑路或由于超售导致线路质量下降的风险。月付可以让你随时保持切换其他品牌的主动权。当你在该站连续使用了三个月以上、经历了多次晚高峰甚至特殊时期，觉得十分稳定后，再考虑年付的优惠。
+          </div>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-slate-900 dark:text-white font-bold">
+            流媒体解锁（原生 IP）有什么用？
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Netflix、Disney+、HBO Max 以及 ChatGPT 等服务对 IP 限制非常严格。如果节点使用的是数据中心的广播 IP，很可能会被判定为“代理”从而拒绝服务（比如 Netflix 只能看自制剧）。提供原生 IP（家宽 IP）的节点可以完美伪装成当地居民用户，从而解锁所有地区限制的内容。
+          </div>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-slate-900 dark:text-white font-bold">
+            什么是 BGP 线路？和直连有什么区别？
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            直连线路是指从你的运营商（如电信/联通/移动）直接连接到海外服务器，晚高峰时很容易拥堵丢包。而 BGP 线路则是先连接到国内的优质机房（中转服务器），再通过优化过的线路传输到海外。BGP 智能路由能够极大改善国内不同运营商互联不互通的问题，显著提升连通率和稳定性。
+          </div>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-slate-900 dark:text-white font-bold">
+            买平价机场好还是贵价机场好？
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            取决于您的真实需求。如果您只是偶尔看看网页、查阅资料，月付 10-20 元的平价机场已经绰绰有余；但如果您需要长时间在晚高峰看 4K 视频、打外服游戏，或者作为远程办公的重度依赖，建议选择价位在 30-50 元左右的专线机场。一分钱一分货在网络服务行业是永恒的真理。
+          </div>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-slate-900 dark:text-white font-bold">
+            为什么节点连上了但是没有网？
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            请检查以下三点：1. 您的设备时间是否与北京时间同步（误差不能超过1分钟），V2ray 等协议对时间校准要求极高；2. 您是否在客户端开启了“系统代理(System Proxy)”，否则只有在浏览器配置插件才能上网；3. 尝试更新订阅并重启客户端，或者切换一个其他国家的节点。如果所有节点超时，可能是订阅已到期或流量耗尽。
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 底部导航游览菜单 -->
+    <div class="max-w-4xl mx-auto px-4 w-full mb-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">底部菜单游览</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400">阅读完毕？点击下方卡片快速跳转至其他板块</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- 目录选项 1 -->
+        <a href="/evaluations/" class="group bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:bg-white dark:hover:bg-slate-800 hover:border-purple-500/50 dark:hover:border-purple-500/50 transition-all text-center flex flex-col items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+            📝
+          </div>
+          <div class="font-bold text-slate-900 dark:text-white text-sm">机场评测</div>
+          <p class="text-xs text-slate-500">深入了解实测数据</p>
+        </a>
+        <!-- 目录选项 2 -->
+        <a href="/clients/" class="group bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:bg-white dark:hover:bg-slate-800 hover:border-amber-500/50 dark:hover:border-amber-500/50 transition-all text-center flex flex-col items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+            ⬇️
+          </div>
+          <div class="font-bold text-slate-900 dark:text-white text-sm">客户端下载</div>
+          <p class="text-xs text-slate-500">获取全平台代理软件</p>
+        </a>
+        <!-- 目录选项 3 -->
+        <a href="/guides/" class="group bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:bg-white dark:hover:bg-slate-800 hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all text-center flex flex-col items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+            📚
+          </div>
+          <div class="font-bold text-slate-900 dark:text-white text-sm">新手教程</div>
+          <p class="text-xs text-slate-500">阅读翻墙科普指南</p>
+        </a>
+        <!-- 目录选项 4 -->
+        <a href="/" class="group bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:bg-white dark:hover:bg-slate-800 hover:border-blue-500/50 dark:hover:border-blue-500/50 transition-all text-center flex flex-col items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+            🏠
+          </div>
+          <div class="font-bold text-slate-900 dark:text-white text-sm">返回首页</div>
+          <p class="text-xs text-slate-500">回到主导航区</p>
+        </a>
+      </div>
+    </div>
+
+</div>
+  <BottomMenuNav />
+</BaseLayout>
+
+<style>
+  /* 隐藏滚动条 */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.brand-card');
+    const tableRows = document.querySelectorAll('.brand-table-row');
+
+    // Function to apply a specific filter programmatically
+    const applyFilter = (filterValue) => {
+        const targetBtn = Array.from(filterBtns).find(btn => btn.getAttribute('data-filter') === filterValue);
+        if (targetBtn) {
+            targetBtn.click();
+        }
+    };
+
+    // Check if there is a filter in the URL hash (e.g., #filter=daily)
+    if (window.location.hash.startsWith('#filter=')) {
+        const initialFilter = window.location.hash.replace('#filter=', '');
+        // Small delay to ensure rendering is complete
+        setTimeout(() => applyFilter(initialFilter), 100);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Reset styles for all filter buttons
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-blue-600', 'text-white', 'border-blue-600', 'shadow-md');
+          b.classList.add('bg-white', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
+        });
+        
+        // Set active style for clicked button
+        btn.classList.remove('bg-white', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
+        btn.classList.add('bg-blue-600', 'text-white', 'border-blue-600', 'shadow-md');
+
+        const filter = btn.getAttribute('data-filter');
+        
+        // Filter the cards using .includes() to support multiple tags
+        cards.forEach(card => {
+          const categories = card.getAttribute('data-category') || '';
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        
+        // Filter the table rows using .includes()
+        tableRows.forEach(row => {
+          const categories = row.getAttribute('data-category') || '';
+          if (filter === 'all' || categories.includes(filter)) {
+            row.style.display = ''; // Reset to default
+          } else {
+            row.style.display = 'none';
+          }
+        });
+
+        // Smooth scroll back up if the user has scrolled past the list
+        const listSection = document.getElementById('all-brands');
+        if (listSection) {
+            // If the top of the list is higher than 100px from the viewport top, we scroll back to it.
+            // 100px is roughly the height of the sticky header.
+            if (listSection.getBoundingClientRect().top < 100) {
+                listSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+
+      });
+    });
+  });
+</script>

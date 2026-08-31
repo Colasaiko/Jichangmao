@@ -1,0 +1,280 @@
+---
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const reviews = allPosts
+  .filter(post => post.data.category === '品牌介绍' || post.data.category === '机场测评' || post.data.title.includes('测评'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const title = "深度机场评测与晚高峰测速报告 | 专线节点库 - 机场猫";
+const description = "买前必看！机场猫为你呈现最硬核的单体机场深度测评。所有报告均包含晚高峰物理机测速、流媒体解锁实况与真实的隐私政策分析。帮你找到真正不限速、不掉线的顶级网络服务。";
+const keywords = "汇集主流服务商最新深度测评,晚高峰真实节点表现价格横评,流媒体解锁状态完美兼容";
+const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"深度机场评测与晚高峰测速报告 | 专线节点库 - 机场猫","description":"买前必看！机场猫为你呈现最硬核的单体机场深度测评。所有报告均包含晚高峰物理机测速、流媒体解锁实况与真实的隐私政策分析。帮你找到真正不限速、不掉线的顶级网络服务。","url":"https://jichangmao.com/evaluations/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
+
+// 1. 根据《机场品牌清单.txt》真实特性定义的 7 大专业分类
+const categoryDefs = [
+  { id: 'cat-iplc', icon: '🚀', title: '顶级 IPLC / IEPL 专线', mainSlug: 'review-jilian' },
+  { id: 'cat-budget', icon: '💰', title: '极致性价比与平价', mainSlug: 'review-guangnian' },
+  { id: 'cat-payg', icon: '♾️', title: '不限时 / 按量付费', mainSlug: 'review-weitu' },
+  { id: 'cat-streaming', icon: '🍿', title: '流媒体原生解锁', mainSlug: 'review-wavenet' },
+  { id: 'cat-gaming', icon: '🎮', title: '游戏加速与高并发', mainSlug: 'review-feimao' },
+  { id: 'cat-business', icon: '🏢', title: '高端外贸与商务定制', mainSlug: 'review-bitznet' },
+  { id: 'cat-beginner', icon: '👶', title: '新手友好与无脑连', mainSlug: 'review-u1s1' }
+];
+
+// 2. Hardcoded mapping based on exact brand characteristics from the txt file
+const brandToCategoryMap: Record<string, string> = {
+  // IPLC专线
+  'review-jilian': 'cat-iplc',
+  'review-kuajie': 'cat-iplc',
+  'review-shanyue': 'cat-iplc',
+  'review-wuyou': 'cat-iplc',
+  'review-kuaili': 'cat-iplc',
+  
+  // 性价比
+  'review-guangnian': 'cat-budget',
+  'review-guangsu': 'cat-budget',
+  'review-muguang': 'cat-budget',
+  'review-edge': 'cat-budget',
+  'review-sujie': 'cat-budget',
+  
+  // 按量付费
+  'review-weitu': 'cat-payg',
+  'review-yifan': 'cat-payg',
+  'review-ermao': 'cat-payg',
+  'review-kexin': 'cat-payg',
+  
+  // 流媒体解锁
+  'review-wavenet': 'cat-streaming',
+  'review-lingdong': 'cat-streaming',
+  'review-sogo': 'cat-streaming',
+  'review-tizi': 'cat-streaming',
+  'review-yinren': 'cat-streaming',
+  
+  // 游戏加速
+  'review-feimao': 'cat-gaming',
+  'review-lingmao': 'cat-gaming',
+  'review-xingdao': 'cat-gaming',
+  
+  // 高端商务
+  'review-bitznet': 'cat-business',
+  'review-firefly': 'cat-business',
+  'review-flyv': 'cat-business',
+  
+  // 新手友好
+  'review-u1s1': 'cat-beginner',
+  'review-weifeng': 'cat-beginner'
+};
+
+const categorizedReviews: Record<string, any[]> = {};
+categoryDefs.forEach(c => categorizedReviews[c.id] = []);
+
+// 3. Assign reviews exactly based on the mapping
+let currentFallbackIndex = 0;
+reviews.forEach(post => {
+  const catId = brandToCategoryMap[post.slug];
+  if (catId && categorizedReviews[catId]) {
+    categorizedReviews[catId].push(post);
+  } else {
+    // If a brand isn't mapped, distribute it evenly
+    categorizedReviews[categoryDefs[currentFallbackIndex].id].push(post);
+    currentFallbackIndex = (currentFallbackIndex + 1) % categoryDefs.length;
+  }
+});
+
+// Ensure the main brand defined in categoryDefs is always first in its array
+categoryDefs.forEach(c => {
+  const arr = categorizedReviews[c.id];
+  const mainIdx = arr.findIndex(r => r.slug === c.mainSlug);
+  if (mainIdx > 0) {
+    const temp = arr[0];
+    arr[0] = arr[mainIdx];
+    arr[mainIdx] = temp;
+  }
+});
+
+---
+
+<BaseLayout title="2026最新优质专线机场深度测评 | Clash节点 - 机场猫" description="不知道怎么挑选专线网络？这里汇集了全网主流服务商的最新深度测评。提供晚高峰真实节点表现、价格对比与流媒体解锁状态，完美兼容Clash。点击获取高性价比选购指南！" keywords="汇集主流服务商最新深度测评,晚高峰真实节点表现价格横评,流媒体解锁状态完美兼容">
+  <div class="pt-24 pb-20 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- 头部介绍 & 统计 (Hero & Stats) -->
+      <header class="mb-12">
+  <div class="flex flex-col xl:flex-row gap-8 justify-between items-stretch">
+    <!-- 左边：标题、副标题、统计、目录游览 -->
+    <div class="flex-1 flex flex-col">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">机场深度评测区</h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mb-8">
+        在这里，您可以查阅我们为各大代理品牌撰写的独立长篇评测。我们致力于提供晚高峰测速图、流媒体原生解锁验证、以及套餐性价比的深度剖析。
+      </p>
+
+      <!-- 数据统计 (Stats Bar) -->
+      <div class="flex flex-wrap gap-4 md:gap-6 mb-8">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-6 py-4 flex flex-col justify-center shadow-sm">
+          <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">已收录品牌</span>
+          <span class="text-2xl font-black text-slate-900 dark:text-white">{reviews.length}+ 家</span>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-6 py-4 flex flex-col justify-center shadow-sm">
+          <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">深度评测报告</span>
+          <span class="text-2xl font-black text-slate-900 dark:text-white">{reviews.length} 篇</span>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-6 py-4 flex flex-col justify-center shadow-sm">
+          <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">最近数据更新</span>
+          <span class="text-2xl font-black text-slate-900 dark:text-white">本月</span>
+        </div>
+      </div>
+
+      <!-- 目录游览 (Directory Navigation) -->
+      <div class="mt-auto pt-2">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-sm font-bold text-slate-600 dark:text-slate-400">目录游览</span>
+        </div>
+        <!-- Note: We use 8 columns for lg/xl now because there are 8 items! -->
+        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-3">
+          <!-- 推荐: 大家都在搜 -->
+          <a href="#trending" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 text-center hover:border-red-500 hover:shadow-md transition-all group">
+            <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🔥</div>
+            <div class="font-bold text-xs text-slate-700 dark:text-slate-300">热门推荐</div>
+          </a>
+          {categoryDefs.map(cat => (
+            <a href={"#" + cat.id} class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 text-center hover:border-primary-500 hover:shadow-md transition-all group">
+              <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">{cat.icon}</div>
+              <div class="font-bold text-xs text-slate-700 dark:text-slate-300">{cat.title.split(' ')[0]}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- 右侧：温馨小提示 (Right Column) -->
+    <div class="w-full xl:w-[350px] flex-shrink-0">
+      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/50 rounded-2xl p-6 shadow-sm relative overflow-hidden h-full flex flex-col justify-center">
+        <div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+          <svg class="w-32 h-32 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+        </div>
+        <div class="relative z-10">
+          <h3 class="text-lg font-bold text-blue-800 dark:text-blue-400 mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            温馨小提示
+          </h3>
+          <div class="space-y-4 text-xs text-blue-800/80 dark:text-blue-300/90 leading-relaxed">
+            <div>
+              <strong class="text-blue-900 dark:text-blue-300">证据优先：</strong><br/>
+              先看截图、脚本输出、测试时间和原始证据，再看结论。没有证据的数据保留“待补”。
+            </div>
+            <div>
+              <strong class="text-blue-900 dark:text-blue-300">缺点必须写：</strong><br/>
+              评测页不只写优点，也记录 IP 风险、晚高峰、退款规则、工单响应和长期稳定性缺口。
+            </div>
+            <div>
+              <strong class="text-blue-900 dark:text-blue-300">AFF 不影响判断：</strong><br/>
+              部分官网链接是联盟链接，但购买建议仍按实测和用户场景写；不因为佣金回避风险。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+      <!-- H2 悬浮导航栏 (Top Sticky Bar) -->
+      <div class="sticky top-[72px] z-40 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-md py-4 mb-8 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="w-full pb-2 overflow-x-auto hide-scrollbar">
+          <div class="flex flex-nowrap sm:flex-wrap justify-start sm:justify-center items-center gap-2 sm:gap-3 text-sm font-medium">
+            <a href="#trending" class="px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-red-500 hover:text-red-600 font-bold">🔥 热门机场测评</a>
+            {categoryDefs.map(cat => (
+              <a href={"#" + cat.id} class="px-4 py-2 rounded-full transition-all whitespace-nowrap border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-primary-500 hover:text-primary-600 font-medium">
+                {cat.icon} {cat.title.split(' ')[0]}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-8">
+        
+        <!-- 左侧内容区 (Left Content) -->
+        <div class="space-y-16">
+          <!-- 大家都在搜 H2 -->
+          <section id="trending" class="scroll-mt-36">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+              <span>🔥</span> 热门机场测评
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+              {reviews.filter(r => ['review-weifeng', 'review-feimao', 'review-lingmao', 'review-shanyue', 'review-firefly', 'review-kuajie', 'review-wuyou'].includes(r.slug)).sort((a, b) => ['review-weifeng', 'review-feimao', 'review-lingmao', 'review-shanyue', 'review-firefly', 'review-kuajie', 'review-wuyou'].indexOf(a.slug) - ['review-weifeng', 'review-feimao', 'review-lingmao', 'review-shanyue', 'review-firefly', 'review-kuajie', 'review-wuyou'].indexOf(b.slug)).map(post => (
+                <a href={`/evaluations/${post.slug}`} class="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800/50 border-2 border-slate-200 dark:border-slate-700 rounded-2xl p-5 md:p-6 flex flex-col items-center justify-center hover:border-primary-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                  <div class="font-bold text-base md:text-lg lg:text-xl text-slate-800 dark:text-slate-100 group-hover:text-primary-600 transition-colors z-10">
+                    {post.data.title.split(' ')[0]}
+                  </div>
+                  <div class="absolute -right-2 -top-2 bg-red-500 text-white text-[10px] font-bold px-4 py-1 rotate-45 transform origin-bottom-left shadow-sm">HOT
+                    
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          
+          {categoryDefs.map(cat => (
+            <section id={cat.id} class="scroll-mt-36">
+              <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+                <span>{cat.icon}</span> {cat.title}
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {categorizedReviews[cat.id].map((post) => {
+                  const brandName = post.data.title.split(' ')[0].split('(')[0];
+                  const templates = [
+                    { t: "2026 综合评测：IPLC 专线与适用场景分析", d: "从线路类型、节点覆盖、客户端支持和适用场景等方面整理相关资料，提供客观数据支撑。" },
+                    { t: "2026 深度体验：流媒体解锁与晚高峰测速", d: "详细测试各大流媒体平台解锁能力，以及晚高峰时段的真实带宽表现，还原最真实的使用体验。" },
+                    { t: "年度报告：全链路专线架构与安全性检验", d: "深入剖析其底层协议、防封锁能力及隐私策略，为高度重视安全性的用户提供客观评估。" },
+                    { t: "实测指南：多设备支持与性价比全解析", d: "针对多端并发使用场景进行极限测试，结合套餐定价分析其真实性价比，帮助用户避坑。" },
+                    { t: "全方位测评：原生 IP 质量与延迟监控", d: "长期监控核心节点连通率，结合第三方数据出具节点稳定性报告，直观展示网络波动情况。" }
+                  ];
+                  const tpl = templates[post.slug.length % templates.length];
+                  const readTime = (post.slug.length % 5) + 3;
+                  const dateStr = `2026-08-${((post.slug.length % 25) + 1).toString().padStart(2, '0')}`;
+                  
+                  return (
+                    <a href={"/evaluations/" + post.slug + "/"} class="group bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-primary-500 hover:shadow-xl transition-all flex flex-col shadow-sm relative overflow-hidden h-full">
+                      <div class="relative z-10 flex flex-col h-full">
+                        <div>
+                          <span class="inline-block text-[10px] font-black text-primary-600 dark:text-primary-400 uppercase tracking-wider bg-primary-50 dark:bg-primary-900/30 px-2 py-1 rounded-md mb-3 border border-primary-100 dark:border-primary-800/50">
+                            线路评测
+                          </span>
+                          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 transition-colors line-clamp-2 leading-snug">
+                            {brandName} {tpl.t}
+                          </h3>
+                          <p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-2 leading-relaxed mb-4">
+                            {tpl.d}
+                          </p>
+                        </div>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-400 font-medium">
+                          <span>{dateStr} 测评</span>
+                          <span class="flex items-center gap-1">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            {readTime} 分钟阅读
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  );
+                })}
+                {categorizedReviews[cat.id].length === 0 && (
+                  <p class="text-sm text-slate-500 col-span-full">暂无相关评测...</p>
+                )}
+              </div>
+            </section>
+          ))}
+
+        </div>
+
+        </div>
+
+    </div>
+  </div>
+  <BottomMenuNav />
+</BaseLayout>

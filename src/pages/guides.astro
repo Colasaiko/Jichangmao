@@ -1,0 +1,331 @@
+---
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch all blog posts
+const allBlogs = await getCollection('blog');
+
+// Categorize them dynamically based on the slug prefix (t-) or category frontmatter
+const c_starter = allBlogs.filter(p => ['starter', 'Core Access', 'Subscription'].includes(p.data.category));
+const c_daily = allBlogs.filter(p => p.data.category === 'daily');
+const c_streaming = allBlogs.filter(p => p.data.category === 'streaming');
+const c_ai_media = allBlogs.filter(p => p.data.category === 'ai_media');
+const c_ai_usage = allBlogs.filter(p => p.data.category === 'ai_usage');
+const c_ai_network = allBlogs.filter(p => p.data.category === 'ai_network');
+const c_ai_tutorial = allBlogs.filter(p => p.data.category === 'ai_tutorial');
+const c_ai_work = allBlogs.filter(p => p.data.category === 'ai_work');
+const c_ai_tools = allBlogs.filter(p => p.data.category === 'ai_tools');
+const c_ai_official = allBlogs.filter(p => p.data.category === 'ai_official');
+
+const c_client_adv = allBlogs.filter(p => ['client_adv', 'clients', 'Devices', 'client_archive'].includes(p.data.category));
+const c_network = allBlogs.filter(p => ['network', 'Node'].includes(p.data.category));
+const c_routing = allBlogs.filter(p => p.data.category === 'routing');
+const c_openwrt = allBlogs.filter(p => p.data.category === 'openwrt');
+const c_troubleshoot = allBlogs.filter(p => ['troubleshoot', 'Node / Connectivity Troubleshooting'].includes(p.data.category));
+const c_advanced_conf = allBlogs.filter(p => ['advanced_conf', 'Security'].includes(p.data.category));
+
+const c_performance = allBlogs.filter(p => p.data.category === 'performance');
+const totalGuides = c_starter.length + c_daily.length + c_streaming.length + c_client_adv.length + c_network.length + c_routing.length + c_openwrt.length + c_troubleshoot.length + c_advanced_conf.length + c_performance.length + c_ai_media.length + c_ai_usage.length + c_ai_network.length + c_ai_tutorial.length + c_ai_work.length + c_ai_tools.length + c_ai_official.length;
+
+
+
+// Define sections array
+const guideSections = [
+      { id: 'starter', title: '👶 初级｜新手入门', desc: '完全没接触过机场、客户端、节点的人也能看懂。', data: c_starter },
+      { id: 'daily', title: '☕ 普通｜日常使用', desc: '我已经会用了，但是遇到各种问题怎么办？', data: c_daily },
+      
+      { id: 'streaming', title: '📺 普通｜流媒体', desc: '流媒体播放卡顿，跨区内容解锁指南。', data: c_streaming },
+      { id: 'ai_tools', title: '🤖 AI 工具推荐', desc: '发现并选择最适合您的 AI 效率工具。', data: c_ai_tools },
+      { id: 'ai_media', title: '🎨 AI 视频与图片', desc: 'Midjourney、Stable Diffusion 等图像视频生成技巧。', data: c_ai_media },
+      { id: 'ai_usage', title: '💬 AI 服务使用', desc: 'ChatGPT、Claude 等对话大模型的注册与使用指南。', data: c_ai_usage },
+      { id: 'ai_network', title: '🔗 AI 网络连接', desc: '解决 AI 服务拒绝访问、IP 封禁等网络连通性问题。', data: c_ai_network },
+      { id: 'ai_tutorial', title: '📘 AI 实用教程', desc: '手把手教您如何通过 AI 解决各种实际问题。', data: c_ai_tutorial },
+      { id: 'ai_work', title: '💼 AI 工作与学习', desc: '将 AI 融入您的日常工作流，大幅提升效率。', data: c_ai_work },
+      { id: 'ai_official', title: '🎓 AI 官方教程', desc: '各大 AI 平台的官方使用文档与权威指南。', data: c_ai_official },
+      { id: 'client_adv', title: '⚙️ 普通｜客户端进阶', desc: '深入理解客户端各项高级配置与代理原理。', data: c_client_adv },
+      { id: 'network', title: '🌐 困难｜网络配置', desc: '深入理解 DNS、TUN 模式与路由表。', data: c_network },
+      { id: 'routing', title: '🔀 困难｜分流与规则', desc: '从零开始编写和理解复杂的智能分流规则。', data: c_routing },
+      { id: 'openwrt', title: '🖧 困难｜路由器 / OpenWrt', desc: '全家设备无感翻墙的高端玩法。', data: c_openwrt },
+      { id: 'troubleshoot', title: '🧯 困难｜网络排错', desc: '利用命令行工具进行深度的网络诊断。', data: c_troubleshoot },
+      { id: 'advanced_conf', title: '🛠️ 困难｜高级客户端与配置', desc: '完全掌控配置文件，搭建最强翻墙环境。', data: c_advanced_conf },
+      { id: 'performance', title: '⚡ 困难｜性能优化', desc: '压榨出节点的每一滴性能，降低游戏与连接延迟。', data: c_performance }
+];
+const totalCategories = guideSections.filter(s => s.data.length > 0).length;
+
+// Helper to render cards
+const emojis = ['🌐', '✈️', '🔗', '🚦', '📱', '💻', '📺', '🚀', '🛠️', '🧯', '⚡', '🔀'];
+---
+
+<BaseLayout title="2026最新科学上网进阶教程 | Clash配置 - 机场猫" description="网络基础太差导致频繁断流？机场猫为您整理了最全面的网络知识体系与进阶教程。从底层协议科普到Clash客户端路由规则的深度解析。点击立即探索最新排错防封锁指南！" keywords="最全面的网络知识体系与教程,底层协议科普到路由规则解析,立即探索最新排错防封锁指南">
+  <main class="flex-1 w-full max-w-[1440px] mx-auto transition-colors duration-300 mt-[60px] xl:mt-0 pb-32">
+    
+    {/* Hero Section */}
+    <section class="text-center pt-24 pb-14 px-4 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 border-b border-slate-100 dark:border-slate-900">
+      <div class="container max-w-[1440px] mx-auto">
+        <div class="inline-block px-4 py-1.5 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 text-xs font-bold rounded-full mb-5 tracking-wide">
+          {totalCategories} 大知识板块 · {totalGuides} 篇深度内容
+        </div>
+        <h1 class="max-w-5xl mx-auto text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight leading-tight">
+          科学上网终极指南
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed mb-10">
+          从买机场、下软件、导节点，到排查连通性故障、解锁 Netflix 以及防范 IP 被封，我们为您铺设了每一层的高质量学习路线。
+        </p>
+        
+        <!-- New Dashboard Header Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-left mt-10 mb-4 max-w-6xl mx-auto">
+          
+          <!-- Left Column (Nav + Roadmap) -->
+          <div class="lg:col-span-2 flex flex-col gap-6">
+            
+            <!-- Quick Navigation -->
+            <div class="bg-slate-50 dark:bg-slate-900/60 p-5 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+              <div class="flex items-center gap-2 text-slate-700 dark:text-slate-300 font-bold ml-2 shrink-0">
+                <svg class="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                快速浏览其它菜单：
+              </div>
+              <div class="flex flex-wrap gap-2 sm:gap-3 w-full sm:w-auto">
+                <a href="/evaluations" class="flex-1 sm:flex-none text-center bg-white dark:bg-slate-800 px-4 py-2 rounded-xl text-sm font-bold text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors shadow-sm">✈️ 机场评测</a>
+                <a href="/clients" class="flex-1 sm:flex-none text-center bg-white dark:bg-slate-800 px-4 py-2 rounded-xl text-sm font-bold text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors shadow-sm">💻 客户端下载</a>
+                <a href="/tools" class="flex-1 sm:flex-none text-center bg-white dark:bg-slate-800 px-4 py-2 rounded-xl text-sm font-bold text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors shadow-sm">🛠️ 实用工具</a>
+              </div>
+            </div>
+
+            <!-- Reading Roadmap -->
+            <div class="bg-white dark:bg-slate-900/30 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm h-full">
+              <h3 class="font-black text-lg text-slate-900 dark:text-white mb-5 flex items-center gap-2">
+                <span class="w-1.5 h-6 bg-gradient-to-b from-indigo-500 to-purple-500 rounded-full inline-block"></span>
+                小白快速阅读路线
+              </h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+                <!-- Decorative connection line for Desktop -->
+                <div class="hidden md:block absolute top-[20px] left-12 right-12 h-0.5 bg-slate-100 dark:bg-slate-800 z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 font-black flex items-center justify-center text-sm ring-4 ring-slate-50 dark:ring-slate-800 shadow-sm shrink-0">1</span>
+                    <span class="font-bold text-slate-900 dark:text-slate-100">新手入门</span>
+                  </div>
+                  <ul class="space-y-2.5 text-sm flex-grow">
+                    <li><a href="/blog/what-is-airport-proxy/" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-start gap-2 transition-colors"><svg class="w-4 h-4 mt-0.5 shrink-0 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>什么是机场节点？</a></li>
+                    <li><a href="/blog/how-to-choose-an-airport-guide/" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-start gap-2 transition-colors"><svg class="w-4 h-4 mt-0.5 shrink-0 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>如何挑选合适机场？</a></li>
+                  </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10 flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 font-black flex items-center justify-center text-sm ring-4 ring-slate-50 dark:ring-slate-800 shadow-sm shrink-0">2</span>
+                    <span class="font-bold text-slate-900 dark:text-slate-100">中期进阶</span>
+                  </div>
+                  <ul class="space-y-2.5 text-sm flex-grow">
+                    <li><a href="/blog/windows-v2rayn-guide/" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-start gap-2 transition-colors"><svg class="w-4 h-4 mt-0.5 shrink-0 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Windows 配置教程</a></li>
+                    <li><a href="/blog/proxy-modes-guide/" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-start gap-2 transition-colors"><svg class="w-4 h-4 mt-0.5 shrink-0 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>全局/规则模式怎么选</a></li>
+                  </ul>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10 flex flex-col h-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 font-black flex items-center justify-center text-sm ring-4 ring-slate-50 dark:ring-slate-800 shadow-sm shrink-0">3</span>
+                    <span class="font-bold text-slate-900 dark:text-slate-100">后期深入</span>
+                  </div>
+                  <ul class="space-y-2.5 text-sm flex-grow">
+                    <li><a href="/blog/iplc-iepl-bgp-explained/" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-start gap-2 transition-colors"><svg class="w-4 h-4 mt-0.5 shrink-0 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>专线协议原理解析</a></li>
+                    <li><a href="/blog/proxy-not-working-troubleshooting-hub/" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-start gap-2 transition-colors"><svg class="w-4 h-4 mt-0.5 shrink-0 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>网络排障诊断中枢</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column (Warm Tips) -->
+          <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-7 text-white shadow-lg relative overflow-hidden flex flex-col h-full">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-black/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <h3 class="font-black text-xl mb-4 relative z-10 flex items-center gap-2">
+              <span class="bg-white/20 p-2 rounded-xl">💡</span> 温馨小提示
+            </h3>
+            
+            <div class="space-y-3 text-indigo-50 text-[14px] leading-relaxed relative z-10 flex-grow">
+              <p>欢迎来到机场猫知识库！这里收录了从小白到高阶的 <strong class="text-white font-bold">{totalGuides}</strong> 篇精选网络教程。</p>
+              <p>如果您是第一次接触：建议先按照左侧的<strong class="text-white font-bold bg-white/10 px-1.5 py-0.5 rounded">小白快速阅读路线</strong>顺藤摸瓜建立基础认知。</p>
+              <p>熟悉基本概念后，您可以利用下方的<strong class="text-white font-bold">分类标签</strong>和<strong class="text-white font-bold">搜索框</strong>，随时查阅具体问题的解决方案！</p>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    {/* Sticky Navigation & Search Bar */}
+    <div class="sticky top-[60px] z-40 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-y border-slate-200 dark:border-slate-800 mb-12 shadow-sm">
+      <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+        
+        {/* Anchor Links */}
+        <div class="flex items-center flex-wrap gap-2 py-3 border-b border-slate-100 dark:border-slate-800/50">
+          <a href="#starter" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-700 font-bold text-sm dark:bg-emerald-900/30 dark:text-emerald-300">👶 新手入门</a>
+          <a href="#daily" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 font-bold text-sm dark:bg-blue-900/30 dark:text-blue-300">☕ 日常使用</a>
+          <a href="#streaming" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-fuchsia-50 text-fuchsia-700 font-bold text-sm dark:bg-fuchsia-900/30 dark:text-fuchsia-300">📺 流媒体与 AI</a>
+          <a href="#client_adv" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-amber-50 text-amber-700 font-bold text-sm dark:bg-amber-900/30 dark:text-amber-300">⚙️ 客户端进阶</a>
+          <a href="#network" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-rose-50 text-rose-700 font-bold text-sm dark:bg-rose-900/30 dark:text-rose-300">🌐 网络配置</a>
+          <a href="#routing" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-rose-50 text-rose-700 font-bold text-sm dark:bg-rose-900/30 dark:text-rose-300">🔀 分流与规则</a>
+          <a href="#openwrt" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-rose-50 text-rose-700 font-bold text-sm dark:bg-rose-900/30 dark:text-rose-300">🖧 软路由</a>
+          <a href="#troubleshoot" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-rose-50 text-rose-700 font-bold text-sm dark:bg-rose-900/30 dark:text-rose-300">🧯 网络排错</a>
+          <a href="#advanced_conf" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-rose-50 text-rose-700 font-bold text-sm dark:bg-rose-900/30 dark:text-rose-300">🛠️ 高级配置</a>
+          <a href="#performance" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-rose-50 text-rose-700 font-bold text-sm dark:bg-rose-900/30 dark:text-rose-300">⚡ 性能优化</a>
+        </div>
+
+        {/* Search & Filters */}
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-3">
+          <div class="relative w-full sm:w-64">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
+            <input type="text" id="guide-search" placeholder={`搜索 ${totalGuides} 篇教程...`} class="w-full pl-9 pr-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-sm focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500 transition-colors" />
+          </div>
+          <div class="flex items-center gap-3">
+            <select id="guide-category" class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-sm rounded-full px-3 py-2 focus:outline-none focus:border-indigo-500 cursor-pointer">
+              <option value="all">📁 所有分类</option>
+              <option value="starter">新手入门</option>
+              <option value="daily">日常使用</option>
+              
+              <option value="streaming">流媒体</option>
+              <option value="ai_media">AI 视频与图片</option>
+              <option value="ai_usage">AI 服务使用</option>
+              <option value="ai_network">AI 网络连接</option>
+              <option value="ai_tutorial">AI 实用教程</option>
+              <option value="ai_work">AI 工作与学习</option>
+              <option value="ai_tools">AI 工具推荐</option>
+              <option value="ai_official">AI 官方教程</option>
+              <option value="client_adv">客户端进阶</option>
+              <option value="network">网络配置</option>
+              <option value="routing">分流与规则</option>
+              <option value="openwrt">软路由</option>
+              <option value="troubleshoot">网络排错</option>
+              <option value="advanced_conf">高级配置</option>
+              <option value="performance">性能优化</option>
+            </select>
+            <select id="guide-difficulty" class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-sm rounded-full px-3 py-2 focus:outline-none focus:border-indigo-500 cursor-pointer">
+              <option value="all">🔥 所有难度</option>
+              <option value="初级">初级</option>
+              <option value="普通">普通</option>
+              <option value="困难">困难</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Dynamic Sections Generator */}
+    {guideSections.map(section => (
+      <section id={section.id} class="guide-section max-w-[1440px] mx-auto px-4 md:px-8 mb-20 scroll-mt-36">
+        <div class="flex items-end justify-between border-b border-slate-200 dark:border-slate-800 pb-3 mb-6">
+          <div>
+            <h2 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">{section.title}</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">{section.desc}</p>
+          </div>
+          <span class="text-xs font-bold text-slate-400">{section.data.length} 篇文章</span>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {section.data.map((guide, idx) => (
+            <a href={`/blog/${guide.slug}/`} class="guide-card group bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all overflow-hidden flex flex-col p-6 h-full min-h-[220px] relative" data-title={guide.data.title.toLowerCase()} data-tags={guide.data.tags ? guide.data.tags.join(',').toLowerCase() : ''} data-desc={guide.data.description ? guide.data.description.toLowerCase() : ''} data-category={section.id} data-difficulty={guide.data.difficulty || '普通'}>
+              <div class="flex justify-between items-start mb-4">
+                <div class="w-10 h-10 rounded-xl bg-slate-50 dark:bg-slate-800/50 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                  {emojis[idx % emojis.length]}
+                </div>
+                <div class="flex flex-col items-end gap-1 shrink-0">
+                  <span class={`px-2 py-0.5 rounded text-[10px] font-bold ${guide.data.difficulty === '困难' ? 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400' : guide.data.difficulty === '普通' ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400' : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400'}`}>
+                    {guide.data.difficulty || '普通'}
+                  </span>
+                  <span class="text-xs text-slate-400">📖 5分钟</span>
+                </div>
+              </div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2 leading-snug pr-2">{guide.data.title}</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed flex-grow">{guide.data.description}</p>
+              <span class="mt-3 text-indigo-600 dark:text-indigo-400 text-xs font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                立即阅读 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('guide-search') as HTMLInputElement | null;
+        const catSelect = document.getElementById('guide-category') as HTMLSelectElement | null;
+        const diffSelect = document.getElementById('guide-difficulty') as HTMLSelectElement | null;
+        const cards = document.querySelectorAll('.guide-card');
+        const sections = document.querySelectorAll('.guide-section');
+        
+        // "Recently Read" Tag Logic
+        const lastRead = localStorage.getItem('lastReadArticle');
+        if (lastRead) {
+          const lastReadCard = document.querySelector(`.guide-card[href="/blog/${lastRead}/"]`) || document.querySelector(`.guide-card[href="/blog/${lastRead}"]`);
+          if (lastReadCard && !lastReadCard.getAttribute('data-marked')) {
+            lastReadCard.setAttribute('data-marked', 'true');
+            lastReadCard.classList.add('ring-2', 'ring-indigo-500', 'ring-offset-2', 'dark:ring-offset-slate-950', 'bg-indigo-50/30', 'dark:bg-indigo-900/10');
+            
+            const titleEl = lastReadCard.querySelector('h3');
+            if (titleEl) {
+              const badge = document.createElement('span');
+              badge.className = 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-[11px] font-black px-2 py-0.5 rounded shadow-sm mr-2 align-middle inline-flex items-center gap-1';
+              badge.innerHTML = '<svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>上次读到这里';
+              titleEl.prepend(badge);
+            }
+            
+
+          }
+        }
+
+        const filterCards = () => {
+
+          if (!searchInput) return;
+          const query = searchInput?.value.toLowerCase() || '';
+          const cat = catSelect?.value || '';
+          const diff = diffSelect?.value || '';
+          
+          cards.forEach(card => {
+            const cardTitle = card.getAttribute('data-title') || '';
+            const cardTags = card.getAttribute('data-tags') || '';
+            const cardDesc = card.getAttribute('data-desc') || '';
+            const cardCat = card.getAttribute('data-category') || '';
+            const cardDiff = card.getAttribute('data-difficulty') || '';
+            
+            const matchQuery = cardTitle.includes(query) || cardTags.includes(query) || cardDesc.includes(query);
+            const matchCat = (cat === 'all') || (cardCat === cat);
+            const matchDiff = (diff === 'all') || (cardDiff === diff);
+            
+            if (matchQuery && matchCat && matchDiff) {
+              (card as HTMLElement).style.display = '';
+            } else {
+              (card as HTMLElement).style.display = 'none';
+            }
+          });
+          
+          // Hide empty sections
+          sections.forEach(section => {
+            const visibleCards = section.querySelectorAll('.guide-card:not([style*="display: none"])');
+            (section as HTMLElement).style.display = visibleCards.length > 0 ? '' : 'none';
+          });
+        };
+        
+        if (searchInput) {
+          searchInput?.addEventListener('input', filterCards);
+          catSelect?.addEventListener('change', filterCards);
+          diffSelect?.addEventListener('change', filterCards);
+        }
+      });
+    </script>
+    <BottomMenuNav />
+  </main>
+</BaseLayout>

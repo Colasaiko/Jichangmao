@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+---
+<BaseLayout title="机场猫节点深度测评与评分标准 | Clash专线 - 机场猫" description="好奇我们的数据是否真实客观？深入了解机场猫的测速环境、打分逻辑与排错方法论。通过严谨的晚高峰物理机连通性测试，为您呈现最真实的节点状态。点击阅读我们的测评核心！" keywords="深入了解测速环境与打分逻辑,严谨的晚高峰物理机连通测试,为您呈现最真实的节点状态">
+  <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
+    <div class="max-w-4xl mx-auto px-4 w-full">
+      <div class="mb-12">
+        <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">机场猫评测方法 (Methodology)</h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400">最后更新时间：2026年8月28日</p>
+      </div>
+      
+      <div class="prose prose-slate dark:prose-invert prose-lg max-w-none bg-white dark:bg-slate-900 p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <p>机场猫是一个<strong>第三方机场信息整理与评测网站</strong>。为了确保信息的透明度与参考价值，我们制定了以下数据采集与评测规范：</p>
+        
+        <hr class="my-8 border-slate-200 dark:border-slate-800" />
+        
+        <h3>1. 如何处理品牌公开资料</h3>
+        <p>我们收录的所有基础信息（包括成立时间、线路类型、标称速度、设备限制政策等）均直接来源于该品牌官方页面的公开资料。我们不对这些宣传话术进行二次夸大，所有来源于官方的数据都会被明确标识为“官方公开信息”。</p>
+        
+        <h3>2. 如何整理价格</h3>
+        <p>所有展示的套餐价格均以甲方服务商提供的实时数据为准。为了让用户更直观地感知长期使用成本，我们在评测中通常会换算并标注出长周期（如年付）折合的真实月均单价。本站严禁去搜索引擎随意抓取其他过期价格来覆盖官方现有定价。</p>
+
+        <h3>3. 如何记录节点</h3>
+        <p>节点数量和地区覆盖范围会随着服务商的运营调整而频繁变动。因此，我们记录的节点信息均基于测试当期的“公开订阅信息整理”。我们不会轻信“海量节点”的模糊宣传，而是尽量给出具体的数值（如：约 80+），并附带时间戳免责声明。</p>
+
+        <h3>4. 如何进行测速</h3>
+        <p>我们的测速数据必须是<strong>真实的物理机抽样测试</strong>。所有包含测速数据的文章，都必须明确标注测试的时间段（通常为晚高峰）、测试地区、使用的本地网络环境（如中国电信 500M）以及测试工具。我们坚决抵制编造“300Mbps、4K秒开”等高度规律的虚假数据；若某品牌暂未进行实测，我们会如实标注为“暂无本站实测数据”。</p>
+
+        <h3>5. 如何评价服务 (安全与隐私)</h3>
+        <p>我们不使用“绝对安全、100%无日志”等绝对化词汇。我们通过以下 5 个具体维度来构建隐私透明度评分：</p>
+        <ul>
+          <li><strong>隐私政策</strong>：有 / 无 / 未找到</li>
+          <li><strong>日志政策</strong>：有明确说明 / 有部分说明 / 未公开</li>
+          <li><strong>DNS</strong>：正常 / 存在异常 / 未测试</li>
+          <li><strong>WebRTC</strong>：正常 / 存在泄漏 / 未测试</li>
+          <li><strong>付款隐私</strong>：普通 / 较好 / 未知</li>
+        </ul>
+
+        <h3>6. 如何区分测试数据与品牌信息</h3>
+        <p>在所有评测文章中，我们严格划分了信息的来源边界。我们会使用“机场猫实测”或“第三方测试”的标签来展示由我们或受信任机构得出的性能数据；而对于品牌方提供的参数，我们一律使用“官方公开信息”进行标注，杜绝将品牌宣传自动变成本站的最终结论。</p>
+      </div>
+    </div>
+    <div class="mt-12">
+      <BottomMenuNav />
+    </div>
+  </main>
+</BaseLayout>

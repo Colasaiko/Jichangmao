@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const currentUrl = new URL(Astro.url.pathname, Astro.site).href;
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${currentUrl}#webpage`,
+      "url": currentUrl,
+      "name": "404: 页面未找到",
+      "description": "【404错误】抱歉，您访问的页面不存在或已被移除。机场猫为您提供最新最真实的国际网络加速工具测速与节点核验数据。请返回首页继续浏览，或是前往导航栏查找您所需要的网络教程与评测！"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": new URL("/", Astro.site).href
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "404: 页面未找到",
+          "item": currentUrl
+        }
+      ]
+    }
+  ]
+});
+---
+
+<BaseLayout title="404找不到页面 | Clash节点进阶教程 - 机场猫" description="您访问的页面不存在？不要紧，机场猫为您提供最新的网络诊断工具与Clash客户端进阶教程。轻松掌握节点连通性测试。点击立即返回首页获取最新高性价比专线防封锁指南！" jsonLd={jsonLd} noindex={true} keywords="返回首页获取最新防封锁指南,网络诊断工具与客户端教程,轻松掌握节点连通性测试">
+  <div class="flex flex-col items-center justify-center py-20 text-center">
+    <h1 class="text-9xl font-extrabold text-slate-200 dark:text-slate-800 tracking-widest">404</h1>
+    <div class="bg-primary-500 text-white px-2 text-sm rounded rotate-12 absolute">
+      页面未找到
+    </div>
+    <div class="mt-8">
+      <p class="text-xl text-slate-600 dark:text-slate-400 mb-8">
+        抱歉，我们找不到您要访问的页面。
+      </p>
+      <a href="/" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-semibold transition-colors">
+        返回首页
+      </a>
+    </div>
+  </div>
+</BaseLayout>

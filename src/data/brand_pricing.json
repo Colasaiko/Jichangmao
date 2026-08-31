@@ -1,0 +1,423 @@
+{
+  "weifeng": [
+    {
+      "name": "清风 (Breeze)",
+      "traffic": "100 GB",
+      "month": "¥11.00",
+      "quarter": "-",
+      "year": "¥109.00"
+    },
+    {
+      "name": "乘风 (Riding)",
+      "traffic": "200 GB",
+      "month": "¥27.00",
+      "quarter": "¥72.00",
+      "year": "¥259.00"
+    },
+    {
+      "name": "破风 (Breaking)",
+      "traffic": "500 GB",
+      "month": "¥57.00",
+      "quarter": "¥153.00",
+      "year": "¥547.00"
+    },
+    {
+      "name": "御风 (Mastery)",
+      "traffic": "1200 GB",
+      "month": "¥127.00",
+      "quarter": "¥342.00",
+      "year": "¥1219.00"
+    },
+    {
+      "name": "信风 · 不限时",
+      "traffic": "270 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "一次性 ¥200.00"
+    },
+    {
+      "name": "长风 · 不限时",
+      "traffic": "570 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "一次性 ¥370.00"
+    }
+  ],
+  "firefly": [
+    {
+      "name": "Firefly年付版",
+      "traffic": "60 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "¥96.00"
+    },
+    {
+      "name": "Firefly Lite",
+      "traffic": "150 GB",
+      "month": "¥25.00",
+      "quarter": "¥67.00",
+      "year": "¥240.00"
+    },
+    {
+      "name": "Firefly Plus",
+      "traffic": "300 GB",
+      "month": "¥ 45.00",
+      "quarter": "¥121.00",
+      "year": "¥ 432.00"
+    },
+    {
+      "name": "Firefly Blaze",
+      "traffic": "600 GB",
+      "month": "¥85.00",
+      "quarter": "¥ 229.00",
+      "year": "¥816.00"
+    },
+    {
+      "name": "Firefly Nova",
+      "traffic": "1000 GB",
+      "month": "¥ 150.00",
+      "quarter": "¥ 400.00",
+      "year": "¥"
+    },
+    {
+      "name": "Firefly不限时",
+      "traffic": "100 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "-"
+    }
+  ],
+  "shanyue": [
+    {
+      "name": "闪跃年付版",
+      "traffic": "60 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "¥96.00"
+    },
+    {
+      "name": "闪动 (Flicker)",
+      "traffic": "150 GB",
+      "month": "¥24.00",
+      "quarter": "¥64.00",
+      "year": "¥230.00"
+    },
+    {
+      "name": "飞跃 (Leap)",
+      "traffic": "300 GB",
+      "month": "¥44.00",
+      "quarter": "¥118.00",
+      "year": "¥422.00"
+    },
+    {
+      "name": "瞬移 (Teleport)",
+      "traffic": "600 GB",
+      "month": "¥84.00",
+      "quarter": "¥ 226.00",
+      "year": "¥806.00"
+    },
+    {
+      "name": "跃迁 (Warp)",
+      "traffic": "1000 GB",
+      "month": "¥134.00",
+      "quarter": "¥369.00",
+      "year": "¥ 1315.00"
+    }
+  ],
+  "wuyou": [
+    {
+      "name": "MINI链接",
+      "traffic": "40 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "¥79.00"
+    },
+    {
+      "name": "舒心链接",
+      "traffic": "100 GB",
+      "month": "¥19.00",
+      "quarter": "¥ 51.00",
+      "year": "¥182.00"
+    },
+    {
+      "name": "省心链接",
+      "traffic": "200 GB",
+      "month": "¥ 33.00",
+      "quarter": "¥89.00",
+      "year": "¥316.00"
+    },
+    {
+      "name": "随心链接",
+      "traffic": "500 GB",
+      "month": "¥77.00",
+      "quarter": "¥ 207.00",
+      "year": "¥ 739.00"
+    },
+    {
+      "name": "忘忧链接",
+      "traffic": "1000 GB",
+      "month": "¥117.00",
+      "quarter": "¥315.00",
+      "year": "¥1123.00"
+    }
+  ],
+  "lingmao": [
+    {
+      "name": "灵猫 · 年付小包",
+      "traffic": "45 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "¥85.00"
+    },
+    {
+      "name": "灵猫 · 年付Small",
+      "traffic": "150 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "¥195.00"
+    },
+    {
+      "name": "灵猫 · 年付Big",
+      "traffic": "300 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "¥295.00"
+    },
+    {
+      "name": "灵猫 · 季付Small",
+      "traffic": "150 GB",
+      "month": "-",
+      "quarter": "¥65.00",
+      "year": "-"
+    },
+    {
+      "name": "灵猫 · 季付Big",
+      "traffic": "300 GB",
+      "month": "-",
+      "quarter": "¥ 125.00",
+      "year": "-"
+    },
+    {
+      "name": "灵猫 · 月付Small",
+      "traffic": "150 GB",
+      "month": "¥25.00",
+      "quarter": "-",
+      "year": "-"
+    },
+    {
+      "name": "灵猫 · 月付Big",
+      "traffic": "300 GB",
+      "month": "¥45.00",
+      "quarter": "-",
+      "year": "-"
+    }
+  ],
+  "bitznet": [
+    {
+      "name": "BitzNet · 季付边缘访问",
+      "traffic": "80 GB",
+      "month": "-",
+      "quarter": "¥ 69.99",
+      "year": "¥244.99"
+    },
+    {
+      "name": "BitzNet · 季付核心访问",
+      "traffic": "400 GB",
+      "month": "-",
+      "quarter": "¥119.99",
+      "year": "¥429.99"
+    },
+    {
+      "name": "BitzNet ·季付深度访问",
+      "traffic": "1000 GB",
+      "month": "-",
+      "quarter": "¥199.99",
+      "year": "¥295.00"
+    }
+  ],
+  "feimao": [
+    {
+      "name": "飞猫 · 学生版",
+      "traffic": "150GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "-"
+    },
+    {
+      "name": "飞猫 · 星耀版",
+      "traffic": "150GB",
+      "month": "¥25.00",
+      "quarter": "¥67.00",
+      "year": "¥127.00"
+    },
+    {
+      "name": "飞猫 · 星环版",
+      "traffic": "300 GB",
+      "month": "¥45.00",
+      "quarter": "¥121.00",
+      "year": "¥229.00"
+    },
+    {
+      "name": "飞猫 · 银河版",
+      "traffic": "600 GB",
+      "month": "¥85.00",
+      "quarter": "¥229.00",
+      "year": "¥433.00"
+    },
+    {
+      "name": "飞猫 · 宇宙版",
+      "traffic": "1.0TB",
+      "month": "¥150.00",
+      "quarter": "¥400.00",
+      "year": "¥750.00"
+    },
+    {
+      "name": "飞猫 · 定制套餐",
+      "traffic": "500 GB",
+      "month": "¥550.00",
+      "quarter": "-",
+      "year": "-"
+    }
+  ],
+  "sogo": [
+    {
+      "name": "小包-年付版",
+      "traffic": "60 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "-"
+    },
+    {
+      "name": "小包-基础版",
+      "traffic": "150 GB",
+      "month": "¥25.00",
+      "quarter": "¥65.00",
+      "year": "¥120.00"
+    },
+    {
+      "name": "小包-优选版",
+      "traffic": "350 GB",
+      "month": "¥45.00",
+      "quarter": "¥125.00",
+      "year": "¥245.00"
+    },
+    {
+      "name": "小包-强化版",
+      "traffic": "550 GB",
+      "month": "¥80.00",
+      "quarter": "¥230.00",
+      "year": "¥450.00"
+    },
+    {
+      "name": "小包-顶配版",
+      "traffic": "1.1TB",
+      "month": "¥150.00",
+      "quarter": "¥440.00",
+      "year": "¥870.00"
+    }
+  ],
+  "muguang": [
+    {
+      "name": "暮光 · 年付轻量版",
+      "traffic": "70GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "-"
+    },
+    {
+      "name": "暮光 · 基础版",
+      "traffic": "120 GB",
+      "month": "¥20.00",
+      "quarter": "¥57.00",
+      "year": "¥103.00"
+    },
+    {
+      "name": "暮光 · 标准版",
+      "traffic": "240 GB",
+      "month": "¥40.00",
+      "quarter": "¥114.00",
+      "year": "¥216.00"
+    },
+    {
+      "name": "暮光 · 旗舰版",
+      "traffic": "700 GB",
+      "month": "¥100.00",
+      "quarter": "¥285.00",
+      "year": "¥540.00"
+    },
+    {
+      "name": "暮光 · 至尊版",
+      "traffic": "1.5 TB",
+      "month": "¥180.00",
+      "quarter": "¥513.00",
+      "year": "¥972.00"
+    },
+    {
+      "name": "独享私人定制节点",
+      "traffic": "500 GB",
+      "month": "¥600.00",
+      "quarter": "-",
+      "year": "-"
+    }
+  ],
+  "xingdao": [
+    {
+      "name": "星岛梦 · 贴心小包",
+      "traffic": "60 GB",
+      "month": "-",
+      "quarter": "-",
+      "year": "-"
+    },
+    {
+      "name": "星岛梦 · 超量150G",
+      "traffic": "150 GB",
+      "month": "¥25.00",
+      "quarter": "¥75.00",
+      "year": "¥135.00"
+    },
+    {
+      "name": "星岛梦 · 进阶300G",
+      "traffic": "300 GB",
+      "month": "¥50.00",
+      "quarter": "¥145.00",
+      "year": "¥270.00"
+    },
+    {
+      "name": "星岛梦 · 闪光500G",
+      "traffic": "500 GB",
+      "month": "¥70.00",
+      "quarter": "¥195.00",
+      "year": "¥385.00"
+    },
+    {
+      "name": "星岛梦 · 旗舰1T版",
+      "traffic": "1.0 TB",
+      "month": "¥130.00",
+      "quarter": "¥370.00",
+      "year": "¥699.00"
+    },
+    {
+      "name": "星岛梦 · 定制套餐",
+      "traffic": "500 GB",
+      "month": "¥680.00",
+      "quarter": "-",
+      "year": "-"
+    }
+  ],
+  "weitu": [],
+  "guangsu": [],
+  "u1s1": [],
+  "jilian": [],
+  "guangnian": [],
+  "yifan": [],
+  "ermao": [],
+  "edge": [],
+  "kexin": [],
+  "sujie": [],
+  "kuaili": [],
+  "flyv": [],
+  "tizi": [],
+  "wavenet": [],
+  "lingdong": [],
+  "yinren": []
+}

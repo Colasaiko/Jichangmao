@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+
+const currentUrl = new URL(Astro.url.pathname, Astro.site).href;
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${currentUrl}#webpage`,
+      "url": currentUrl,
+      "name": "隐私政策 | 机场猫",
+      "description": "【隐私政策】机场猫高度重视并承诺保护您的隐私数据与访问安全。本隐私政策详细说明了我们在为您提供测速数据与文章内容时，如何收集、使用和保护您的信息。点击了解更多数据安全保障措施。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": new URL("/", Astro.site).href
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "隐私政策",
+          "item": currentUrl
+        }
+      ]
+    }
+  ]
+});
+
+---
+
+<BaseLayout title="机场猫隐私政策与访问信息安全 | 节点测评平台 - 机场猫" description="在查阅最新进阶教程与深度测评时，您的访问安全至关重要。了解机场猫如何保护用户隐私、处理Cookie以及遵守数据安全规范。点击阅读我们最新的透明化数据安全政策！" keywords="了解如何保护用户隐私安全,处理本地Cookie数据规范,阅读最新的透明化数据安全政策">
+  <div class="max-w-3xl mx-auto prose dark:prose-invert py-12">
+    <h1>隐私政策 (Privacy Policy)</h1>
+    <p>欢迎访问机场猫。我们非常重视您的隐私保护。</p>
+    <h2>数据收集</h2>
+    <p>本网站为纯静态博客，不强制要求注册，也不主动收集用户的个人敏感信息。本站目前使用的实际统计 / 分析工具以当前部署配置为准。</p>
+    <h2>Cookies</h2>
+    <p>我们仅使用必要的 Cookies 来记录您的基本偏好（例如：深色模式切换状态）。我们不会将此类信息用于跨站追踪或广告定向。</p>
+    <h2>外部链接</h2>
+    <p>我们的文章可能包含指向其他网站的链接。我们不对这些外部网站的隐私做法或内容负责，建议您在访问时查阅其隐私声明。</p>
+    <p><em>最后更新日期：2026年8月</em></p>
+  </div>
+</BaseLayout>

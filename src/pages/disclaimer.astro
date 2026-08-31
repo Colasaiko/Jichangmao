@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+---
+<BaseLayout title="免责声明与合规使用说明 | Clash专线测速 - 机场猫" description="访问前请仔细阅读免责声明。机场猫仅提供第三方客观的专线网络深度测评与客户端进阶教程，不对任何服务商稳定性作担保。点击了解本站的信息时效性与网络合规说明！" keywords="提供第三方客观的专线测评,不对任何服务商稳定性担保,了解本站的信息时效性说明">
+  <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
+    <div class="max-w-4xl mx-auto px-4 w-full">
+      <div class="mb-12">
+        <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">免责声明与隐私政策</h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400">最后更新时间：2026年8月28日</p>
+      </div>
+      
+      <div class="prose prose-slate dark:prose-invert prose-lg max-w-none bg-white dark:bg-slate-900 p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <h3>免责声明</h3>
+        <p>1. <strong>第三方信息平台</strong>：机场猫（Jichangmao）仅作为一个独立的第三方网络信息整理与技术交流平台。我们自身<strong>不提供、不运营、不转售</strong>任何形式的虚拟专用网络（VPN）、代理节点或网络加速服务。</p>
+        <p>2. <strong>信息准确性</strong>：本站收录的所有品牌参数、套餐价格与节点信息均来源于各服务商官网的公开页面，或本站在特定时间段内的抽样测试结果。由于网络服务的特殊性，我们无法保证信息的绝对实时性与长期有效性。用户在做出购买决定前，务必以服务商当前官方页面为准。</p>
+        <p>3. <strong>风险提示</strong>：任何网络代理服务均存在不可抗力或运营中断（跑路）的风险。我们强烈建议用户在初次使用任何服务时，优先选择短周期（如月付）进行测试，切勿盲目充值大额长周期套餐。本站对用户因购买或使用第三方服务而产生的任何直接或间接损失概不负责。</p>
+        
+        <hr class="my-8 border-slate-200 dark:border-slate-800" />
+        
+        <h3>隐私政策</h3>
+        <p>1. <strong>数据收集</strong>：作为一个纯静态展示的资讯类博客，本站不要求用户注册账号，不收集用户的姓名、电子邮件、电话号码或支付信息。</p>
+        <p>2. <strong>追踪技术</strong>：本站是否使用统计或分析工具，以实际部署配置为准；如未来启用新的分析服务，我们会相应更新本政策。来了解整体的流量趋势，这些工具记录的数据通常是匿名的（如设备类型、浏览器类型、大致地理位置等），仅用于优化网站内容与排版体验。</p>
+        <p>3. <strong>外部链接</strong>：本站内容中可能包含指向其他外部网站（如各品牌服务商官网）的链接。请注意，一旦您点击这些链接离开本站，您的隐私与数据安全将受目标网站的隐私政策管辖。我们对第三方网站的内容与隐私保护措施不承担任何责任。</p>
+      </div>
+    </div>
+    <div class="mt-12">
+      <BottomMenuNav />
+    </div>
+  </main>
+</BaseLayout>

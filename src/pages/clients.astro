@@ -1,0 +1,511 @@
+---
+import BottomMenuNav from '../components/BottomMenuNav.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allClientPosts = await getCollection('clients');
+
+
+const clientApps: Record<string, {name: string, desc: string, url: string, tags: string[]}[]> = {
+  windows: [
+    { name: 'v2rayN', desc: 'Windows 上最受欢迎的经典 V2Ray 客户端，支持 Vmess、Vless、Trojan 等几乎所有主流协议，界面直观，适合所有用户。', url: 'https://github.com/2dust/v2rayN/releases', tags: ['免费开源', '小白推荐', '全协议支持'] },
+    { name: 'Clash Verge Rev', desc: '基于 Tauri 的全新 Clash 跨平台客户端，支持强大的 Meta 核心（包含 Hysteria2 等最新协议），界面极为现代化。', url: 'https://github.com/clash-verge-rev/clash-verge-rev/releases', tags: ['免费开源', '进阶首选', 'UI极佳'] },
+    { name: 'NekoRay', desc: '基于 Qt 开发的跨平台代理客户端，原生支持 Sing-box 和 Xray 双核心，性能强劲，路由规则配置灵活。', url: 'https://github.com/MatsuriDayo/nekoray/releases', tags: ['免费开源', '双核心', '高性能'] },
+    { name: 'Clash for Windows', desc: '曾经最流行的老牌 Clash 客户端，虽然原作者已停更，但其汉化版依然是许多老用户的装机必备。', url: '#', tags: ['已停更', '经典老牌'] }
+  ],
+  android: [
+    { name: 'v2rayNG', desc: '安卓平台最稳定、最经典的代理客户端，更新频繁，支持最新的 Xray 核心特性，耗电量控制优秀。', url: 'https://github.com/2dust/v2rayNG/releases', tags: ['免费开源', '装机必备', '超强稳定'] },
+    { name: 'Clash Meta for Android', desc: '手机端的 Clash 神器，直接集成强大的 Meta 内核，支持覆写规则、分应用代理，极大提升手机上网体验。', url: 'https://github.com/MetaCubeX/ClashMetaForAndroid/releases', tags: ['免费开源', '高级分流', '全能型'] },
+    { name: 'Surfboard', desc: '全面兼容 Surge 配置文件格式的安卓客户端，UI 设计在安卓代理软件中堪称一绝，操作逻辑顺滑。', url: 'https://github.com/getsurfboard/surfboard/releases', tags: ['免费', 'Surge兼容', '高颜值'] },
+    { name: 'NekoBox', desc: '安卓端的技术极客最爱！深度整合 Sing-box 核心，不仅协议支持全面，还内置了极强的自定义路由功能。', url: 'https://github.com/MatsuriDayo/NekoBoxForAndroid/releases', tags: ['免费开源', '极客专属', 'Sing-box'] },
+    { name: 'SagerNet', desc: '一个通用的 Android 代理客户端，旨在为用户提供类似 iOS 端的无缝代理体验。', url: 'https://github.com/SagerNet/SagerNet', tags: ['已归档', '通用框架'] }
+  ],
+  macos: [
+    { name: 'Clash Verge Rev', desc: '完美支持 Apple Silicon (M1/M2/M3) 芯片，不仅提供漂亮的图形界面，更具备原生的运行性能。', url: 'https://github.com/clash-verge-rev/clash-verge-rev/releases', tags: ['免费开源', '原生支持', '极速'] },
+    { name: 'V2rayU', desc: '拥有极为轻量级的 Mac 顶部菜单栏交互，一键切换节点和代理模式，是追求极简体验的绝佳选择。', url: 'https://github.com/yanue/V2rayU/releases', tags: ['免费开源', '菜单栏', '极简'] },
+    { name: 'Surge Mac', desc: 'Mac 平台上最强大的网络开发和代理工具，价格昂贵但功能无可匹敌，适合网络工程师和专业玩家。', url: 'https://nssurge.com/', tags: ['昂贵', '专业级', '抓包'] },
+    { name: 'ClashX Pro', desc: '曾经 Mac 上最流行的 Clash 客户端增强版，提供增强模式（TUN），目前已停止维护。', url: '#', tags: ['已停更', 'TUN模式'] }
+  ],
+  ios: [
+    { name: 'Shadowrocket (小火箭)', desc: '国人最熟知的 iOS 代理神仙软件，性价比极高，协议更新速度永远领先全网，小白闭眼入。', url: 'https://apps.apple.com/us/app/shadowrocket/id932747118', tags: ['付费买断', '$2.99', '性价比之王'] },
+    { name: 'Quantumult X (圈X)', desc: '不仅能科学上网，更具备强大的重写（Rewrite）、去广告和脚本执行功能，iOS 进阶用户的最终归宿。', url: 'https://apps.apple.com/us/app/quantumult-x/id1443988620', tags: ['付费买断', '$7.99', '全能神器'] },
+    { name: 'Loon', desc: 'UI 设计极为现代的 iOS 代理工具，配置简单直观，插件生态丰富，是介于小火箭与圈X之间的完美折中。', url: 'https://apps.apple.com/us/app/loon/id1373567447', tags: ['付费买断', '$5.99', '高颜值'] },
+    { name: 'Stash', desc: 'iOS 端的 Clash 完美复刻版！完全兼容电脑端 Clash 的 YAML 规则，实现多端配置无缝同步。', url: 'https://apps.apple.com/us/app/stash/id1596063349', tags: ['付费买断', '$3.99', 'Clash生态'] },
+    { name: 'Surge iOS', desc: 'iOS 端代理软件的开山鼻祖，价格极其昂贵（百美元级），但提供最底层的网络控制体验。', url: 'https://apps.apple.com/us/app/surge-5/id1442620678', tags: ['极度昂贵', '标杆级'] }
+  ],
+  linux: [
+    { name: 'Clash Verge Rev', desc: '少有的为 Linux 桌面环境（Ubuntu/Debian 等）提供完整且美观 GUI 界面的代理客户端。', url: 'https://github.com/clash-verge-rev/clash-verge-rev/releases', tags: ['免费开源', '图形界面'] },
+    { name: 'v2raya', desc: '极其轻量的 Linux 代理工具，提供 Web GUI 界面，可以在无桌面的服务器环境中轻松通过浏览器管理配置。', url: 'https://github.com/v2rayA/v2rayA/releases', tags: ['免费开源', 'Web-GUI', '服务端'] },
+    { name: 'mihomo (Clash Meta)', desc: '强大的纯命令行内核，适合部署在 Linux 旁路由或服务器上，通过编写 YAML 文件实现全自动代理。', url: 'https://github.com/MetaCubeX/mihomo/releases', tags: ['无GUI', '核心程序'] }
+  ],
+  harmony: [
+    { name: '鸿蒙与安卓的兼容性说明', desc: '【新手必看】HarmonyOS 3.0 和 4.0 依然保留了安卓兼容层，所以您可以直接下载下方的安卓应用（如 v2rayNG）。但未来的 HarmonyOS NEXT（纯血鸿蒙）将彻底不再支持安卓 APP。', url: '#', tags: ['科普提示', '必读'] },
+    { name: 'v2rayNG (鸿蒙 3.0/4.0 适用)', desc: '如果您当前使用的是非 NEXT 版本的鸿蒙系统，直接下载这款经典的安卓 V2Ray 客户端即可完美运行，完全不影响科学上网。', url: 'https://github.com/2dust/v2rayNG/releases', tags: ['免费开源', '完美兼容'] },
+    { name: 'Clash Meta for Android (鸿蒙 3.0/4.0 适用)', desc: '在当前大部分华为手机上均可直接安装运行，耗电、分流和网络接管功能与原生安卓机型体验完全一致。', url: 'https://github.com/MetaCubeX/ClashMetaForAndroid/releases', tags: ['免费开源', '直接运行'] },
+    { name: 'V2Ray NEXT (开发中)', desc: '【纯血鸿蒙专属】针对即将剥离安卓的 HarmonyOS NEXT 星河版，社区开发者正在使用 ArkUI 原生开发的专属代理客户端。', url: 'https://github.com/', tags: ['纯血鸿蒙', '原生开发', '敬请期待'] },
+    { name: 'Clash NEXT (规划中)', desc: '【纯血鸿蒙专属】基于 Clash 核心的纯血鸿蒙原生版本，目前仍在底层核心（Rust/C++）到 ArkTS 的交叉编译适配阶段。', url: 'https://github.com/', tags: ['纯血鸿蒙', '底层适配', '敬请期待'] }
+  ],
+  router: [
+    { name: 'OpenClash', desc: 'OpenWrt 路由器上最强大、最硬核的 Clash 插件，通过极其复杂的图形界面提供全屋无死角科学上网。', url: 'https://github.com/vernesong/OpenClash/releases', tags: ['免费开源', 'OpenWrt', '全屋代理'] },
+    { name: 'PassWall', desc: '老牌且极度稳定的路由器代理插件，相比 OpenClash 配置更直观，协议支持非常全面。', url: 'https://github.com/xiaorouji/openwrt-passwall/releases', tags: ['免费开源', '超高稳定', '易配置'] },
+    { name: 'ShellCrash', desc: '不需要任何图形界面的核心脚本，可以直接通过 SSH 在各种主流路由器系统上极其轻量地运行代理。', url: 'https://github.com/juewuy/ShellCrash', tags: ['免费开源', '极轻量', 'SSH操作'] },
+    { name: 'ShadowSocksR Plus+', desc: '早年间最经典的路由器插件，虽然界面较老，但因其极低的资源占用率，依然活跃在大量低配路由器中。', url: 'https://github.com/fw876/helloworld', tags: ['低配福音', '经典插件'] }
+  ],
+  tools: [
+    { name: 'Subconverter (万能订阅转换)', desc: '将普通 V2Ray/SSR 订阅链接，一键转换为 Clash/Surge/Loon 等专用格式的万能工具。', url: 'https://sub-web.netlify.app/', tags: ['在线工具', '极简操作', '格式转换'] },
+    { name: 'v2rayse (在线订阅节点抓取)', desc: '强大的在线节点解析与分享平台，帮助你测试节点的连通性、延迟以及真伪。', url: 'https://v2rayse.com/', tags: ['免费查询', '节点测试'] },
+    { name: 'Ping0.cc (IP 伪装度测试)', desc: '专业测试你的代理节点 IP 是否足够纯净，是否会被 Netflix/Disney+ 等流媒体网站无情拦截。', url: 'https://ping0.cc/', tags: ['IP测试', '防流媒体封锁'] },
+    { name: 'Speedtest.net', desc: '全球最权威的测速工具，科学上网后用来测试机场晚高峰真实带宽和延迟的最佳平台。', url: 'https://www.speedtest.net/', tags: ['测速', '全球节点'] }
+  ],
+  changelog: [],
+  guide: []
+};
+
+
+const changelogs = [
+  {
+    date: '2026-08-27',
+    title: '全站资源库大规模重构与扩充',
+    desc: '按最新行业标准对客户端大全进行了深度重构。补充了更多专业工具的下载入口，移除了失效资源，并引入了全新的动态识别与展示框架。',
+    items: [
+      { type: '🚀 新增', typeColor: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/30', title: '补充 HarmonyOS 专区', desc: '新增了针对华为鸿蒙系统（包含 3.0/4.0 兼容层及 NEXT 星河版）的专业解答与工具预告。', tags: ['HarmonyOS', '首发'] },
+      { type: '✨ 优化', typeColor: 'text-blue-600 bg-blue-50 dark:bg-blue-900/30', title: '智能下载按钮', desc: '下载按钮现已支持自动检测链接属性，智能切换「官方 GitHub」与「App Store」标识。', tags: ['UI/UX', '动态展示'] },
+      { type: '🔧 修复', typeColor: 'text-amber-600 bg-amber-50 dark:bg-amber-900/30', title: '路由器板块链接修正', desc: '修复了 ShadowSocksR Plus+ 在点击时无法正确跳转至开源仓库的漏洞。', tags: ['路由器', '链接修复'] }
+    ]
+  },
+  {
+    date: '2026-08-20',
+    title: '图文配置教程中心正式上线',
+    desc: '为了解决小白用户的上手难题，全新推出了带有详细图文标注与分步解析的配置教程中心。',
+    items: [
+      { type: '🚀 新增', typeColor: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/30', title: '四大平台教程首发', desc: '首批上线了针对 Windows、macOS、iOS 和 Android 四大主流平台的极速配置教程。', tags: ['全平台', '教程'] },
+      { type: '✨ 优化', typeColor: 'text-blue-600 bg-blue-50 dark:bg-blue-900/30', title: '桌面端配图放大', desc: '针对 Mac 和 Windows 教程，专项优化了横屏截图的最大显示宽度，字迹更加清晰。', tags: ['排版优化'] }
+    ]
+  },
+  {
+    date: '2026-07-15',
+    title: '代理核心规则重构与精简',
+    desc: '基于各大主流机场的节点特征，重新整理并下发了更加纯净的去广告与流媒体解锁分流规则。',
+    items: [
+      { type: '✨ 优化', typeColor: 'text-blue-600 bg-blue-50 dark:bg-blue-900/30', title: '全球流媒体分流升级', desc: '重构了针对 Netflix、Disney+ 等主流海外流媒体的路由分流策略，降低了 DNS 泄露风险。', tags: ['流媒体', '规则'] },
+      { type: '⚠️ 下架', typeColor: 'text-rose-600 bg-rose-50 dark:bg-rose-900/30', title: '移除失效的去广告库', desc: '剔除了一些已经超过半年未更新的国内视频网站去广告规则，提升了客户端启动加载速度。', tags: ['规则瘦身'] }
+    ]
+  },
+  {
+    date: '2026-06-02',
+    title: '针对 Hysteria2 协议的全面适配',
+    desc: '随着各大主流机场全面升级至 Hysteria2 极速协议，对客户端库中不支持该协议的老旧工具进行了归档处理。',
+    items: [
+      { type: '🚀 新增', typeColor: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/30', title: 'Meta 内核推广', desc: '全面将电脑端推荐软件从老旧的 Clash 替换为支持 Hysteria2 协议的 Clash Verge Rev。', tags: ['内核升级', 'Hysteria2'] },
+      { type: '⚠️ 下架', typeColor: 'text-rose-600 bg-rose-50 dark:bg-rose-900/30', title: '归档 Clash for Windows', desc: '鉴于 CFW 原作者已删库且不支持新协议，正式将其从首屏推荐位中移除。', tags: ['旧库归档'] },
+      { type: '✨ 调整', typeColor: 'text-purple-600 bg-purple-50 dark:bg-purple-900/30', title: 'v2rayN 版本提示', desc: '在 Windows 版 v2rayN 页面中增加了必须升级至 6.x 以上版本才能支持新协议的显著提示。', tags: ['版本要求'] }
+    ]
+  }
+];
+const sections = [
+  { id: 'windows', icon: '💻', name: 'Windows' },
+  { id: 'android', icon: '📱', name: 'Android' },
+  { id: 'ios', icon: '🍎', name: 'iOS' },
+  { id: 'macos', icon: '🍏', name: 'macOS' },
+  { id: 'linux', icon: '🐧', name: 'Linux' },
+  { id: 'harmony', icon: '🌸', name: 'HarmonyOS' },
+  { id: 'router', icon: '🔌', name: '路由器' },
+  { id: 'tools', icon: '🛠️', name: '辅助工具' },
+  { id: 'changelog', icon: '📝', name: '更新记录' },
+  { id: 'guide', icon: '📖', name: '选择指南' }
+];
+---
+
+<BaseLayout title="2026全平台客户端教程 | Clash配置 - 机场猫" description="不知道怎么安装？本页汇总全平台最新进阶教程。含Clash、v2rayN及Shadowrocket图文配置与节点导入。点击立即获取专属防封排错指南！" keywords="汇总全平台最新进阶教程安装,图文配置与节点一键导入,获取专属防封排错安全指南">
+  <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
+      
+      <!-- H1 Header -->
+      <header class="mb-12 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">客户端下载与使用指南</h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400">选择您的操作系统，获取最新版主流代理客户端及详细配置教程。</p>
+      </header>
+
+<!-- The 6 Navigation Cards (H1 frameworks) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+        
+        <!-- Left Side: 6 Navigation Cards (Shrunk) -->
+        <div class="lg:col-span-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
+            <a href="#windows" class="group bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-indigo-500/50 transition-all text-left flex items-center gap-4 h-full">
+              <div class="text-3xl group-hover:scale-110 transition-transform">💻</div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white text-base mb-0.5">Windows 代理软件</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">电脑主力常驻</p>
+              </div>
+            </a>
+            
+            <a href="#android" class="group bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-emerald-500/50 transition-all text-left flex items-center gap-4 h-full">
+              <div class="text-3xl group-hover:scale-110 transition-transform">🤖</div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white text-base mb-0.5">安卓代理软件</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">免费开源选择更多</p>
+              </div>
+            </a>
+            
+            <a href="#ios" class="group bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-blue-500/50 transition-all text-left flex items-center gap-4 h-full">
+              <div class="text-3xl group-hover:scale-110 transition-transform">📱</div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white text-base mb-0.5">iOS 代理软件</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">免费与买断应用</p>
+              </div>
+            </a>
+            
+            <a href="#macos" class="group bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-slate-500/50 transition-all text-left flex items-center gap-4 h-full">
+              <div class="text-3xl group-hover:scale-110 transition-transform">🍎</div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white text-base mb-0.5">macOS 代理软件</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">菜单栏和原生体验</p>
+              </div>
+            </a>
+            
+            <a href="#tools" class="group bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-amber-500/50 transition-all text-left flex items-center gap-4 h-full">
+              <div class="text-3xl group-hover:scale-110 transition-transform">🛠️</div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white text-base mb-0.5">订阅格式不兼容</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">再看转换工具</p>
+              </div>
+            </a>
+            
+            <a href="#changelog" class="group bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-rose-500/50 transition-all text-left flex items-center gap-4 h-full">
+              <div class="text-3xl group-hover:scale-110 transition-transform">⚠️</div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white text-base mb-0.5">怕用到停更项目</div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">先看维护状态</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right Side: Tips Box -->
+        <div class="lg:col-span-1">
+          <div class="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/40 dark:to-purple-950/40 p-6 rounded-3xl border border-indigo-100 dark:border-indigo-900/50 shadow-sm h-full flex flex-col relative overflow-hidden group">
+            <!-- Decorative background -->
+            <div class="absolute -right-6 -bottom-6 text-8xl opacity-10 dark:opacity-20 pointer-events-none group-hover:scale-110 transition-transform duration-500">💡</div>
+            
+            <h3 class="flex items-center gap-2 font-bold text-lg text-indigo-900 dark:text-indigo-300 mb-5 relative z-10">
+              <svg class="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"></path></svg>
+              下载温馨小提示
+            </h3>
+            
+            <div class="space-y-4 relative z-10 flex-grow text-sm">
+              <div class="flex items-start gap-3">
+                <span class="flex items-center justify-center w-5 h-5 rounded-full bg-indigo-200 dark:bg-indigo-800/80 text-indigo-700 dark:text-indigo-200 font-bold shrink-0 text-[10px] mt-0.5">1</span>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-xs">
+                  <strong class="text-slate-900 dark:text-white font-bold">认准官方：</strong> 请务必通过本页面提供的 GitHub 或 App Store 链接下载，防范带有木马后门的第三方修改版软件。
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="flex items-center justify-center w-5 h-5 rounded-full bg-indigo-200 dark:bg-indigo-800/80 text-indigo-700 dark:text-indigo-200 font-bold shrink-0 text-[10px] mt-0.5">2</span>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-xs">
+                  <strong class="text-slate-900 dark:text-white font-bold">先看教程：</strong> iOS 用户下载需自备海外 Apple ID；Windows 系统请确认已安装完整的运行库。详情请查看各平台首屏的图文教程。
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="flex items-center justify-center w-5 h-5 rounded-full bg-indigo-200 dark:bg-indigo-800/80 text-indigo-700 dark:text-indigo-200 font-bold shrink-0 text-[10px] mt-0.5">3</span>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-xs">
+                  <strong class="text-slate-900 dark:text-white font-bold">推荐内核：</strong> 若您的机场已支持，强烈建议优先下载支持 <span class="bg-indigo-200/50 dark:bg-indigo-900/50 px-1 rounded text-indigo-800 dark:text-indigo-300">Meta</span> 或 <span class="bg-indigo-200/50 dark:bg-indigo-900/50 px-1 rounded text-indigo-800 dark:text-indigo-300">Sing-box</span> 的客户端，以获得极致的网速体验。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Sticky Bar -->
+      <div class="sticky top-[72px] z-40 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-md py-4 mb-12 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="w-full pb-2 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-sm font-medium">
+          {sections.map(sec => (
+            <a href={`#${sec.id}`} class="px-4 py-2 rounded-full border bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-indigo-500 hover:text-indigo-600 whitespace-nowrap transition-colors shadow-sm hover:shadow-md">
+              {sec.icon} {sec.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Content Sections (H2) Dynamic Rendering -->
+      {sections.map(sec => {
+        const posts = allClientPosts.filter(p => p.data.os === sec.id).sort((a,b) => a.data.order - b.data.order);
+        const hasApps = clientApps[sec.id] && clientApps[sec.id].length > 0;
+        const hasPosts = posts.length > 0;
+        
+        return (
+          <section id={sec.id} class="scroll-mt-40 mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+              {sec.icon} {sec.name}
+            </h2>
+            
+            
+            
+            {sec.id === 'guide' ? (
+              <div class="mt-6">
+                <!-- 1. 场景快速选择 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                  {/* 新手入门 */}
+                  <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-emerald-100 dark:border-emerald-900/30 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-colors"></div>
+                    <div class="flex items-center gap-2 mb-1 relative z-10">
+                      <span class="text-2xl">🌱</span>
+                      <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">新手入门</h3>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-6 relative z-10">只需要稳定代理，不想折腾</p>
+                    <ul class="space-y-4 text-sm relative z-10">
+                      <li class="flex flex-col gap-1"><span class="text-emerald-600 dark:text-emerald-400 font-bold text-[11px] uppercase tracking-wider">Win / Mac</span> <span class="text-slate-700 dark:text-slate-300 font-medium">Clash Verge Rev 或 v2rayN</span></li>
+                      <li class="flex flex-col gap-1"><span class="text-emerald-600 dark:text-emerald-400 font-bold text-[11px] uppercase tracking-wider">iOS 苹果</span> <span class="text-slate-700 dark:text-slate-300 font-medium">Shadowrocket (首选推荐)</span></li>
+                      <li class="flex flex-col gap-1"><span class="text-emerald-600 dark:text-emerald-400 font-bold text-[11px] uppercase tracking-wider">Android 安卓</span> <span class="text-slate-700 dark:text-slate-300 font-medium">v2rayNG (极其省心)</span></li>
+                    </ul>
+                  </div>
+
+                  {/* 进阶玩家 */}
+                  <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-blue-100 dark:border-blue-900/30 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-colors"></div>
+                    <div class="flex items-center gap-2 mb-1 relative z-10">
+                      <span class="text-2xl">💎</span>
+                      <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">进阶玩家</h3>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-6 relative z-10">需要脚本、规则、深度定制</p>
+                    <ul class="space-y-4 text-sm relative z-10">
+                      <li class="flex flex-col gap-1"><span class="text-blue-600 dark:text-blue-400 font-bold text-[11px] uppercase tracking-wider">Win / Mac</span> <span class="text-slate-700 dark:text-slate-300 font-medium">Clash Verge (编写 Script)</span></li>
+                      <li class="flex flex-col gap-1"><span class="text-blue-600 dark:text-blue-400 font-bold text-[11px] uppercase tracking-wider">iOS 苹果</span> <span class="text-slate-700 dark:text-slate-300 font-medium">Quantumult X 或 Loon</span></li>
+                      <li class="flex flex-col gap-1"><span class="text-blue-600 dark:text-blue-400 font-bold text-[11px] uppercase tracking-wider">Mac (专业级)</span> <span class="text-slate-700 dark:text-slate-300 font-medium">Surge Mac</span></li>
+                    </ul>
+                  </div>
+
+                  {/* 多端全平台 */}
+                  <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 border border-purple-100 dark:border-purple-900/30 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-colors"></div>
+                    <div class="flex items-center gap-2 mb-1 relative z-10">
+                      <span class="text-2xl">🌐</span>
+                      <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">多端全平台</h3>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-6 relative z-10">追求所有设备一致的体验</p>
+                    <ul class="space-y-4 text-sm relative z-10">
+                      <li class="flex flex-col gap-1"><span class="text-purple-600 dark:text-purple-400 font-bold text-[11px] uppercase tracking-wider">Clash 生态</span> <span class="text-slate-700 dark:text-slate-300 font-medium">全端均使用 Clash 核心客户端</span></li>
+                      <li class="flex flex-col gap-1"><span class="text-purple-600 dark:text-purple-400 font-bold text-[11px] uppercase tracking-wider">Apple 生态</span> <span class="text-slate-700 dark:text-slate-300 font-medium">Mac + iOS 均使用 Surge 体系</span></li>
+                      <li class="flex flex-col gap-1"><span class="text-purple-600 dark:text-purple-400 font-bold text-[11px] uppercase tracking-wider">极简跨平台</span> <span class="text-slate-700 dark:text-slate-300 font-medium">NekoRay (电脑) + NekoBox (安卓)</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2. 矩阵表格 -->
+                <div class="bg-slate-50/80 dark:bg-slate-900/50 rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 mb-8 overflow-hidden">
+                  <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl">📅</span>
+                    <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">2026 年推荐组合 <span class="text-sm font-bold text-slate-400 dark:text-slate-500 ml-1">(按核心分类)</span></h3>
+                  </div>
+                  <div class="overflow-x-auto pb-2">
+                    <table class="w-full text-sm text-left whitespace-nowrap min-w-[600px]">
+                      <thead class="text-xs text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-700/50">
+                        <tr>
+                          <th class="pb-4 font-bold px-2">内核生态</th>
+                          <th class="pb-4 font-bold px-2">Windows</th>
+                          <th class="pb-4 font-bold px-2">macOS</th>
+                          <th class="pb-4 font-bold px-2">iOS</th>
+                          <th class="pb-4 font-bold px-2">Android</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                        <tr class="hover:bg-slate-100/50 dark:hover:bg-slate-800/30 transition-colors">
+                          <td class="py-4 px-2 flex items-center gap-2 font-bold text-slate-800 dark:text-slate-200"><div class="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></div> Mihomo (Meta)</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Clash Verge</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Clash Verge</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Stash</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Clash Meta</td>
+                        </tr>
+                        <tr class="hover:bg-slate-100/50 dark:hover:bg-slate-800/30 transition-colors">
+                          <td class="py-4 px-2 flex items-center gap-2 font-bold text-slate-800 dark:text-slate-200"><div class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></div> Sing-box</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">NekoRay</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Sing-box GUI</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Loon / Egern</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">NekoBox</td>
+                        </tr>
+                        <tr class="hover:bg-slate-100/50 dark:hover:bg-slate-800/30 transition-colors">
+                          <td class="py-4 px-2 flex items-center gap-2 font-bold text-slate-800 dark:text-slate-200"><div class="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]"></div> Xray / V2Ray</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">v2rayN</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">V2rayU</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">Shadowrocket</td>
+                          <td class="py-4 px-2 text-slate-600 dark:text-slate-400 font-medium">v2rayNG</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- 3. 底部 Tips -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="bg-rose-50/50 dark:bg-rose-950/20 p-6 rounded-2xl border border-rose-100 dark:border-rose-900/30 hover:border-rose-300 dark:hover:border-rose-700/50 transition-colors">
+                    <div class="flex items-center gap-2 mb-3 font-extrabold text-rose-800 dark:text-rose-400"><span class="text-xl">🔒</span> 安全下载声明</div>
+                    <p class="text-xs text-rose-700/80 dark:text-rose-300/80 leading-relaxed">务必使用本页提供的官方 GitHub 或 App Store 链接下载，坚决抵制任何第三方群文件或破解版，防止隐私泄露。</p>
+                  </div>
+                  <div class="bg-indigo-50/50 dark:bg-indigo-950/20 p-6 rounded-2xl border border-indigo-100 dark:border-indigo-900/30 hover:border-indigo-300 dark:hover:border-indigo-700/50 transition-colors">
+                    <div class="flex items-center gap-2 mb-3 font-extrabold text-indigo-800 dark:text-indigo-400"><span class="text-xl">📱</span> iOS 免费选择</div>
+                    <p class="text-xs text-indigo-700/80 dark:text-indigo-300/80 leading-relaxed">如果暂时不想购买小火箭，在美区 App Store 也有部分如 OneClick 等完全免费的代理应用可供临时过渡使用。</p>
+                  </div>
+                  <div class="bg-cyan-50/50 dark:bg-cyan-950/20 p-6 rounded-2xl border border-cyan-100 dark:border-cyan-900/30 hover:border-cyan-300 dark:hover:border-cyan-700/50 transition-colors">
+                    <div class="flex items-center gap-2 mb-3 font-extrabold text-cyan-800 dark:text-cyan-400"><span class="text-xl">🔄</span> 内核协议升级</div>
+                    <p class="text-xs text-cyan-700/80 dark:text-cyan-300/80 leading-relaxed">随着机场全面普及 Hysteria2，强烈建议大家逐步过渡到支持 Meta 核心的客户端（如 Clash Verge）以获得极速体验。</p>
+                  </div>
+                </div>
+              </div>
+            ) : sec.id === 'changelog' ? (
+              <div class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-10 shadow-sm mt-6">
+                <div class="relative border-l-2 border-indigo-100 dark:border-indigo-900/50 ml-2 md:ml-4 space-y-12 pb-2">
+                  {changelogs.map((log, index) => (
+                    <div class={`relative pl-6 md:pl-8 changelog-item ${index >= 2 ? 'changelog-collapsible hidden opacity-0 translate-y-4 transition-all duration-500 ease-out' : ''}`}>
+                      <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-slate-950 border-4 border-indigo-500 shadow-sm"></div>
+                      
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
+                        <time class="text-sm font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 px-3 py-1 rounded-full border border-indigo-100 dark:border-indigo-800/50">{log.date}</time>
+                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">{log.title}</h3>
+                      </div>
+                      
+                      <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm max-w-4xl leading-relaxed">{log.desc}</p>
+                      
+                      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                        {log.items.map(item => (
+                          <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition-all flex flex-col h-full group">
+                            <div class="flex justify-between items-start mb-4">
+                              <span class={`text-xs font-bold px-2 py-1 rounded-md border border-white/10 shadow-sm ${item.typeColor}`}>
+                                {item.type}
+                              </span>
+                              <div class="flex gap-1 flex-wrap justify-end">
+                                {item.tags.map(t => (
+                                  <span class="text-[10px] text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-1.5 py-0.5 rounded">{t}</span>
+                                ))}
+                              </div>
+                            </div>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-2">{item.title}</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-1">{item.desc}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {changelogs.length > 2 && (
+                  <div class="mt-12 text-center changelog-more-container">
+                    <button id="toggle-changelogs" class="inline-flex items-center gap-2 px-8 py-3 bg-slate-50 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-indigo-900/40 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-bold rounded-full transition-all border border-slate-200 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-800/50 shadow-sm hover:shadow">
+                      <span id="toggle-changelogs-text">查看更早的历史记录</span>
+                      <svg id="toggle-changelogs-icon" class="w-4 h-4 animate-bounce mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                  </div>
+                )}
+              </div>
+            ) : (hasApps || hasPosts) ? (
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                
+                {/* 1. Tutorials (Posts) */}
+                {posts.map(post => (
+                  <a href={`/clients/${post.slug}/`} class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm hover:shadow-md hover:border-indigo-500/50 transition-all flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-3">
+                      <h4 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-1">{post.data.title}</h4>
+                      <div class="flex gap-1 flex-wrap justify-end">
+                        <span class="bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-800/50 px-2 py-0.5 rounded text-[10px] font-bold">图文教程</span>
+                      </div>
+                    </div>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-5 flex-grow">
+                      包含最新的下载安装指引与详细的图文配置步骤，更新于 {new Date(post.data.updatedDate).toLocaleDateString('zh-CN')}。
+                    </p>
+                    <div class="mt-auto w-full inline-flex justify-center items-center gap-2 bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-900/30 dark:hover:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 py-2.5 px-4 rounded-xl font-bold text-sm transition-colors border border-indigo-100 dark:border-indigo-800/50">
+                      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                      阅读详细教程
+                    </div>
+                  </a>
+                ))}
+
+                {/* 2. Official Apps (Direct Links) */}
+                {hasApps && clientApps[sec.id].map(app => (
+                  <a href={app.url} target="_blank" rel="noopener noreferrer" class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm hover:shadow-md hover:border-slate-400/50 transition-all flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-3">
+                      <h4 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors">{app.name}</h4>
+                      <div class="flex gap-1 flex-wrap justify-end">
+                        {app.tags.map(tag => (
+                          <span class="bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-200 dark:border-slate-700">{tag}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-5 flex-grow">{app.desc}</p>
+                    <div class="mt-auto w-full inline-flex justify-center items-center gap-2 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 py-2.5 px-4 rounded-xl font-bold text-sm transition-colors border border-slate-200 dark:border-slate-700">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                      {app.url.includes('github.com') ? '官方 GitHub' : (app.url.includes('apple.com') ? 'App Store' : '官方主页')}
+                    </div>
+                  </a>
+                ))}
+
+              </div>
+            ) : (
+              <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm min-h-[150px] flex items-center justify-center text-slate-400">
+                {sec.name} 资源及教程整理中...
+              </div>
+            )}
+          </section>
+        );
+      })}
+
+
+      {/* 底部探索更多资源 */}
+          </div>
+<BottomMenuNav />
+  </main>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('toggle-changelogs');
+    const textSpan = document.getElementById('toggle-changelogs-text');
+    const iconSvg = document.getElementById('toggle-changelogs-icon') as HTMLElement | null; //('toggle-changelogs-icon');
+    
+    let isExpanded = false;
+    
+    if (btn) {
+      btn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        const collapsibleItems = document.querySelectorAll('.changelog-collapsible');
+        
+        if (isExpanded) {
+          // Expand
+          if(textSpan) textSpan.textContent = '收起历史记录';
+          iconSvg?.classList.remove('mt-1');
+          iconSvg?.classList.add('rotate-180', 'mb-1');
+          
+          collapsibleItems.forEach((el, index) => {
+            el.classList.remove('hidden');
+            // Staggered fade in animation
+            setTimeout(() => {
+              el.classList.remove('opacity-0', 'translate-y-4');
+            }, 50 * index);
+          });
+        } else {
+          // Collapse
+          if(textSpan) textSpan.textContent = '查看更早的历史记录';
+          iconSvg?.classList.remove('rotate-180', 'mb-1');
+          iconSvg?.classList.add('mt-1');
+          
+          // Instantly add styles back
+          collapsibleItems.forEach((el) => {
+            el.classList.add('opacity-0', 'translate-y-4');
+            // wait for transition to finish before hiding
+            setTimeout(() => {
+              el.classList.add('hidden');
+            }, 300);
+          });
+          
+          // Optionally scroll back up slightly so the user doesn't get lost
+          const changelogSection = document.getElementById('changelog');
+          if (changelogSection) {
+            changelogSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    }
+  });
+</script>
+</BaseLayout>

@@ -1,0 +1,76 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
+import { readingTime } from '../../utils/readingTime';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const regularPosts = posts.filter(post => !(post.data.category === '品牌介绍' || post.data.category === '机场测评' || post.data.title.includes('测评')));
+  return regularPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+const post = Astro.props;
+const { Content, headings } = await post.render();
+const readTime = readingTime(post.body);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "image": post.data.coverImage ? (post.data.coverImage.startsWith('http') ? post.data.coverImage : `https://jichangmao.com${post.data.coverImage}`) : "https://jichangmao.com/og/og-article-default.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": post.data.author || "机场猫"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "机场猫",
+    "url": "https://jichangmao.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jichangmao.com/logo.jpg"
+    }
+  },
+  "datePublished": post.data.pubDate ? new Date(post.data.pubDate).toISOString() : new Date().toISOString(),
+  "dateModified": post.data.updatedDate ? new Date(post.data.updatedDate).toISOString() : (post.data.pubDate ? new Date(post.data.pubDate).toISOString() : new Date().toISOString()),
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://jichangmao.com/blog/${post.slug}/`
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://jichangmao.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "博客与教程",
+      "item": "https://jichangmao.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": post.data.title,
+      "item": `https://jichangmao.com/blog/${post.slug}/`
+    }
+  ]
+};
+
+const jsonLd = JSON.stringify([articleSchema, breadcrumbSchema]);
+---
+
+<BlogPostLayout {...post.data} readTime={readTime} headings={headings} jsonLd={jsonLd}>
+  <Content />
+</BlogPostLayout>
