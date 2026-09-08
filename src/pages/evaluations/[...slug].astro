@@ -32,7 +32,7 @@ const articleSchema = {
     "url": "https://jichangmao.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jichangmao.com/logo.jpg"
+      "url": "https://jichangmao.com/logo-compressed.jpg"
     }
   },
   "datePublished": post.data.pubDate ? new Date(post.data.pubDate).toISOString() : new Date().toISOString(),
@@ -69,23 +69,8 @@ const breadcrumbSchema = {
 };
 
 
-const brandName = post.data.title.split(' ')[0].split('(')[0];
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": brandName,
-  "description": post.data.description,
-  "image": post.data.coverImage ? (post.data.coverImage.startsWith('http') ? post.data.coverImage : `https://jichangmao.com${post.data.coverImage}`) : "https://jichangmao.com/og/og-article-default.jpg",
-  "review": {
-    "@type": "Review",
-    "author": {
-      "@type": "Organization",
-      "name": "机场猫"
-    }
-  }
-};
 
-const jsonLd = JSON.stringify([articleSchema, breadcrumbSchema, productSchema]);
+const jsonLd = JSON.stringify([articleSchema, breadcrumbSchema]);
 
 ---
 

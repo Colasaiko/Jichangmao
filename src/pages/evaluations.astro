@@ -8,10 +8,10 @@ const reviews = allPosts
   .filter(post => post.data.category === '品牌介绍' || post.data.category === '机场测评' || post.data.title.includes('测评'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const title = "深度机场评测与晚高峰测速报告 | 专线节点库 - 机场猫";
-const description = "买前必看！机场猫为你呈现最硬核的单体机场深度测评。所有报告均包含晚高峰物理机测速、流媒体解锁实况与真实的隐私政策分析。帮你找到真正不限速、不掉线的顶级网络服务。";
-const keywords = "汇集主流服务商最新深度测评,晚高峰真实节点表现价格横评,流媒体解锁状态完美兼容";
-const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"深度机场评测与晚高峰测速报告 | 专线节点库 - 机场猫","description":"买前必看！机场猫为你呈现最硬核的单体机场深度测评。所有报告均包含晚高峰物理机测速、流媒体解锁实况与真实的隐私政策分析。帮你找到真正不限速、不掉线的顶级网络服务。","url":"https://jichangmao.com/evaluations/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
+const title = "机场深度评测：单体机场晚高峰测速与线路分析 - 机场猫";
+const description = "机场猫专线节点测评库。针对各家服务商进行晚高峰真实测速、流媒体解锁实况记录与隐私政策分析，为您展现最客观的单体机场网络表现报告。";
+const keywords = "机场评测,晚高峰测速,流媒体解锁,专线机场,线路分析";
+const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":description,"url":"https://jichangmao.com/evaluations/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
 
 // 1. 根据《机场品牌清单.txt》真实特性定义的 7 大专业分类
 const categoryDefs = [

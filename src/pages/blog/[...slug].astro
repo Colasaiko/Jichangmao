@@ -32,7 +32,7 @@ const articleSchema = {
     "url": "https://jichangmao.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jichangmao.com/logo.jpg"
+      "url": "https://jichangmao.com/logo-compressed.jpg"
     }
   },
   "datePublished": post.data.pubDate ? new Date(post.data.pubDate).toISOString() : new Date().toISOString(),
@@ -56,8 +56,8 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "博客与教程",
-      "item": "https://jichangmao.com/blog/"
+      "name": "知识指南",
+      "item": "https://jichangmao.com/guides/"
     },
     {
       "@type": "ListItem",

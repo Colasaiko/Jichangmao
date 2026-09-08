@@ -6,7 +6,9 @@ import { getCollection } from 'astro:content';
 const title = "2026机场推荐排行榜：全面客观的机场天梯榜 - 机场猫";
 const description = "2026最新机场推荐排行榜。机场猫按稳定性、速度、晚高峰表现评选出全面客观的机场天梯榜，帮您快速找到排名前列的优质服务商。";
 const keywords = "机场推荐排行榜,2026机场排行榜,2026机场推荐排行榜,机场排行榜,机场天梯榜,2026机场天梯榜";
-const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"2026机场推荐排行榜：全面客观的机场天梯榜 - 机场猫","description":"2026最新机场推荐排行榜。机场猫按稳定性、速度、晚高峰表现评选出全面客观的机场天梯榜，帮您快速找到排名前列的优质服务商。","url":"https://jichangmao.com/reviews/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
+
+
+
 
 // Fetch posts
 const posts = (await getCollection('blog'))
@@ -393,6 +395,26 @@ const rawBrands = [
     "protocol": "SS"
   }
 ];
+
+const itemListElements = rawBrands.map((b, index) => ({
+  "@type": "ListItem",
+  "position": index + 1,
+  "name": b.name,
+  "url": `https://jichangmao.com/evaluations/review-${b.id}/`
+}));
+
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": title,
+  "description": description,
+  "url": "https://jichangmao.com/reviews/",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": itemListElements
+  }
+});
+
 const categoryMap: Record<string, string> = {"jilian":"advanced","kuajie":"download","shanyue":"4k","wuyou":"4k","kuaili":"social","guangnian":"daily","guangsu":"daily","muguang":"daily","edge":"daily","sujie":"social","weitu":"social","yifan":"daily","ermao":"daily","kexin":"social","wavenet":"streaming","lingdong":"streaming","sogo":"streaming","tizi":"streaming","yinren":"streaming","feimao":"gaming","lingmao":"gaming","xingdao":"gaming","bitznet":"business","firefly":"business","flyv":"business","u1s1":"beginner","weifeng":"beginner"};
 
 const top7Ids = rawBrands.slice(0, 7).map(b => b.id);
