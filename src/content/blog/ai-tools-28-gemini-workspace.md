@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Gemini在Google Workspace中的使用：Gmail和Docs整合 - 机场猫"
+description: "介绍 Google Gemini 与 Gmail、Google Docs、Sheets 的深度整合功能：在 Google 生产力套件内直接使用 AI 辅助写作、摘要和数据分析。"
+keywords: "Gemini Google Workspace,Gemini Gmail,Gemini Docs,Google AI办公"
 pubDate: 2026-03-30
 author: "机场猫编辑部"
 category: "ai_tools"

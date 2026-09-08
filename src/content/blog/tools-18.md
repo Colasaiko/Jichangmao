@@ -1,7 +1,7 @@
 ---
-title: "tools 18：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 18的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 18,tools 18教程,机场猫"
+title: "Tailscale Exit Node配置：借用远程设备的出口网络 - 机场猫"
+description: "介绍 Tailscale Exit Node 的配置方法：在公共 Wi-Fi 或需要借用家中宽带 IP 时，如何开启出口节点将所有流量加密转发到指定设备再访问公网。"
+keywords: "Tailscale Exit Node,Tailscale出口节点,Tailscale配置,VPN出口"
 pubDate: 2026-08-10
 author: "机场猫编辑部"
 category: "performance"

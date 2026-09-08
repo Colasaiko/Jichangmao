@@ -1,7 +1,7 @@
 ---
-title: "adv：2026最新教程与指南 - 机场猫"
-description: "全面介绍adv的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "adv,adv教程,机场猫"
+title: "数据中心IP是什么？为什么机场IP会被平台封锁 - 机场猫"
+description: "解析数据中心 IP（IDC IP）的特征：ASN 明确归属云服务商，流媒体和 AI 平台为何容易识别并封锁这类 IP，以及原生住宅 IP 的价值所在。"
+keywords: "数据中心IP,IDC IP,机场IP被封,ChatGPT封IP"
 pubDate: 2026-01-11
 author: "机场猫编辑部"
 category: "starter"

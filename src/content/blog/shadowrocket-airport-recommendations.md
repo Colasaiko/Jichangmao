@@ -59,6 +59,52 @@ Shadowrocket 仅适用于 **iOS / iPadOS**。如果你还有 Mac，可以使用�
 
 以下机场提供与 Shadowrocket 完全兼容的订阅，可直接一键导入：
 
+
+以下机场提供 SS / Trojan / Hysteria2 协议节点，可直接在 Shadowrocket 中导入使用：
+
+### 1. 微风网络
+- **线路类型**：全IPLC、不限设备
+- **月付起步**：¥11.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，SS 协议，Shadowrocket 直接导入，不限设备数，支持香港/日本/美国节点
+- **官网注册**：[微风网络 官网（含优惠链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
+
+### 2. 灵猫
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，原生 IP 解锁 Netflix/Disney+/ChatGPT，Shadowrocket 兼容
+- **官网注册**：[灵猫 官网（含优惠链接）](https://downwww.civetnettttt.lol/#/?code=2Ai6V6Ub)
+
+### 3. 无忧
+- **线路类型**：纯IPLC、4K秒开
+- **月付起步**：¥19.00
+- **协议支持**：SS
+- **为什么适合**：纯IPLC专线，稳定全球 AI 支持，4K 流畅观影，Shadowrocket 兼容
+- **官网注册**：[无忧 官网（含优惠链接）](https://letter.worryfreettt.homes/#/?code=ydtFVWqU)
+
+### 4. 闪跃
+- **线路类型**：原生IP、全IPLC
+- **月付起步**：¥24.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，原生 IP 解锁流媒体，解锁 ChatGPT/TikTok，SS 协议
+- **官网注册**：[闪跃 官网（含优惠链接）](https://rfv.flashleapxx.xyz/#/?code=hCwClNUi)
+
+### 5. 唯兔云
+- **线路类型**：IPLC、vless
+- **月付起步**：¥19.90
+- **协议支持**：VLESS
+- **为什么适合**：IPLC + VLESS 协议，Shadowrocket 支持 VLESS，不限速不限设备
+- **官网注册**：[唯兔云 官网（含优惠链接）](https://jifdsf.v2saat.homes/#/?code=bGS5G7xn)
+
+### 6. 飞猫云
+- **线路类型**：2.5Gbps、全IPLC
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，最高 2.5Gbps，原生 IP，Shadowrocket 兼容，全球节点覆盖
+- **官网注册**：[飞猫云 官网（含优惠链接）](https://dfg12cd.feimaogfttt1.sbs/#/?code=UUcH5yh9)
+
+
 - **查看完整排行榜 →** [2026机场推荐排行榜](/reviews/)
 
 筛选标准：

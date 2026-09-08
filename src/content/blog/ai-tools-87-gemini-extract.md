@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Gemini信息提取技巧：从长文档中快速提炼关键内容 - 机场猫"
+description: "介绍如何借助 Google Gemini 处理研究报告、会议记录、法律合同等长篇文档，快速提炼摘要、提取关键信息的实用 Prompt 技巧。"
+keywords: "Gemini信息提取,Gemini长文档处理,Gemini提炼摘要,AI文档处理"
 pubDate: 2026-05-02
 author: "机场猫编辑部"
 category: "ai_tools"

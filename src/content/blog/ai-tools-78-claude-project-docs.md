@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude整理项目文档：用AI快速消化烂摊子项目 - 机场猫"
+description: "介绍如何用 Claude 处理接手新项目时的大量文档：上传 PRD、会议记录、代码片段，让 AI 梳理项目背景、识别关键决策和潜在问题，快速建立项目认知。"
+keywords: "Claude整理项目文档,Claude PRD分析,Claude项目接手,AI项目文档"
 pubDate: 2026-04-27
 author: "机场猫编辑部"
 category: "ai_tools"

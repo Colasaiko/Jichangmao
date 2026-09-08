@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Grok提示词写法：如何发挥Grok的幽默与反叛特性 - 机场猫"
+description: "专为 Grok 定制的 Prompt 写作指南：利用 Grok 的幽默感和较少内容限制的特点，针对不同场景编写能够激发最佳回答的提示词技巧。"
+keywords: "Grok提示词,Grok Prompt写法,Grok使用技巧,xAI Grok提问"
 pubDate: 2026-06-10
 author: "机场猫编辑部"
 category: "ai_official"

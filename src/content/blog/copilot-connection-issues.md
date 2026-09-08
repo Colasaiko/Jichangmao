@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能（问题）解析：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能（问题）解析的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能（问题）解析,一、这个功能（问题）解析教程,机场猫"
+title: "Copilot连接失败怎么办？微软Copilot访问问题排查 - 机场猫"
+description: "系统排查 Microsoft Copilot 无法连接的常见原因：代理设置问题、地区访问限制、账号状态异常，以及恢复正常使用的解决步骤。"
+keywords: "Copilot连接失败,Copilot无法访问,Copilot报错,Copilot网络问题"
 pubDate: 2026-06-01
 author: "机场猫编辑部"
 category: "ai_official"

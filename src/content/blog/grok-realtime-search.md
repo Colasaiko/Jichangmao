@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Grok实时搜索功能：直接访问X平台最新信息 - 机场猫"
+description: "介绍 Grok 实时搜索 X（Twitter）平台的独特能力：如何使用 Grok 获取最新热点资讯、追踪实时事件，以及 Grok 搜索与 Perplexity 等工具的适用场景对比。"
+keywords: "Grok实时搜索,Grok搜索Twitter,Grok实时信息,xAI Grok搜索"
 pubDate: 2026-06-11
 author: "机场猫编辑部"
 category: "ai_official"

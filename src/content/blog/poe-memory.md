@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Poe记忆功能：让AI记住偏好 vs 无痕对话模式 - 机场猫"
+description: "介绍 Poe 的 Memory（记忆）功能与无痕对话模式：如何让 AI 记住个人偏好避免重复说明，以及何时切换到隐私保护的无痕对话模式。"
+keywords: "Poe记忆功能,Poe Memory,Poe无痕对话,AI记忆功能"
 pubDate: 2026-07-17
 author: "机场猫编辑部"
 category: "ai_official"

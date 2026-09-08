@@ -1,7 +1,7 @@
 ---
-title: "tools：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools,tools教程,机场猫"
+title: "MTR路由追踪工具使用指南：诊断网络路径问题 - 机场猫"
+description: "介绍 MTR（My Traceroute）工具的使用方法：结合 traceroute 和 ping，逐跳追踪网络路径，找到延迟飙升或丢包集中在哪一个网络节点。"
+keywords: "MTR工具,路由追踪,traceroute,网络路径诊断"
 pubDate: 2026-08-11
 author: "机场猫编辑部"
 category: "starter"

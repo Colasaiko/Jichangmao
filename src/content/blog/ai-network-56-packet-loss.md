@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "什么是网络丢包？丢包如何影响AI工具使用体验 - 机场猫"
+description: "解析网络丢包（Packet Loss）的原理和对 ChatGPT 等 AI 工具的影响：为何丢包会导致 AI 回答中断或加载失败，以及如何通过节点选择降低丢包率。"
+keywords: "网络丢包影响,丢包AI工具,ChatGPT丢包,代理丢包"
 pubDate: 2026-03-02
 author: "机场猫编辑部"
 category: "ai_network"

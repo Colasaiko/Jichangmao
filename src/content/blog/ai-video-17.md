@@ -1,7 +1,7 @@
 ---
-title: "ai video：2026最新教程与指南 - 机场猫"
-description: "全面介绍ai video的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "ai video,ai video教程,机场猫"
+title: "AI视频制作提示词（Prompt）写法：精准描述生成效果 - 机场猫"
+description: "专门讲解 AI 视频生成 Prompt 的写作技巧：如何描述场景、镜头运动、光线氛围和人物动作，让视频生成结果更接近预期。"
+keywords: "AI视频Prompt,视频生成提示词,Runway Prompt,AI视频描述词"
 pubDate: 2026-05-07
 category: "ai_media"
 difficulty: "初级"

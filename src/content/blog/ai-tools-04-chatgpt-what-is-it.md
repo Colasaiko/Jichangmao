@@ -1,7 +1,7 @@
 ---
-title: "ChatGPT：2026最新教程与指南 - 机场猫"
-description: "全面介绍ChatGPT的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "ChatGPT,ChatGPT教程,机场猫"
+title: "ChatGPT是什么？零基础理解AI对话工具 - 机场猫"
+description: "用最通俗的语言解释 ChatGPT 是什么：阅读了海量文章的虚拟助手，可以回答问题、写作、编程，以及与普通搜索引擎的本质区别。"
+keywords: "ChatGPT是什么,ChatGPT介绍,AI对话助手,ChatGPT功能"
 pubDate: 2026-03-16
 author: "机场猫编辑部"
 category: "ai_tools"

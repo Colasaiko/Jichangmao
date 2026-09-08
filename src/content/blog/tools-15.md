@@ -1,7 +1,7 @@
 ---
-title: "tools 15：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 15的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 15,tools 15教程,机场猫"
+title: "WireGuard vs OpenVPN：两种VPN协议哪个更好 - 机场猫"
+description: "深度对比 WireGuard 与 OpenVPN 在性能、配置复杂度、安全性和网络穿透力上的差异，帮助你根据实际使用场景（远程办公/家庭/企业）做出最合适的选择。"
+keywords: "WireGuard vs OpenVPN,WireGuard对比,VPN协议对比,WireGuard教程"
 pubDate: 2026-08-09
 author: "机场猫编辑部"
 category: "starter"

@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude输出格式控制：让AI按你要求的结构输出 - 机场猫"
+description: "介绍如何通过 Prompt 控制 Claude 的输出格式：指定 Markdown 结构、表格、代码块、列表等，以及 Claude 在格式控制方面与 ChatGPT 的差异。"
+keywords: "Claude输出格式,Claude格式控制,Claude Markdown,Claude结构化输出"
 pubDate: 2026-03-22
 author: "机场猫编辑部"
 category: "ai_tools"

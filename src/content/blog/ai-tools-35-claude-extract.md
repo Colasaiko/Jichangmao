@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude信息提取技巧：从文档中精准抽取结构化数据 - 机场猫"
+description: "介绍使用 Claude 从长篇文档、合同、报告中提取关键信息的技巧：如何通过结构化 Prompt 指定提取维度，让 AI 直接输出整理好的数据。"
+keywords: "Claude信息提取,Claude提取数据,Claude结构化提取,AI文档提取"
 pubDate: 2026-04-03
 author: "机场猫编辑部"
 category: "ai_tools"

@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Poe提示词技巧：针对不同AI模型的高效提问方法 - 机场猫"
+description: "专为 Poe 多模型平台整理的 Prompt 写作指南：针对 ChatGPT、Claude、Gemini 等不同模型的特点，如何调整提问策略获得最佳回答质量。"
+keywords: "Poe提示词,Poe Prompt写法,Poe使用技巧,AI提示词技巧"
 pubDate: 2026-07-18
 author: "机场猫编辑部"
 category: "ai_official"

@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT第一次对话怎么开始？新手首次使用完整指南 - 机场猫"
+description: "面向完全新手：打开 ChatGPT 之后如何开始第一次对话，如何提出好问题，常见的新手误区，以及几个立即上手的实用场景示例。"
+keywords: "ChatGPT第一次对话,ChatGPT新手使用,ChatGPT怎么问问题,ChatGPT入门"
 pubDate: 2026-03-17
 author: "机场猫编辑部"
 category: "ai_tools"

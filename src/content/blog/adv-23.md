@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "IP段和CIDR子网是什么？防火墙封锁整段IP的原理 - 机场猫"
+description: "解析 IP 段（CIDR 子网）的划分逻辑，以及为何防火墙/平台会'拉黑整个 IP 段'——C 段被封、整个机房被屏蔽的底层技术原因。"
+keywords: "IP段,CIDR,子网掩码,IP段被封"
 pubDate: 2026-01-13
 author: "机场猫编辑部"
 category: "troubleshoot"

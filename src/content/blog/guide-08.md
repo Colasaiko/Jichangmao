@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "什么是分流规则？Clash规则集如何配置 - 机场猫"
+description: "解释 Clash 分流规则的工作逻辑：哪些域名/IP走代理、哪些直连，如何使用现成规则集（Rule Provider），以及自定义分流规则的基本方法。"
+keywords: "分流规则,Clash规则,规则集,分流配置"
 pubDate: 2026-06-16
 author: "机场猫编辑部"
 category: "streaming"

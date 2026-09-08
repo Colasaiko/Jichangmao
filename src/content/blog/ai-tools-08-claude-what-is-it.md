@@ -1,7 +1,7 @@
 ---
-title: "Claude：2026最新教程与指南 - 机场猫"
-description: "全面介绍Claude的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "Claude,Claude教程,机场猫"
+title: "Claude AI vs ChatGPT：两者有什么不同 - 机场猫"
+description: "对比 Claude AI 与 ChatGPT 的核心差异：回答风格、内容限制、IP 访问要求、长文处理能力，帮助用户选择更适合自己工作场景的 AI 工具。"
+keywords: "Claude vs ChatGPT,Claude AI对比,Claude ChatGPT区别,AI工具对比"
 pubDate: 2026-03-18
 author: "机场猫编辑部"
 category: "ai_tools"

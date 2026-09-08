@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "代理DNS污染怎么解决？DNS泄漏与防护方法 - 机场猫"
+description: "解析 DNS 污染的成因与危害，以及如何在代理环境下正确设置 DNS（DoH/DoT）防止真实 IP 通过 DNS 泄漏，保障访问安全和隐私。"
+keywords: "DNS污染,DNS泄漏,DNS防护,代理DNS设置"
 pubDate: 2026-06-16
 author: "机场猫编辑部"
 category: "performance"

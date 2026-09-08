@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Microsoft Copilot是什么？微软AI助手全面介绍 - 机场猫"
+description: "全面介绍 Microsoft Copilot 的定位与功能：基于 GPT-4 的 AI 助手，深度整合微软生态系统，涵盖撰写文档、总结网页、生成代码、AI 绘图等场景。"
+keywords: "Microsoft Copilot是什么,Copilot介绍,微软AI助手,Copilot功能"
 pubDate: 2026-06-06
 author: "机场猫编辑部"
 category: "ai_official"

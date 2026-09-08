@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Poe自定义Bot教程：无代码创建专属AI机器人 - 机场猫"
+description: "手把手介绍在 Poe 平台上不需要编写代码，通过设置提示词（Prompt）和上传知识库，创建属于自己的个性化 AI 机器人（Bot）的完整步骤。"
+keywords: "Poe创建Bot,Poe自定义AI,Poe机器人,Poe Bot教程"
 pubDate: 2026-07-15
 author: "机场猫编辑部"
 category: "ai_official"

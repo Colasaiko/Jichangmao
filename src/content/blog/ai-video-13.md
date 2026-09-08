@@ -1,7 +1,7 @@
 ---
-title: "ai video：2026最新教程与指南 - 机场猫"
-description: "全面介绍ai video的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "ai video,ai video教程,机场猫"
+title: "AI视频生成工具对比：Runway/Sora/Kling哪个好 - 机场猫"
+description: "对比主流 AI 视频生成工具（Runway、Sora、Kling 等）的功能特点、生成质量、价格与使用门槛，帮助创作者选择最适合自己需求的平台。"
+keywords: "AI视频生成工具,Runway AI,Sora,Kling AI视频"
 pubDate: 2026-05-04
 category: "ai_media"
 difficulty: "困难"

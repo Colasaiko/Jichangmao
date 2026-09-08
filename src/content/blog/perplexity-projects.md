@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Perplexity Projects功能：创建专属AI知识库工作空间 - 机场猫"
+description: "介绍 Perplexity Projects（项目空间）功能：为不同任务创建专属工作区，设置自定义 AI 指令并上传参考文件，构建聚焦特定领域的 AI 知识库。"
+keywords: "Perplexity Projects,Perplexity项目空间,Perplexity知识库,AI工作空间"
 pubDate: 2026-07-12
 author: "机场猫编辑部"
 category: "ai_official"

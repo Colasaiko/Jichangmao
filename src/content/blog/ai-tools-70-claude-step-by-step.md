@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude分步推理：让AI展示思考过程减少逻辑错误 - 机场猫"
+description: "介绍让 Claude 分步骤展示推理过程的方法：通过'Think Step by Step'提示让 Claude 进行深思熟虑的推导，减少直觉性错误，尤其适用于逻辑和数学题。"
+keywords: "Claude分步推理,Claude逻辑推理,Claude Think Step by Step,AI推理技巧"
 pubDate: 2026-04-22
 author: "机场猫编辑部"
 category: "ai_tools"

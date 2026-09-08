@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude追问技巧：如何引导Claude深入回答 - 机场猫"
+description: "介绍与 Claude 进行多轮对话追问的技巧：如何基于上一条回复提出更有针对性的问题，引导 Claude 不断深入、完善回答，提升对话质量。"
+keywords: "Claude追问技巧,Claude多轮对话,Claude引导回答,Claude使用技巧"
 pubDate: 2026-03-21
 author: "机场猫编辑部"
 category: "ai_tools"

@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Gemini多轮对话技巧：引导Gemini深入展开讨论 - 机场猫"
+description: "介绍与 Google Gemini 进行高质量多轮对话的技巧：如何在上一条回复基础上追问，引导 Gemini 更详细、更深入地探讨特定话题。"
+keywords: "Gemini追问技巧,Gemini多轮对话,Gemini引导,Google AI使用技巧"
 pubDate: 2026-03-23
 author: "机场猫编辑部"
 category: "ai_tools"

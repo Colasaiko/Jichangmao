@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT读取PDF：分析长篇文档和报告的技巧 - 机场猫"
+description: "专门介绍用 ChatGPT 处理 PDF 文档的方法：如何上传 PDF、提出正确的问题引导 AI 提炼关键信息，以及 ChatGPT 在长文档处理上的能力上限和技巧。"
+keywords: "ChatGPT读PDF,ChatGPT分析PDF,ChatGPT文档,PDF分析AI"
 pubDate: 2026-03-24
 author: "机场猫编辑部"
 category: "ai_tools"

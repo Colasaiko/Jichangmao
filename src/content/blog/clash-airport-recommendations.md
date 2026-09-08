@@ -54,6 +54,52 @@ Clash 使用 **YAML 格式的订阅文件**，支持以下协议：
 
 机场猫整理的以下机场均提供正式 Clash 订阅链接，可直接一键导入：
 
+
+以下机场均提供标准 Clash YAML 订阅链接，支持 Clash Verge Rev / Clash Nyanpasu 一键导入：
+
+### 1. 微风网络
+- **线路类型**：全IPLC、不限设备
+- **月付起步**：¥11.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，SS 协议，Clash 订阅兼容性极佳，不限设备数，晚高峰稳定
+- **官网注册**：[微风网络 官网（含优惠链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
+
+### 2. firefly
+- **线路类型**：IPLC、不限速
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：IPLC 专线，不限速，Clash 订阅兼容，节点数量丰富
+- **官网注册**：[firefly 官网（含优惠链接）](https://fly.fireflytttt.xyz/#/?code=mcYQUZxG)
+
+### 3. 跨界云
+- **线路类型**：IPLC、x1倍率
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么适合**：IPLC 高端线路，所有节点 x1 倍率，Clash/Shadowrocket 全兼容，不限设备
+- **官网注册**：[跨界云 官网（含优惠链接）](https://kasoasf.kuajiecloudtttt.mom/#/?code=HRzqSLrR)
+
+### 4. sogo云
+- **线路类型**：IEPL、VLESS
+- **月付起步**：¥25.00
+- **协议支持**：VLESS
+- **为什么适合**：VLESS 协议 + 企业级 IEPL 专线，Clash Meta 内核完整支持 VLESS，三网优化
+- **官网注册**：[sogo云 官网（含优惠链接）](https://asfdgd.sogotztz2.sbs/#/?code=JvxcPy2A)
+
+### 5. U1S1
+- **线路类型**：IEPL出口、不限设备
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么适合**：BGP+IEPL 专线出口，SS 协议，Clash 全平台兼容，不限设备数
+- **官网注册**：[U1S1 官网（含优惠链接）](https://hudeiuf.u1sat.my/#/?code=T1UVuVDP)
+
+### 6. 灵猫
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，不限速，Clash 订阅兼容，全天客服支持
+- **官网注册**：[灵猫 官网（含优惠链接）](https://downwww.civetnettttt.lol/#/?code=2Ai6V6Ub)
+
+
 - **查看完整排行榜 →** [2026机场推荐排行榜](/reviews/)
 
 筛选标准：

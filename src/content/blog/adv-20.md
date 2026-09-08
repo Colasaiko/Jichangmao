@@ -1,7 +1,7 @@
 ---
-title: "adv：2026最新教程与指南 - 机场猫"
-description: "全面介绍adv的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "adv,adv教程,机场猫"
+title: "住宅IP是什么？与机房IP的区别及使用场景 - 机场猫"
+description: "解析住宅 IP（Residential IP）的来源、与数据中心 IP 的核心区别，以及在流媒体解锁、ChatGPT、跨境电商等高风控场景中的使用价值。"
+keywords: "住宅IP,住宅IP是什么,Residential IP,家宽IP"
 pubDate: 2026-01-11
 author: "机场猫编辑部"
 category: "advanced_conf"

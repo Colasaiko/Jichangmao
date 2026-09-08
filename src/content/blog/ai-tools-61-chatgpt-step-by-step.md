@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "让ChatGPT分步骤推理：解决AI计算和逻辑错误 - 机场猫"
+description: "介绍'Chain of Thought'（思维链）提示技巧：让 ChatGPT 分步骤展示推理过程，显著减少复杂数学、逻辑推理任务中的错误率，以及适用场景。"
+keywords: "ChatGPT分步推理,Chain of Thought,AI逻辑推理,ChatGPT计算错误"
 pubDate: 2026-04-17
 author: "机场猫编辑部"
 category: "ai_tools"

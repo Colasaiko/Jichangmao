@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Perplexity是什么？颠覆传统的AI答案引擎介绍 - 机场猫"
+description: "介绍 Perplexity AI 这款'答案引擎'：如何将人工智能与搜索引擎结合，用自然语言提问直接获取带引用来源的整合答案，以及为何越来越多人转向 AI 搜索。"
+keywords: "Perplexity是什么,Perplexity AI介绍,AI答案引擎,Perplexity搜索"
 pubDate: 2026-07-14
 author: "机场猫编辑部"
 category: "ai_official"

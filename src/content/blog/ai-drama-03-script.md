@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI辅助短剧剧本创作：用ChatGPT生成剧本的方法 - 机场猫"
+description: "介绍如何用 ChatGPT 等大语言模型辅助创作短剧剧本：从核心故事种子出发，通过 AI 扩写成完整剧本的实用步骤与 Prompt 技巧。"
+keywords: "AI短剧剧本,ChatGPT写剧本,AI创作剧本,短剧剧本生成"
 pubDate: 2026-01-18
 category: "ai_media"
 difficulty: "初级"

@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Poe上传文件功能：让AI读取和分析你的文档 - 机场猫"
+description: "介绍 Poe 的文件上传功能（PDF、Word、代码等）：结合大模型对长文档进行阅读、总结、翻译和信息提取，以及不同 AI Bot 在文件处理能力上的差异。"
+keywords: "Poe上传文件,Poe文档分析,Poe读取PDF,AI文件处理"
 pubDate: 2026-07-19
 author: "机场猫编辑部"
 category: "ai_official"

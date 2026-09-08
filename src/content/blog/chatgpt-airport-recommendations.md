@@ -67,6 +67,52 @@ ChatGPT 支持的地区很广，但 **美国、日本、新加坡节点效果最
 
 以下机场经过 IP 质量测试，具备较好的 ChatGPT / Claude 使用体验：
 
+
+以下机场明确标注原生 IP 解锁 ChatGPT/Claude，适合需要访问 AI 服务的用户：
+
+### 1. 灵猫
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：原生IP解锁 ChatGPT、Gemini、TikTok，全IPLC专线，IP 质量有保障
+- **官网注册**：[灵猫 官网（含优惠链接）](https://downwww.civetnettttt.lol/#/?code=2Ai6V6Ub)
+
+### 2. 跨界云
+- **线路类型**：IPLC、x1倍率
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么适合**：支持 ChatGPT、Gemini、Claude 等 AI，IPLC 高端线路，原生 IP 节点
+- **官网注册**：[跨界云 官网（含优惠链接）](https://kasoasf.kuajiecloudtttt.mom/#/?code=HRzqSLrR)
+
+### 3. 闪跃
+- **线路类型**：原生IP、全IPLC
+- **月付起步**：¥24.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，原生IP解锁流媒体，明确解锁 ChatGPT/TikTok
+- **官网注册**：[闪跃 官网（含优惠链接）](https://rfv.flashleapxx.xyz/#/?code=hCwClNUi)
+
+### 4. 飞猫云
+- **线路类型**：2.5Gbps、全IPLC
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC，原生 IP 线路，解锁 Netflix/Disney+/ChatGPT/TikTok，香港×20/日本×10
+- **官网注册**：[飞猫云 官网（含优惠链接）](https://dfg12cd.feimaogfttt1.sbs/#/?code=UUcH5yh9)
+
+### 5. 唯兔云
+- **线路类型**：IPLC、vless
+- **月付起步**：¥19.90
+- **协议支持**：VLESS
+- **为什么适合**：全IPLC+VLESS，原生IP解锁 Netflix/HBO/Disney+，解锁 ChatGPT/TikTok
+- **官网注册**：[唯兔云 官网（含优惠链接）](https://jifdsf.v2saat.homes/#/?code=bGS5G7xn)
+
+### 6. 星岛梦
+- **线路类型**：全IEPL、多并发
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IEPL专线，原生 IP，支持 Netflix/Disney+/ChatGPT/TikTok，多设备不限量
+- **官网注册**：[星岛梦 官网（含优惠链接）](https://jljljfois.xdmttt4.lol/#/?code=1qBePxW1)
+
+
 - **查看完整排行榜 →** [2026机场推荐排行榜](/reviews/)
 
 每个品牌的测评页面都包含 **Claude AI IP 风险检测截图**，可供参考。

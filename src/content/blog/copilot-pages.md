@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Copilot Pages是什么？AI协作文档功能使用指南 - 机场猫"
+description: "介绍 Microsoft Copilot Pages 功能：将 AI 对话内容一键转换为可多人实时协作编辑的持久页面，适合团队头脑风暴和 AI 辅助内容创作场景。"
+keywords: "Copilot Pages,Copilot协作文档,Microsoft Copilot功能,AI协作"
 pubDate: 2026-06-04
 author: "机场猫编辑部"
 category: "ai_official"

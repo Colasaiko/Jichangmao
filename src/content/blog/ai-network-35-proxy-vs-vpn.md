@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "代理和VPN有什么区别？科学上网工具选择指南 - 机场猫"
+description: "彻底厘清代理（Proxy/机场）与 VPN 的本质区别：工作原理、加密方式、速度表现、适用场景的对比，以及哪种工具更适合访问 ChatGPT 等 AI 服务。"
+keywords: "代理和VPN区别,代理vs VPN,VPN是什么,机场和VPN区别"
 pubDate: 2026-02-18
 author: "机场猫编辑部"
 category: "ai_network"

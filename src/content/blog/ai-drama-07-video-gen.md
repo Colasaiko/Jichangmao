@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI短剧视频生成实战：Runway/Pika/Kling生成教程 - 机场猫"
+description: "从分镜图到最终视频的完整生成实战：对比 Runway、Pika、可灵(Kling)、海螺等主流 AI 视频工具的 Text to Video 和 Image to Video 两种生成模式的使用要点。"
+keywords: "AI视频生成实战,Runway教程,Pika使用,可灵Kling教程"
 pubDate: 2026-01-20
 category: "ai_media"
 difficulty: "普通"

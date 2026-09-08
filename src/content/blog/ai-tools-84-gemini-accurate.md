@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Gemini回答太浅？让Gemini给出更准确深度回答的技巧 - 机场猫"
+description: "解析为何 Gemini 有时回答显得'水'缺乏深度，以及通过专属提示词（Prompt）技巧大幅提升 Gemini 回答准确度和专业性的实用方法。"
+keywords: "Gemini提示词技巧,Gemini准确回答,Gemini Prompt,提升AI回答质量"
 pubDate: 2026-04-30
 author: "机场猫编辑部"
 category: "ai_tools"

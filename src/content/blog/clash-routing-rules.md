@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Clash分流规则如何应用？规则集配置实战教程 - 机场猫"
+description: "从理论到实操：如何在 Clash 客户端中配置和应用分流规则，使用预置规则集或自定义规则控制哪些流量走代理、哪些直连。"
+keywords: "Clash分流规则配置,Clash规则集,Clash路由规则,Clash分流教程"
 pubDate: 2026-08-27
 category: "routing"
 difficulty: "普通"

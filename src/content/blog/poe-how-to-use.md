@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Poe AI平台怎么用？ChatGPT/Claude聚合平台使用教程 - 机场猫"
+description: "介绍 Poe 平台的使用方法：在一个界面内与 ChatGPT、Claude、Gemini 等多款主流 AI 模型对话切换，以及 Poe 的订阅方案和对代理 IP 的访问要求。"
+keywords: "Poe怎么用,Poe使用教程,Poe AI平台,Poe聚合ChatGPT Claude"
 pubDate: 2026-07-15
 author: "机场猫编辑部"
 category: "ai_official"

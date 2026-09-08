@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT上传文件功能：如何让AI分析你的文档 - 机场猫"
+description: "介绍 ChatGPT Plus 的文件上传功能：支持上传 PDF、Word、Excel、代码文件，让 AI 进行阅读分析、摘要提取、数据处理，以及对上传内容的最佳提问方式。"
+keywords: "ChatGPT上传文件,ChatGPT文件分析,ChatGPT PDF,AI文档处理"
 pubDate: 2026-03-23
 author: "机场猫编辑部"
 category: "ai_tools"

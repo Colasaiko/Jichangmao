@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude看网页截图：从截图还原前端代码和布局 - 机场猫"
+description: "介绍前端开发和 UI 设计师的高级使用场景：上传网页截图让 Claude 分析设计风格并生成对应的 HTML/CSS 代码，大幅加速前端开发中的界面复刻工作。"
+keywords: "Claude网页截图,Claude生成代码,AI前端开发,Claude UI复刻"
 pubDate: 2026-04-25
 author: "机场猫编辑部"
 category: "ai_tools"

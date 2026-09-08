@@ -1,7 +1,7 @@
 ---
-title: "tools 3：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 3的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 3,tools 3教程,机场猫"
+title: "Hysteria2协议测试：UDP加速节点性能验证 - 机场猫"
+description: "专门针对 Hysteria2 协议节点的性能测试方法：UDP 加速机制如何工作，如何验证 Hysteria2 节点的连通性，以及与 TCP 协议的实测速度对比。"
+keywords: "Hysteria2测试,Hysteria2协议,UDP加速,Hysteria2节点"
 pubDate: 2026-08-18
 author: "机场猫编辑部"
 category: "performance"

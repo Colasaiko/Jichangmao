@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT解数学题：数学问题正确提问方法 - 机场猫"
+description: "介绍如何用 ChatGPT 解决数学问题：通过要求 AI 分步骤展示解题过程（Chain of Thought），减少直觉错误，以及对 ChatGPT 数学能力的准确预期。"
+keywords: "ChatGPT解数学,ChatGPT数学问题,AI解题,ChatGPT计算"
 pubDate: 2026-04-08
 author: "机场猫编辑部"
 category: "ai_tools"

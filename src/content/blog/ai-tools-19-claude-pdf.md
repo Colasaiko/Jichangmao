@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude读取PDF和长文档：超长文本处理技巧 - 机场猫"
+description: "介绍 Claude 处理 PDF 和长文档的能力：比较 Claude 与 ChatGPT 在长文本处理上的差异，以及如何引导 Claude 从长篇资料中提炼所需信息。"
+keywords: "Claude读PDF,Claude长文档,Claude文件处理,Claude vs ChatGPT文档"
 pubDate: 2026-03-25
 author: "机场猫编辑部"
 category: "ai_tools"

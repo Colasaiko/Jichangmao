@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Copilot图像生成怎么用？DALL-E 3 AI绘图教程 - 机场猫"
+description: "详解 Microsoft Copilot 集成的 DALL-E 3 图像生成功能使用方法：如何撰写生成提示词、调整图片风格，以及访问 Copilot 图像生成所需的代理配置。"
+keywords: "Copilot图像生成,DALL-E 3,Copilot AI绘图,Copilot绘画"
 pubDate: 2026-06-02
 author: "机场猫编辑部"
 category: "ai_official"

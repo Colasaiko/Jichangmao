@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Gemini看图功能：上传图片进行AI分析和解读 - 机场猫"
+description: "介绍 Google Gemini 的多模态图片分析功能：如何上传照片、图表、外语菜单或数学题图，让 AI 进行识别、分析和解答。"
+keywords: "Gemini看图,Gemini图片分析,Google AI视觉,Gemini多模态"
 pubDate: 2026-05-01
 author: "机场猫编辑部"
 category: "ai_tools"

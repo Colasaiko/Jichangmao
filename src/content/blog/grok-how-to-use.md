@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Grok AI怎么用？xAI Grok使用入门教程 - 机场猫"
+description: "手把手介绍如何使用 Grok AI：功能特点、如何访问 X 平台实时数据、与 ChatGPT 的使用差异，以及对代理节点的地区要求。"
+keywords: "Grok AI使用教程,Grok怎么用,xAI Grok,Grok入门"
 pubDate: 2026-06-09
 author: "机场猫编辑部"
 category: "ai_official"

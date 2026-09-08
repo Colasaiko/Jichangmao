@@ -1,7 +1,7 @@
 ---
-title: "tools 16：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 16的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 16,tools 16教程,机场猫"
+title: "Tailscale是什么？无需公网IP的异地组网工具 - 机场猫"
+description: "介绍 Tailscale 的工作原理：基于 WireGuard 的网状组网技术，无需公网 IP 和复杂配置，即可把分散在各地的设备连入同一个专属虚拟局域网。"
+keywords: "Tailscale是什么,Tailscale使用,异地组网,WireGuard组网"
 pubDate: 2026-08-09
 author: "机场猫编辑部"
 category: "network"

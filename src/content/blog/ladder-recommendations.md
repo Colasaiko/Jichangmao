@@ -99,6 +99,46 @@ A：正常情况下是节点 IP 被封，而不是你的设备被封。切换到
 
 ---
 
+
+## 推荐的"梯子"（机场）选择
+
+以下是目前机场猫收录的、适合不同需求的机场（代理服务商）推荐，搭配对应客户端即可使用：
+
+### 1. 微风网络 —— 重度用户首选，全IPLC专线
+- **线路类型**：全IPLC、不限设备
+- **月付起步**：¥11.00
+- **协议支持**：SS（兼容 Clash/Shadowrocket/v2rayN）
+- **为什么推荐**：老牌全IPLC专线，不限设备，月付最低套餐约 ¥11，有 7 折优惠码（weifeng90），适合长期重度使用
+- **官网注册**：[微风网络 官网（含优惠链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
+
+### 2. 跨界云 —— 家庭多设备、解锁AI全能选
+- **线路类型**：IPLC、x1倍率
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么推荐**：IPLC 高端线路，不限设备，支持 ChatGPT/Gemini/Claude，月付 ¥20 起，有 8 折优惠码（kuajie）
+- **官网注册**：[跨界云 官网（含优惠链接）](https://kasoasf.kuajiecloudtttt.mom/#/?code=HRzqSLrR)
+
+### 3. 极连云 —— 性价比专线，新手友好
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥18.00
+- **协议支持**：SS
+- **为什么推荐**：月付 ¥18 起，全IPLC，有 8 折优惠码（JLY888），适合日常使用的进阶用户
+- **官网注册**：[极连云 官网（含优惠链接）](https://1jdhjfeeef.jilianat.homes/#/?code=nrPTQT2i)
+
+### 4. 速界机场 —— 新手首次试用
+- **线路类型**：全IPLC、性价比
+- **月付起步**：¥15.00
+- **协议支持**：SS
+- **为什么推荐**：¥15 月付小包可试用，全IPLC专线，适合新手低成本验证需求后再升级
+- **官网注册**：[速界机场 官网（含优惠链接）](https://linktest.tzztssuujj.xyz/#/?code=q1enwrOd)
+
+### 5. 可信云 —— 轻度用户低价选
+- **线路类型**：全IEPL、不限设备
+- **月付起步**：¥15.00
+- **协议支持**：SS
+- **为什么推荐**：¥15 月付小包，全IEPL专线，不限设备，适合偶尔使用的轻度用户
+- **官网注册**：[可信云 官网（含优惠链接）](https://asfasf.kexintztz2.sbs/#/?code=PY3isazT)
+
 → 查看 [2026机场推荐排行榜](/reviews/)
 → 了解 [Clash机场推荐](/blog/clash-airport-recommendations/)
 → 了解 [Shadowrocket机场推荐（iOS）](/blog/shadowrocket-airport-recommendations/)

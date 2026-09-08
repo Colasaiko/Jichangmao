@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Gemini联网搜索功能：实时获取最新信息 - 机场猫"
+description: "介绍 Google Gemini 的联网搜索功能：与只有训练截止日期数据的 AI 不同，Gemini 可以实时搜索互联网获取最新信息，适合查询时事和近期数据。"
+keywords: "Gemini联网搜索,Gemini实时搜索,Gemini搜索功能,AI实时信息"
 pubDate: 2026-04-01
 author: "机场猫编辑部"
 category: "ai_tools"

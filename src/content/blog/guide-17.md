@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "手机代理怎么设置？iOS和Android全平台配置指南 - 机场猫"
+description: "面向手机用户的代理配置完整指南：iOS 使用 Shadowrocket，Android 使用 v2rayNG 或 Clash Meta，从下载安装到导入订阅的全步骤教程。"
+keywords: "手机代理设置,iOS代理配置,Android代理,手机科学上网"
 pubDate: 2026-06-21
 author: "机场猫编辑部"
 category: "performance"

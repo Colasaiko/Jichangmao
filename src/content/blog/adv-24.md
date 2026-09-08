@@ -1,7 +1,7 @@
 ---
-title: "adv 4：2026最新教程与指南 - 机场猫"
-description: "全面介绍adv 4的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "adv 4,adv 4教程,机场猫"
+title: "IPv4和IPv6有什么区别？代理节点与双栈网络解析 - 机场猫"
+description: "对比 IPv4（32位，约43亿地址）与 IPv6（128位，无限地址）的结构差异，以及在代理节点选择、VPS配置和双栈网络场景中的实际影响。"
+keywords: "IPv4和IPv6区别,IPv6是什么,双栈网络,代理IPv6节点"
 pubDate: 2026-01-14
 author: "机场猫编辑部"
 category: "starter"

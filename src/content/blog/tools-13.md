@@ -1,7 +1,7 @@
 ---
-title: "tools 13：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 13的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 13,tools 13教程,机场猫"
+title: "OpenVPN是什么？企业级VPN协议原理与使用场景 - 机场猫"
+description: "解析 OpenVPN 的技术特点：基于 SSL/TLS 的企业级 VPN 标准，拥有二十年行业应用历史。介绍其工作原理和与 WireGuard 等新协议的对比。"
+keywords: "OpenVPN是什么,OpenVPN使用,企业级VPN,OpenVPN教程"
 pubDate: 2026-08-07
 author: "机场猫编辑部"
 category: "openwrt"

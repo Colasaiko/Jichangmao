@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude写代码：为什么程序员越来越偏爱Claude - 机场猫"
+description: "分析程序员从 ChatGPT 转向 Claude 的原因：Claude 在代码生成、代码审查和复杂逻辑推理上的优势，以及如何最大化发挥 Claude 编程辅助能力。"
+keywords: "Claude写代码,Claude编程,Claude vs ChatGPT代码,程序员用Claude"
 pubDate: 2026-03-29
 author: "机场猫编辑部"
 category: "ai_tools"

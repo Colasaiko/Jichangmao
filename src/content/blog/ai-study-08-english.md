@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI学英语：用ChatGPT提升英语口语和写作的技巧 - 机场猫"
+description: "介绍如何将 ChatGPT 等 AI 工具用于英语学习：模拟英语对话练习、纠正语法错误、改写英语文章，以及与 AI 对话提升实际语言应用能力。"
+keywords: "AI学英语,ChatGPT练英语,AI英语口语,AI英语写作"
 pubDate: 2026-03-13
 author: "机场猫编辑部"
 category: "ai_work"

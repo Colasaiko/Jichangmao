@@ -58,6 +58,52 @@ v2rayN（Windows）和 v2rayNG（Android）是两款基于 V2Ray / Xray 内核�
 
 以下机场提供与 v2rayN / v2rayNG 完全兼容的订阅：
 
+
+以下机场提供 VMess/VLESS/SS 等 v2ray 系列协议节点，兼容 v2rayN（Windows）和 v2rayNG（Android）：
+
+### 1. 唯兔云
+- **线路类型**：IPLC、vless
+- **月付起步**：¥19.90
+- **协议支持**：VLESS
+- **为什么适合**：VLESS 协议 + 全IPLC专线，直接兼容 v2rayN/v2rayNG，不限速不限设备
+- **官网注册**：[唯兔云 官网（含优惠链接）](https://jifdsf.v2saat.homes/#/?code=bGS5G7xn)
+
+### 2. sogo云
+- **线路类型**：IEPL、VLESS
+- **月付起步**：¥25.00
+- **协议支持**：VLESS
+- **为什么适合**：VLESS 协议 + 企业级 IEPL 专线，v2rayN Meta 内核完整支持，三网优化
+- **官网注册**：[sogo云 官网（含优惠链接）](https://asfdgd.sogotztz2.sbs/#/?code=JvxcPy2A)
+
+### 3. 跨界云
+- **线路类型**：IPLC、x1倍率
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC高端线路，SS 协议兼容 v2rayN，所有节点 x1 倍率，不限设备
+- **官网注册**：[跨界云 官网（含优惠链接）](https://kasoasf.kuajiecloudtttt.mom/#/?code=HRzqSLrR)
+
+### 4. 极连云
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥18.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，2.5Gbps 速率，SS 协议兼容 v2rayN，原生 IP
+- **官网注册**：[极连云 官网（含优惠链接）](https://1jdhjfeeef.jilianat.homes/#/?code=nrPTQT2i)
+
+### 5. 微风网络
+- **线路类型**：全IPLC、不限设备
+- **月付起步**：¥11.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，SS 协议，v2rayN/v2rayNG 兼容性极好，低延迟，不限设备
+- **官网注册**：[微风网络 官网（含优惠链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
+
+### 6. U1S1
+- **线路类型**：IEPL出口、不限设备
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么适合**：BGP+IEPL，SS 协议，v2rayN 全平台兼容，ChatGPT/Claude AI 支持
+- **官网注册**：[U1S1 官网（含优惠链接）](https://hudeiuf.u1sat.my/#/?code=T1UVuVDP)
+
+
 - **查看完整排行榜 →** [2026机场推荐排行榜](/reviews/)
 
 筛选标准：

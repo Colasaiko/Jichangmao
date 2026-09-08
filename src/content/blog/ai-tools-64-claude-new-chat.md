@@ -1,7 +1,7 @@
 ---
-title: "引言：2026最新教程与指南 - 机场猫"
-description: "全面介绍引言的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "引言,引言教程,机场猫"
+title: "Claude新对话最佳实践：如何开启高质量对话 - 机场猫"
+description: "分享在 Claude 中开启新对话时的最佳实践：提供足够背景信息、设置角色、分段输入长文，让 Claude 从第一条回复就达到最高质量。"
+keywords: "Claude对话技巧,Claude Prompt,Claude使用技巧,Claude新对话"
 pubDate: 2026-04-19
 author: "机场猫编辑部"
 category: "ai_tools"

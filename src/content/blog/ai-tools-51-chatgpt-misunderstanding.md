@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT答非所问怎么办？解决AI理解偏差的策略 - 机场猫"
+description: "解析为什么 ChatGPT 有时无法准确理解你的意图：提供的上下文不足、指令模糊、假设不一致，以及通过明确指令让 AI 真正理解需求的实用策略。"
+keywords: "ChatGPT答非所问,ChatGPT理解偏差,ChatGPT指令技巧,AI理解问题"
 pubDate: 2026-04-11
 author: "机场猫编辑部"
 category: "ai_tools"

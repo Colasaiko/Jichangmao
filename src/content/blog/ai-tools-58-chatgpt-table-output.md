@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT生成表格：让AI把信息整理成清晰表格 - 机场猫"
+description: "介绍用 ChatGPT 生成结构化对比表格的方法：通过简单的 Prompt 技巧让 AI 将杂乱信息整理为清晰的 Markdown 表格，适合数据对比和信息汇总场景。"
+keywords: "ChatGPT生成表格,ChatGPT对比表格,AI表格输出,ChatGPT Markdown表格"
 pubDate: 2026-04-15
 author: "机场猫编辑部"
 category: "ai_tools"

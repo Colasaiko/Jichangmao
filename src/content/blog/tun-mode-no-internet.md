@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "开启TUN模式后断网怎么办？TUN模式断网修复指南 - 机场猫"
+description: "专门解决 TUN 模式开启后整台电脑断网的问题：分析 TUN 模式修改系统路由表导致断网的原因，以及通过关闭 TUN 模式或调整路由配置恢复网络的步骤。"
+keywords: "TUN模式断网,TUN模式问题,Clash TUN断网,代理断网修复"
 pubDate: 2026-08-27
 category: "troubleshoot"
 difficulty: "普通"

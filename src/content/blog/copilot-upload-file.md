@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Copilot上传文件功能：分析PDF和文档的方法 - 机场猫"
+description: "介绍 Microsoft Copilot 的文件上传功能：如何上传 PDF、Word、Excel 等文档让 AI 进行智能分析、总结和关键信息提取。"
+keywords: "Copilot上传文件,Copilot分析文档,Copilot PDF分析,微软AI文件"
 pubDate: 2026-06-05
 author: "机场猫编辑部"
 category: "ai_official"

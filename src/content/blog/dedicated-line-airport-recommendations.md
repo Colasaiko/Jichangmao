@@ -59,6 +59,52 @@ tags: ["专线", "IPLC", "IEPL", "低延迟", "机场推荐"]
 
 以下机场提供全程 IPLC 或 IEPL 专线节点，适合对稳定性有高要求的用户：
 
+
+以下机场全部提供 IPLC 或 IEPL 物理专线节点，适合对晚高峰稳定性有高要求的用户：
+
+### 1. 微风网络
+- **线路类型**：全IPLC、不限设备
+- **月付起步**：¥11.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，不限设备，不限速，节点速率 x1，低延迟高速率，适合重度用户
+- **官网注册**：[微风网络 官网（含优惠链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
+
+### 2. 跨界云
+- **线路类型**：IPLC、x1倍率
+- **月付起步**：¥20.00
+- **协议支持**：SS
+- **为什么适合**：IPLC 高端线路，所有节点 x1 倍率，不限设备，解锁 Netflix/ChatGPT/Claude
+- **官网注册**：[跨界云 官网（含优惠链接）](https://kasoasf.kuajiecloudtttt.mom/#/?code=HRzqSLrR)
+
+### 3. 灵猫
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，不限速，带宽可达 1000Mbps，原生IP解锁流媒体和 ChatGPT
+- **官网注册**：[灵猫 官网（含优惠链接）](https://downwww.civetnettttt.lol/#/?code=2Ai6V6Ub)
+
+### 4. 飞猫云
+- **线路类型**：2.5Gbps、全IPLC
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，最高 2.5Gbps，原生 IP，香港×20/台湾×10/日本×10/美国×10
+- **官网注册**：[飞猫云 官网（含优惠链接）](https://dfg12cd.feimaogfttt1.sbs/#/?code=UUcH5yh9)
+
+### 5. 星岛梦
+- **线路类型**：全IEPL、多并发
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全IEPL专线，低延迟，单节点峰值 2.5Gbps，解锁 Netflix/Disney+/ChatGPT/TikTok
+- **官网注册**：[星岛梦 官网（含优惠链接）](https://jljljfois.xdmttt4.lol/#/?code=1qBePxW1)
+
+### 6. 极连云
+- **线路类型**：全IPLC、原生IP
+- **月付起步**：¥18.00
+- **协议支持**：SS
+- **为什么适合**：全IPLC专线，最大 2.5Gbps 速率，原生 IP，解锁各大流媒体和 ChatGPT/TikTok
+- **官网注册**：[极连云 官网（含优惠链接）](https://1jdhjfeeef.jilianat.homes/#/?code=nrPTQT2i)
+
+
 - **查看完整排行榜 →** [2026机场推荐排行榜](/reviews/)
 
 筛选标准：

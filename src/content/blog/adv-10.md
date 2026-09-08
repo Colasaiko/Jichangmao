@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "IEPL是什么？IEPL与IPLC的区别详解 - 机场猫"
+description: "清楚区分 IEPL（国际以太网专线）与 IPLC 的技术差异：两者同属内网物理专线，均不过 GFW，但底层实现技术不同，选购时该如何取舍？"
+keywords: "IEPL是什么,IEPL专线,IEPL与IPLC区别,国际以太网专线"
 pubDate: 2026-01-06
 author: "机场猫编辑部"
 category: "network"

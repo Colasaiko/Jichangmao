@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT语音对话功能（Voice Mode）使用指南 - 机场猫"
+description: "介绍 ChatGPT 语音对话（Voice Mode）的使用方法：如何开启语音功能、与 AI 进行自然语音对话，以及语音模式在英语练习和口头信息处理中的实际应用。"
+keywords: "ChatGPT语音对话,ChatGPT Voice Mode,ChatGPT语音功能,AI语音对话"
 pubDate: 2026-04-09
 author: "机场猫编辑部"
 category: "ai_tools"

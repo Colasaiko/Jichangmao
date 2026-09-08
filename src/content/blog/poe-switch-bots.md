@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Poe如何切换Bot？快速找到适合任务的AI模型 - 机场猫"
+description: "介绍在 Poe 平台上如何快速搜索和切换不同的 AI Bot：面对海量官方和社区 Bot，如何根据当前任务类型高效定位并一键切换最适合的 AI 模型。"
+keywords: "Poe切换Bot,Poe选择AI模型,Poe搜索Bot,Poe使用技巧"
 pubDate: 2026-07-18
 author: "机场猫编辑部"
 category: "ai_official"

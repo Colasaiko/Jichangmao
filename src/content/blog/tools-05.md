@@ -1,7 +1,7 @@
 ---
-title: "tools：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools,tools教程,机场猫"
+title: "Shadowsocks协议测试工具：SS节点连通性验证 - 机场猫"
+description: "针对 Shadowsocks（SS）协议的专项测试方法：如何验证 SS 节点是否正常工作，常见的连接失败原因排查，以及调试工具的使用。"
+keywords: "SS节点测试,Shadowsocks连通性,SS协议调试,节点测试"
 pubDate: 2026-08-03
 author: "机场猫编辑部"
 category: "starter"

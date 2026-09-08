@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI出题测验：用ChatGPT/Claude生成练习题自测 - 机场猫"
+description: "介绍如何用 ChatGPT 或 Claude 为自己生成测验题（Quiz）进行自我检测：通过提供学习材料让 AI 出选择题、填空题或简答题，提高复习效率。"
+keywords: "AI出练习题,ChatGPT出题,AI测验,AI辅助学习"
 pubDate: 2026-03-12
 author: "机场猫编辑部"
 category: "ai_work"

@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Copilot提示词技巧：如何与微软AI高效沟通 - 机场猫"
+description: "详解与 Microsoft Copilot 高效沟通的提示词（Prompt）技巧：如何让 AI 准确理解意图，生成高质量内容，以及针对不同任务类型的提问策略。"
+keywords: "Copilot提示词,Copilot Prompt技巧,Copilot使用技巧,微软AI提问"
 pubDate: 2026-06-04
 author: "机场猫编辑部"
 category: "ai_official"

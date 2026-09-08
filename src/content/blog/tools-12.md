@@ -1,7 +1,7 @@
 ---
-title: "tools 1：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 1的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 1,tools 1教程,机场猫"
+title: "V2Ray/VMess协议节点测试与连通性验证方法 - 机场猫"
+description: "针对 VMess/VLESS 等 V2Ray 系协议的连通性测试方法，帮助验证 V2Ray 节点是否正常工作，常见错误的排查思路。"
+keywords: "V2Ray节点测试,VMess连通性,V2Ray调试,VLESS测试"
 pubDate: 2026-08-07
 author: "机场猫编辑部"
 category: "streaming"

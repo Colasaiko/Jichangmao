@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Perplexity上传文件功能：让AI分析总结长篇文档 - 机场猫"
+description: "介绍 Perplexity 的文件上传功能（PDF、TXT等）：如何让 AI 快速总结长篇报告、提取核心数据或翻译文档，大幅提升处理文档的工作效率。"
+keywords: "Perplexity上传文件,Perplexity分析PDF,Perplexity文档功能,AI文档分析"
 pubDate: 2026-07-13
 author: "机场猫编辑部"
 category: "ai_official"

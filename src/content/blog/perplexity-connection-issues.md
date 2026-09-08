@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能（问题）解析：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能（问题）解析的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能（问题）解析,一、这个功能（问题）解析教程,机场猫"
+title: "Perplexity连接问题排查：网页白屏或加载失败怎么办 - 机场猫"
+description: "系统排查 Perplexity AI 搜索工具连接失败的原因：从代理设置到服务器状态，提供分步骤的诊断方法，帮你快速恢复正常使用。"
+keywords: "Perplexity连接问题,Perplexity无法使用,Perplexity网络错误,AI搜索连接问题"
 pubDate: 2026-07-10
 author: "机场猫编辑部"
 category: "ai_official"

@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "IP泄漏导致ChatGPT封号？代理IP泄漏检测与防护 - 机场猫"
+description: "解析代理使用中的 IP 泄漏风险：WebRTC 泄漏、DNS 泄漏如何暴露真实 IP，以及如何检测是否存在泄漏、修复配置防止 ChatGPT 等平台识别真实位置。"
+keywords: "IP泄漏ChatGPT,代理IP泄漏,WebRTC泄漏,IP泄漏检测防护"
 pubDate: 2026-02-21
 author: "机场猫编辑部"
 category: "ai_network"

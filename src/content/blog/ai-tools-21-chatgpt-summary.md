@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT总结文章技巧：精准提炼长文关键信息 - 机场猫"
+description: "介绍用 ChatGPT 总结文章、报告和长文的正确方法：如何通过 Prompt 控制摘要的长度、详细程度和重点方向，让 AI 真正提炼你需要的关键信息。"
+keywords: "ChatGPT总结文章,ChatGPT摘要,AI文章总结,ChatGPT提炼信息"
 pubDate: 2026-03-26
 author: "机场猫编辑部"
 category: "ai_tools"

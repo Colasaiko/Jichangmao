@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT修改内容技巧：给精准反馈而不是让它重写 - 机场猫"
+description: "介绍向 ChatGPT 给出精准修改反馈的技巧：指出具体问题点（语气/结构/内容准确性）让 AI 进行局部调整，而非模糊地说'重新写一遍'。"
+keywords: "ChatGPT修改技巧,ChatGPT精准反馈,ChatGPT迭代,AI内容修改"
 pubDate: 2026-04-18
 author: "机场猫编辑部"
 category: "ai_tools"

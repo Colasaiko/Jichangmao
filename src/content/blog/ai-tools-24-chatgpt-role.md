@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT角色扮演Prompt：让AI扮演专家角色提升回答质量 - 机场猫"
+description: "介绍在 ChatGPT 中使用角色扮演（Role Prompting）的技巧：通过让 AI 扮演特定专家角色（如资深律师、资深工程师），显著提升回答的专业程度和实用性。"
+keywords: "ChatGPT角色扮演,Role Prompting,ChatGPT扮演专家,AI角色设定"
 pubDate: 2026-03-27
 author: "机场猫编辑部"
 category: "ai_tools"

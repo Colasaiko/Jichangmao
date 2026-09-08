@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "流媒体解锁是什么？Netflix/Disney+原生IP要求 - 机场猫"
+description: "解释流媒体解锁的技术原理：Netflix、Disney+ 等平台通过 IP 归属地判断用户地区，为何需要原生 IP 才能真正解锁内容，以及如何判断节点是否支持解锁。"
+keywords: "流媒体解锁,Netflix解锁,Disney+解锁,原生IP解锁"
 pubDate: 2026-06-18
 author: "机场猫编辑部"
 category: "routing"

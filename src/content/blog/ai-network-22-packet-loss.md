@@ -1,7 +1,7 @@
 ---
-title: "网络丢包：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络丢包的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络丢包,网络丢包教程,机场猫"
+title: "代理丢包导致ChatGPT中断？AI工具网络丢包排查 - 机场猫"
+description: "针对 ChatGPT 等海外 AI 工具使用中出现'Network Error'中断的场景，解析网络丢包（Packet Loss）的成因，提供代理环境下的丢包排查与改善方法。"
+keywords: "ChatGPT丢包,AI工具网络错误,代理丢包,网络丢包排查"
 pubDate: 2026-02-11
 author: "机场猫编辑部"
 category: "ai_network"

@@ -1,7 +1,7 @@
 ---
-title: "费曼技巧：2026最新教程与指南 - 机场猫"
-description: "全面介绍费曼技巧的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "费曼技巧,费曼技巧教程,机场猫"
+title: "用ChatGPT解释复杂概念：费曼技巧与AI学习法 - 机场猫"
+description: "结合费曼技巧（用简单语言解释复杂事物）介绍如何用 ChatGPT 学习和理解难懂概念，包括引导 AI 用比喻、案例逐步解释的 Prompt 技巧。"
+keywords: "费曼技巧ChatGPT,ChatGPT学习方法,ChatGPT解释概念,AI学习技巧"
 pubDate: 2026-04-14
 author: "机场猫编辑部"
 category: "ai_tools"

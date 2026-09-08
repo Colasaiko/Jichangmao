@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Clash如何开启TUN模式？Windows全局代理配置步骤 - 机场猫"
+description: "图文介绍在 Windows 的 Clash Verge Rev 中开启 TUN 模式的完整步骤：TUN 模式的使用场景，以及开启前需要注意的权限和配置要求。"
+keywords: "Clash TUN模式,Clash开启TUN,Clash全局代理,Clash Verge TUN"
 pubDate: 2026-08-27
 category: "openwrt"
 difficulty: "初级"

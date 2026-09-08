@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude编辑润色：保留个人风格同时提升文章质量 - 机场猫"
+description: "介绍让 Claude 扮演资深编辑角色润色文章的方法：在提升语言质量、修正逻辑的同时保留作者原始风格（Voice），而非将内容改造为千篇一律的 AI 腔调。"
+keywords: "Claude润色文章,Claude编辑,AI保留写作风格,Claude语言润色"
 pubDate: 2026-04-28
 author: "机场猫编辑部"
 category: "ai_tools"

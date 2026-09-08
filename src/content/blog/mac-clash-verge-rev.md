@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Clash Verge Rev是什么？macOS代理客户端介绍 - 机场猫"
+description: "介绍 Clash Verge Rev 的定位与特点：基于 Tauri 框架的现代化代理客户端，与其他 Clash 分叉的区别，以及在 macOS 上的安装和基础配置。"
+keywords: "Clash Verge Rev,Clash客户端,Clash Verge,macOS代理客户端"
 pubDate: 2026-06-23
 author: "机场猫编辑部"
 category: "client_archive"

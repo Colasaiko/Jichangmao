@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT看图功能：上传图片让AI分析内容 - 机场猫"
+description: "ChatGPT Plus 图片分析功能实际应用指南：如何上传截图、照片、图表让 AI 识别内容、解读数据，以及图片分析在工作和学习中的典型使用场景。"
+keywords: "ChatGPT看图,ChatGPT图片分析,ChatGPT多模态,AI看图分析"
 pubDate: 2026-04-03
 author: "机场猫编辑部"
 category: "ai_tools"

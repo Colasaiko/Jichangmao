@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT/Claude服务器宕机如何判断？服务状态检测方法 - 机场猫"
+description: "介绍如何区分'节点问题'和'AI平台服务器宕机'：使用官方状态页、第三方监控工具判断 ChatGPT/Claude/Gemini 是否正在全球范围内故障，避免无效排查。"
+keywords: "ChatGPT宕机,Claude服务器故障,AI平台状态,服务器故障检测"
 pubDate: 2026-02-13
 author: "机场猫编辑部"
 category: "ai_network"

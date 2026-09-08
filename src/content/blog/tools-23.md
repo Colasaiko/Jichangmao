@@ -1,7 +1,7 @@
 ---
-title: "tools 3：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 3的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 3,tools 3教程,机场猫"
+title: "Trojan协议节点测试：连通性与协议兼容性验证 - 机场猫"
+description: "针对 Trojan 协议节点的测试与验证方法：Trojan 如何伪装成 HTTPS 流量，如何验证节点正常工作，以及常见配置错误的排查步骤。"
+keywords: "Trojan节点测试,Trojan协议,Trojan连通性,HTTPS伪装"
 pubDate: 2026-08-13
 author: "机场猫编辑部"
 category: "openwrt"

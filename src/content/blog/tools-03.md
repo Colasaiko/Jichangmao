@@ -1,7 +1,7 @@
 ---
-title: "基本概念：2026最新教程与指南 - 机场猫"
-description: "全面介绍基本概念的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "基本概念,基本概念教程,机场猫"
+title: "WebRTC泄漏检测：浏览器IP泄漏检测方法 - 机场猫"
+description: "使用 WebRTC 泄漏检测工具验证浏览器是否通过 WebRTC 协议暴露本地真实 IP，以及如何在不同浏览器中禁用 WebRTC 防止泄漏。"
+keywords: "WebRTC泄漏检测,浏览器IP泄漏,WebRTC禁用,IP泄漏检测"
 pubDate: 2026-08-02
 author: "机场猫编辑部"
 category: "openwrt"

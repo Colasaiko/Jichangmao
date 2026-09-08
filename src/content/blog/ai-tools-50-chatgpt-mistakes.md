@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "这些习惯让ChatGPT越用越差：常见新手误区 - 机场猫"
+description: "深入分析导致 ChatGPT 使用效果差的常见习惯：问题不具体、不提供背景、不验证回答、不追问等，以及养成高质量使用习惯的实用建议。"
+keywords: "ChatGPT使用误区,ChatGPT坏习惯,ChatGPT提升效果,ChatGPT使用技巧"
 pubDate: 2026-04-11
 author: "机场猫编辑部"
 category: "ai_tools"

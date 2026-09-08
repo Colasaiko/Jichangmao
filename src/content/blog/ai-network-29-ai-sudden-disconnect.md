@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI对话突然中断怎么办？ChatGPT断线原因与修复 - 机场猫"
+description: "解析 ChatGPT 等 AI 工具对话突然中断的常见原因：网络丢包、节点超时、服务器限制，以及如何通过调整代理设置减少中断频率、保护长对话不丢失。"
+keywords: "ChatGPT突然中断,AI对话断线,ChatGPT断连修复,AI连接中断"
 pubDate: 2026-02-15
 author: "机场猫编辑部"
 category: "ai_network"

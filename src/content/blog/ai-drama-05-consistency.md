@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI视频'变脸'问题怎么解决？角色一致性进阶方案 - 机场猫"
+description: "汇总从入门到进阶的 AI 视频角色一致性解决方案：提示词+Seed锁定（基础级）、IP-Adapter、参考图等方式，按难度从低到高帮你解决 AI 短剧主角'变脸'问题。"
+keywords: "AI视频变脸解决,角色一致性AI,IP-Adapter,AI短剧制作技巧"
 pubDate: 2026-01-19
 category: "ai_media"
 difficulty: "困难"

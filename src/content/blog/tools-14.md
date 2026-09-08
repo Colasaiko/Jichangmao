@@ -1,7 +1,7 @@
 ---
-title: "tools 14：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 14的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 14,tools 14教程,机场猫"
+title: "OpenVPN配置文件(.ovpn)解析：核心参数看懂指南 - 机场猫"
+description: "用通俗语言解读 .ovpn 配置文件的核心参数含义：连接指令、路由规则、内嵌证书密钥的作用，帮助你在遇到连接失败时自行排查。"
+keywords: "OpenVPN配置文件,ovpn文件,OpenVPN参数,VPN配置"
 pubDate: 2026-08-08
 author: "机场猫编辑部"
 category: "troubleshoot"

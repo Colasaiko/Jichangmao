@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Copilot语音与视觉功能：Voice和Vision使用指南 - 机场猫"
+description: "介绍 Copilot Voice（语音对话）和 Copilot Vision（视觉分析）两项多模态功能：如何通过语音与 AI 自然对话，以及如何让 AI 分析图片和屏幕内容。"
+keywords: "Copilot Voice,Copilot Vision,Copilot语音,Copilot视觉功能"
 pubDate: 2026-06-05
 author: "机场猫编辑部"
 category: "ai_official"

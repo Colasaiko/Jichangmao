@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude OCR功能：从图片中精准提取文字内容 - 机场猫"
+description: "介绍如何用 Claude 的视觉能力进行 OCR（光学字符识别）：上传截图或图片后提取文字，保持原有排版格式，以及比传统 OCR 工具更灵活的使用方式。"
+keywords: "Claude OCR,Claude图片提取文字,AI OCR识别,Claude文字识别"
 pubDate: 2026-04-24
 author: "机场猫编辑部"
 category: "ai_tools"

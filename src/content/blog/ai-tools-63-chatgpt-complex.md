@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT处理大任务：分解复杂项目的Prompt策略 - 机场猫"
+description: "解析为何不能让 ChatGPT 一次性完成10万字小说或完整应用开发，以及通过'任务分解'策略（将大任务拆为可执行的小步骤）让 AI 有效完成复杂项目的方法。"
+keywords: "ChatGPT处理大任务,任务分解Prompt,ChatGPT复杂项目,AI大任务策略"
 pubDate: 2026-04-18
 author: "机场猫编辑部"
 category: "ai_tools"

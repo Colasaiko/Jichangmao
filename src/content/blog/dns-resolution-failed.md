@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "DNS解析失败怎么办？代理环境DNS故障排查指南 - 机场猫"
+description: "专门解决代理开启后 DNS 解析失败的问题：区分 DNS 失败与普通连接超时，分步骤排查 DNS 配置错误，以及修复 DNS 泄漏和解析失败的具体方法。"
+keywords: "DNS解析失败,代理DNS故障,DNS排查,DNS修复"
 pubDate: 2026-08-27
 category: "troubleshoot"
 difficulty: "困难"

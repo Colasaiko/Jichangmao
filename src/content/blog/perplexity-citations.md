@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Perplexity引用标注功能：如何验证AI回答的可信度 - 机场猫"
+description: "介绍 Perplexity 的引用标注（Citations）功能：如何追溯 AI 回答的信息来源，验证答案的真实性，避免 AI '幻觉'，以及引用来源的查阅方法。"
+keywords: "Perplexity引用,Perplexity来源验证,AI引用标注,Perplexity可信度"
 pubDate: 2026-07-09
 author: "机场猫编辑部"
 category: "ai_official"

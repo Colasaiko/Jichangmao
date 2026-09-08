@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Perplexity vs 谷歌搜索：AI搜索与传统搜索的区别 - 机场猫"
+description: "深度对比 Perplexity AI 搜索与 Google 等传统搜索引擎的本质差异：AI 直接给答案 vs 返回网页列表，各自适用的搜索场景与优劣势分析。"
+keywords: "Perplexity vs Google,AI搜索vs传统搜索,Perplexity区别,AI搜索引擎"
 pubDate: 2026-07-13
 author: "机场猫编辑部"
 category: "ai_official"

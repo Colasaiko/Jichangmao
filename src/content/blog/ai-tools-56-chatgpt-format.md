@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT按格式输出：JSON/Markdown/表格结构化输出指南 - 机场猫"
+description: "介绍如何让 ChatGPT 严格按照指定格式输出：通过 Prompt 要求 JSON（适合程序解析）、Markdown 表格（适合阅读）、代码块等特定结构，满足不同使用场景。"
+keywords: "ChatGPT JSON输出,ChatGPT格式化输出,ChatGPT Markdown输出,结构化输出AI"
 pubDate: 2026-04-14
 author: "机场猫编辑部"
 category: "ai_tools"

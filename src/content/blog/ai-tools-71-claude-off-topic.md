@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "Claude为什么会乱编数据？AI幻觉原理与防止方法 - 机场猫"
+description: "深入解析 AI 幻觉（Hallucination）的本质：Claude 等大语言模型为何会生成看似合理但实际虚假的信息，以及如何通过 Prompt 设计和验证步骤减少幻觉影响。"
+keywords: "AI幻觉,Claude幻觉,AI乱编数据,Hallucination"
 pubDate: 2026-04-23
 author: "机场猫编辑部"
 category: "ai_tools"

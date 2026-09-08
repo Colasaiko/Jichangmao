@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "ChatGPT生成大纲：让AI帮你快速建立文章结构 - 机场猫"
+description: "介绍如何用 ChatGPT 生成文章、报告或演讲的逻辑大纲：提供主题和要求后让 AI 快速建立清晰的层级结构，作为内容创作的起点，减少'空白页恐惧'。"
+keywords: "ChatGPT生成大纲,AI文章大纲,ChatGPT写作,ChatGPT结构化写作"
 pubDate: 2026-03-30
 author: "机场猫编辑部"
 category: "ai_tools"

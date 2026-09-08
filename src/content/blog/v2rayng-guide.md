@@ -1,7 +1,7 @@
 ---
-title: "使用前需要准备什么解析：2026最新教程与指南 - 机场猫"
-description: "全面介绍使用前需要准备什么解析的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "使用前需要准备什么解析,使用前需要准备什么解析教程,机场猫"
+title: "v2rayNG使用教程：Android安卓代理完整配置指南 - 机场猫"
+description: "Android 用户的 v2rayNG 完整配置指南：如何下载安装 v2rayNG、导入机场订阅链接、设置规则分流，以及常见连接问题的排查方法。"
+keywords: "v2rayNG教程,v2rayNG使用,安卓代理配置,v2rayNG配置"
 pubDate: 2026-08-27
 category: "streaming"
 difficulty: "困难"

@@ -1,7 +1,7 @@
 ---
-title: "一、这个功能：2026最新教程与指南 - 机场猫"
-description: "全面介绍一、这个功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "一、这个功能,一、这个功能教程,机场猫"
+title: "Perplexity Pro Search是什么？高级深度搜索功能详解 - 机场猫"
+description: "详解 Perplexity Pro Search 的工作方式：针对复杂问题进行多步骤深度检索，如同研究助手一样主动搜集、筛选、整理信息，以及与普通搜索的区别。"
+keywords: "Perplexity Pro Search,Perplexity深度搜索,Perplexity Pro,AI深度研究"
 pubDate: 2026-07-11
 author: "机场猫编辑部"
 category: "ai_official"

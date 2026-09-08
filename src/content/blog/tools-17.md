@@ -1,7 +1,7 @@
 ---
-title: "tools 17：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools 17的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools 17,tools 17教程,机场猫"
+title: "WireGuard与Tailscale的关系：底层协议与上层封装 - 机场猫"
+description: "厘清 WireGuard 和 Tailscale 的关系：WireGuard 是底层 VPN 协议（发动机），Tailscale 是在其之上实现了自动密钥分发和 NAT 穿透的完整组网平台。"
+keywords: "WireGuard和Tailscale,Tailscale WireGuard关系,VPN协议,组网工具"
 pubDate: 2026-08-10
 author: "机场猫编辑部"
 category: "streaming"

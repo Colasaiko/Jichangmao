@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "IPLC、IEPL和BGP是什么？三种线路类型完整解析 - 机场猫"
+description: "一文厘清机场营销中最常见的三类线路术语：IPLC（国际私有专线）、IEPL（国际以太网专线）、BGP多线中转——技术差异、价格区别与适用场景。"
+keywords: "IPLC IEPL BGP区别,专线是什么,BGP中转,机场线路类型"
 pubDate: 2026-08-27
 category: "routing"
 parent: "what-is-node"

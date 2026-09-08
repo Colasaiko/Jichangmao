@@ -1,7 +1,7 @@
 ---
-title: "tools：2026最新教程与指南 - 机场猫"
-description: "全面介绍tools的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "tools,tools教程,机场猫"
+title: "IP纯净度检测工具：判断节点IP是否被风控标记 - 机场猫"
+description: "使用 IPPure、IPCheck 等工具检测代理节点 IP 的'纯净度'：评估 IP 是否被列为高风险代理 IP，ChatGPT/Netflix 是否可能识别并封锁该 IP。"
+keywords: "IP纯净度检测,IPPure,IPCheck,ChatGPT IP检测"
 pubDate: 2026-08-12
 author: "机场猫编辑部"
 category: "streaming"

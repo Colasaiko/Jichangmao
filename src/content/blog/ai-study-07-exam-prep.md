@@ -1,7 +1,7 @@
 ---
-title: "网络专线：2026最新教程与指南 - 机场猫"
-description: "全面介绍网络专线的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
-keywords: "网络专线,网络专线教程,机场猫"
+title: "AI辅助备考：用ChatGPT高效准备考试的方法 - 机场猫"
+description: "系统介绍如何用 ChatGPT 进行考试备考：整理考点、生成模拟题、解析错题、制定复习计划，让 AI 成为你的个人备考助教。"
+keywords: "AI备考,ChatGPT备考,AI考试准备,AI学习辅助"
 pubDate: 2026-03-13
 author: "机场猫编辑部"
 category: "ai_work"
