@@ -3,10 +3,10 @@ import BottomMenuNav from '../components/BottomMenuNav.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const title = "2026高性价比机场推荐榜 | Clash节点 - 机场猫";
-const description = "想快速找到便宜网络？本页面为您汇总2026最新机场推荐排行榜单与深度测评。对比价格与流媒体解锁能力，帮助您轻松选购适配Clash的专线。点击获取最新打折情报！";
-const keywords = "汇总最新机场推荐排行榜单,对比价格与流媒体解锁能力,帮助您轻松选购适配的专线";
-const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"2026最新机场推荐与价格横评 | Clash 节点排行榜 - 机场猫","description":"不知道哪个机场适合你？本页面汇总了2026最新机场推荐榜单与价格对比。从节点测速、流媒体解锁到多端设备支持，全方位横向测评主流专线机场。点击获取最新高性价比 Clash 订阅方案！","url":"https://jichangmao.com/reviews/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
+const title = "2026机场推荐排行榜：稳定、高性价比机场精选 - 机场猫";
+const description = "2026最新机场推荐排行榜。机场猫按稳定性、价格、IPLC线路、流媒体解锁、晚高峰表现及IP质量评选，帮你找到真正靠谱的高性价比机场，支持Clash/Shadowrocket全平台订阅。";
+const keywords = "2026机场推荐,机场推荐排行榜,稳定机场推荐,便宜机场推荐,高性价比机场推荐,专线机场推荐,老牌机场推荐,高速机场推荐,Clash机场推荐";
+const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"2026机场推荐排行榜：稳定、高性价比机场精选 - 机场猫","description":"2026最新机场推荐排行榜。按稳定性、价格、IPLC线路、流媒体解锁、晚高峰表现及IP质量评选，帮你找到真正靠谱的高性价比机场，支持Clash/Shadowrocket全平台订阅。","url":"https://jichangmao.com/reviews/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
 
 // Fetch posts
 const posts = (await getCollection('blog'))

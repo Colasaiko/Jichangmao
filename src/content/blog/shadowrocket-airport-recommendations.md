@@ -1,0 +1,85 @@
+---
+title: "2026 Shadowrocket机场推荐：iOS小火箭适配机场 - 机场猫"
+description: "2026年Shadowrocket机场推荐。为iOS用户整理与Shadowrocket（小火箭）完美兼容的机场，解释订阅格式、协议支持、导入流程，以及选购iOS机场的注意事项。"
+keywords: "Shadowrocket机场推荐,小火箭机场推荐,小火箭订阅推荐,Shadowrocket节点推荐,iOS机场推荐"
+pubDate: 2026-09-08
+author: "机场猫编辑部"
+category: "guides"
+article_type: "Guide"
+tags: ["Shadowrocket", "iOS", "小火箭", "机场推荐"]
+---
+
+# 2026 Shadowrocket机场推荐：iOS 小火箭适配机场选购指南
+
+Shadowrocket（小火箭）是 iOS 平台上使用最广泛的代理工具。本文专门为 **iPhone / iPad 用户**整理与 Shadowrocket 兼容性最佳的机场推荐。
+
+> 本文解决的是 **"小火箭配什么机场"**，而不是 "Shadowrocket 怎么安装"。如需下载安装教程，请查看 [iOS Shadowrocket 安装与配置指南](/blog/shadowrocket-guide/)。
+
+## Shadowrocket 支持什么协议？
+
+| 协议 | 支持情况 | 说明 |
+|---|---|---|
+| Shadowsocks (SS) | ✅ 完整支持 | 最稳定，首选 |
+| VMess | ✅ 支持 | V2Ray 协议 |
+| VLESS | ✅ 支持（新版本） | 效率更高 |
+| Trojan | ✅ 完整支持 | 伪装 HTTPS |
+| Hysteria2 | ✅ 支持（新版本） | 基于 UDP，强抗封锁 |
+| SSR（ShadowsocksR） | ✅ 支持但已过时 | 不推荐 |
+
+## iOS 机场的特殊注意事项
+
+### 1. 需要非大陆 Apple ID
+Shadowrocket 需要从**美区或港区 App Store** 购买，约 \$2.99 美元。如果你只有大陆 Apple ID，需要先申请一个海外 Apple ID。
+
+### 2. 订阅格式兼容性
+Shadowrocket 支持多种订阅格式：
+- **Clash YAML 格式**：大多数机场都支持，Shadowrocket 可以自动识别
+- **Base64 订阅**：旧版格式，部分机场仍在使用
+- **单节点 URI**（ss:// vmess:// 等）：直接添加单个节点
+
+### 3. iOS VPN 限制
+iOS 对 VPN 连接有额外限制，建议在 Shadowrocket 设置中开启「始终开启 VPN」模式，避免切换 App 时代理断开。
+
+## 选择 Shadowrocket 机场要注意什么？
+
+1. **提供多种订阅格式**：Clash 订阅和 Base64 订阅都能在 Shadowrocket 使用，选支持两者的机场更灵活
+2. **SS 协议质量**：iOS 上 SS 协议更稳定，选择在 SS 上有专线节点的机场
+3. **节点数量与地区覆盖**：iPhone 用户对地区需求差异很大（美区 Netflix、ChatGPT 需要美国节点，游戏需要日本/台湾节点）
+4. **多设备支持**：确认机场允许在 iPhone + iPad 同时登录
+
+## 适用系统
+
+Shadowrocket 仅适用于 **iOS / iPadOS**。如果你还有 Mac，可以使用：
+- macOS：[Clash Verge Rev](/blog/mac-clash-verge-rev-guide/) 或 Surge
+- Windows：[v2rayN](/blog/v2rayn-airport-recommendations/) 或 Clash Verge Rev
+
+大多数机场允许同一账号在多台设备使用同一订阅，无需重复购买。
+
+## 2026 推荐 Shadowrocket 兼容机场
+
+以下机场提供与 Shadowrocket 完全兼容的订阅，可直接一键导入：
+
+- **查看完整排行榜 →** [2026机场推荐排行榜](/reviews/)
+
+筛选标准：
+- ✅ 提供 SS / Trojan / Hysteria2 协议节点
+- ✅ 支持 Clash 订阅格式（Shadowrocket 兼容）
+- ✅ 多设备同时登录支持
+- ✅ 覆盖美国、日本、香港、新加坡等常用地区
+
+## 常见问题（FAQ）
+
+**Q：Shadowrocket 可以用 Clash 订阅吗？**
+A：可以。Shadowrocket 可以直接识别并导入 Clash YAML 格式的订阅链接，无需额外转换。
+
+**Q：小火箭连上了但是打不开 YouTube / Netflix？**
+A：通常是节点的 IP 被流媒体平台封锁，或者你选择的节点地区没有该服务的授权。可以尝试切换到"原生"标注的节点，或选择该服务对应的地区节点（如 Netflix 美国需要美国节点）。
+
+**Q：iPhone 在内地购买的机场可以在海外使用吗？**
+A：可以。机场节点的使用不受购买地限制。但在不同网络环境（如海外 WiFi）下，部分协议的表现可能略有差异。
+
+---
+
+→ 查看 [2026机场推荐排行榜](/reviews/)
+→ 查看 [Clash机场推荐（Windows/macOS）](/blog/clash-airport-recommendations/)
+→ 查看 [v2rayN机场推荐（Android/Windows）](/blog/v2rayn-airport-recommendations/)

@@ -1,7 +1,7 @@
 ---
-title: "Prompt解析 | AI效率神器 - 机场猫"
-description: "还在为了提示词发愁？机场猫为您带来2026最新Prompt实战教程。助您轻松掌握大模型的高效用法与核心逻辑，大幅提升生产力。点击获取专属配置指南！"
-keywords: "2026最新Prompt教程,Prompt高效用法解析,提升生产力必备神器"
+title: "Prompt：2026最新教程与指南 - 机场猫"
+description: "全面介绍Prompt的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+keywords: "Prompt,Prompt教程,机场猫"
 pubDate: 2026-03-05
 category: "ai_usage"
 difficulty: "困难"

@@ -1,7 +1,7 @@
 ---
-title: "深入解析clash原理 | Clash节点 - 机场猫"
-description: "经常遇到网络连通问题？机场猫为您提供2026最新clash进阶教程。带您轻松掌握底层协议原理与全平台客户端的图文配置方法。点击获取安全排错指南！"
-keywords: "2026最新clash进阶教程,clash核心原理解析,Clash配置指南"
+title: "clash：2026最新教程与指南 - 机场猫"
+description: "全面介绍clash的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+keywords: "clash,clash教程,机场猫"
 pubDate: 2026-05-18
 author: "机场猫编辑部"
 category: "client_archive"

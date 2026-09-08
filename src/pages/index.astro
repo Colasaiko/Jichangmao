@@ -13,7 +13,7 @@ const jsonLd = JSON.stringify({
       "@id": "https://jichangmao.com/#website",
       "url": "https://jichangmao.com/",
       "name": "机场猫",
-      "description": "2026机场推荐与专线测评 | Clash节点 - 机场猫"
+      "description": "2026机场推荐、稳定机场筛选、专线机场对比、价格与节点测评的专业网站。整理高性价比便宜机场与高速机场排行榜。"
     },
     {
       "@type": "Organization",
@@ -48,7 +48,7 @@ const latestEvals = allEvals.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
 
 ---
 
-<BaseLayout title="2026机场推荐与专线测评 | Clash节点 - 机场猫" description="不知道如何配置优质节点？机场猫为您带来2026最新高性价比机场横评。提供真实的专线测速、流媒体解锁分析，完美兼容Clash客户端。点击获取进阶防封锁指南！" keywords="最新高性价比优质机场专线横评,提供真实的专线测速解锁分析,完美兼容全平台客户端" jsonLd={jsonLd}>
+<BaseLayout title="2026机场推荐：稳定、便宜、专线机场排行榜 - 机场猫" description="机场猫是一个提供2026机场推荐、稳定机场筛选、专线机场对比、价格与节点测评的专业网站。为您整理高性价比的便宜机场与高速Clash机场排行榜。" keywords="机场推荐,2026机场推荐,稳定机场推荐,便宜机场推荐,专线机场推荐,高性价比机场推荐,机场排行榜,Clash机场推荐" jsonLd={jsonLd}>
   
   <main class="w-full relative z-10 flex flex-col bg-slate-50 dark:bg-slate-950/50 min-h-screen">
     
@@ -57,11 +57,11 @@ const latestEvals = allEvals.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
       <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center relative z-10">
         <div class="reveal-el flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15] drop-shadow-sm">
-            机场推荐与网络服务指南</h1>
+            2026 机场推荐与稳定专线机场排行榜</h1>
           <img src="/logo.jpg" alt="机场猫 Logo" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl border-4 border-white dark:border-slate-800 rotate-3 hover:rotate-0 transition-transform duration-300 flex-shrink-0" />
         </div>
         <p class="reveal-el reveal-delay-100 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
-          独立整理网络服务、节点线路、客户端教程与网络工具，帮助你更方便地选择适合自己的服务。        </p>
+          机场猫专注于 2026 机场推荐、稳定机场筛选、便宜机场对比与专线机场测评。无论你需要 Clash机场推荐、Shadowrocket机场推荐还是按量计费机场，这里都有详细的选购指南。        </p>
         <div class="reveal-el reveal-delay-200 flex flex-wrap items-center justify-center gap-4 mt-8">
           <a href="/reviews/" class="px-8 py-3.5 rounded-xl bg-primary-600 text-white font-bold text-lg hover:bg-primary-700 transition-colors shadow-sm">机场推荐</a>
           <a href="/guides/" class="px-8 py-3.5 rounded-xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm">新手教程</a>
@@ -325,6 +325,64 @@ const latestEvals = allEvals.sort((a, b) => b.data.pubDate.valueOf() - a.data.pu
   
     
     
+
+    <!-- 热门机场选择指南 (SEO Topic Cluster Entrance) -->
+    <section class="max-w-7xl mx-auto px-4 w-full mb-24">
+      <div class="flex items-center justify-between mb-8 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">热门机场选择指南</h2>
+          </div>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 sm:ml-11">按需求直达最相关的选购指南，找到最适合你的机场</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <a href="/reviews/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-primary-300 dark:hover:border-primary-700 transition-all">
+          <div class="text-2xl mb-2">🏆</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-primary-600 transition-colors">2026机场推荐</div>
+          <div class="text-xs text-slate-500">全站精选机场排行榜</div>
+        </a>
+        <a href="/blog/cheap-airport-recommendations/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-emerald-300 dark:hover:border-emerald-700 transition-all">
+          <div class="text-2xl mb-2">💰</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-emerald-600 transition-colors">便宜机场推荐</div>
+          <div class="text-xs text-slate-500">低价、高性价比机场整理</div>
+        </a>
+        <a href="/blog/dedicated-line-airport-recommendations/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-blue-300 dark:hover:border-blue-700 transition-all">
+          <div class="text-2xl mb-2">⚡</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-blue-600 transition-colors">专线机场推荐</div>
+          <div class="text-xs text-slate-500">IPLC/IEPL全专线机场</div>
+        </a>
+        <a href="/blog/clash-airport-recommendations/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-purple-300 dark:hover:border-purple-700 transition-all">
+          <div class="text-2xl mb-2">🛡️</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-purple-600 transition-colors">Clash机场推荐</div>
+          <div class="text-xs text-slate-500">Clash/Verge兼容机场</div>
+        </a>
+        <a href="/blog/shadowrocket-airport-recommendations/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-amber-300 dark:hover:border-amber-700 transition-all">
+          <div class="text-2xl mb-2">📱</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-amber-600 transition-colors">Shadowrocket机场推荐</div>
+          <div class="text-xs text-slate-500">iOS小火箭适配机场</div>
+        </a>
+        <a href="/blog/pay-as-you-go-airport/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-teal-300 dark:hover:border-teal-700 transition-all">
+          <div class="text-2xl mb-2">📦</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-teal-600 transition-colors">按量计费机场</div>
+          <div class="text-xs text-slate-500">不限时、不过期流量包</div>
+        </a>
+        <a href="/blog/chatgpt-airport-recommendations/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-700 transition-all">
+          <div class="text-2xl mb-2">🤖</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-indigo-600 transition-colors">ChatGPT机场推荐</div>
+          <div class="text-xs text-slate-500">AI服务与流媒体解锁</div>
+        </a>
+        <a href="/blog/ladder-recommendations/" class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 hover:shadow-md hover:border-rose-300 dark:hover:border-rose-700 transition-all">
+          <div class="text-2xl mb-2">🪜</div>
+          <div class="font-bold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-rose-600 transition-colors">梯子推荐</div>
+          <div class="text-xs text-slate-500">好用的梯子工具推荐</div>
+        </a>
+      </div>
+    </section>
+
     <!-- AEO FAQ Section -->
     <section class="max-w-7xl mx-auto px-4 w-full mb-16">
       <div class="mb-8 text-center">

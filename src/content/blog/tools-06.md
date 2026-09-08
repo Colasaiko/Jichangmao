@@ -1,7 +1,7 @@
 ---
-title: "深入解析tools 06原理 | Clash节点 - 机场猫"
-description: "经常遇到网络连通问题？机场猫为您提供2026最新tools 06进阶教程。带您轻松掌握底层协议原理与全平台客户端的图文配置方法。点击获取安全排错指南！"
-keywords: "最新tools 06教程,tools 06原理解析,Clash配置"
+title: "tools 06：2026最新教程与指南 - 机场猫"
+description: "全面介绍tools 06的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+keywords: "tools 06,tools 06教程,机场猫"
 pubDate: 2026-08-04
 author: "机场猫编辑部"
 category: "daily"

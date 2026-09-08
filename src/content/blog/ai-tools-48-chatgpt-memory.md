@@ -1,7 +1,7 @@
 ---
-title: "ChatGPT 的记忆功能解析 | AI效率神器 - 机场猫"
-description: "还在为了提示词发愁？机场猫为您带来2026最新ChatGPT 的记忆功能实战教程。助您轻松掌握大模型的高效用法与核心逻辑，大幅提升生产力。点击获取专属配置指南！"
-keywords: "最新ChatGPT 的记忆功能教程,ChatGPT 的记忆功能用法解析,生产力必备神器"
+title: "ChatGPT 的记忆功能：2026最新教程与指南 - 机场猫"
+description: "全面介绍ChatGPT 的记忆功能的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+keywords: "ChatGPT 的记忆功能,ChatGPT 的记忆功能教程,机场猫"
 pubDate: 2026-04-10
 author: "机场猫编辑部"
 category: "ai_tools"

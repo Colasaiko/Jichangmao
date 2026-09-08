@@ -1,7 +1,7 @@
 ---
-title: "制作 Banner 的两个核心解析 | AI效率神器 - 机场猫"
-description: "还在为了提示词发愁？机场猫为您带来2026最新制作 Banner 的两个核心要求实战教程。助您轻松掌握大模型的高效用法与核心逻辑，点击获取专属配置指南！"
-keywords: "最新制作 Banner 的两个核心要求教程,制作 Banner 的两个核心要求用法解析,生产力必备神器"
+title: "制作 Banner 的两个核心：2026最新教程与指南 - 机场猫"
+description: "全面介绍制作 Banner 的两个核心的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+keywords: "制作 Banner 的两个核心,制作 Banner 的两个核心教程,机场猫"
 pubDate: 2026-01-27
 category: "ai_media"
 difficulty: "困难"
