@@ -51,7 +51,7 @@ WireGuard 采取了完全不同的策略：**不提供冗余的算法选择**。
 
 ### 2. 加密密钥路由（Cryptokey Routing）
 这是 WireGuard 最优雅的技术创新之一。
-在 WireGuard 中，**公钥（Public Key）就是对等节点的唯一身份标识**。WireGuard 在虚拟网卡层面将“客户端的公钥”与“分配给它的内部 IP 地址”紧紧绑定在一起。
+在 WireGuard 中，**公钥（Public Key）就是对等[节点](/blog/what-is-node/)的唯一身份标识**。WireGuard 在虚拟网卡层面将“客户端的公钥”与“分配给它的内部 IP 地址”紧紧绑定在一起。
 - 发送数据时：WireGuard 检查数据包的目的地 IP，在内部列表中找到匹配的公钥，直接加密后发送出去。
 - 接收数据时：WireGuard 验证数据包签名并解密，检查数据包内部的源 IP 是否与该公钥所绑定的 IP 完全一致，不符合就直接丢弃。
 
@@ -89,7 +89,7 @@ WireGuard 的表现则令人惊叹：
 3. **现代云原生与网状组网（Mesh VPN）**：
    - 备受好评的 Tailscale、Netmaker 等新一代组网工具，其底层核心引擎正是基于 WireGuard 构建的。
 4. **代理工具的出站集成**：
-   - 在如 sing-box 或 Clash 等多协议网络代理核心中，WireGuard 经常被用作可靠的上游出站通道（例如用于接入 Cloudflare WARP 网络），为特定流量提供清洁可信的出口网络。
+   - 在如 sing-box 或 [Clash](/blog/mac-clash-verge-rev-guide/) 等多协议网络代理核心中，WireGuard 经常被用作可靠的上游出站通道（例如用于接入 Cloudflare WARP 网络），为特定流量提供清洁可信的出口网络。
 
 ---
 

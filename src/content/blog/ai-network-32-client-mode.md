@@ -26,7 +26,7 @@ tags: [客户端配置, 规则模式, 代理教程]
 
 当你输入一个网址时，客户端会按照规则集进行判定。举个简单的例子：
 
-- 规则包含：`domain:openai.com -> proxy` （走代理节点）
+- 规则包含：`domain:openai.com -> proxy` （走代理[节点](/blog/what-is-node/)）
 - 规则包含：`domain:google.com -> proxy` （走代理节点）
 - 规则包含：`domain:baidu.com -> direct` （直连网络）
 - 规则包含：`GEOIP,CN -> direct` （中国大陆 IP 直连）

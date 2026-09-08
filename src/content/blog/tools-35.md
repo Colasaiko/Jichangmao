@@ -126,7 +126,7 @@ curl -w "\nDNS解析耗时: %{time_namelookup}s\nTCP建立连接: %{time_connect
 
 ## 实际应用
 
-### 1. 验证代理节点与检测当前真实公网 IP
+### 1. 验证代理[节点](/blog/what-is-node/)与检测当前真实公网 IP
 
 在配置代理客户端（如 [Clash](/blog/mac-clash-verge-rev-guide/)、Sing-box、V2ray）时，我们经常需要测试本地监听端口是否生效，以及走代理后的落地 IP 是哪里的。
 

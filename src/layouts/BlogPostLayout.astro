@@ -97,60 +97,103 @@ const descriptions = {
 const allBlogs = await getCollection('blog');
 
 let relatedArticles: any[] = [];
-let relatedBrands: any[] = [];
-
-// Semantic Matching Engine (No Randomness)
-const getScore = (p: any) => {
-  let score = 0;
-  if (p.data.category === category) score += 3;
-  if (Astro.props.tags && p.data.tags) {
-    p.data.tags.forEach((t: string) => {
-      if (Astro.props.tags.includes(t)) score += 1;
-    });
-  }
-  return score;
-};
-
-if (isReview) {
-  // 1. Brand Reviews link to Core Knowledge Guides based on tags (e.g. Clash, Sing-box, Speed)
-  // Fallback to core hubs if no tags match.
-  const coreHubs = ['what-is-airport-proxy', 'how-to-choose-an-airport-guide', 'proxy-not-working-troubleshooting-hub', 'mac-clash-verge-rev-guide', 'low-latency-slow-speed'];
+  let relatedBrands: any[] = [];
   
-  const eligibleGuides = allBlogs.filter(p => p.data.category !== '品牌介绍' && p.data.category !== 'review_archive' && p.data.category !== 'client_archive' && p.slug !== slug);
+  // Semantic Topic Clusters (Expanded)
+  const clusters: Record<string, string[]> = {
+    airport: ['机场', '机场节点', '机场测速', '机场选择', '流量', '节点', '中转'],
+    speed: ['测速', '速度', '带宽', '延迟', '丢包', '晚高峰', '下载速度'],
+    clash: ['Clash', 'Clash Verge', 'Clash Meta', '配置', '代理客户端'],
+    singbox: ['sing-box', 'SFA', 'singbox', '配置', '客户端'],
+    streaming: ['Netflix', 'YouTube', 'Disney+', '流媒体', '解锁'],
+    ai: ['AI', 'ChatGPT', 'Claude', 'Gemini', 'OpenAI', 'AI工具'],
+    network: ['网络', 'DNS', 'IPv4', 'IPv6', 'BGP', 'IPLC', 'IEPL', '中转', '专线'],
+    routing: ['分流', '规则', '路由', '规则集', '代理规则'],
+    openwrt: ['OpenWrt', '路由器', '旁路由', '软路由']
+  };
   
-  relatedArticles = eligibleGuides
-    .map(p => ({ p, score: getScore(p) + (coreHubs.includes(p.slug) ? 2 : 0) }))
-    .sort((a, b) => b.score - a.score || b.p.data.pubDate.valueOf() - a.p.data.pubDate.valueOf())
-    .map(x => x.p)
-    .slice(0, 5);
-} else {
-  // 2. Knowledge Guides link to other Guides deterministically by score
-  const eligibleGuides = allBlogs.filter(p => p.data.category !== '品牌介绍' && p.data.category !== 'review_archive' && p.data.category !== 'client_archive' && p.slug !== slug);
+  const textToAnalyze = `${title} ${description} ${(Astro.props.tags || []).join(' ')} ${keywords || ''}`.toLowerCase();
+  const currentClusters = Object.keys(clusters).filter(key => 
+    clusters[key].some((keyword: string) => textToAnalyze.includes(keyword.toLowerCase()))
+  );
   
-  relatedArticles = eligibleGuides
-    .map(p => ({ p, score: getScore(p) }))
-    .filter(x => x.score > 0)
-    .sort((a, b) => b.score - a.score || b.p.data.pubDate.valueOf() - a.p.data.pubDate.valueOf())
-    .map(x => x.p)
-    .slice(0, 5);
+  const getAdvancedScore = (p: any, isBrandSearch: boolean = false) => {
+    let score = 0;
+    const targetText = `${p.data.title} ${p.data.description} ${(p.data.tags || []).join(' ')} ${p.data.keywords || ''}`.toLowerCase();
     
-  // Fallback to latest guides if not enough related
-  if (relatedArticles.length < 4) {
-    const fallbacks = eligibleGuides
-      .filter(p => !relatedArticles.find(r => r.slug === p.slug))
-      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-      .slice(0, 5 - relatedArticles.length);
-    relatedArticles = [...relatedArticles, ...fallbacks];
-  }
+    currentClusters.forEach(clusterKey => {
+      if (clusters[clusterKey].some((keyword: string) => targetText.includes(keyword.toLowerCase()))) {
+        score += 10; 
+      }
+    });
   
-  // 3. Knowledge Guides link back to Relevant Brands
+    if (Astro.props.tags && p.data.tags) {
+      p.data.tags.forEach((t: string) => {
+        if (Astro.props.tags.includes(t)) score += 6;
+      });
+    }
+  
+    if (p.data.category === category) score += 4;
+    
+    if (isReview && !isBrandSearch) {
+      if (currentClusters.includes('clash') && targetText.includes('clash')) score += 10;
+      if (currentClusters.includes('speed') && targetText.includes('测速')) score += 10;
+    }
+    if (!isReview && isBrandSearch) {
+      if (currentClusters.includes('streaming') && targetText.includes('解锁')) score += 10;
+      if (currentClusters.includes('network') && (targetText.includes('iplc') || targetText.includes('bgp'))) score += 10;
+    }
+  
+    if (p.data.article_type === 'Hub' && score > 0) {
+      score += 2;
+    }
+    return score;
+  };
+  
+  const sortDeterministically = (a: any, b: any) => {
+    if (b.score !== a.score) return b.score - a.score;
+    const aHub = (a.p.data.article_type === 'Hub') ? 1 : 0;
+    const bHub = (b.p.data.article_type === 'Hub') ? 1 : 0;
+    if (aHub !== bHub) return bHub - aHub;
+    const aTime = a.p.data.pubDate ? new Date(a.p.data.pubDate).valueOf() : 0;
+    const bTime = b.p.data.pubDate ? new Date(b.p.data.pubDate).valueOf() : 0;
+    if (aTime !== bTime) return bTime - aTime;
+    return a.p.slug.localeCompare(b.p.slug);
+  };
+  
+  const eligibleGuides = allBlogs.filter(p => p.data.category !== '品牌介绍' && p.data.category !== 'review_archive' && p.data.category !== 'client_archive' && p.slug !== slug);
   const allBrands = allBlogs.filter(p => p.data.category === '品牌介绍' && p.slug !== slug);
-  relatedBrands = allBrands
-    .map(p => ({ p, score: getScore(p) }))
-    .sort((a, b) => b.score - a.score || b.p.data.pubDate.valueOf() - a.p.data.pubDate.valueOf())
-    .map(x => x.p)
-    .slice(0, 3);
-}
+  
+  if (isReview) {
+    relatedArticles = eligibleGuides
+      .map(p => ({ p, score: getAdvancedScore(p, false) }))
+      .sort(sortDeterministically)
+      .slice(0, 5)
+      .map(x => x.p);
+  } else {
+    relatedArticles = eligibleGuides
+      .map(p => ({ p, score: getAdvancedScore(p, false) }))
+      .filter(x => x.score > 0)
+      .sort(sortDeterministically)
+      .slice(0, 5)
+      .map(x => x.p);
+      
+    if (relatedArticles.length < 4) {
+      const fallbacks = eligibleGuides
+        .filter(p => p.data.article_type === 'Hub' && !relatedArticles.find(r => r.slug === p.slug))
+        .map(p => ({ p, score: 1 }))
+        .sort(sortDeterministically)
+        .slice(0, 5 - relatedArticles.length)
+        .map(x => x.p);
+      relatedArticles = [...relatedArticles, ...fallbacks];
+    }
+    
+    relatedBrands = allBrands
+      .map(p => ({ p, score: getAdvancedScore(p, true) }))
+      .sort(sortDeterministically)
+      .slice(0, 3)
+      .map(x => x.p);
+  }
 
 ---
 

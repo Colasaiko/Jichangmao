@@ -13,7 +13,7 @@ tags:
 featured: true
 ---
 
-选[机场](/blog/what-is-airport-proxy/)最怕晚高峰卡顿和频繁断连。综合日常稳定性、晚高峰测速、流媒体解锁以及 AI 工具支持等多维度实测，我们筛选出了当前体验最稳的 4 家主力服务：**微风网络**、**飞猫云**、**sogo云** 和 **暮光加速**，并整理了最新的套餐价格与优惠信息。
+选[机场](/blog/what-is-airport-proxy/)最怕晚高峰卡顿和频繁断连。综合日常稳定性、晚高峰[测速](/blog/low-latency-slow-speed/)、流媒体解锁以及 AI 工具支持等多维度实测，我们筛选出了当前体验最稳的 4 家主力服务：**微风网络**、**飞猫云**、**sogo云** 和 **暮光加速**，并整理了最新的套餐价格与优惠信息。
 
 以下是各品牌的详细套餐、价格及专属购买链接整理：
 
@@ -43,7 +43,7 @@ featured: true
 
 飞猫云在流媒体和多设备支持方面表现极其优异，最高可达 2.5Gbps 的速率能满足 4K 乃至 8K 的观影需求。
 
-* **核心特色**：全 IPLC 专线（最高 2.5Gbps），原生 IP 解锁 Netflix/Disney+/ChatGPT/TikTok，智能路由分配，全球丰富节点覆盖。
+* **核心特色**：全 IPLC 专线（最高 2.5Gbps），原生 IP 解锁 Netflix/Disney+/ChatGPT/TikTok，智能路由分配，全球丰富[节点](/blog/what-is-node/)覆盖。
 * **优惠活动**：年付 8 折｜两年付 7 折｜三年付 6 折（长期有效）
 * **👉 官方直达链接**：[点击注册飞猫云](https://m1cfjgcx.feimaogfttt1.xyz/#/?code=UUcH5yh9)
 

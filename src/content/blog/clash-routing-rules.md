@@ -15,7 +15,7 @@ tags: ["教程", "Clash", "分流规则", "实操指南"]
 
 ## 什么是代理组 (Proxy Groups)？
 
-打开 Clash Verge Rev 的 **“代理 (Proxies)”** 界面，您会看到除了最基础的国家节点列表外，上方通常还有几个特殊的卡片，比如：
+打开 Clash Verge Rev 的 **“代理 (Proxies)”** 界面，您会看到除了最基础的国家[节点](/blog/what-is-node/)列表外，上方通常还有几个特殊的卡片，比如：
 *   **PROXIES (全局代理)**
 *   **Netflix (流媒体)**
 *   **ChatGPT (AI 服务)**

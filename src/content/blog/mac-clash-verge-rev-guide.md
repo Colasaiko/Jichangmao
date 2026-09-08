@@ -32,7 +32,7 @@ tags: ["教程", "Mac", "Clash Verge Rev", "TUN模式"]
 1.  打开 [Clash](/blog/mac-clash-verge-rev-guide/) Verge Rev，点击左侧导航栏的 **配置 (Profiles)**。
 2.  在顶部的输入框（URL 栏）中，粘贴您的订阅链接。
 3.  点击右侧的 **导入 (Import)** 按钮。
-4.  稍等片刻，软件会联网拉取节点数据。成功后，列表中会出现您的[机场](/blog/what-is-airport-proxy/)配置卡片。
+4.  稍等片刻，软件会联网拉取[节点](/blog/what-is-node/)数据。成功后，列表中会出现您的[机场](/blog/what-is-airport-proxy/)配置卡片。
 5.  **重要提示**：请单击选中刚刚导入的这张配置卡片（卡片背景变色或出现指示点），告诉软件“我要使用这个配置”。
 
 ## 三、开启代理与选择模式

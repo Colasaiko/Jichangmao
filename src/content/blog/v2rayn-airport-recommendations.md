@@ -9,9 +9,9 @@ article_type: "Guide"
 tags: ["v2rayN", "v2rayNG", "Windows", "Android", "机场推荐"]
 ---
 
-# 2026 v2rayN 机场推荐：Windows / Android 用户适配机场选购指南
+# 2026 v2rayN [机场](/blog/what-is-airport-proxy/)推荐：Windows / Android 用户适配机场选购指南
 
-v2rayN（Windows）和 v2rayNG（Android）是两款基于 V2Ray / Xray 内核的代理客户端，在不想使用 Clash 的用户中依然非常流行。本文为 **Windows 和 Android 用户**整理与 v2rayN / v2rayNG 最佳兼容的机场推荐。
+v2rayN（Windows）和 v2rayNG（Android）是两款基于 V2Ray / Xray 内核的代理客户端，在不想使用 [Clash](/blog/mac-clash-verge-rev-guide/) 的用户中依然非常流行。本文为 **Windows 和 Android 用户**整理与 v2rayN / v2rayNG 最佳兼容的机场推荐。
 
 > 本文解决 **"v2rayN 配什么机场"**，而非 "v2rayN 怎么安装"。如需安装教程，请查看 [Windows v2rayN 安装与配置指南](/blog/windows-v2rayn-guide/)。
 
@@ -42,7 +42,7 @@ v2rayN（Windows）和 v2rayNG（Android）是两款基于 V2Ray / Xray 内核�
 
 ## 选择 v2ray 机场要注意什么？
 
-1. **提供 v2rayN 兼容订阅**：确认机场提供包含 VMess / VLESS 节点的订阅格式
+1. **提供 v2rayN 兼容订阅**：确认机场提供包含 VMess / VLESS [节点](/blog/what-is-node/)的订阅格式
 2. **支持订阅转换**：理想情况下机场直接提供 v2rayN 订阅，或支持通过 [订阅转换](/blog/what-is-subscription/) 工具转换
 3. **协议多样性**：除了 VMess，最好也有 VLESS + Reality 节点，抗封锁能力更强
 4. **节点更新频率**：v2rayN 订阅支持一键更新是基本功能

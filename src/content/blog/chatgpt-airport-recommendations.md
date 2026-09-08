@@ -9,9 +9,9 @@ article_type: "Guide"
 tags: ["ChatGPT", "Claude", "AI服务", "原生IP", "机场推荐"]
 ---
 
-# ChatGPT机场推荐：2026 适合 AI 服务的机场选购指南
+# ChatGPT[机场](/blog/what-is-airport-proxy/)推荐：2026 适合 AI 服务的机场选购指南
 
-这篇文章解决的是：**用什么机场才能稳定访问 ChatGPT / Claude / Gemini 等 AI 服务**，以及如何选择 IP 质量足够好的节点，避免被封号。
+这篇文章解决的是：**用什么机场才能稳定访问 ChatGPT / Claude / Gemini 等 AI 服务**，以及如何选择 IP 质量足够好的[节点](/blog/what-is-node/)，避免被封号。
 
 > 注意：本文与 ChatGPT 使用技巧、Prompt 写法**完全无关**。如果你在找 Prompt 教程，请通过[知识指南](/guides/)搜索。
 
@@ -132,4 +132,4 @@ A：Anthropic 对 Claude 的地区限制比 OpenAI 更严格。Claude 直接对�
 
 → 查看 [2026机场推荐排行榜](/reviews/)
 → 查看 [专线机场推荐（高IP质量）](/blog/dedicated-line-airport-recommendations/)
-→ 查看 [Clash机场推荐（客户端选择）](/blog/clash-airport-recommendations/)
+→ 查看 [Clash机场推荐（客户端选择）](/blog/[clash](/blog/mac-clash-verge-rev-guide/)-airport-recommendations/)

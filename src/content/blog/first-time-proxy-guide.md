@@ -9,7 +9,7 @@ author: "Antigravity"
 tags: ["教程", "新手入门", "操作指南"]
 ---
 
-恭喜您迈出了第一步，成功购买了[代理服务（机场）](/blog/what-is-airport-proxy)的套餐。
+恭喜您迈出了第一步，成功购买了[代理服务（[机场](/blog/what-is-airport-proxy/)）](/blog/what-is-airport-proxy)的套餐。
 
 很多完全没有经验的新手在完成支付后，面对服务商后台往往会一头雾水：“我钱付了，然后呢？怎么才能上网？”
 
@@ -26,11 +26,11 @@ tags: ["教程", "新手入门", "操作指南"]
 您的手机或电脑本身不知道如何解析那个链接，需要借助一个工具来翻译并连接，这个工具叫**客户端**。
 *   **操作**：根据您的设备类型，下载对应的软件并安装。
 *   **实操指南参考**：
-    *   如果您使用 Windows 电脑：[Clash Verge Rev 新手完整使用教程](/blog/clash-verge-rev-guide)
+    *   如果您使用 Windows 电脑：[Clash Verge Rev 新手完整使用教程](/blog/[clash](/blog/mac-clash-verge-rev-guide/)-verge-rev-guide)
     *   如果您使用苹果手机：[Shadowrocket 基础使用教程](/blog/shadowrocket-guide)
     *   *[待创建] 安卓手机与 Mac 电脑客户端使用教程*
 
-## 步骤 3：导入订阅与更新节点
+## 步骤 3：导入订阅与更新[节点](/blog/what-is-node/)
 
 有了软件，也有了链接，接下来就是把它们组合在一起。
 *   **操作**：打开客户端软件，找到“配置”或“订阅”选项，将您刚才复制的链接粘贴进去，并点击导入。导入成功后，软件界面里会瞬间多出几十个[代理节点](/blog/what-is-node)。

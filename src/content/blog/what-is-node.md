@@ -9,7 +9,7 @@ author: "Antigravity"
 tags: ["教程", "新手入门", "节点知识"]
 ---
 
-在了解了[什么是机场](/blog/what-is-airport-proxy)之后，您在客户端里看到最多的词一定就是“节点”。
+在了解了[什么是机场](/blog/what-is-airport-proxy)之后，您在客户端里看到最多的词一定就是“[节点](/blog/what-is-node/)”。
 
 面对长长的节点列表，新手常常会感到困惑：不同国家和地区的节点有什么区别？延迟越低速度就一定越快吗？
 

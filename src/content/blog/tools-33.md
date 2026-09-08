@@ -171,7 +171,7 @@ nslookup yourdomain.com 223.5.5.5
 ## 查询谷歌 DNS 是否同步了新 IP
 nslookup yourdomain.com 8.8.8.8
 
-## 直接向你的权威 DNS (如 Cloudflare 节点) 查询是否已就绪
+## 直接向你的权威 DNS (如 Cloudflare [节点](/blog/what-is-node/)) 查询是否已就绪
 nslookup yourdomain.com 1.1.1.1
 ```
 

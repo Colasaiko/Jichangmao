@@ -40,7 +40,7 @@ nextSlug: "tools-17"
 为了帮助大家更好地阅读后续内容和官方文档，我们先用大白话解释几个 Tailscale 里的核心概念：
 
 - **Tailnet（虚拟私有网络）**：这是你在 Tailscale 中创建的专属私有网络空间。登录同一个账号的所有设备，都会自动加入到同一个 Tailnet 中。
-- **Node（节点 / 设备）**：加入你 Tailnet 的每一个具体设备，无论是你的 iPhone、Windows 电脑还是 Linux 服务器，都称为一个 Node。
+- **Node（[节点](/blog/what-is-node/) / 设备）**：加入你 Tailnet 的每一个具体设备，无论是你的 iPhone、Windows 电脑还是 Linux 服务器，都称为一个 Node。
 - **100.x.y.z 专用 IP 地址**：每个加入 Tailnet 的设备都会被分配一个独一无二的固定虚拟内网 IP（属于 CGNAT `100.64.0.0/10` 网段）。无论你的手机从家里 Wi-Fi 切换到移动数据，这个 IP 永远保持不变。
 - **MagicDNS（魔法域名）**：Tailscale 提供的内置智能域名解析服务。你不需要费力记忆枯燥的 IP 地址，只要输入设备名称（例如 `http://my-nas` 或 `http://work-pc`），就能直接在任何设备上访问对应的机器。
 
@@ -104,7 +104,7 @@ Tailscale 内置了一个非常实用的小功能——**Taildrop**。它类似�
 
 新手在初次接触 Tailscale 时，往往容易产生以下几个误区：
 
-### 误区一：“Tailscale 是用来代理加速的代理机场吗？”
+### 误区一：“Tailscale 是用来代理加速的代理[机场](/blog/what-is-airport-proxy/)吗？”
 **纠正**：**不是。** Tailscale 是一款专门用于“私有设备互联”的虚拟局域网（VPN）工具，它的核心设计目的是连接属于你自己的设备。它本身不提供任何位于海外的公共代理节点。虽然你可以把海外 VPS 作为 Exit Node 来转发流量，但 Tailscale 本身绝非商业网络代理软件。
 
 ### 误区二：“把数据交给 Tailscale，隐私会不会被泄露？”

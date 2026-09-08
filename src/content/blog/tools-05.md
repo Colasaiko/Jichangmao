@@ -26,11 +26,11 @@ nextSlug: "tools-06"
 
 ### 2. Outbound（出站）
 - **定义**：流量离开 sing-box、发往外部目的地的“出口”。
-- **通俗解释**：相当于机场的“登机口”。数据在经过内部处理后，最终必须通过某一个出站通道发送出去。
+- **通俗解释**：相当于[机场](/blog/what-is-airport-proxy/)的“登机口”。数据在经过内部处理后，最终必须通过某一个出站通道发送出去。
 - **常见类型**：
   - `direct`（直连）：不走任何代理，直接通过你本地的[网络线路](/blog/guide-01/)连接目标；
   - `block`（拦截）：直接丢弃数据包（用于屏蔽广告）；
-  - 具体的代理协议节点（如 Shadowsocks、VMess、Trojan、Hysteria 2 等[网络协议](/blog/guide-05/)）；
+  - 具体的代理协议[节点](/blog/what-is-node/)（如 Shadowsocks、VMess、Trojan、Hysteria 2 等[网络协议](/blog/guide-05/)）；
   - 策略组（如 `selector` 手动选择、`urltest` 自动测速）。
 
 ### 3. Route（路由）

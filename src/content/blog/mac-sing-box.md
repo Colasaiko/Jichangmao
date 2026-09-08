@@ -34,7 +34,7 @@ sing-box 是一个通用的网络工具平台，不仅提供了强大的底层�
 
 ## sing-box Mac 如何导入配置？
 
-安装完成后，你需要导入配置文件才能正常使用。请注意，sing-box 客户端本身不提供任何网络节点，你需要自行准备兼容 sing-box 格式的配置文件。
+安装完成后，你需要导入配置文件才能正常使用。请注意，sing-box 客户端本身不提供任何网络[节点](/blog/what-is-node/)，你需要自行准备兼容 sing-box 格式的配置文件。
 导入配置的基础步骤如下：
 1. 打开 sing-box 客户端主界面。
 2. 切换到 Profiles（配置）选项卡，点击添加新的配置（Add Profile）。
@@ -45,7 +45,7 @@ sing-box 是一个通用的网络工具平台，不仅提供了强大的底层�
 
 ## sing-box 常见问题
 
-### sing-box 和 Clash Verge Rev 有什么区别？
+### sing-box 和 [Clash](/blog/mac-clash-verge-rev-guide/) Verge Rev 有什么区别？
 sing-box 是一个从底层核心到 GUI 均由官方统一维护的平台，支持的协议更加现代化（如 VLESS、Reality 等），且客户端较为轻便。而 Clash Verge Rev 则是基于 Clash 衍生内核（如 Meta）的第三方优秀图形客户端。两者在配置文件格式上互不兼容，但均能提供出色的网络管理体验。
 
 ### sing-box 支持什么系统？

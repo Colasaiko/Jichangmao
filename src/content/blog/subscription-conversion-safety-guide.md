@@ -12,7 +12,7 @@ tags: ["教程", "排错", "订阅转换", "安全风险"]
 
 在您了解了[什么是订阅链接](/blog/what-is-subscription)后，随着使用需求的升级，您可能会遇到以下痛点：
 *   买了一个只提供 V2ray (Base64) 格式的[机场](/blog/what-is-airport-proxy/)，但想在要求 YAML 格式的 Clash 中使用。
-*   手里买了三个不同的机场套餐，想把它们的节点合并成一条链接，方便在客户端中统一自动[测速](/blog/how-to-test-node-speed/)。
+*   手里买了三个不同的机场套餐，想把它们的[节点](/blog/what-is-node/)合并成一条链接，方便在客户端中统一自动[测速](/blog/how-to-test-node-speed/)。
 
 为了解决这些问题，**[订阅转换](/blog/subscription-conversion-safety-guide/) (Subscription Conversion)** 技术应运而生。但在享受便利的同时，如果操作不当，极易导致您的账号流量被盗刷。
 

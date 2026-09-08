@@ -11,7 +11,7 @@ tags: ["教程", "客户端", "Quantumult X", "圈X", "iOS"]
 
 ## 什么是 Quantumult X？
 
-Quantumult X（常被玩家称为“圈X”）是 iOS 平台上功能最为强大的网络代理工具之一。与主打简单易用的 Shadowrocket（小火箭）不同，Quantumult X 提供了极其深度的自定义选项，包括节点策略组配置、强大的[分流规则](/blog/what-are-routing-rules/)（Rule）、请求重写（Rewrite）以及 MitM（中间人攻击）解密。
+Quantumult X（常被玩家称为“圈X”）是 iOS 平台上功能最为强大的网络代理工具之一。与主打简单易用的 Shadowrocket（小火箭）不同，Quantumult X 提供了极其深度的自定义选项，包括[节点](/blog/what-is-node/)策略组配置、强大的[分流规则](/blog/what-are-routing-rules/)（Rule）、请求重写（Rewrite）以及 MitM（中间人攻击）解密。
 
 它非常适合那些不满足于简单翻墙，希望实现自动去除 App 广告、解锁流媒体区域限制、自动运行签到脚本等高级玩法的进阶用户。
 

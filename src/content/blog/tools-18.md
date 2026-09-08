@@ -9,7 +9,7 @@ difficulty: "普通"
 nextTitle: "什么是 Tailscale Subnet Router？"
 nextSlug: "tools-19"
 ---
-默认情况下，Tailscale 只会在你访问网内设备时走加密隧道，日常网页流量依然直连。但在公共 Wi-Fi 等不安全环境下，或者需要借用家中宽带 IP 上网时，通过开启 **Exit Node（出口节点）**，就能将所有网络流量先加密转发到指定设备，再代为访问公网。
+默认情况下，Tailscale 只会在你访问网内设备时走加密隧道，日常网页流量依然直连。但在公共 Wi-Fi 等不安全环境下，或者需要借用家中宽带 IP 上网时，通过开启 **Exit Node（出口[节点](/blog/what-is-node/)）**，就能将所有网络流量先加密转发到指定设备，再代为访问公网。
 
 默认情况下，Tailscale 采用的是**分流模式（Split Tunneling）**：
 - 当你访问加入 Tailnet 的其他设备（比如家中 NAS、办公室电脑的 `100.x.y.z` IP）时，流量会经过高强度加密的点对点隧道；

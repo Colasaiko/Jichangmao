@@ -60,7 +60,7 @@ tags: [iOS客户端, iPhone, 下载教程]
   <img src="/images/client/ios-5.webp" alt="iOS 连接 VPN 状态指示" width="473" height="1028" class="rounded-xl border border-slate-200 shadow-sm w-full max-w-sm mx-auto my-6" loading="lazy" decoding="async" />
 </a>
 
-## 7. 选择节点
+## 7. 选择[节点](/blog/what-is-node/)
 
 完成 VPN 配置后，点击界面上的「**选择节点**」即可看到所有的节点列表。
 

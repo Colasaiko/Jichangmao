@@ -9,7 +9,7 @@ nextTitle: "什么是 Clash？"
 nextSlug: "clash-02"
 ---
 
-很多人刚接触代理服务时会有疑问：既然已经购买了节点，为什么还要在手机或电脑上安装 [Clash](/blog/mac-clash-verge-rev-guide/)、v2rayN 或 Shadowrocket？所谓网络客户端（Client），就是运行在本地设备上的「流量调度中心」，负责接管系统网络请求、根据规则进行分流，并把数据加密封装后送往远端服务器。
+很多人刚接触代理服务时会有疑问：既然已经购买了[节点](/blog/what-is-node/)，为什么还要在手机或电脑上安装 [Clash](/blog/mac-clash-verge-rev-guide/)、v2rayN 或 Shadowrocket？所谓网络客户端（Client），就是运行在本地设备上的「流量调度中心」，负责接管系统网络请求、根据规则进行分流，并把数据加密封装后送往远端服务器。
 
 这个将你的设备与远程网络服务器连接起来的“桥梁”和“方向盘”，就是我们通常所说的**网络客户端（Client）**。
 

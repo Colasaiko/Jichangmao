@@ -79,7 +79,7 @@ WireGuard 由 Jason A. Donenfeld 于 2016 年推出，并在 2020 年被正式�
 
 ### 6. 用户认证与企业级管控
 - **OpenVPN**：拥有完整的 **PKI（公钥基础设施）**，支持 CA 根证书签发、证书吊销列表（CRL）、在线证书状态协议（OCSP），并能无缝对接企业的 LDAP / Active Directory 用户目录系统。当某位员工离职时，管理员只需轻点鼠标吊销其单张证书即可。
-- **WireGuard**：采用静态的**加密密钥路由（Cryptokey Routing）**，每个节点的公钥和内网 IP 都是静态配置绑定的，原生不提供动态证书吊销或集中用户目录管理功能。在大型企业场景中，通常需要借助上层的网状组网工具（如 [Tailscale](/blog/tools-16/) 或 Netmaker）来进行自动化配置编排。
+- **WireGuard**：采用静态的**加密密钥路由（Cryptokey Routing）**，每个[节点](/blog/what-is-node/)的公钥和内网 IP 都是静态配置绑定的，原生不提供动态证书吊销或集中用户目录管理功能。在大型企业场景中，通常需要借助上层的网状组网工具（如 [Tailscale](/blog/tools-16/) 或 Netmaker）来进行自动化配置编排。
 
 ---
 

@@ -9,7 +9,7 @@ article_type: "Guide"
 tags: ["Shadowrocket", "iOS", "小火箭", "机场推荐"]
 ---
 
-# 2026 Shadowrocket机场推荐：iOS 小火箭适配机场选购指南
+# 2026 Shadowrocket[机场](/blog/what-is-airport-proxy/)推荐：iOS 小火箭适配机场选购指南
 
 Shadowrocket（小火箭）是 iOS 平台上使用最广泛的代理工具。本文专门为 **iPhone / iPad 用户**整理与 Shadowrocket 兼容性最佳的机场推荐。
 
@@ -33,9 +33,9 @@ Shadowrocket 需要从**美区或港区 App Store** 购买，约 \$2.99 美元�
 
 ### 2. 订阅格式兼容性
 Shadowrocket 支持多种订阅格式：
-- **Clash YAML 格式**：大多数机场都支持，Shadowrocket 可以自动识别
+- **[Clash](/blog/mac-clash-verge-rev-guide/) YAML 格式**：大多数机场都支持，Shadowrocket 可以自动识别
 - **Base64 订阅**：旧版格式，部分机场仍在使用
-- **单节点 URI**（ss:// vmess:// 等）：直接添加单个节点
+- **单[节点](/blog/what-is-node/) URI**（ss:// vmess:// 等）：直接添加单个节点
 
 ### 3. iOS VPN 限制
 iOS 对 VPN 连接有额外限制，建议在 Shadowrocket 设置中开启「始终开启 VPN」模式，避免切换 App 时代理断开。

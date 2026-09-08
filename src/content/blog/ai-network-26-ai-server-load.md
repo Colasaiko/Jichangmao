@@ -16,7 +16,7 @@ tags: [服务器负载, 稳定性排障, AI报错]
 像 OpenAI 和 Anthropic 这样的 AI 公司，背后依赖大量的 GPU 集群来进行推理运算。当全球用户在同一时间大量发起对话请求时，算力资源就会面临瓶颈。为了保证整体服务的运行，平台通常会采取限流措施（Throttling）。当 GPU 过载时，服务器就会拒绝或延迟处理部分用户的请求。
 
 在技术层面，这种高负载通常表现为特定的 HTTP 状态码：
-- **HTTP 429 Too Many Requests**：表示您或当前节点的请求次数过多，超出了平台的速率限制。
+- **HTTP 429 Too Many Requests**：表示您或当前[节点](/blog/what-is-node/)的请求次数过多，超出了平台的速率限制。
 - **HTTP 503 Service Unavailable** / **500 Internal Server Error**：表示服务器当前不堪重负，或者平台后端出现了宕机故障。
 
 ## 网络不行 vs 平台崩了：如何分辨？

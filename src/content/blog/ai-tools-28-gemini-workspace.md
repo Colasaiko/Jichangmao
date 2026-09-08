@@ -44,7 +44,7 @@ tags: [Gemini, 效率工具, 学习技巧]
 
 > [!WARNING]
 > 
-> 由于 Gemini 和 Google Workspace 深度绑定，使用这些功能需要稳定的网络环境。请确保你的代理客户端（如 Clash、v2ray 等）正确配置了路由规则，将 `*.google.com` 及其相关域名（如 `drive.google.com`, `docs.google.com`）设置为通过代理访问。否则，Gemini 在尝试读取你的云端硬盘文件时可能会发生超时错误。
+> 由于 Gemini 和 Google Workspace 深度绑定，使用这些功能需要稳定的网络环境。请确保你的代理客户端（如 [Clash](/blog/mac-clash-verge-rev-guide/)、v2ray 等）正确配置了路由规则，将 `*.google.com` 及其相关域名（如 `drive.google.com`, `docs.google.com`）设置为通过代理访问。否则，Gemini 在尝试读取你的云端硬盘文件时可能会发生超时错误。
 
 ## 结语
 

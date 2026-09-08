@@ -33,7 +33,7 @@ Tailscale 对个人用户提供了极其慷慨的 **Personal（免费版）计�
 - 支持最多 **3 个独立用户**；
 - 支持绑定多达 **100 台设备（Nodes）**；
 - **无限加密流量**（端到端直连流量完全不计费、不限速）；
-- 免费使用 **MagicDNS**、**子网路由（Subnet Router）** 与 **出口节点（Exit Node）**。
+- 免费使用 **MagicDNS**、**子网路由（Subnet Router）** 与 **出口[节点](/blog/what-is-node/)（Exit Node）**。
 
 对于 99% 的个人用户、数码爱好者和家庭家庭实验室（HomeLab）玩家来说，免费版额度完全绰绰有余，无需支付任何费用。
 

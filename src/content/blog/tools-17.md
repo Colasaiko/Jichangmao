@@ -29,7 +29,7 @@ nextSlug: "tools-18"
 我们在之前的文章 [WireGuard 和 OpenVPN 有什么区别？](/blog/tools-15/) 中介绍过，WireGuard 是由 Jason Donenfeld 开发的下一代开源 VPN 协议。它的核心特点是：
 - **极简与高效**：代码量仅几千行（而老牌 OpenVPN 有数十万行），直接运行在操作系统内核中，速度极快、延迟极低。
 - **现代化密码学**：采用了业界公认最先进的加密算法组合（如 Curve25519、ChaCha20-Poly1305 等），安全性毋庸置疑。
-- **点对点对等架构（Peer-to-Peer）**：在协议层面没有严格的“客户端”和“服务端”之分，每一个节点都是一个对等的 Peer。
+- **点对点对等架构（Peer-to-Peer）**：在协议层面没有严格的“客户端”和“服务端”之分，每一个[节点](/blog/what-is-node/)都是一个对等的 Peer。
 
 ### 2. Tailscale 是什么？（基于 WireGuard 的智能编排网络）
 **Tailscale 并不是一种新的底层加密协议。** Tailscale 的所有数据加密与通道传输，完全是基于 WireGuard 技术来实现的。

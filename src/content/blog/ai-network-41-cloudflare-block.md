@@ -11,7 +11,7 @@ tags: [Cloudflare, 盾拦截, 网络排障]
 
 当你在日常使用 ChatGPT、Claude、Midjourney 等海外 AI 服务时，是否经常遇到一个令人崩溃的页面——满屏的“Verify you are human”（证明你是人类），然后要求你无休止地点击验证码，甚至有时候点完了还在无限循环？
 
-这通常是因为你触发了 **Cloudflare** 的安全防御系统。今天就来为你深度剖析为什么 Cloudflare 如此“讨厌”你的网络节点，以及如何从根本上解决这个问题。
+这通常是因为你触发了 **Cloudflare** 的安全防御系统。今天就来为你深度剖析为什么 Cloudflare 如此“讨厌”你的网络[节点](/blog/what-is-node/)，以及如何从根本上解决这个问题。
 
 ## 什么是 Cloudflare 验证机制 (Turnstile / CAPTCHA)？
 

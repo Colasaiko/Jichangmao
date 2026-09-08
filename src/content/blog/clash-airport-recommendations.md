@@ -9,7 +9,7 @@ article_type: "Guide"
 tags: ["Clash", "Clash Verge", "机场推荐", "客户端"]
 ---
 
-# 2026 Clash机场推荐：最佳 Clash 订阅机场选购指南
+# 2026 [Clash](/blog/mac-clash-verge-rev-guide/)[机场](/blog/what-is-airport-proxy/)推荐：最佳 Clash 订阅机场选购指南
 
 Clash 是目前最流行的代理客户端之一，拥有完善的规则分流、多协议支持和直观的 UI 设计。本文专门为 **使用 Clash 系列客户端**（Clash Verge Rev、Clash Nyanpasu、OpenClash 等）的用户整理最佳机场推荐。
 
@@ -32,7 +32,7 @@ Clash 使用 **YAML 格式的订阅文件**，支持以下协议：
 
 ## 选择 Clash 机场要注意什么？
 
-1. **提供 Clash 专用订阅链接**：部分老机场只提供 SS/SSR 单节点，不支持 Clash 的 YAML 订阅格式，导入会报错
+1. **提供 Clash 专用订阅链接**：部分老机场只提供 SS/SSR 单[节点](/blog/what-is-node/)，不支持 Clash 的 YAML 订阅格式，导入会报错
 2. **订阅内容是否包含分流规则**：好的机场订阅会带基础的分流规则，国内访问不走代理
 3. **协议版本**：推荐选择支持 SS + Hysteria2 或 VLESS + Reality 的机场，抗封锁能力更强
 4. **节点标注清晰**：节点名称里应有地区、倍率（如 2x、0.5x）标注
