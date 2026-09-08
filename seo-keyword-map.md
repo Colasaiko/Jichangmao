@@ -123,3 +123,25 @@
   - 其余小型重复组 全部修复
 - **P1修复**：8 个推荐专题文章全部添加 3~6 个真实品牌推荐，每个品牌注明线路类型、月付价格、协议支持、适合原因，以及官网链接（含AFF）
 - **P2更新**：seo-keyword-map.md 重新划分关键词归属，明确首页 vs /reviews/ vs 专题文章的独占词
+
+## Topic Cluster D: 更多客户端 × 场景
+
+### /blog/sing-box-airport-recommendations/
+**Primary Keyword**: sing-box机场推荐
+**Secondary Keywords**: singbox机场推荐, sing-box订阅机场, sing-box节点推荐, sing-box机场, sing-box订阅推荐
+
+### /blog/quantumult-x-airport-recommendations/
+**Primary Keyword**: Quantumult X机场推荐
+**Secondary Keywords**: 圈X机场推荐, Quantumult X订阅推荐, 圈X订阅推荐, Quantumult X节点推荐, iOS机场推荐
+
+### /blog/netflix-airport-recommendations/
+**Primary Keyword**: Netflix机场推荐
+**Secondary Keywords**: 流媒体解锁机场推荐, Netflix节点推荐, Disney+机场推荐, 流媒体机场推荐, Netflix机场
+
+### /blog/native-ip-airport-recommendations/
+**Primary Keyword**: 原生IP机场推荐
+**Secondary Keywords**: 原生IP机场, 原生IP节点推荐, 高质量IP机场, 原生IP节点, 住宅IP机场
+
+### /blog/hiddify-airport-recommendations/
+**Primary Keyword**: Hiddify机场推荐
+**Secondary Keywords**: Hiddify Next机场, Hiddify订阅, Hiddify节点推荐, Hiddify机场, Hiddify Next订阅

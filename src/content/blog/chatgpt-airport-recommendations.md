@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT机场推荐：2026适合AI服务的机场选购指南 - 机场猫"
 description: "2026年ChatGPT机场推荐。为需要使用ChatGPT、Claude等AI服务的用户推荐高IP质量、原生IP节点的机场。解释AI服务对节点的特殊要求，以及如何避免被ChatGPT封号。"
-keywords: "ChatGPT机场推荐,Claude机场推荐,AI服务机场推荐,流媒体解锁机场推荐,ChatGPT节点推荐"
+keywords: "ChatGPT机场推荐,Claude机场推荐,AI服务机场推荐,ChatGPT节点推荐"
 pubDate: 2026-09-08
 author: "机场猫编辑部"
 category: "guides"
