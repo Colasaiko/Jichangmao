@@ -29,6 +29,7 @@ const clients = defineCollection({
   schema: z.object({
     title: z.string(),
     os: z.string(),
+    description: z.string().optional(),
     updatedDate: z.coerce.date(),
     order: z.number().default(0),
   }),

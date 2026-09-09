@@ -1,6 +1,6 @@
 ---
 title: "Claude分步推理：让AI展示思考过程减少逻辑错误 - 机场猫"
-description: "介绍让 Claude 分步骤展示推理过程的方法：通过'Think Step by Step'提示让 Claude 进行深思熟虑的推导，减少直觉性错误，尤其适用于逻辑和数学题。"
+description: "本文详细探讨了关于Claude分步推理的实际应用场景，包括什么是 Chain of Thought（思维链）？、为什么要激发 Claude 的思维链？、如何让 Claude 展现思考过程？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。"
 keywords: "Claude分步推理,Claude逻辑推理,Claude Think Step by Step,AI推理技巧"
 pubDate: 2026-04-22
 author: "机场猫编辑部"

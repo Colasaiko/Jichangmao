@@ -1,6 +1,6 @@
 ---
 title: "让ChatGPT分步骤推理：解决AI计算和逻辑错误 - 机场猫"
-description: "介绍'Chain of Thought'（思维链）提示技巧：让 ChatGPT 分步骤展示推理过程，显著减少复杂数学、逻辑推理任务中的错误率，以及适用场景。"
+description: "本文详细探讨了关于让ChatGPT分步骤推理的实际应用场景，包括什么是思维链（Chain of Thought, CoT）？、为什么“分步骤”能减少 AI 的幻觉？、如何在实际中使用？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。"
 keywords: "ChatGPT分步推理,Chain of Thought,AI逻辑推理,ChatGPT计算错误"
 pubDate: 2026-04-17
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
 title: "IP纯净度检测工具：判断节点IP是否被风控标记 - 机场猫"
-description: "使用 IPPure、IPCheck 等工具检测代理节点 IP 的'纯净度'：评估 IP 是否被列为高风险代理 IP，ChatGPT/Netflix 是否可能识别并封锁该 IP。"
+description: "本文详细探讨了关于IP纯净度检测工具的实际应用场景，包括基本概念：什么是网络抓包？、进一步理解：网络抓包的底层机制与运作流程、实际应用：抓包在现实中的核心用武之地等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。"
 keywords: "IP纯净度检测,IPPure,IPCheck,ChatGPT IP检测"
 pubDate: 2026-08-12
 author: "机场猫编辑部"

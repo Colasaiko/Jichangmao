@@ -11,7 +11,23 @@ const reviews = allPosts
 const title = "机场深度评测：单体机场晚高峰测速与线路分析 - 机场猫";
 const description = "机场猫专线节点测评库。针对各家服务商进行晚高峰真实测速、流媒体解锁实况记录与隐私政策分析，为您展现最客观的单体机场网络表现报告。";
 const keywords = "机场评测,晚高峰测速,流媒体解锁,专线机场,线路分析";
-const jsonLd = JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":description,"url":"https://jichangmao.com/evaluations/","mainEntity":{"@type":"ItemList","itemListElement":[]}});
+const itemListElements = reviews.map((post, index) => ({
+  "@type": "ListItem",
+  "position": index + 1,
+  "name": post.data.title,
+  "url": `https://jichangmao.com/evaluations/${post.slug}/`
+}));
+const jsonLd = JSON.stringify({
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "name":title,
+  "description":description,
+  "url":"https://jichangmao.com/evaluations/",
+  "mainEntity":{
+    "@type":"ItemList",
+    "itemListElement": itemListElements
+  }
+});
 
 // 1. 根据《机场品牌清单.txt》真实特性定义的 7 大专业分类
 const categoryDefs = [

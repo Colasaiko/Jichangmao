@@ -10,8 +10,6 @@ article_type: "Guide"
 tags: ["Hiddify", "客户端", "机场推荐", "节点"]
 ---
 
-# 2026 Hiddify机场推荐
-
 在跨平台的代理客户端中，Hiddify Next 凭借其出色的多端一致性体验、友好的 UI 和强大的底层协议支持，迅速成为了许多极客和新手的共同选择。如何为这个新兴的热门客户端寻找合适的[机场](/reviews/)节点，是目前大家非常关心的话题。
 
 ## Hiddify / Hiddify Next是什么
@@ -88,7 +86,7 @@ Hiddify 本身是一个**客户端**。它是否能正常使用，并不取决�
 ## Hiddify和[sing-box](/blog/sing-box-airport-recommendations/)是什么关系
 
 这是许多极客非常好奇的重要章节。简单来说：
-**Hiddify 的底层核心就是基于 sing-box 开发的。**
+**Hiddify 主要基于 sing-box 工具链发展，并融合了当前版本的其他核心支持。**
 
 - **sing-box**：就像是汽车的“发动机引擎”，负责底层复杂的网络数据包处理。
 - **Hiddify Next**：就像是基于这台引擎打造的“整车”。它利用了 sing-box 强悍的协议处理能力，在外面包裹上了一个极其易用的跨平台图形界面（GUI）。因此，它继承了 sing-box 的轻量、低延迟特性，同时大大降低了小白用户的上手门槛。

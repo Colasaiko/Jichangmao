@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT GPTs：2026最新教程与指南 - 机场猫"
-description: "全面介绍ChatGPT GPTs的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+title: 'ChatGPT GPTs - 机场猫：核心概念与配置实战指南'
+description: '本文详细探讨了关于ChatGPT GPTs - 机场猫的实际应用场景，包括什么是 ChatGPT GPTs？、如何在 GPT 商店中寻找并使用 GPTs？、注意事项：网络代理与外部 API等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
 keywords: "ChatGPT GPTs,ChatGPT GPTs教程,机场猫"
 pubDate: 2026-04-06
 author: "机场猫编辑部"

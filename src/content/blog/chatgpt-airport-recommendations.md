@@ -9,8 +9,6 @@ article_type: "Guide"
 tags: ["ChatGPT", "Claude", "AI服务", "原生IP", "机场推荐"]
 ---
 
-# ChatGPT[机场](/blog/what-is-airport-proxy/)推荐：2026 适合 AI 服务的机场选购指南
-
 这篇文章解决的是：**用什么机场才能稳定访问 ChatGPT / Claude / Gemini 等 AI 服务**，以及如何选择 IP 质量足够好的[节点](/blog/what-is-node/)，避免被封号。
 
 > 注意：本文与 ChatGPT 使用技巧、Prompt 写法**完全无关**。如果你在找 Prompt 教程，请通过[知识指南](/guides/)搜索。

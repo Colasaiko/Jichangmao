@@ -9,8 +9,6 @@ article_type: "Guide"
 tags: ["Shadowrocket", "iOS", "小火箭", "机场推荐"]
 ---
 
-# 2026 Shadowrocket[机场](/blog/what-is-airport-proxy/)推荐：iOS 小火箭适配机场选购指南
-
 Shadowrocket（小火箭）是 iOS 平台上使用最广泛的代理工具。本文专门为 **iPhone / iPad 用户**整理与 Shadowrocket 兼容性最佳的机场推荐。
 
 > 本文解决的是 **"小火箭配什么机场"**，而不是 "Shadowrocket 怎么安装"。如需下载安装教程，请查看 [iOS Shadowrocket 安装与配置指南](/blog/shadowrocket-guide/)。

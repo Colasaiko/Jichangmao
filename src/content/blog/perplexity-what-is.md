@@ -1,6 +1,6 @@
 ---
 title: "Perplexity是什么？颠覆传统的AI答案引擎介绍 - 机场猫"
-description: "介绍 Perplexity AI 这款'答案引擎'：如何将人工智能与搜索引擎结合，用自然语言提问直接获取带引用来源的整合答案，以及为何越来越多人转向 AI 搜索。"
+description: "本文详细探讨了关于Perplexity是什么？颠覆传统的AI答案引擎介绍 - 机场猫的实际应用场景，包括一、这个功能是什么？、二、在哪里可以找到？、三、怎么使用？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。"
 keywords: "Perplexity是什么,Perplexity AI介绍,AI答案引擎,Perplexity搜索"
 pubDate: 2026-07-14
 author: "机场猫编辑部"

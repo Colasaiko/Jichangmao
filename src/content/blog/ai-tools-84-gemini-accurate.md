@@ -1,6 +1,6 @@
 ---
 title: "Gemini回答太浅？让Gemini给出更准确深度回答的技巧 - 机场猫"
-description: "解析为何 Gemini 有时回答显得'水'缺乏深度，以及通过专属提示词（Prompt）技巧大幅提升 Gemini 回答准确度和专业性的实用方法。"
+description: "本文详细探讨了关于Gemini回答太浅？让Gemini给出更准确深度回答的技巧 - 机场猫的实际应用场景，包括赋予专家角色 (Act as an Expert)、提供清晰的背景与上下文、善用 Google 搜索整合进行事实核查等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。"
 keywords: "Gemini提示词技巧,Gemini准确回答,Gemini Prompt,提升AI回答质量"
 pubDate: 2026-04-30
 author: "机场猫编辑部"

@@ -9,8 +9,6 @@ article_type: "Guide"
 tags: ["专线", "IPLC", "IEPL", "低延迟", "机场推荐"]
 ---
 
-# 2026专线[机场](/blog/what-is-airport-proxy/)推荐：IPLC/IEPL全专线机场选购指南
-
 "专线机场"是指使用 **IPLC（国际私用出租线路）或 IEPL（国际以太网专线）**的机场。相比普通的公网中转，专线机场的最大优势是**不走 GFW，晚高峰不受封锁影响，延迟极低且非常稳定**。
 
 ## IPLC 和 IEPL 是什么？

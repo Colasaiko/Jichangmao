@@ -10,8 +10,6 @@ article_type: "Guide"
 tags: ["Quantumult X", "客户端", "机场推荐", "iOS"]
 ---
 
-# 2026 Quantumult X机场推荐
-
 Quantumult X（常被国内用户简称为“圈X”）作为 iOS 平台上最顶级的网络调试与代理工具之一，凭借其强大的脚本支持、重写功能（Rewrite）和出色的 UI 设计，吸引了大量重度网络用户。如何为这款强大的软件挑选合适的[机场](/reviews/)节点，是很多新手经常遇到的问题。
 
 ## Quantumult X 用户选机场和普通用户有什么不同
@@ -25,7 +23,7 @@ Quantumult X（常被国内用户简称为“圈X”）作为 iOS 平台上最�
 - **SS (Shadowsocks)**：完美支持，这是圈X处理效率最高、最为推荐的协议。
 - **Trojan**：原生支持较好，也是各大机场提供的高速直连或中转协议之一。
 - **vmess**：支持。
-- **VLESS / Hysteria**：圈X 原生版本目前对这些较新的协议支持非常有限或者完全不支持。如果您购买的是纯 VLESS 协议的机场，往往无法直接在圈X中使用。
+- **VLESS / Hysteria**：当前版本的圈X已支持 VLESS 与 Reality TLS，也可以通过单独配置来支持 Hysteria2 等协议。因此，购买新协议机场的圈X用户不再受到过去的严格限制。
 
 ## 选机场重点看什么
 

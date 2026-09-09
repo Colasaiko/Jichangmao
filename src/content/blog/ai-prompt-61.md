@@ -1,6 +1,6 @@
 ---
-title: "Prompt：2026最新教程与指南 - 机场猫"
-description: "全面介绍Prompt的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+title: 'Prompt - 机场猫：核心概念与配置实战指南'
+description: '本文详细探讨了关于Prompt - 机场猫的实际应用场景，包括什么是 Prompt？、为什么 Prompt 这么重要？、提示词工程 (Prompt Engineering) 又是什么？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
 keywords: "Prompt,Prompt教程,机场猫"
 pubDate: 2026-03-05
 category: "ai_usage"

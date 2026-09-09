@@ -1,6 +1,6 @@
 ---
-title: "ai image：2026最新教程与指南 - 机场猫"
-description: "全面介绍ai image的核心概念与实际应用。机场猫为您提供详细的图文指南，帮助您快速掌握相关网络与AI效率技巧，解决日常使用中的常见问题。"
+title: 'ai image - 机场猫：核心概念与配置实战指南'
+description: '本文详细探讨了关于ai image - 机场猫的实际应用场景，包括方案一：使用 Midjourney 的角色参考 (--cref)、方案二：给人物“起个特殊的名字”、方案三：后期换脸法等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
 keywords: "ai image,ai image教程,机场猫"
 pubDate: 2026-01-26
 category: "ai_media"

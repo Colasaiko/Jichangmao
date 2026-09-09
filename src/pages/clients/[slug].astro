@@ -14,7 +14,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BaseLayout title={`${post.data.title} | 机场猫`} description={`${post.data.os} 平台的极速配置指引`}>
+<BaseLayout title={`${post.data.title} | 机场猫`} description={post.data.description || ""}>
   <main class="w-full relative z-10 flex flex-col items-center bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20">
     <div class="max-w-3xl px-4 sm:px-6 w-full">
       
