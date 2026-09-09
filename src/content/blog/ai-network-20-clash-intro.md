@@ -62,4 +62,13 @@ A: 请检查以下几点：1. 节点是否有效或已过期；2. 是否误触�
 A: 核心功能相同（都使用 Clash 协议），区别主要在于操作系统的兼容性以及用户界面的设计。选择一款你觉得界面顺眼、适合自己设备的即可。
 
 
-除了本文介绍的 Clash 核心工作机制外，如果你想获取更多相关客户端的图形化教程与节点订阅方法，可以查阅 <a href="https://jichangbay.com/" target="_blank" rel="noopener noreferrer">JichangBay 的 Clash 专题</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">除了本文介绍的 Clash 核心工作机制外，如果你想获取更多相关客户端的图形化教程与节点订阅方法，可以查阅相关的内容。</p>
+  <a href="https://jichangbay.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    JichangBay · Clash 专题 &rarr;
+  </a>
+</div>

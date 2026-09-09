@@ -60,3 +60,16 @@ A: 可能是该网站的域名极其冷门，没有被主流的规则库（如 A
 
 **Q: 玩外服游戏时，用浏览器的代理规则管用吗？**
 A: 通常不管用。传统的代理客户端分流主要针对 HTTP/HTTPS 等网页流量。网络游戏通常使用的是 UDP 协议。玩外服游戏建议使用专门的游戏加速器，或者支持 TUN（虚拟网卡）模式并配置了专门游戏规则的客户端。
+
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">除了理解分流机制的原理，如果你需要直接获取可以在客户端导入的去广告、特定服务直连规则片段，可以参考更详细的规则编写教程。</p>
+  <a href="https://clashwiki.blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    ClashWiki · Clash 路由规则配置 &rarr;
+  </a>
+</div>
+

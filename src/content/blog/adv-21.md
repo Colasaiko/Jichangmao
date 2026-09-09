@@ -107,7 +107,16 @@ IP 地址（互联网协议地址）就像是网络世界中的“门牌号”�
   你不仅需要原生 IP，甚至可能需要**住宅原生 IP**。这种情况下，对 IP 的纯净度要求极高，建议寻找专门提供此类业务的供应商，并做好高昂成本的准备。
 
 
-寻找真正的原生 IP 往往是为了顺畅使用各类 AI 工具。如果你在解决节点问题后，还需要关于账号注册与使用的进一步教程，可以访问 <a href="https://runainav.com/" target="_blank" rel="noopener noreferrer">RunAI 的综合 AI 使用指南</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">寻找真正的原生 IP 往往是为了顺畅使用各类 AI 工具。如果你在解决节点问题后，还需要关于账号注册与使用的进一步指引，可以继续阅读。</p>
+  <a href="https://runainav.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    RunAI · 综合 AI 使用指南 &rarr;
+  </a>
+</div>
 
 ## 总结
 

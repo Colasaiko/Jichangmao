@@ -116,6 +116,19 @@ BGP 是一种运行在核心骨干网和大型数据中心路由器上的底层�
 4. **选择服务商时的考量**
 当你购买云服务时，明确询问客服：“你们提供的是动态 BGP 还是静态 BGP？”。如果你的业务容不得半点中断（如电商交易、实时音视频），请务必选择动态 BGP。此外，不要只看页面宣传，要求服务商提供一个测试 IP，在晚高峰时段（晚上 8 点 - 11 点）进行持续的 Ping 丢包测试，这才是检验真实网络质量的较佳标准。
 
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">BGP 多线机房能够显著提升体验，但在实际挑选机场套餐时，如何辨别商家是否真的采用了优质 BGP 接入？可以继续查看选购防坑方面的文章。</p>
+  <a href="https://jichangblog.net/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    JichangBlog · 机场机房线路全解析 &rarr;
+  </a>
+</div>
+
+
 ## 总结
 
 BGP 多线技术是现代互联网数据中心不可或缺的核心枢纽。它通过智能、动态的路由选择协议，巧妙地将多家网络运营商的线路整合在一个单一的 IP 地址之下，彻底打破了长期以来的跨网互访壁垒。

@@ -62,4 +62,13 @@ tags: [丢包率, 网络拥塞, 稳定性排障]
 “带宽（网速）”和“丢包率（稳定性）”是两码事。网速快只代表路很宽，但如果路况不好（丢包率高），运输高精密数据（AI 对话）的货车依然会翻车。AI 文本对话本身对网速（带宽）的要求极低，但对网络的稳定性（丢包、延迟）要求极高。
 
 
-除了通过更换优质专线机场来解决丢包外，如果你还想了解网络对具体 AI 工具（如长文本生成、文件上传）的实际影响，可以参阅 <a href="https://runainav.com/guides/ai-packet-loss" target="_blank" rel="noopener noreferrer">RunAI 的相关丢包网络指南</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">除了更换优质专线机场来解决丢包外，如果你还想了解网络波动对具体 AI 工具（长文本、文件上传）的实际影响，可以参阅更多内容。</p>
+  <a href="https://runainav.com/guides/ai-packet-loss" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    RunAI · AI 丢包网络指南 &rarr;
+  </a>
+</div>

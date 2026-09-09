@@ -51,4 +51,13 @@ Ping 值低，只意味着**你的网络到服务商网络入口的路况很好*
 对于跨国连接的 AI 服务，不要一味追求极限的低 Ping 值，而应看重**晚高峰时段的丢包率和抖动率**。选择提供专线优化、路由稳定的优质网络服务，能够有效减少流式输出时的卡顿和断线问题。
 
 
-如果你的主要问题不是节点选择，而是想了解更多关于 ChatGPT 或 Claude 响应慢的深度排查方法，可以进一步查看 <a href="https://runainav.com/guides/ai-response-slow" target="_blank" rel="noopener noreferrer">RunAI 的 AI 回复变慢排查指南</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">如果你的主要问题不是节点选择，而是想了解更多关于 ChatGPT 或 Claude 响应慢的深度排查方法，可以进一步查看相关教程。</p>
+  <a href="https://runainav.com/guides/ai-response-slow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    RunAI · AI 回复变慢排查指南 &rarr;
+  </a>
+</div>

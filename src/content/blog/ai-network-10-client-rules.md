@@ -54,3 +54,16 @@ A: 并不是。过多的无用规则会增加客户端匹配时的计算负担�
 
 **Q: 什么是“全局模式”和“规则模式”？**
 A: “规则模式”就是依靠上述分流规则来决定每个请求怎么走；而“全局模式”则是无视所有规则，让设备上的所有网络请求全部强行通过代理服务器发送。遇到复杂网络问题时，可以临时切换到全局模式排查问题。
+
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">规则文件的语法可能会随客户端版本变化，想了解 Clash Verge 或 Meta 内核最新支持的规则写法，可以查阅相关客户端配置维基。</p>
+  <a href="https://clashwiki.blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    ClashWiki · 客户端规则集详解 &rarr;
+  </a>
+</div>
+

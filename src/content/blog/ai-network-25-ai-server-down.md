@@ -55,4 +55,13 @@ A: **不要急于重置！** 先按照上述步骤排查。重置网络适配器
 A: 尝试清除浏览器的缓存和 Cookie，或者使用浏览器的无痕模式重新访问。有时候旧的会话数据会阻碍新的连接。
 
 
-当你排除了节点代理问题，确认是 AI 服务端故障时，如果想寻找其他平替工具或者阅读更多官方公告应对策略，可以参考 <a href="https://runainav.com/guides/ai-outage-or-network" target="_blank" rel="noopener noreferrer">RunAI 的服务中断应对教程</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">当你排除了节点代理问题，确认是 AI 服务端故障时，如果想寻找其他平替工具或者阅读更多官方公告应对策略，可以参考这份指南。</p>
+  <a href="https://runainav.com/guides/ai-outage-or-network" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    RunAI · 服务中断应对教程 &rarr;
+  </a>
+</div>

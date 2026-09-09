@@ -50,3 +50,16 @@ tags: [客户端排障, 虚假连接, 网络教程]
 
 **Q3: 频繁出现“虚假连接”如何有效解决？**
 建议选择线路质量更稳定的服务商（例如使用[专线](/blog/iplc-iepl-bgp-explained/)、IEPL 线路），并保持客户端软件版本和路由规则的定期更新。
+
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">已连接却无网络往往和虚拟网卡、系统时间、旧版代理残留有关。如果你尝试了上述方法仍然失败，可以参考更深入的网络配置除错文章。</p>
+  <a href="https://vpn-clash.net/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    VPN-Clash · 节点连通性网络排查 &rarr;
+  </a>
+</div>
+

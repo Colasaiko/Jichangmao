@@ -84,7 +84,16 @@ nextSlug: "adv-09"
 很多新手认为专线不经过防火墙，就非常安全、匿名。请注意，专线只是不经过“公网防火墙”，但专线的两端（国内入口服务器和海外落地服务器）都是受监管的。服务提供商完全有能力看到并记录你的网络活动特征。因此，在网络世界中，无论使用什么线路，遵守相关法律法规，保持良好的网络安全意识永远是第一位的。
 
 
-当你弄清楚专线的物理隔离原理后，如果想多对比几家主打专线套餐的服务商，不妨看看 <a href="https://bestjichang.com/" target="_blank" rel="noopener noreferrer">另一份来自 BestJichang 的机场选择参考</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">当你弄清楚专线的物理隔离原理后，如果想多对比几家主打专线套餐的服务商，不妨看看另一份综合对比。</p>
+  <a href="https://bestjichang.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    BestJichang · 机场选择参考 &rarr;
+  </a>
+</div>
 
 ## 总结
 

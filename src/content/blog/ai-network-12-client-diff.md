@@ -47,3 +47,16 @@ tags: [客户端配置, 基础概念, 网络工具]
 
 ### 3. 手机上和电脑上的区别大吗？
 基本原理是一样的。手机上同样有浏览器（如 Safari）和代理客户端（如 Shadowrocket、Quantumult X）。只有当代理客户端在后台成功建立连接后，手机浏览器才能顺利打开相应的网页。
+
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">理解了浏览器与系统代理的差异后，如果你需要在命令行、开发工具（如 Git/Docker）中也配置代理，可以查阅相关的进阶使用技巧。</p>
+  <a href="https://vpn-clash.net/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    VPN-Clash · 系统级代理配置解析 &rarr;
+  </a>
+</div>
+

@@ -50,3 +50,16 @@ A: 是的。网络服务提供商可能会不定期调整服务器节点、优�
 
 **Q: 我可以把配置链接导入到多台设备吗？**
 A: 一般是可以的，但这取决于您的网络服务提供商的套餐限制规则。大多数服务商允许在合理的设备数量内（例如 3 到 5 台）同时使用同一个配置链接，但请不要分享给过多陌生人使用，以免触发账号风控。
+
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">在实际导入过程中，如果遇到格式不支持或者需要进行订阅转换的高级操作，可以继续阅读专门的配置转换与排错指南。</p>
+  <a href="https://clashwiki.blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    ClashWiki · 订阅转换与导入教程 &rarr;
+  </a>
+</div>
+

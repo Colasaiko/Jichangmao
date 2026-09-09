@@ -105,7 +105,16 @@ BGP（Border Gateway Protocol，边界网关协议）是更高级别的一种中
 很多机场会在节点名称中标注中转类型。例如：“沪日专线”、“深港 BGP”、“广新隧道”等。前面通常代表中转服务器所在地（上海、深圳、广州），后面代表落地服务器所在地（日本、香港、新加坡）。距离你物理位置越近的中转入口，通常体验越好。
 
 
-掌握了中转节点加速的原理后，如果你想了解如何真正在各种客户端上配置并使用这些高速节点，可以访问 <a href="https://jichangbay.com/" target="_blank" rel="noopener noreferrer">JichangBay 的客户端与节点教程</a>。
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">掌握了中转节点加速的原理后，如果你想了解如何真正在各种客户端上配置并使用这些高速节点，可以访问更详细的配置指南。</p>
+  <a href="https://jichangbay.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    JichangBay · 客户端与节点教程 &rarr;
+  </a>
+</div>
 
 ## 总结
 

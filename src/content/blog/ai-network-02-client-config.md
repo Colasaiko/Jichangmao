@@ -73,3 +73,16 @@ featured: true
   A: 核心逻辑完全一致，都是“导入配置 -> 开启连接”。只是手机端因为操作系统限制，可能会要求安装 VPN 配置文件，这属于正常授权。
 - **Q: 为什么 AI 工具提示“无法在当前地区使用”？**
   A: 这说明你的网络配置所指向的出口 IP 不在 AI 工具支持的区域内，或者该 IP 被 AI 服务商标记为不受信任。你可以尝试在客户端中切换到其他区域的节点。
+
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">不同操作系统的网络环境差异很大。如果你的设备比较特殊，或者想要寻找某款特定代理软件的下载与配置方法，可以查看客户端相关整理。</p>
+  <a href="https://vpn-clash.net/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    VPN-Clash · 各平台客户端大全 &rarr;
+  </a>
+</div>
+

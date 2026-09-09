@@ -95,6 +95,19 @@ nextSlug: "adv-17"
 4.  **联系服务提供商：** 如果确认拥塞不是发生在本地网络，且长时间无法恢复，可以尝试联系你的宽带运营商或相关服务的客服，寻求技术支持。
 5.  **使用代理或 VPN 服务：** 在某些情况下（如跨网或跨境访问），使用优质的代理或 VPN 服务可以帮助你绕过拥堵的公共网络节点，通过[专线](/blog/iplc-iepl-bgp-explained/)或优化后的路由路径进行数据传输，从而显著改善网络体验。
 
+
+<div class="my-8 p-5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-xl">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="text-lg">🔗</span>
+    <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
+  </div>
+  <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">既然物理拥塞难以完全避免，那么在日常使用中如何通过客户端设置或节点策略来缓解这一问题？可以参阅相关的网络应对教程。</p>
+  <a href="https://jichangblog.net/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    JichangBlog · 晚高峰测速与拥塞应对 &rarr;
+  </a>
+</div>
+
+
 ## 总结
 
 网络拥塞是互联网时代不可避免的一个副产物。它就像是城市交通中的堵车，只要有大量的数据流动，就总会有拥挤的时候。理解网络拥塞的原理、类型和成因，可以帮助我们更理性地看待网络问题，避免陷入常见的认知误区。
