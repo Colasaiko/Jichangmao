@@ -167,6 +167,9 @@ BGP 路由器会实时向邻居路由器通告自己掌握的最优路由表：
 
 ---
 
+
+看穿这些营销话术后，如果你还想从另一个维度获取真实可信的测速与购买建议，也可以参考 <a href="https://bestjichang.com/" target="_blank" rel="noopener noreferrer">BestJichang 的节点选择整理</a>。
+
 ## 总结
 
 梳理清楚了这些名词，我们用一张简明表格来总结这三者的核心价值与选型建议：

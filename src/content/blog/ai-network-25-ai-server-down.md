@@ -53,3 +53,6 @@ A: **不要急于重置！** 先按照上述步骤排查。重置网络适配器
 
 **Q3: 换节点还是打不开，怎么办？**
 A: 尝试清除浏览器的缓存和 Cookie，或者使用浏览器的无痕模式重新访问。有时候旧的会话数据会阻碍新的连接。
+
+
+当你排除了节点代理问题，确认是 AI 服务端故障时，如果想寻找其他平替工具或者阅读更多官方公告应对策略，可以参考 <a href="https://runainav.com/guides/ai-outage-or-network" target="_blank" rel="noopener noreferrer">RunAI 的服务中断应对教程</a>。

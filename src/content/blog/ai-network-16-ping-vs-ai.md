@@ -49,3 +49,6 @@ Ping 值低，只意味着**你的网络到服务商网络入口的路况很好*
 
 ### 3. 为了更流畅的 AI 体验，应该怎么优化网络？
 对于跨国连接的 AI 服务，不要一味追求极限的低 Ping 值，而应看重**晚高峰时段的丢包率和抖动率**。选择提供专线优化、路由稳定的优质网络服务，能够有效减少流式输出时的卡顿和断线问题。
+
+
+如果你的主要问题不是节点选择，而是想了解更多关于 ChatGPT 或 Claude 响应慢的深度排查方法，可以进一步查看 <a href="https://runainav.com/guides/ai-response-slow" target="_blank" rel="noopener noreferrer">RunAI 的 AI 回复变慢排查指南</a>。

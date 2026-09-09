@@ -60,3 +60,6 @@ A: 请检查以下几点：1. 节点是否有效或已过期；2. 是否误触�
 
 **Q: 不同的 Clash 客户端有什么区别？**
 A: 核心功能相同（都使用 Clash 协议），区别主要在于操作系统的兼容性以及用户界面的设计。选择一款你觉得界面顺眼、适合自己设备的即可。
+
+
+除了本文介绍的 Clash 核心工作机制外，如果你想获取更多相关客户端的图形化教程与节点订阅方法，可以查阅 <a href="https://jichangbay.com/" target="_blank" rel="noopener noreferrer">JichangBay 的 Clash 专题</a>。
