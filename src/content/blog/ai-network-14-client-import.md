@@ -58,8 +58,8 @@ A: 一般是可以的，但这取决于您的网络服务提供商的套餐限�
     <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
   </div>
   <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">在实际导入过程中，如果遇到格式不支持或者需要进行订阅转换的高级操作，可以继续阅读专门的配置转换与排错指南。</p>
-  <a href="https://clashwiki.blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
-    ClashWiki · 订阅转换与导入教程 &rarr;
+  <a href="https://clashwiki.blog/clash-for-windows-tutorial/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    ClashWiki · Clash for Windows 导入教程 &rarr;
   </a>
 </div>
 

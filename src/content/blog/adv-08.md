@@ -90,8 +90,8 @@ nextSlug: "adv-09"
     <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
   </div>
   <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">当你弄清楚专线的物理隔离原理后，如果想多对比几家主打专线套餐的服务商，不妨看看另一份综合对比。</p>
-  <a href="https://bestjichang.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
-    BestJichang · 机场选择参考 &rarr;
+  <a href="https://bestjichang.com/top-4-recommended-airports/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    BestJichang · Top 4 机场精选推荐 &rarr;
   </a>
 </div>
 

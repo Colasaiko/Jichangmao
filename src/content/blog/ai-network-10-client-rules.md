@@ -62,8 +62,8 @@ A: “规则模式”就是依靠上述分流规则来决定每个请求怎么�
     <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
   </div>
   <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">规则文件的语法可能会随客户端版本变化，想了解 Clash Verge 或 Meta 内核最新支持的规则写法，可以查阅相关客户端配置维基。</p>
-  <a href="https://clashwiki.blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
-    ClashWiki · 客户端规则集详解 &rarr;
+  <a href="https://clashwiki.blog/clash-ultimate-tutorial-2026/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    ClashWiki · 最新 Clash 完全配置指南 &rarr;
   </a>
 </div>
 

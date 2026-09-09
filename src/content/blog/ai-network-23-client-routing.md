@@ -68,8 +68,8 @@ A: 通常不管用。传统的代理客户端分流主要针对 HTTP/HTTPS 等�
     <span class="font-bold text-slate-800 dark:text-slate-200">延伸阅读</span>
   </div>
   <p class="m-0 mb-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">除了理解分流机制的原理，如果你需要直接获取可以在客户端导入的去广告、特定服务直连规则片段，可以参考更详细的规则编写教程。</p>
-  <a href="https://clashwiki.blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
-    ClashWiki · Clash 路由规则配置 &rarr;
+  <a href="https://clashwiki.blog/clash-verge-vs-clash-for-windows/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-semibold !text-primary-600 dark:!text-primary-400 hover:underline underline-offset-4 decoration-2 transition-colors">
+    ClashWiki · Verge 与 CFW 路由功能对比 &rarr;
   </a>
 </div>
 
