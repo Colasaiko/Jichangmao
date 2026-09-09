@@ -1,5 +1,5 @@
 ---
-title: "Perplexity Pro Search是什么？高级深度搜索功能详解 - 机场猫"
+title: "Perplexity Pro Search是什么 - 机场猫"
 description: "详解 Perplexity Pro Search 的工作方式：针对复杂问题进行多步骤深度检索，如同研究助手一样主动搜集、筛选、整理信息，以及与普通搜索的区别。"
 keywords: "Perplexity Pro Search,Perplexity深度搜索,Perplexity Pro,AI深度研究"
 pubDate: 2026-07-11

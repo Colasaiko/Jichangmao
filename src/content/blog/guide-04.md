@@ -1,6 +1,6 @@
 ---
 title: "科学上网客户端怎么选？各平台推荐对比 - 机场猫"
-description: "对比各平台的主流科学上网客户端：Windows 推荐 Clash Verge Rev，macOS 同样适用，iOS 首选 Shadowrocket，Android 推荐 v2rayNG，帮助新手快速定位。"
+description: "对比各平台的主流科学上网客户端：Windows 推荐 Clash Verge Rev，macOS 同样适用，iOS 首选 Shadowrocket，"
 keywords: "科学上网客户端,Clash推荐,Shadowrocket,v2rayN推荐"
 pubDate: 2026-06-14
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
-title: "AI辅助短剧剧本创作：用ChatGPT生成剧本的方法 - 机场猫"
-description: "介绍如何用 ChatGPT 等大语言模型辅助创作短剧剧本：从核心故事种子出发，通过 AI 扩写成完整剧本的实用步骤与 Prompt 技巧。"
+title: "AI辅助短剧剧本创作：用ChatGPT生成剧本的 - 机场猫"
+description: "介绍如何用 ChatGPT 等大语言模型辅助创作短剧剧本：从核心故事种子出发，通过 AI 扩写成完整剧本的实用步骤与 Prompt 技巧。，涵盖相关文章"
 keywords: "AI短剧剧本,ChatGPT写剧本,AI创作剧本,短剧剧本生成"
 pubDate: 2026-01-18
 category: "ai_media"

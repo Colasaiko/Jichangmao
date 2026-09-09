@@ -1,6 +1,6 @@
 ---
-title: "Perplexity引用标注功能：如何验证AI回答的可信度 - 机场猫"
-description: "介绍 Perplexity 的引用标注（Citations）功能：如何追溯 AI 回答的信息来源，验证答案的真实性，避免 AI '幻觉'，以及引用来源的查阅方法。"
+title: "Perplexity引用标注功能 - 机场猫"
+description: "介绍 Perplexity 的引用标注（Citations）功能：如何追溯 AI 回答的信息来源，验证答案的真实性，避免 AI 幻觉导致错误引用的实用技巧。"
 keywords: "Perplexity引用,Perplexity来源验证,AI引用标注,Perplexity可信度"
 pubDate: 2026-07-09
 author: "机场猫编辑部"

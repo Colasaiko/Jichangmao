@@ -1,6 +1,6 @@
 ---
 title: "Claude新对话最佳实践：如何开启高质量对话 - 机场猫"
-description: "分享在 Claude 中开启新对话时的最佳实践：提供足够背景信息、设置角色、分段输入长文，让 Claude 从第一条回复就达到最高质量。"
+description: "分享在 Claude 中开启新对话时的最佳实践：提供足够背景信息、设置角色、分段输入长文，让 Claude 从第一条回复就达到最高质量。，，帮助您快速了解并掌握"
 keywords: "Claude对话技巧,Claude Prompt,Claude使用技巧,Claude新对话"
 pubDate: 2026-04-19
 author: "机场猫编辑部"

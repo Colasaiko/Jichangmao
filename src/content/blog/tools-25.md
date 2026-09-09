@@ -1,6 +1,6 @@
 ---
-title: 'tools 5 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于tools 5 - 机场猫的实际应用场景，包括基本概念：什么是 Display Filter？、进一步理解：Display Filter 的核心语法结构、实际应用：日常排障高频过滤秘籍与小技巧等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "tools 5 - 机场猫：核心概念与配置实战指南"
+description: "本文介绍tools 5 - 机场猫，涵盖基本概念：什么是 Display Filter？与进一步理解：Display Filter 的核心语法结构等内容，帮助。"
 keywords: "tools 5,tools 5教程,机场猫"
 pubDate: 2026-08-14
 author: "机场猫编辑部"

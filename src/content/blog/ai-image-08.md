@@ -1,6 +1,6 @@
 ---
-title: 'AI 放大（Upscale） - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于AI 放大（Upscale） - 机场猫的实际应用场景，包括什么是 AI 放大（Upscale）？、常见的高清放大方案、操作步骤演示（以通用在线工具为例）等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "AI 放大（Upscale） - 机场猫 - 机场猫"
+description: "本文介绍AI 放大（Upscale） - 机场猫，涵盖什么是 AI 放大（Upscale）？与常见的高清放大方案等内容，帮助您理解相关原理与实际配置方法。"
 keywords: "AI 放大（Upscale）,AI 放大（Upscale）教程,机场猫"
 pubDate: 2026-01-28
 category: "ai_media"

@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT第一次对话怎么开始？新手首次使用完整指南 - 机场猫"
-description: "面向完全新手：打开 ChatGPT 之后如何开始第一次对话，如何提出好问题，常见的新手误区，以及几个立即上手的实用场景示例。"
+title: "ChatGPT第一次对话怎么开始？新手首次使用完 - 机场猫"
+description: "面向完全新手：打开 ChatGPT 之后如何开始第一次对话，如何提出好问题，常见的新手误区，以及几个立即上手的实用场景示例。，涵盖认识 ChatGPT 的聊"
 keywords: "ChatGPT第一次对话,ChatGPT新手使用,ChatGPT怎么问问题,ChatGPT入门"
 pubDate: 2026-03-17
 author: "机场猫编辑部"

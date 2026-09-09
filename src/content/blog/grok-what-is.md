@@ -1,6 +1,6 @@
 ---
-title: "Grok AI是什么？xAI旗下幽默AI助手完整介绍 - 机场猫"
-description: "介绍马斯克旗下 xAI 公司推出的 Grok AI 助手：幽默风格、反叛特性、实时访问 X 平台数据的独特能力，以及与 ChatGPT/Claude 的核心差异。"
+title: "Grok AI是什么？xAI旗下幽默AI助手完整 - 机场猫"
+description: "介绍马斯克旗下 xAI 公司推出的 Grok AI 助手：幽默风格、反叛特性、实时访问 X 平台数据的独特能力，以及与 ChatGPT/Claude 的核心"
 keywords: "Grok AI是什么,xAI Grok,Grok介绍,Grok vs ChatGPT"
 pubDate: 2026-06-11
 author: "机场猫编辑部"

@@ -1,5 +1,5 @@
 ---
-title: "Copilot上传文件功能：分析PDF和文档的方法 - 机场猫"
+title: "Copilot上传文件功能：分析PDF和文档的方 - 机场猫"
 description: "介绍 Microsoft Copilot 的文件上传功能：如何上传 PDF、Word、Excel 等文档让 AI 进行智能分析、总结和关键信息提取。"
 keywords: "Copilot上传文件,Copilot分析文档,Copilot PDF分析,微软AI文件"
 pubDate: 2026-06-05

@@ -1,6 +1,6 @@
 ---
 title: "Clash分流规则如何应用？规则集配置实战教程 - 机场猫"
-description: "从理论到实操：如何在 Clash 客户端中配置和应用分流规则，使用预置规则集或自定义规则控制哪些流量走代理、哪些直连。"
+description: "从理论到实操：如何在 Clash 客户端中配置和应用分流规则，使用预置规则集或自定义规则控制哪些流量走代理、哪些直连。，涵盖什么是代理组 (Proxy Gr"
 keywords: "Clash分流规则配置,Clash规则集,Clash路由规则,Clash分流教程"
 pubDate: 2026-08-27
 category: "routing"

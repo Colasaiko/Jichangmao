@@ -1,6 +1,6 @@
 ---
-title: "Claude写代码：为什么程序员越来越偏爱Claude - 机场猫"
-description: "分析程序员从 ChatGPT 转向 Claude 的原因：Claude 在代码生成、代码审查和复杂逻辑推理上的优势，以及如何最大化发挥 Claude 编程辅助能力。"
+title: "Claude写代码：为什么程序员越来越偏爱Cla - 机场猫"
+description: "分析程序员从 ChatGPT 转向 Claude 的原因：Claude 在代码生成、代码审查和复杂逻辑推理上的优势，以及如何最大化发挥 Claude 编程辅"
 keywords: "Claude写代码,Claude编程,Claude vs ChatGPT代码,程序员用Claude"
 pubDate: 2026-03-29
 author: "机场猫编辑部"

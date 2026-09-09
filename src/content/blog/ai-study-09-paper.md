@@ -1,5 +1,5 @@
 ---
-title: "AI辅助论文写作：ChatGPT帮你完成学术写作的方法 - 机场猫"
+title: "AI辅助论文写作：ChatGPT帮你完成学术写作 - 机场猫"
 description: "介绍合理使用 ChatGPT 辅助学术论文写作的方法：文献检索辅助、提纲生成、段落改写润色、语法检查，以及学术写作中 AI 使用的边界与注意事项。"
 keywords: "AI写论文,ChatGPT学术写作,AI辅助论文,论文AI工具"
 pubDate: 2026-03-14

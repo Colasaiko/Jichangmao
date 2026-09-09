@@ -1,6 +1,6 @@
 ---
-title: "Few-Shot Prompting技巧：给例子让ChatGPT按样学样 - 机场猫"
-description: "介绍 Few-Shot Prompting（示例驱动提示）的原理和应用：在 Prompt 中提供2-3个示例，比用文字描述格式更有效地控制 ChatGPT 的输出风格和结构。"
+title: "Few-Shot Prompting技巧 - 机场猫"
+description: "介绍 Few-Shot Prompting（示例驱动提示）的原理和应用：在 Prompt 中提供2-3个示例，比用文字描述格式更有效地控制 ChatGPT "
 keywords: "Few-Shot Prompting,示例提示词,ChatGPT给例子,AI提示词技巧"
 pubDate: 2026-04-16
 author: "机场猫编辑部"

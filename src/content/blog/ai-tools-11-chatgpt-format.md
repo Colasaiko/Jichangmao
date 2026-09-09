@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT输出格式怎么控制？Markdown和JSON格式指定 - 机场猫"
+title: "ChatGPT输出格式怎么控制？Markdown - 机场猫"
 description: "介绍如何通过 Prompt 指定 ChatGPT 的输出格式：要求以 Markdown、JSON、表格、列表等特定格式输出，满足开发和内容创作不同场景的需求。"
 keywords: "ChatGPT输出格式,ChatGPT Markdown,ChatGPT JSON输出,格式化输出"
 pubDate: 2026-03-20

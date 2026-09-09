@@ -1,6 +1,6 @@
 ---
 title: "TCP/UDP协议在代理中的差异与选择建议 - 机场猫"
-description: "对比 TCP 与 UDP 协议在代理场景中的优劣：TCP 稳定但延迟较高，UDP 快速但可能被 QoS 限速，以及 Hysteria2/QUIC 等 UDP 代理协议的使用场景。"
+description: "对比 TCP 与 UDP 协议在代理场景中的优劣：TCP 稳定但延迟较高，UDP 快速但可能被 QoS 限速，以及 Hysteria2/QUIC 等 UDP"
 keywords: "TCP UDP代理,Hysteria2,UDP代理,代理协议选择"
 pubDate: 2026-08-12
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
-title: "Grok AI怎么用？xAI Grok使用入门教程 - 机场猫"
-description: "手把手介绍如何使用 Grok AI：功能特点、如何访问 X 平台实时数据、与 ChatGPT 的使用差异，以及对代理节点的地区要求。"
+title: "Grok AI怎么用？xAI Grok使用入门教 - 机场猫"
+description: "手把手介绍如何使用 Grok AI：功能特点、如何访问 X 平台实时数据、与 ChatGPT 的使用差异，以及对代理节点的地区要求。，涵盖一、"
 keywords: "Grok AI使用教程,Grok怎么用,xAI Grok,Grok入门"
 pubDate: 2026-06-09
 author: "机场猫编辑部"

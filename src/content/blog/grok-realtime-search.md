@@ -1,6 +1,6 @@
 ---
 title: "Grok实时搜索功能：直接访问X平台最新信息 - 机场猫"
-description: "介绍 Grok 实时搜索 X（Twitter）平台的独特能力：如何使用 Grok 获取最新热点资讯、追踪实时事件，以及 Grok 搜索与 Perplexity 等工具的适用场景对比。"
+description: "介绍 Grok 实时搜索 X（Twitter）平台的独特能力：如何使用 Grok 获取最新热点资讯、追踪实时事件，以及 Grok 搜索与 Perplexit"
 keywords: "Grok实时搜索,Grok搜索Twitter,Grok实时信息,xAI Grok搜索"
 pubDate: 2026-06-11
 author: "机场猫编辑部"

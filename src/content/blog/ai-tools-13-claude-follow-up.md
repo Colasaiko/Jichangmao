@@ -1,5 +1,5 @@
 ---
-title: "Claude追问技巧：如何引导Claude深入回答 - 机场猫"
+title: "Claude追问技巧：如何引导Claude深入回 - 机场猫"
 description: "介绍与 Claude 进行多轮对话追问的技巧：如何基于上一条回复提出更有针对性的问题，引导 Claude 不断深入、完善回答，提升对话质量。"
 keywords: "Claude追问技巧,Claude多轮对话,Claude引导回答,Claude使用技巧"
 pubDate: 2026-03-21

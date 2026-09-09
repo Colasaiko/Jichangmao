@@ -1,6 +1,6 @@
 ---
-title: 'Image to Video - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Image to Video - 机场猫的实际应用场景，包括什么是 Image to Video (图生视频)？、为什么要用图生视频？、主流的图生视频工具等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Image to Video - 机场猫 - 机场猫"
+description: "本文介绍Image to Video - 机场猫，涵盖什么是 Image to Video (图生视频)？与为什么要用图生视频？等内容，帮助您理解相关原理与实。"
 keywords: "Image to Video,Image to Video教程,机场猫"
 pubDate: 2026-05-03
 category: "ai_media"

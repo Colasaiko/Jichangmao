@@ -1,5 +1,5 @@
 ---
-title: "OpenVPN是什么？企业级VPN协议原理与使用场景 - 机场猫"
+title: "OpenVPN是什么？企业级VPN协议原理与使用 - 机场猫"
 description: "解析 OpenVPN 的技术特点：基于 SSL/TLS 的企业级 VPN 标准，拥有二十年行业应用历史。介绍其工作原理和与 WireGuard 等新协议的对比。"
 keywords: "OpenVPN是什么,OpenVPN使用,企业级VPN,OpenVPN教程"
 pubDate: 2026-08-07

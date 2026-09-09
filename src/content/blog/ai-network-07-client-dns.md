@@ -1,6 +1,6 @@
 ---
-title: '系统 DNS 与客户端 DNS - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于系统 DNS 与客户端 DNS - 机场猫的实际应用场景，包括系统 DNS 与客户端 DNS 的区别、为什么 AI 服务会因为 DNS 配置不当而连接失败？、如何排查 AI 服务连接异常？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "系统 DNS 与客户端 DNS - 机场猫 - 机场猫"
+description: "本文介绍系统 DNS 与客户端 DNS - 机场猫，涵盖系统 DNS 与客户端 DNS 的区别与为什么 AI 服务会因为 DNS 配置不当而连接失败？等内容，。"
 keywords: "系统 DNS 与客户端 DNS,系统 DNS 与客户端 DNS教程,机场猫"
 pubDate: 2026-02-03
 author: "机场猫编辑部"

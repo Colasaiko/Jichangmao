@@ -1,6 +1,6 @@
 ---
-title: "V2Ray/VMess协议节点测试与连通性验证方法 - 机场猫"
-description: "针对 VMess/VLESS 等 V2Ray 系协议的连通性测试方法，帮助验证 V2Ray 节点是否正常工作，常见错误的排查思路。"
+title: "V2Ray/VMess协议节点测试与连通性验证方 - 机场猫"
+description: "针对 VMess/VLESS 等 V2Ray 系协议的连通性测试方法，帮助验证 V2Ray 节点是否正常工作，常见错误的排查思路。，涵盖基本概念："
 keywords: "V2Ray节点测试,VMess连通性,V2Ray调试,VLESS测试"
 pubDate: 2026-08-07
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
-title: "Poe AI平台怎么用？ChatGPT/Claude聚合平台使用教程 - 机场猫"
-description: "介绍 Poe 平台的使用方法：在一个界面内与 ChatGPT、Claude、Gemini 等多款主流 AI 模型对话切换，以及 Poe 的订阅方案和对代理 IP 的访问要求。"
+title: "Poe AI平台怎么用？ChatGPT/Clau - 机场猫"
+description: "介绍 Poe 平台的使用方法：在一个界面内与 ChatGPT、Claude、Gemini 等多款主流 AI 模型对话切换，以及 Poe 的订阅方案和对代理 "
 keywords: "Poe怎么用,Poe使用教程,Poe AI平台,Poe聚合ChatGPT Claude"
 pubDate: 2026-07-15
 author: "机场猫编辑部"

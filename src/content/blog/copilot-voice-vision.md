@@ -1,6 +1,6 @@
 ---
-title: "Copilot语音与视觉功能：Voice和Vision使用指南 - 机场猫"
-description: "介绍 Copilot Voice（语音对话）和 Copilot Vision（视觉分析）两项多模态功能：如何通过语音与 AI 自然对话，以及如何让 AI 分析图片和屏幕内容。"
+title: "Copilot语音与视觉功能：Voice和Vis - 机场猫"
+description: "介绍 Copilot Voice（语音对话）和 Copilot Vision（视觉分析）两项多模态功能：如何通过语音与 AI 自然对话，以及如何让 AI 分"
 keywords: "Copilot Voice,Copilot Vision,Copilot语音,Copilot视觉功能"
 pubDate: 2026-06-05
 author: "机场猫编辑部"

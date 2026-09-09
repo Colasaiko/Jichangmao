@@ -1,5 +1,5 @@
 ---
-title: "学生AI学习工作流：从课前预习到课后复习的完整方案 - 机场猫"
+title: "学生AI学习工作流：从课前预习到课后复习的完整方 - 机场猫"
 description: "为学生整理的完整 AI 学习流程：将 ChatGPT、Claude 等 AI 工具融入预习、听课、复习各个环节，建立系统性 AI 辅助学习习惯提升学习效率。"
 keywords: "AI学生学习,AI辅助学习工作流,ChatGPT学习,学生用AI"
 pubDate: 2026-05-14

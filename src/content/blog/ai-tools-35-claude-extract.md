@@ -1,5 +1,5 @@
 ---
-title: "Claude信息提取技巧：从文档中精准抽取结构化数据 - 机场猫"
+title: "Claude信息提取技巧：从文档中精准抽取结构化 - 机场猫"
 description: "介绍使用 Claude 从长篇文档、合同、报告中提取关键信息的技巧：如何通过结构化 Prompt 指定提取维度，让 AI 直接输出整理好的数据。"
 keywords: "Claude信息提取,Claude提取数据,Claude结构化提取,AI文档提取"
 pubDate: 2026-04-03

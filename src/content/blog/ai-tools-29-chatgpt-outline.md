@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT生成大纲：让AI帮你快速建立文章结构 - 机场猫"
-description: "介绍如何用 ChatGPT 生成文章、报告或演讲的逻辑大纲：提供主题和要求后让 AI 快速建立清晰的层级结构，作为内容创作的起点，减少'空白页恐惧'。"
+title: "ChatGPT生成大纲：让AI帮你快速建立文章结 - 机场猫"
+description: "介绍如何用 ChatGPT 生成文章、报告或演讲的逻辑大纲：提供主题和要求后让 AI 快速建立清晰的层级结构，作为内容创作的起点，从而减少思路整理时间。"
 keywords: "ChatGPT生成大纲,AI文章大纲,ChatGPT写作,ChatGPT结构化写作"
 pubDate: 2026-03-30
 author: "机场猫编辑部"

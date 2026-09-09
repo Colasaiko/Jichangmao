@@ -1,6 +1,6 @@
 ---
-title: "Tailscale Exit Node配置：借用远程设备的出口网络 - 机场猫"
-description: "介绍 Tailscale Exit Node 的配置方法：在公共 Wi-Fi 或需要借用家中宽带 IP 时，如何开启出口节点将所有流量加密转发到指定设备再访问公网。"
+title: "Tailscale Exit Node配置 - 机场猫"
+description: "介绍 Tailscale Exit Node 的配置方法：在公共 Wi-Fi 或需要借用家中宽带 IP 时，如何开启出口节点将所有流量加密转发到指定设备再访"
 keywords: "Tailscale Exit Node,Tailscale出口节点,Tailscale配置,VPN出口"
 pubDate: 2026-08-10
 author: "机场猫编辑部"

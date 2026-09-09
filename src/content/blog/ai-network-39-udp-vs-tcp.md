@@ -1,6 +1,6 @@
 ---
-title: 'TCP 与 UDP 的核心区别 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于TCP 与 UDP 的核心区别 - 机场猫的实际应用场景，包括TCP 与 UDP 的核心区别、对 AI 服务的影响：ChatGPT 语音模式的挑战、常见问题解答 (FAQ)等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "TCP 与 UDP 的核心区别 - 机场猫 - 机场猫"
+description: "本文介绍TCP 与 UDP 的核心区别 - 机场猫，涵盖TCP 与 UDP 的核心区别与对 AI 服务的影响：ChatGPT 语音模式的挑战等内容，帮助您理解。"
 keywords: "TCP 与 UDP 的核心区别,TCP 与 UDP 的核心区别教程,机场猫"
 pubDate: 2026-02-21
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
 title: "Claude读取PDF和长文档：超长文本处理技巧 - 机场猫"
-description: "介绍 Claude 处理 PDF 和长文档的能力：比较 Claude 与 ChatGPT 在长文本处理上的差异，以及如何引导 Claude 从长篇资料中提炼所需信息。"
+description: "介绍 Claude 处理 PDF 和长文档的能力：比较 Claude 与 ChatGPT 在长文本处理上的差异，以及如何引导 Claude 从长篇资料中提炼"
 keywords: "Claude读PDF,Claude长文档,Claude文件处理,Claude vs ChatGPT文档"
 pubDate: 2026-03-25
 author: "机场猫编辑部"

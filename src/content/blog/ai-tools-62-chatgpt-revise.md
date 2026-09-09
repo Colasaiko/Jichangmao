@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT修改内容技巧：给精准反馈而不是让它重写 - 机场猫"
-description: "介绍向 ChatGPT 给出精准修改反馈的技巧：指出具体问题点（语气/结构/内容准确性）让 AI 进行局部调整，而非模糊地说'重新写一遍'。"
+title: "ChatGPT修改内容技巧：给精准反馈而不是让它 - 机场猫"
+description: "介绍向 ChatGPT 给出精准修改反馈的技巧：清晰指出具体问题点（语气、结构、内容准确性）让 AI 进行局部调整，而非模糊说「改好一点」，提升修改效率。"
 keywords: "ChatGPT修改技巧,ChatGPT精准反馈,ChatGPT迭代,AI内容修改"
 pubDate: 2026-04-18
 author: "机场猫编辑部"

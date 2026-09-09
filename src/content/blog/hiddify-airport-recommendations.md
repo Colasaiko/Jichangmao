@@ -1,6 +1,6 @@
 ---
-title: "2026 Hiddify机场推荐：Hiddify Next订阅与机场选择指南 - 机场猫"
-description: "面向 Hiddify Next 用户说明机场订阅选择方法，介绍协议兼容、订阅导入及节点使用注意事项，并结合机场猫现有数据提供机场选择参考。"
+title: "2026 Hiddify机场推荐 - 机场猫"
+description: "面向 Hiddify Next 用户说明机场订阅选择方法，介绍协议兼容、订阅导入及节点使用注意事项，并结合机场猫现有数据提供机场选择参考。，"
 keywords: "Hiddify机场推荐,Hiddify Next机场,Hiddify订阅,Hiddify节点推荐,Hiddify机场,Hiddify Next订阅"
 pubDate: 2026-09-08
 updatedDate: 2026-09-08

@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT是什么？零基础理解AI对话工具 - 机场猫"
-description: "用最通俗的语言解释 ChatGPT 是什么：阅读了海量文章的虚拟助手，可以回答问题、写作、编程，以及与普通搜索引擎的本质区别。"
+description: "用最通俗的语言解释 ChatGPT 是什么：阅读了海量文章的虚拟助手，可以回答问题、写作、编程，以及与普通搜索引擎的本质区别。，涵盖什么是 ChatGPT？"
 keywords: "ChatGPT是什么,ChatGPT介绍,AI对话助手,ChatGPT功能"
 pubDate: 2026-03-16
 author: "机场猫编辑部"

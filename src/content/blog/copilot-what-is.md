@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Copilot是什么？微软AI助手全面介绍 - 机场猫"
-description: "全面介绍 Microsoft Copilot 的定位与功能：基于 GPT-4 的 AI 助手，深度整合微软生态系统，涵盖撰写文档、总结网页、生成代码、AI 绘图等场景。"
+title: "Microsoft Copilot是什么？微软A - 机场猫"
+description: "全面介绍 Microsoft Copilot 的定位与功能：基于 GPT-4 的 AI 助手，深度整合微软生态系统，涵盖撰写文档、总结网页、生成代码、"
 keywords: "Microsoft Copilot是什么,Copilot介绍,微软AI助手,Copilot功能"
 pubDate: 2026-06-06
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
-title: "Poe记忆功能：让AI记住偏好 vs 无痕对话模式 - 机场猫"
-description: "介绍 Poe 的 Memory（记忆）功能与无痕对话模式：如何让 AI 记住个人偏好避免重复说明，以及何时切换到隐私保护的无痕对话模式。"
+title: "Poe记忆功能：让AI记住偏好 vs 无痕对话模 - 机场猫"
+description: "介绍 Poe 的 Memory（记忆）功能与无痕对话模式：如何让 AI 记住个人偏好避免重复说明，以及何时切换到隐私保护的无痕对话模式。，涵盖一、"
 keywords: "Poe记忆功能,Poe Memory,Poe无痕对话,AI记忆功能"
 pubDate: 2026-07-17
 author: "机场猫编辑部"

@@ -1,5 +1,5 @@
 ---
-title: "用ChatGPT解释复杂概念：费曼技巧与AI学习法 - 机场猫"
+title: "用ChatGPT解释复杂概念：费曼技巧与AI学习 - 机场猫"
 description: "结合费曼技巧（用简单语言解释复杂事物）介绍如何用 ChatGPT 学习和理解难懂概念，包括引导 AI 用比喻、案例逐步解释的 Prompt 技巧。"
 keywords: "费曼技巧ChatGPT,ChatGPT学习方法,ChatGPT解释概念,AI学习技巧"
 pubDate: 2026-04-14

@@ -1,6 +1,6 @@
 ---
-title: 'Claude Projects - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Claude Projects - 机场猫的实际应用场景，包括什么是 Claude Projects？、为什么你需要 Claude Projects？、怎么高效使用 Claude Projects？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Claude Projects - 机场猫 - 机场猫"
+description: "本文介绍Claude Projects - 机场猫，涵盖什么是 Claude Projects？与为什么你需要 Claude Projects？等内容，帮助您。"
 keywords: "Claude Projects,Claude Projects教程,机场猫"
 pubDate: 2026-04-10
 author: "机场猫编辑部"

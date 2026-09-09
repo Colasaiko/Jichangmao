@@ -1,5 +1,5 @@
 ---
-title: "Claude改写和润色文章：保留个人风格的AI编辑技巧 - 机场猫"
+title: "Claude改写和润色文章：保留个人风格的AI编 - 机场猫"
 description: "介绍如何用 Claude 作为编辑角色润色文章：在提升语言质量的同时保留作者原始风格（Voice），以及 Claude 在保留个人写作特色上的优势。"
 keywords: "Claude改写文章,Claude润色,AI编辑,保留写作风格"
 pubDate: 2026-03-31

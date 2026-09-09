@@ -1,6 +1,6 @@
 ---
-title: 'Surgefor进阶教程 | Clash配置 - 机场猫 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Surgefor进阶教程 | Clash配置 - 机场猫 - 机场猫的实际应用场景，包括什么是 Surge？、核心概念：Profile（配置文件）、步骤一：一键导入托管配置 (Managed Profile)等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Surgefor进阶教程 | Clash配置 - - 机场猫"
+description: "本文介绍Surgefor进阶教程 | Clash配置 -，涵盖什么是 Surge？与核心概念：Profile（配置文件）等内容，帮助您理解相关原理与实际配置方。"
 keywords: "Surgefor进阶教程 | Clash配置 - 机场猫,Surgefor进阶教程 | Clash配置 - 机场猫教程,机场猫"
 pubDate: 2026-08-28
 category: "clients"

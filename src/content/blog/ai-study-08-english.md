@@ -1,5 +1,5 @@
 ---
-title: "AI学英语：用ChatGPT提升英语口语和写作的技巧 - 机场猫"
+title: "AI学英语：用ChatGPT提升英语口语和写作的 - 机场猫"
 description: "介绍如何将 ChatGPT 等 AI 工具用于英语学习：模拟英语对话练习、纠正语法错误、改写英语文章，以及与 AI 对话提升实际语言应用能力。"
 keywords: "AI学英语,ChatGPT练英语,AI英语口语,AI英语写作"
 pubDate: 2026-03-13

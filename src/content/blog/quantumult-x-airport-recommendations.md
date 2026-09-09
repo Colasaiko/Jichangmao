@@ -1,5 +1,5 @@
 ---
-title: "2026 Quantumult X机场推荐：圈X订阅机场选择指南 - 机场猫"
+title: "2026 Quantumult X机场推荐 - 机场猫"
 description: "为 Quantumult X 与圈X用户整理机场选择思路，重点介绍订阅兼容、协议支持、iOS使用场景及机场挑选方法，并结合现有品牌资料提供参考。"
 keywords: "Quantumult X机场推荐,圈X机场推荐,Quantumult X订阅推荐,圈X订阅推荐,Quantumult X节点推荐,iOS机场推荐"
 pubDate: 2026-09-08

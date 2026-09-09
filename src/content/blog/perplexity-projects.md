@@ -1,5 +1,5 @@
 ---
-title: "Perplexity Projects功能：创建专属AI知识库工作空间 - 机场猫"
+title: "Perplexity Projects功能 - 机场猫"
 description: "介绍 Perplexity Projects（项目空间）功能：为不同任务创建专属工作区，设置自定义 AI 指令并上传参考文件，构建聚焦特定领域的 AI 知识库。"
 keywords: "Perplexity Projects,Perplexity项目空间,Perplexity知识库,AI工作空间"
 pubDate: 2026-07-12

@@ -1,6 +1,6 @@
 ---
-title: '直接上传 PDF 文件分析 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于直接上传 PDF 文件分析 - 机场猫的实际应用场景，包括直接上传 PDF 文件分析、使用 Google Drive 深度整合 (@Google Drive)、确保网络连接畅通等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "直接上传 PDF 文件分析 - 机场猫 - 机场猫"
+description: "本文介绍直接上传 PDF 文件分析 - 机场猫，涵盖直接上传 PDF 文件分析与使用 Google Drive 深度整合 (@Google Drive)等内容。"
 keywords: "直接上传 PDF 文件分析,直接上传 PDF 文件分析教程,机场猫"
 pubDate: 2026-03-27
 author: "机场猫编辑部"

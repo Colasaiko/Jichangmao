@@ -1,6 +1,6 @@
 ---
-title: "用AI写Excel公式：自然语言搞定VLOOKUP和嵌套函数 - 机场猫"
-description: "介绍如何用 ChatGPT 等 AI 工具处理 Excel 复杂公式：不再需要记忆 VLOOKUP、INDEX-MATCH 等函数语法，用自然语言描述需求让 AI 直接生成公式。"
+title: "用AI写Excel公式：自然语言搞定VLOOKU - 机场猫"
+description: "介绍如何用 ChatGPT 等 AI 工具处理 Excel 复杂公式：不再需要记忆 VLOOKUP、INDEX-MATCH 等函数语法，用自然语言描述需求让"
 keywords: "AI写Excel公式,ChatGPT Excel,AI数据处理,Excel AI助手"
 pubDate: 2026-05-11
 author: "机场猫编辑部"

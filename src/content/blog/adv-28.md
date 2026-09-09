@@ -1,6 +1,6 @@
 ---
-title: "代理线路全面对比：CN2/9929/CMIN2/IPLC/IEPL如何选 - 机场猫"
-description: "一篇文章搞懂所有主流代理线路的差异：普通公网直连（163/169）、优化骨干网（CN2/9929/CMIN2）与内网物理专线（IPLC/IEPL）的架构差异与选购建议。"
+title: "代理线路全面对比：CN2/9929/CMIN2/ - 机场猫"
+description: "一篇文章搞懂所有主流代理线路的差异：普通公网直连（163/169）、优化骨干网（CN2/9929/CMIN2）与内网物理专线（IPLC/IEPL）的架构差异"
 keywords: "CN2 GIA推荐,代理线路对比,IPLC IEPL对比,9929线路,代理线路选购"
 pubDate: 2026-01-16
 author: "机场猫编辑部"

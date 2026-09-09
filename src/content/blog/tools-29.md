@@ -1,6 +1,6 @@
 ---
-title: 'tools 9 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于tools 9 - 机场猫的实际应用场景，包括基本概念：什么是 DNS over TLS (DoT)？、进一步理解：DoT 与 DoH 的全方位对比、实际应用：在日常设备中如何使用 DoT？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "tools 9 - 机场猫：核心概念与配置实战指南"
+description: "本文介绍tools 9 - 机场猫，涵盖基本概念：什么是 DNS over TLS (DoT)？与进一步理解：DoT 与 DoH 的全方位对比等内容，帮助您理。"
 keywords: "tools 9,tools 9教程,机场猫"
 pubDate: 2026-08-16
 author: "机场猫编辑部"

@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT答非所问怎么办？解决AI理解偏差的策略 - 机场猫"
+title: "ChatGPT答非所问怎么办？解决AI理解偏差的 - 机场猫"
 description: "解析为什么 ChatGPT 有时无法准确理解你的意图：提供的上下文不足、指令模糊、假设不一致，以及通过明确指令让 AI 真正理解需求的实用策略。"
 keywords: "ChatGPT答非所问,ChatGPT理解偏差,ChatGPT指令技巧,AI理解问题"
 pubDate: 2026-04-11

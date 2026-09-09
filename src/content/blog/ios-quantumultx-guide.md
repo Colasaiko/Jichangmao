@@ -1,6 +1,6 @@
 ---
-title: 'Quantumult进阶教程 | Clash配置 - 机场猫 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Quantumult进阶教程 | Clash配置 - 机场猫 - 机场猫的实际应用场景，包括什么是 Quantumult X？、步骤一：导入机场订阅节点、步骤二：开启代理并选择模式等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Quantumult进阶教程 | Clash配置 - 机场猫"
+description: "本文介绍Quantumult进阶教程 | Clash配置，涵盖什么是 Quantumult X？与步骤一：导入机场订阅节点等内容，帮助您理解相关原理与实际配置。"
 keywords: "Quantumult进阶教程 | Clash配置 - 机场猫,Quantumult进阶教程 | Clash配置 - 机场猫教程,机场猫"
 pubDate: 2026-08-28
 category: "clients"

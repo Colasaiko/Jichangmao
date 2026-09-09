@@ -1,5 +1,5 @@
 ---
-title: "Copilot Deep Research怎么用？深度研究功能指南 - 机场猫"
+title: "Copilot Deep Research怎么用 - 机场猫"
 description: "详解 Microsoft Copilot Deep Research 深度研究功能的使用方法：如何发起研究任务、解读结果、引用来源，以及与普通问答功能的区别。"
 keywords: "Copilot Deep Research,Copilot深度研究,Copilot研究功能,AI深度研究"
 pubDate: 2026-06-01

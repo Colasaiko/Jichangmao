@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT角色扮演Prompt：让AI扮演专家角色提升回答质量 - 机场猫"
-description: "介绍在 ChatGPT 中使用角色扮演（Role Prompting）的技巧：通过让 AI 扮演特定专家角色（如资深律师、资深工程师），显著提升回答的专业程度和实用性。"
+title: "ChatGPT角色扮演Prompt - 机场猫"
+description: "介绍在 ChatGPT 中使用角色扮演（Role Prompting）的技巧：通过让 AI 扮演特定专家角色（如资深律师、资深工程师），显著提升回答的专业程"
 keywords: "ChatGPT角色扮演,Role Prompting,ChatGPT扮演专家,AI角色设定"
 pubDate: 2026-03-27
 author: "机场猫编辑部"

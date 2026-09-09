@@ -1,6 +1,6 @@
 ---
-title: "Claude AI是什么？Anthropic Claude功能与使用入门 - 机场猫"
-description: "介绍 Anthropic 开发的 Claude AI 助手：功能特点、与 ChatGPT 的对比、如何访问 Claude，以及 Claude 对代理 IP 质量的特殊要求。"
+title: "Claude AI是什么？Anthropic C - 机场猫"
+description: "介绍 Anthropic 开发的 Claude AI 助手：功能特点、与 ChatGPT 的对比、如何访问 Claude，以及 Claude 对代理 IP "
 keywords: "Claude AI是什么,Claude AI使用,Anthropic Claude,Claude入门"
 pubDate: 2026-03-15
 author: "机场猫编辑部"

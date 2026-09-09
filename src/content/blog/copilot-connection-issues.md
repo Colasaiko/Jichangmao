@@ -1,6 +1,6 @@
 ---
-title: "Copilot连接失败怎么办？微软Copilot访问问题排查 - 机场猫"
-description: "系统排查 Microsoft Copilot 无法连接的常见原因：代理设置问题、地区访问限制、账号状态异常，以及恢复正常使用的解决步骤。"
+title: "Copilot连接失败怎么办？微软Copilot - 机场猫"
+description: "系统排查 Microsoft Copilot 无法连接的常见原因：代理设置问题、地区访问限制、账号状态异常，以及恢复正常使用的解决步骤。，涵盖一、"
 keywords: "Copilot连接失败,Copilot无法访问,Copilot报错,Copilot网络问题"
 pubDate: 2026-06-01
 author: "机场猫编辑部"

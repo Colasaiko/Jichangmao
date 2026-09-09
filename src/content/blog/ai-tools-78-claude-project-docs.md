@@ -1,5 +1,5 @@
 ---
-title: "Claude整理项目文档：用AI快速消化烂摊子项目 - 机场猫"
+title: "Claude整理项目文档：用AI快速消化烂摊子项 - 机场猫"
 description: "介绍如何用 Claude 处理接手新项目时的大量文档：上传 PRD、会议记录、代码片段，让 AI 梳理项目背景、识别关键决策和潜在问题，快速建立项目认知。"
 keywords: "Claude整理项目文档,Claude PRD分析,Claude项目接手,AI项目文档"
 pubDate: 2026-04-27

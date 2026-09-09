@@ -1,5 +1,5 @@
 ---
-title: "Claude生成文章大纲：用AI克服创作初期的'空白页恐惧' - 机场猫"
+title: "Claude生成文章大纲：用AI克服创作初期的' - 机场猫"
 description: "介绍如何用 Claude 作为头脑风暴工具快速生成文章大纲：提供主题后让 AI 生成多个结构方向供选择，解决内容创作初期不知从何写起的问题。"
 keywords: "Claude生成大纲,Claude写作辅助,AI文章大纲,Claude内容创作"
 pubDate: 2026-04-27

@@ -1,6 +1,6 @@
 ---
-title: "2026 Shadowrocket机场推荐：iOS小火箭适配机场 - 机场猫"
-description: "2026年Shadowrocket机场推荐。为iOS用户整理与Shadowrocket（小火箭）完美兼容的机场，解释订阅格式、协议支持、导入流程，以及选购iOS机场的注意事项。"
+title: "2026 Shadowrocket机场推荐 - 机场猫"
+description: "2026年Shadowrocket机场推荐。为iOS用户整理与Shadowrocket（小火箭）完美兼容的机场，解释订阅格式、协议支持、导入流程，"
 keywords: "Shadowrocket机场推荐,小火箭机场推荐,小火箭订阅推荐,Shadowrocket节点推荐,iOS机场推荐"
 pubDate: 2026-09-08
 author: "机场猫编辑部"

@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT翻译功能：比翻译软件更智能的AI翻译技巧 - 机场猫"
+title: "ChatGPT翻译功能：比翻译软件更智能的AI翻 - 机场猫"
 description: "介绍如何用 ChatGPT 进行专业翻译：比普通翻译软件更好地处理语境、专业术语和文化差异，以及通过 Prompt 控制翻译风格（正式/口语/地道）的技巧。"
 keywords: "ChatGPT翻译,AI翻译技巧,ChatGPT翻译功能,智能翻译"
 pubDate: 2026-04-08

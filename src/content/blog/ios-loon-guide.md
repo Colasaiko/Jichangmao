@@ -1,6 +1,6 @@
 ---
-title: 'Loon客户端基础进阶教程 | Clash配置 - 机场猫 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Loon客户端基础进阶教程 | Clash配置 - 机场猫 - 机场猫的实际应用场景，包括什么是 Loon？、第一步：一键导入机场订阅、第二步：使用策略组 (Policy Group) 分流等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Loon客户端基础进阶教程 | Clash配置  - 机场猫"
+description: "本文介绍Loon客户端基础进阶教程 | Clash配置，涵盖什么是 Loon？与第一步：一键导入机场订阅等内容，帮助您理解相关原理与实际配置方法。"
 keywords: "Loon客户端基础进阶教程 | Clash配置 - 机场猫,Loon客户端基础进阶教程 | Clash配置 - 机场猫教程,机场猫"
 pubDate: 2026-08-28
 category: "clients"

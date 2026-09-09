@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT按格式输出：JSON/Markdown/表格结构化输出指南 - 机场猫"
-description: "介绍如何让 ChatGPT 严格按照指定格式输出：通过 Prompt 要求 JSON（适合程序解析）、Markdown 表格（适合阅读）、代码块等特定结构，满足不同使用场景。"
+title: "ChatGPT按格式输出：JSON/Markdo - 机场猫"
+description: "介绍如何让 ChatGPT 严格按照指定格式输出：通过 Prompt 要求 JSON（适合程序解析）、Markdown 表格（适合阅读）、代码块等特定结构，"
 keywords: "ChatGPT JSON输出,ChatGPT格式化输出,ChatGPT Markdown输出,结构化输出AI"
 pubDate: 2026-04-14
 author: "机场猫编辑部"

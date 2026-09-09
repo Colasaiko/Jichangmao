@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT处理大任务：分解复杂项目的Prompt策略 - 机场猫"
-description: "本文详细探讨了关于ChatGPT处理大任务的实际应用场景，包括为什么 ChatGPT 搞不定大任务？、什么是任务拆解？、实战演示：用 ChatGPT 写小说等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。"
+title: "ChatGPT处理大任务：分解复杂项目的Prom - 机场猫"
+description: "本文介绍ChatGPT处理大任务，涵盖为什么 ChatGPT 搞不定大任务？与什么是任务拆解？等内容，帮助您理解相关原理与实际配置方法，适合新手与进阶用户参考，"
 keywords: "ChatGPT处理大任务,任务分解Prompt,ChatGPT复杂项目,AI大任务策略"
 pubDate: 2026-04-18
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
-title: 'sing-box - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于sing-box - 机场猫的实际应用场景，包括sing-box 是什么？、Mac 可以使用 sing-box 吗？、sing-box Mac 怎么下载？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "sing-box - 机场猫：核心概念与配置实战指南"
+description: "本文介绍sing-box - 机场猫，涵盖sing-box 是什么？与Mac 可以使用 sing-box 吗？等内容，帮助您理解相关原理与实际配置方法。"
 keywords: "sing-box,sing-box教程,机场猫"
 pubDate: 2026-06-24
 author: "机场猫编辑部"

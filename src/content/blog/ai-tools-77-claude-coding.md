@@ -1,6 +1,6 @@
 ---
-title: "程序员用Claude写代码：优于ChatGPT的编程场景 - 机场猫"
-description: "从程序员视角分析 Claude 在代码生成、代码审查、复杂逻辑实现上的优势，解释越来越多开发者将日常编程 AI 工具从 ChatGPT 切换为 Claude 的原因。"
+title: "程序员用Claude写代码：优于ChatGPT的 - 机场猫"
+description: "从程序员视角分析 Claude 在代码生成、代码审查、复杂逻辑实现上的优势，解释越来越多开发者将日常编程 AI 工具从 ChatGPT 切换为 Claude"
 keywords: "Claude编程,程序员Claude,Claude vs ChatGPT编程,Claude代码生成"
 pubDate: 2026-04-26
 author: "机场猫编辑部"

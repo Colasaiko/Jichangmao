@@ -1,6 +1,6 @@
 ---
-title: "Gemini分析PDF文件：超长上下文处理文档的技巧 - 机场猫"
-description: "介绍如何利用 Google Gemini 1.5 Pro 的超大上下文窗口处理长篇 PDF 文档：上传步骤、提问技巧，以及 Gemini 在大文档分析上的实际表现。"
+title: "Gemini分析PDF文件：超长上下文处理文档的 - 机场猫"
+description: "介绍如何利用 Google Gemini 1.5 Pro 的超大上下文窗口处理长篇 PDF 文档：上传步骤、提问技巧，以及 Gemini 在大文档分析上的实"
 keywords: "Gemini分析PDF,Gemini处理文档,Gemini长文档,Google AI文件分析"
 pubDate: 2026-04-29
 author: "机场猫编辑部"

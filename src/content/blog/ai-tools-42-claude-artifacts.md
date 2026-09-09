@@ -1,6 +1,6 @@
 ---
-title: "Claude Artifacts是什么？代码和文档实时预览功能 - 机场猫"
-description: "介绍 Claude Artifacts 功能：在对话窗口中直接预览生成的 HTML/React 代码和文档，支持实时修改和迭代，在 AI 辅助开发和内容创作中的实际价值。"
+title: "Claude Artifacts是什么？代码和文 - 机场猫"
+description: "介绍 Claude Artifacts 功能：在对话窗口中直接预览生成的 HTML/React 代码和文档，支持实时修改和迭代，在 AI 辅助开发和内容创作"
 keywords: "Claude Artifacts,Claude代码预览,Claude实时预览,Claude开发功能"
 pubDate: 2026-04-06
 author: "机场猫编辑部"

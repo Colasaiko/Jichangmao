@@ -1,5 +1,5 @@
 ---
-title: "Poe图像和视频生成Bot：一站体验多款AI绘图工具 - 机场猫"
+title: "Poe图像和视频生成Bot：一站体验多款AI绘图 - 机场猫"
 description: "介绍如何在 Poe 平台一站式体验图像和视频生成 AI 工具，无需在多个平台分别订阅，通过 Poe 聚合访问各类图像/视频生成 Bot 的方法。"
 keywords: "Poe图像生成,Poe视频生成Bot,Poe AI绘图,Poe生成工具"
 pubDate: 2026-07-16

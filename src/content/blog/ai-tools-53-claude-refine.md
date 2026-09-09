@@ -1,5 +1,5 @@
 ---
-title: "Claude局部修改技巧：不重新生成只调整特定部分 - 机场猫"
+title: "Claude局部修改技巧：不重新生成只调整特定部 - 机场猫"
 description: "介绍 Claude 的局部修改对话技巧：如何针对 AI 回复中的某个具体段落或细节进行精准调整，而无需让 AI 全部重新生成，节省时间提升迭代效率。"
 keywords: "Claude局部修改,Claude精准调整,Claude迭代优化,Claude对话技巧"
 pubDate: 2026-04-13

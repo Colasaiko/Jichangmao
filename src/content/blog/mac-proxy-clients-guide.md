@@ -1,6 +1,6 @@
 ---
-title: 'mac proxy clien：核心概念与配置实战指南'
-description: '本文详细探讨了关于mac proxy clien的实际应用场景，包括1. 免费开源的现代首选：Clash Verge Rev、2. 优质极客的商业标杆：Surge for Mac、3. 极简与跨平台的后起之秀：Hiddify / Karing等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "mac proxy clien：核心概念与配置实战指南"
+description: "本文介绍mac proxy clien，涵盖1. 免费开源的现代首选：Clash Verge Rev与2. 优质极客的商业标杆：Surge for Mac等内。"
 keywords: "mac proxy clien解析,mac proxy clien解析教程,机场猫"
 pubDate: 2026-08-27
 category: "streaming"

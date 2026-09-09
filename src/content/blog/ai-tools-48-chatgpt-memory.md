@@ -1,6 +1,6 @@
 ---
-title: 'ChatGPT 的记忆功能 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于ChatGPT 的记忆功能 - 机场猫的实际应用场景，包括什么是 ChatGPT 的记忆功能？、如何主动让 ChatGPT 记住你的偏好？、如何管理和删除 ChatGPT 的记忆？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "ChatGPT 的记忆功能 - 机场猫 - 机场猫"
+description: "本文介绍ChatGPT 的记忆功能 - 机场猫，涵盖什么是 ChatGPT 的记忆功能？与如何主动让 ChatGPT 记住你的偏好？等内容，帮助您理解相关原理。"
 keywords: "ChatGPT 的记忆功能,ChatGPT 的记忆功能教程,机场猫"
 pubDate: 2026-04-10
 author: "机场猫编辑部"

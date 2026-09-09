@@ -1,6 +1,6 @@
 ---
-title: 'ai image - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于ai image - 机场猫的实际应用场景，包括方案一：使用 Midjourney 的角色参考 (--cref)、方案二：给人物“起个特殊的名字”、方案三：后期换脸法等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "ai image - 机场猫：核心概念与配置实战指南"
+description: "本文介绍ai image - 机场猫，涵盖方案一：使用 Midjourney 的角色参考 (--cref)与方案二：给人物“起个特殊的名字”等内容，帮助您理解。"
 keywords: "ai image,ai image教程,机场猫"
 pubDate: 2026-01-26
 category: "ai_media"

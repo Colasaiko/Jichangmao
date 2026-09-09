@@ -1,5 +1,5 @@
 ---
-title: "Tailscale Subnet Router：让整个内网设备都可远程访问 - 机场猫"
+title: "Tailscale Subnet Router - 机场猫"
 description: "介绍 Tailscale Subnet Router（子网路由）的配置方法：让无法安装客户端的 NAS、打印机、摄像头等内网设备，通过路由宣告在外网直接访问。"
 keywords: "Tailscale Subnet Router,Tailscale子网路由,内网穿透,NAS远程访问"
 pubDate: 2026-08-11

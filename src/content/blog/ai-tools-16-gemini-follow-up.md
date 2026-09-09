@@ -1,5 +1,5 @@
 ---
-title: "Gemini多轮对话技巧：引导Gemini深入展开讨论 - 机场猫"
+title: "Gemini多轮对话技巧：引导Gemini深入展 - 机场猫"
 description: "介绍与 Google Gemini 进行高质量多轮对话的技巧：如何在上一条回复基础上追问，引导 Gemini 更详细、更深入地探讨特定话题。"
 keywords: "Gemini追问技巧,Gemini多轮对话,Gemini引导,Google AI使用技巧"
 pubDate: 2026-03-23

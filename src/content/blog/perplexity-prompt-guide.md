@@ -1,5 +1,5 @@
 ---
-title: "Perplexity提示词技巧：如何问出更精准的AI搜索结果 - 机场猫"
+title: "Perplexity提示词技巧 - 机场猫"
 description: "专为 Perplexity 整理的提问（Prompt）技巧：如何通过合理构建查询词激发更深度的信息检索能力，获取更有深度、更有引用来源的回答。"
 keywords: "Perplexity提示词,Perplexity Prompt,Perplexity使用技巧,AI搜索提问"
 pubDate: 2026-07-12

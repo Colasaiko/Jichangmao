@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT语音对话功能（Voice Mode）使用指南 - 机场猫"
-description: "介绍 ChatGPT 语音对话（Voice Mode）的使用方法：如何开启语音功能、与 AI 进行自然语音对话，以及语音模式在英语练习和口头信息处理中的实际应用。"
+title: "ChatGPT语音对话功能（Voice Mode - 机场猫"
+description: "介绍 ChatGPT 语音对话（Voice Mode）的使用方法：如何开启语音功能、与 AI 进行自然语音对话，以及语音模式在英语练习和口头信息处理中的实际"
 keywords: "ChatGPT语音对话,ChatGPT Voice Mode,ChatGPT语音功能,AI语音对话"
 pubDate: 2026-04-09
 author: "机场猫编辑部"

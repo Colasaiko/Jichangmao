@@ -1,6 +1,6 @@
 ---
 title: "AI辅助备考：用ChatGPT高效准备考试的方法 - 机场猫"
-description: "系统介绍如何用 ChatGPT 进行考试备考：整理考点、生成模拟题、解析错题、制定复习计划，让 AI 成为你的个人备考助教。"
+description: "系统介绍如何用 ChatGPT 进行考试备考：整理考点、生成模拟题、解析错题、制定复习计划，让 AI 成为你的个人备考助教。，涵盖一、，帮助您快速了解并掌握相关"
 keywords: "AI备考,ChatGPT备考,AI考试准备,AI学习辅助"
 pubDate: 2026-03-13
 author: "机场猫编辑部"

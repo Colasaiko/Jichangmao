@@ -1,6 +1,6 @@
 ---
-title: 'tools 8 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于tools 8 - 机场猫的实际应用场景，包括基本概念：什么是 DNS over HTTPS (DoH)？、进一步理解：DoH 带来了哪些核心优势？、实际应用：主流设备与软件如何开启 DoH？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "tools 8 - 机场猫：核心概念与配置实战指南"
+description: "本文介绍tools 8 - 机场猫，涵盖基本概念：什么是 DNS over HTTPS (DoH)？与进一步理解：DoH 带来了哪些核心优势？等内容，帮助您理。"
 keywords: "tools 8,tools 8教程,机场猫"
 pubDate: 2026-08-16
 author: "机场猫编辑部"

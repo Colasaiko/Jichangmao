@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT读取PDF：分析长篇文档和报告的技巧 - 机场猫"
-description: "专门介绍用 ChatGPT 处理 PDF 文档的方法：如何上传 PDF、提出正确的问题引导 AI 提炼关键信息，以及 ChatGPT 在长文档处理上的能力上限和技巧。"
+title: "ChatGPT读取PDF：分析长篇文档和报告的技 - 机场猫"
+description: "专门介绍用 ChatGPT 处理 PDF 文档的方法：如何上传 PDF、提出正确的问题引导 AI 提炼关键信息，以及 ChatGPT 在长文档处理上的能力上"
 keywords: "ChatGPT读PDF,ChatGPT分析PDF,ChatGPT文档,PDF分析AI"
 pubDate: 2026-03-24
 author: "机场猫编辑部"

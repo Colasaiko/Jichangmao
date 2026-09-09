@@ -1,5 +1,5 @@
 ---
-title: "Hysteria2协议测试：UDP加速节点性能验证 - 机场猫"
+title: "Hysteria2协议测试：UDP加速节点性能验 - 机场猫"
 description: "专门针对 Hysteria2 协议节点的性能测试方法：UDP 加速机制如何工作，如何验证 Hysteria2 节点的连通性，以及与 TCP 协议的实测速度对比。"
 keywords: "Hysteria2测试,Hysteria2协议,UDP加速,Hysteria2节点"
 pubDate: 2026-08-18

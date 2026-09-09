@@ -1,5 +1,5 @@
 ---
-title: "Clash如何开启TUN模式？Windows全局代理配置步骤 - 机场猫"
+title: "Clash如何开启TUN模式？Windows全局 - 机场猫"
 description: "图文介绍在 Windows 的 Clash Verge Rev 中开启 TUN 模式的完整步骤：TUN 模式的使用场景，以及开启前需要注意的权限和配置要求。"
 keywords: "Clash TUN模式,Clash开启TUN,Clash全局代理,Clash Verge TUN"
 pubDate: 2026-08-27

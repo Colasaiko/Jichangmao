@@ -1,6 +1,6 @@
 ---
-title: "Shadowrocket（小火箭）配置教程：iOS代理完整使用指南 - 机场猫"
-description: "iOS 用户的 Shadowrocket 完整配置指南：如何获取非大陆 Apple ID、下载安装 Shadowrocket、导入机场订阅链接，以及日常使用中的常见问题解决。"
+title: "Shadowrocket（小火箭）配置教程 - 机场猫"
+description: "iOS 用户的 Shadowrocket 完整配置指南：如何获取非大陆 Apple ID、下载安装 Shadowrocket、导入机场订阅链接，"
 keywords: "Shadowrocket教程,小火箭使用教程,iOS代理配置,Shadowrocket配置"
 pubDate: 2026-08-27
 category: "network"

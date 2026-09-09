@@ -1,5 +1,5 @@
 ---
-title: "Claude OCR功能：从图片中精准提取文字内容 - 机场猫"
+title: "Claude OCR功能：从图片中精准提取文字内 - 机场猫"
 description: "介绍如何用 Claude 的视觉能力进行 OCR（光学字符识别）：上传截图或图片后提取文字，保持原有排版格式，以及比传统 OCR 工具更灵活的使用方式。"
 keywords: "Claude OCR,Claude图片提取文字,AI OCR识别,Claude文字识别"
 pubDate: 2026-04-24

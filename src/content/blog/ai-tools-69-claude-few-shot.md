@@ -1,6 +1,6 @@
 ---
-title: 'Few-Shot - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Few-Shot - 机场猫的实际应用场景，包括什么是 Few-Shot？、为什么 Few-Shot 对 Claude 特别有效？、实战演练：如何给 Claude 写 Few-Shot 提示词？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Few-Shot - 机场猫：核心概念与配置实战指南"
+description: "本文介绍Few-Shot - 机场猫，涵盖什么是 Few-Shot？与为什么 Few-Shot 对 Claude 特别有效？等内容，帮助您理解相关原理与实际配。"
 keywords: "Few-Shot,Few-Shot教程,机场猫"
 pubDate: 2026-04-22
 author: "机场猫编辑部"

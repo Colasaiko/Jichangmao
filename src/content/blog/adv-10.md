@@ -1,6 +1,6 @@
 ---
 title: "IEPL是什么？IEPL与IPLC的区别详解 - 机场猫"
-description: "清楚区分 IEPL（国际以太网专线）与 IPLC 的技术差异：两者同属内网物理专线，均不过 GFW，但底层实现技术不同，选购时该如何取舍？"
+description: "清楚区分 IEPL（国际以太网专线）与 IPLC 的技术差异：两者同属内网物理专线，均不过 GFW，但底层实现技术不同，选购时该如何取舍？，"
 keywords: "IEPL是什么,IEPL专线,IEPL与IPLC区别,国际以太网专线"
 pubDate: 2026-01-06
 author: "机场猫编辑部"

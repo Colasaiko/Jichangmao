@@ -1,6 +1,6 @@
 ---
-title: "Perplexity连接问题排查：网页白屏或加载失败怎么办 - 机场猫"
-description: "系统排查 Perplexity AI 搜索工具连接失败的原因：从代理设置到服务器状态，提供分步骤的诊断方法，帮你快速恢复正常使用。"
+title: "Perplexity连接问题排查 - 机场猫"
+description: "系统排查 Perplexity AI 搜索工具连接失败的原因：从代理设置到服务器状态，提供分步骤的诊断方法，帮你快速恢复正常使用。，涵盖一、"
 keywords: "Perplexity连接问题,Perplexity无法使用,Perplexity网络错误,AI搜索连接问题"
 pubDate: 2026-07-10
 author: "机场猫编辑部"

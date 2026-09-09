@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Copilot使用教程：功能介绍与新手入门 - 机场猫"
-description: "Microsoft Copilot 完整入门指南：从什么是 Copilot 到如何在 Windows、Edge、Microsoft 365 中使用，涵盖对话、写作、图片生成等核心功能。"
+title: "Microsoft Copilot使用教程 - 机场猫"
+description: "Microsoft Copilot 完整入门指南：从什么是 Copilot 到如何在 Windows、Edge、Microsoft 365 中使用，"
 keywords: "Microsoft Copilot使用教程,Copilot入门,Copilot功能,Copilot怎么用"
 pubDate: 2026-06-02
 author: "机场猫编辑部"

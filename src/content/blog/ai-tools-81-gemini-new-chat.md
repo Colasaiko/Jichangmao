@@ -1,6 +1,6 @@
 ---
-title: '认识 Gemini 的界面布局 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于认识 Gemini 的界面布局 - 机场猫的实际应用场景，包括认识 Gemini 的界面布局、如何在 Gemini 中新建对话、Gemini 是如何保存对话记录的？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "认识 Gemini 的界面布局 - 机场猫 - 机场猫"
+description: "本文介绍认识 Gemini 的界面布局 - 机场猫，涵盖认识 Gemini 的界面布局与如何在 Gemini 中新建对话等内容，帮助您理解相关原理与实际配置方。"
 keywords: "认识 Gemini 的界面布局,认识 Gemini 的界面布局教程,机场猫"
 pubDate: 2026-04-28
 author: "机场猫编辑部"

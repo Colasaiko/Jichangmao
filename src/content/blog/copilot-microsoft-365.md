@@ -1,6 +1,6 @@
 ---
-title: "Microsoft 365 Copilot是什么？Word/Excel/Teams使用指南 - 机场猫"
-description: "介绍 Microsoft 365 Copilot 如何与 Word、Excel、PowerPoint、Outlook、Teams 深度整合，实现文档生成、数据分析、邮件起草等生产力自动化功能。"
+title: "Microsoft 365 Copilot是什么 - 机场猫"
+description: "介绍 Microsoft 365 Copilot 如何与 Word、Excel、PowerPoint、Outlook、Teams 深度整合，实现文档生成、"
 keywords: "Microsoft 365 Copilot,Copilot Word,Copilot Excel,Office AI助手"
 pubDate: 2026-06-03
 author: "机场猫编辑部"

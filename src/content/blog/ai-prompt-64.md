@@ -1,6 +1,6 @@
 ---
-title: 'ai prompt - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于ai prompt - 机场猫的实际应用场景，包括万能 Prompt 公式：角色 + 背景 + 任务 + 要求 + 输出格式、把公式拼起来：一个完整的优秀案例、总结等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "ai prompt - 机场猫：核心概念与配置实战指南"
+description: "本文介绍ai prompt - 机场猫，涵盖万能 Prompt 公式：角色 + 背景 + 任务 + 要求 + 输出格式与把公式拼起来：一个完整的优秀案例等内容。"
 keywords: "ai prompt,ai prompt教程,机场猫"
 pubDate: 2026-03-07
 category: "ai_usage"

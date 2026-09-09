@@ -1,6 +1,6 @@
 ---
-title: 'ChatGPT GPTs - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于ChatGPT GPTs - 机场猫的实际应用场景，包括什么是 ChatGPT GPTs？、如何在 GPT 商店中寻找并使用 GPTs？、注意事项：网络代理与外部 API等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "ChatGPT GPTs - 机场猫：核心概念与配置实战指南"
+description: "本文介绍ChatGPT GPTs - 机场猫，涵盖什么是 ChatGPT GPTs？与如何在 GPT 商店中寻找并使用 GPTs？等内容，帮助您理解相关原理与。"
 keywords: "ChatGPT GPTs,ChatGPT GPTs教程,机场猫"
 pubDate: 2026-04-06
 author: "机场猫编辑部"

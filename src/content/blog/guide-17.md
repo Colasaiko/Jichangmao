@@ -1,6 +1,6 @@
 ---
-title: "手机代理怎么设置？iOS和Android全平台配置指南 - 机场猫"
-description: "面向手机用户的代理配置完整指南：iOS 使用 Shadowrocket，Android 使用 v2rayNG 或 Clash Meta，从下载安装到导入订阅的全步骤教程。"
+title: "手机代理怎么设置？iOS和Android全平台配 - 机场猫"
+description: "面向手机用户的代理配置完整指南：iOS 使用 Shadowrocket，Android 使用 v2rayNG 或 Clash Meta，从下载安装到导入订阅"
 keywords: "手机代理设置,iOS代理配置,Android代理,手机科学上网"
 pubDate: 2026-06-21
 author: "机场猫编辑部"

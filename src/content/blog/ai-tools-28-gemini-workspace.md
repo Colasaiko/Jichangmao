@@ -1,6 +1,6 @@
 ---
-title: "Gemini在Google Workspace中的使用：Gmail和Docs整合 - 机场猫"
-description: "介绍 Google Gemini 与 Gmail、Google Docs、Sheets 的深度整合功能：在 Google 生产力套件内直接使用 AI 辅助写作、摘要和数据分析。"
+title: "Gemini在Google Workspace中 - 机场猫"
+description: "介绍 Google Gemini 与 Gmail、Google Docs、Sheets 的深度整合功能：在 Google 生产力套件内直接使用 AI 辅助写"
 keywords: "Gemini Google Workspace,Gemini Gmail,Gemini Docs,Google AI办公"
 pubDate: 2026-03-30
 author: "机场猫编辑部"

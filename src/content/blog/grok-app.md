@@ -1,6 +1,6 @@
 ---
-title: "Grok手机版怎么用？在X(Twitter)上使用Grok AI - 机场猫"
-description: "介绍如何在 X（原 Twitter）移动客户端中使用 Grok AI：无需下载独立应用，访问步骤与对代理 IP 地区的要求。"
+title: "Grok手机版怎么用？在X(Twitter)上使 - 机场猫"
+description: "介绍如何在 X（原 Twitter）移动客户端中使用 Grok AI：无需下载独立应用，访问步骤与对代理 IP 地区的要求。，涵盖一、这个功能是什么？与二、"
 keywords: "Grok手机版,Grok移动端,X Twitter Grok,Grok使用"
 pubDate: 2026-06-07
 author: "机场猫编辑部"

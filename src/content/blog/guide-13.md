@@ -1,5 +1,5 @@
 ---
-title: "订阅转换工具是什么？如何将机场订阅转为Clash格式 - 机场猫"
+title: "订阅转换工具是什么？如何将机场订阅转为Clash - 机场猫"
 description: "解释订阅转换（Subconverter）的作用：将机场提供的 SS/VMess 订阅格式转换为 Clash YAML 格式，并提供使用注意事项与安全建议。"
 keywords: "订阅转换,Subconverter,订阅格式转换,Clash订阅"
 pubDate: 2026-06-19

@@ -1,6 +1,6 @@
 ---
-title: 'Prompt - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Prompt - 机场猫的实际应用场景，包括什么是 Prompt？、为什么 Prompt 这么重要？、提示词工程 (Prompt Engineering) 又是什么？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Prompt - 机场猫：核心概念与配置实战指南"
+description: "本文介绍Prompt - 机场猫，涵盖什么是 Prompt？与为什么 Prompt 这么重要？等内容，帮助您理解相关原理与实际配置方法，适合新手与进阶用户参考。"
 keywords: "Prompt,Prompt教程,机场猫"
 pubDate: 2026-03-05
 category: "ai_usage"

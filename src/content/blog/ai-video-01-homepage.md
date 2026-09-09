@@ -1,6 +1,6 @@
 ---
-title: 'Step 1：确定影片主题 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Step 1的实际应用场景，包括Step 1：确定影片主题、Step 2：让 AI 帮你写视频脚本、Step 3：制作分镜表等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Step 1：确定影片主题 - 机场猫 - 机场猫"
+description: "本文介绍Step 1，涵盖Step 1：确定影片主题与Step 2：让 AI 帮你写视频脚本等内容，帮助您理解相关原理与实际配置方法，适合新手与进阶用户参考，。"
 keywords: "Step 1,Step 1教程,机场猫"
 pubDate: 2026-05-02
 category: "ai_media"

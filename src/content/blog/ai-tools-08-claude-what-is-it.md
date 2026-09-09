@@ -1,5 +1,5 @@
 ---
-title: "Claude AI vs ChatGPT：两者有什么不同 - 机场猫"
+title: "Claude AI vs ChatGPT - 机场猫"
 description: "对比 Claude AI 与 ChatGPT 的核心差异：回答风格、内容限制、IP 访问要求、长文处理能力，帮助用户选择更适合自己工作场景的 AI 工具。"
 keywords: "Claude vs ChatGPT,Claude AI对比,Claude ChatGPT区别,AI工具对比"
 pubDate: 2026-03-18

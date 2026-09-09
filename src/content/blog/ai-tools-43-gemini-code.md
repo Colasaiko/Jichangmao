@@ -1,6 +1,6 @@
 ---
-title: 'Gemini 编程能力初探 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Gemini 编程能力初探 - 机场猫的实际应用场景，包括Gemini 编程能力初探、与 GPT-4 和 Claude 3.5 的中立对比、强大的生态整合能力等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Gemini 编程能力初探 - 机场猫 - 机场猫"
+description: "本文介绍Gemini 编程能力初探 - 机场猫，涵盖Gemini 编程能力初探与与 GPT-4 和 Claude 3.5 的中立对比等内容，帮助您理解相关原理。"
 keywords: "Gemini 编程能力初探,Gemini 编程能力初探教程,机场猫"
 pubDate: 2026-04-07
 author: "机场猫编辑部"

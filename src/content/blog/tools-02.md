@@ -1,6 +1,6 @@
 ---
 title: "DNS泄漏检测工具使用方法：检查代理DNS设置 - 机场猫"
-description: "详细说明如何使用 DNS 泄漏检测工具判断代理是否正确接管 DNS 请求，避免真实 DNS 服务器暴露本地位置，以及发现泄漏后的修复方式。"
+description: "详细说明如何使用 DNS 泄漏检测工具判断代理是否正确接管 DNS 请求，避免真实 DNS 服务器暴露本地位置，以及发现泄漏后的修复方式。，"
 keywords: "DNS泄漏检测,DNS泄漏工具,DNS检查,代理DNS"
 pubDate: 2026-08-01
 author: "机场猫编辑部"

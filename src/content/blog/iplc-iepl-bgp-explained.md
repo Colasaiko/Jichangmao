@@ -1,5 +1,5 @@
 ---
-title: "IPLC、IEPL和BGP是什么？三种线路类型完整解析 - 机场猫"
+title: "IPLC、IEPL和BGP是什么？三种线路类型完 - 机场猫"
 description: "一文厘清机场营销中最常见的三类线路术语：IPLC（国际私有专线）、IEPL（国际以太网专线）、BGP多线中转——技术差异、价格区别与适用场景。"
 keywords: "IPLC IEPL BGP区别,专线是什么,BGP中转,机场线路类型"
 pubDate: 2026-08-27

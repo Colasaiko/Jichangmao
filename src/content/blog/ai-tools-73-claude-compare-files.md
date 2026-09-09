@@ -1,5 +1,5 @@
 ---
-title: "Claude对比多个文档：快速找出合同和文件的差异 - 机场猫"
+title: "Claude对比多个文档：快速找出合同和文件的差 - 机场猫"
 description: "介绍如何用 Claude 对比两份长文档（合同不同版本、财报等）：利用 Claude 的长文本能力快速识别关键差异，比人工逐行对比大幅节省时间。"
 keywords: "Claude对比文档,Claude文件对比,AI文档差异,Claude合同对比"
 pubDate: 2026-04-24

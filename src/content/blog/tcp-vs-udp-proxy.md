@@ -1,6 +1,6 @@
 ---
-title: 'TCP 与 UDP 的本质区别：核心概念与配置实战指南'
-description: '本文详细探讨了关于TCP 与 UDP 的本质区别的实际应用场景，包括TCP 与 UDP 的本质区别、数据包收发逻辑对比图解、这对代理客户端有什么影响？等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "TCP 与 UDP 的本质区别：核心概念与配置实战指南"
+description: "本文介绍TCP 与 UDP 的本质区别，涵盖TCP 与 UDP 的本质区别与数据包收发逻辑对比图解等内容，帮助您理解相关原理与实际配置方法。"
 keywords: "TCP 与 UDP 的本质区别解析,TCP 与 UDP 的本质区别解析教程,机场猫"
 pubDate: 2026-08-27
 category: "client_adv"

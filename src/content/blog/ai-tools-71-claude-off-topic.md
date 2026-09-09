@@ -1,6 +1,6 @@
 ---
-title: "Claude为什么会乱编数据？AI幻觉原理与防止方法 - 机场猫"
-description: "深入解析 AI 幻觉（Hallucination）的本质：Claude 等大语言模型为何会生成看似合理但实际虚假的信息，以及如何通过 Prompt 设计和验证步骤减少幻觉影响。"
+title: "Claude为什么会乱编数据？AI幻觉原理与防止 - 机场猫"
+description: "深入解析 AI 幻觉（Hallucination）的本质：Claude 等大语言模型为何会生成看似合理但实际虚假的信息，以及如何通过 Prompt 设计和验"
 keywords: "AI幻觉,Claude幻觉,AI乱编数据,Hallucination"
 pubDate: 2026-04-23
 author: "机场猫编辑部"

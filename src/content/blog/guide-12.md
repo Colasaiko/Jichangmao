@@ -1,6 +1,6 @@
 ---
-title: "流媒体解锁是什么？Netflix/Disney+原生IP要求 - 机场猫"
-description: "解释流媒体解锁的技术原理：Netflix、Disney+ 等平台通过 IP 归属地判断用户地区，为何需要原生 IP 才能真正解锁内容，以及如何判断节点是否支持解锁。"
+title: "流媒体解锁是什么？Netflix/Disney+ - 机场猫"
+description: "解释流媒体解锁的技术原理：Netflix、Disney+ 等平台通过 IP 归属地判断用户地区，为何需要原生 IP 才能真正解锁内容，以及如何判断节点是否支"
 keywords: "流媒体解锁,Netflix解锁,Disney+解锁,原生IP解锁"
 pubDate: 2026-06-18
 author: "机场猫编辑部"

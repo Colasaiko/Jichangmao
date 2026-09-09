@@ -1,6 +1,6 @@
 ---
-title: 'Claude 的文件处理能力 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Claude 的文件处理能力 - 机场猫的实际应用场景，包括什么是 Claude 的文件处理能力？、如何上传文件？、常见问题与排障（Troubleshooting）等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Claude 的文件处理能力 - 机场猫 - 机场猫"
+description: "本文介绍Claude 的文件处理能力 - 机场猫，涵盖什么是 Claude 的文件处理能力？与如何上传文件？等内容，帮助您理解相关原理与实际配置方法。"
 keywords: "Claude 的文件处理能力,Claude 的文件处理能力教程,机场猫"
 pubDate: 2026-04-12
 author: "机场猫编辑部"

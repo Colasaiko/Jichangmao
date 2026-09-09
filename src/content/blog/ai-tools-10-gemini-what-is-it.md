@@ -1,6 +1,6 @@
 ---
-title: 'Google Gemini - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于Google Gemini - 机场猫的实际应用场景，包括什么是 Google Gemini？、Gemini 的核心特点、第一次使用 Gemini：新手起步指南等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "Google Gemini - 机场猫 - 机场猫"
+description: "本文介绍Google Gemini - 机场猫，涵盖什么是 Google Gemini？与Gemini 的核心特点等内容，帮助您理解相关原理与实际配置方法。"
 keywords: "Google Gemini,Google Gemini教程,机场猫"
 pubDate: 2026-03-20
 author: "机场猫编辑部"

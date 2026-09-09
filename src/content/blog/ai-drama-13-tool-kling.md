@@ -1,6 +1,6 @@
 ---
-title: "可灵(Kling)AI视频生成教程：短剧场景制作指南 - 机场猫"
-description: "专门介绍快手可灵（Kling）AI 视频生成工具的使用方法：如何输入提示词生成短剧场景，以及可灵在AI短剧制作中的实际效果和适用场景。"
+title: "可灵(Kling)AI视频生成教程 - 机场猫"
+description: "专门介绍快手可灵（Kling）AI 视频生成工具的使用方法：如何输入提示词生成短剧场景，以及可灵在AI短剧制作中的实际效果和适用场景。，，帮助您快速了解并掌握相"
 keywords: "可灵AI视频,Kling使用教程,AI短剧制作,可灵短剧"
 pubDate: 2026-01-23
 category: "ai_media"

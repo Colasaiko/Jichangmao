@@ -1,6 +1,6 @@
 ---
-title: "OpenVPN配置文件(.ovpn)解析：核心参数看懂指南 - 机场猫"
-description: "用通俗语言解读 .ovpn 配置文件的核心参数含义：连接指令、路由规则、内嵌证书密钥的作用，帮助你在遇到连接失败时自行排查。"
+title: "OpenVPN配置文件(.ovpn)解析 - 机场猫"
+description: "用通俗语言解读 .ovpn 配置文件的核心参数含义：连接指令、路由规则、内嵌证书密钥的作用，帮助你在遇到连接失败时自行排查。，涵盖基本概念："
 keywords: "OpenVPN配置文件,ovpn文件,OpenVPN参数,VPN配置"
 pubDate: 2026-08-08
 author: "机场猫编辑部"

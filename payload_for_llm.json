@@ -1,0 +1,2866 @@
+{
+  "src/content/blog/ai-network-05-dns-issue.md": {
+    "originalTitle": "DNS ：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于DNS 的实际应用场景，包括什么是 DNS 解析？",
+    "category": "ai_network",
+    "tags": "DNS, 网络排障, AI教程",
+    "firstPara": "在访问各种 AI 工具（如 ChatGPT、Claude、Midjourney 等）时，你可能会遇到页面完全无法加载的情况，浏览器提示 `ERR_NAME_NOT_RESOLVED` 或“找不到服务器",
+    "headers": "什么是 DNS 解析？ | 常见的 DNS 错误提示 | 如何修复 DNS 解析异常？"
+  },
+  "src/content/blog/client-download-mac.md": {
+    "originalTitle": "下载客户端：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于下载客户端的实际应用场景，包括1. 下载客户端",
+    "category": "review_archive",
+    "tags": "Mac客户端, macOS, 下载教程",
+    "firstPara": "如果你使用的是 Mac 电脑，可以按照下面的步骤完成客户端下载安装和基础设置。",
+    "headers": "1. 下载客户端 | 2. 解压并打开 | 3. 完成安装"
+  },
+  "src/content/blog/adv-05.md": {
+    "originalTitle": "ISP运营商分层解析：从家庭宽带到Tier1骨干网 - 机场猫",
+    "originalDesc": "解读 ISP 运营商的层级结构：从最末端的家庭宽带接入商，到掌控跨国海底光缆的 Tier 1 骨干网，不同层级的运营商如何决定你的网络质量。",
+    "category": "network",
+    "tags": "",
+    "firstPara": "无论是家庭宽带、手机蜂窝网络，还是跨国机房之间的数据传输，背后都由网络运营商（ISP）在提供物理连接与路由支持。从最底层的民用宽带接入商，到掌控跨国海底光缆的全球一级骨干网（Tier 1 ISP），不",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-23.md": {
+    "originalTitle": "IP段和CIDR子网是什么？防火墙封锁整段IP的原理 - 机场猫",
+    "originalDesc": "本文详细探讨了关于IP段和CIDR子网是什么？防火墙封锁整段IP的原理 - 机场猫的实际应用场景，包括基本概念",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "在网络安全和风控策略中，我们经常会听到「拉黑整个 IP 段」或「整个 C 段都被封了」的说法。IP 段（CIDR 子网）是指由连续 IP 地址构成的一个网络区间，例如 `192.168.1.0/24`",
+    "headers": "基本概念 | 进一步理解：如何表示 IP 段？ | 常见分类：A段、B段、C段究竟是什么？"
+  },
+  "src/content/blog/adv-24.md": {
+    "originalTitle": "IPv4和IPv6有什么区别？代理节点与双栈网络解析 - 机场猫",
+    "originalDesc": "对比 IPv4（32位，约43亿地址）与 IPv6（128位，无限地址）的结构差异，以及在代理节点选择、VPS配置和双栈网络场景中的实际影响。",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "不管是申请宽带公网 IP，还是配置服务器双栈网络，IPv4 与 IPv6 都是绕不开的基础协议。IPv4 采用 32 位地址结构，仅能提供约 43 亿个地址，早已在全球范围内分配殆尽；而拥有 128 ",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/adv-28.md": {
+    "originalTitle": "代理线路全面对比：CN2/9929/CMIN2/IPLC/IEPL如何选 - 机场猫",
+    "originalDesc": "一篇文章搞懂所有主流代理线路的差异：普通公网直连（163/169）、优化骨干网（CN2/9929/CMIN2）与内网物理专线（IPLC/IEPL）的架构差异与选购建议。",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "面对 CN2 GIA、9929、CMIN2、IPLC、IEPL 等琳琅满目的线路术语，很多新手往往因为分不清技术差异而多花了冤枉钱。搞懂各类线路的核心，在于分清普通公网直连（163/169）、优化骨干",
+    "headers": "基本概念：数据是如何跨国传输的？ | 常见类型：详细解析各种线路名词 | 常见误区：拆穿商家的文字游戏"
+  },
+  "src/content/blog/ai-drama-03-script.md": {
+    "originalTitle": "AI辅助短剧剧本创作：用ChatGPT生成剧本的方法 - 机场猫",
+    "originalDesc": "介绍如何用 ChatGPT 等大语言模型辅助创作短剧剧本：从核心故事种子出发，通过 AI 扩写成完整剧本的实用步骤与 Prompt 技巧。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "很多人想尝试做 AI 短剧，但往往卡在第一步：“我不会写剧本，我只有一个大概的想法，怎么办？”",
+    "headers": "相关文章"
+  },
+  "src/content/blog/ai-drama-07-video-gen.md": {
+    "originalTitle": "AI短剧视频生成实战：Runway/Pika/Kling生成教程 - 机场猫",
+    "originalDesc": "从分镜图到最终视频的完整生成实战：对比 Runway、Pika、可灵(Kling)、海螺等主流 AI 视频工具的 Text to Video 和 Image to Video 两种生成模式的使用要点。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "准备好了剧本和分镜图，终于来到了最激动人心的环节：**生成视频**。这也是让很多新手感到既神奇又挫败的一步。",
+    "headers": "相关文章"
+  },
+  "src/content/blog/ai-drama-09-bgm.md": {
+    "originalTitle": "常见的 AI 音乐生成工具 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于常见的 AI 音乐生成工具 - 机场猫的实际应用场景，包括常见的 AI 音乐生成工具",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "一部优秀的短剧，背景音乐（BGM）和音效往往能决定观众的代入感。在当前的短剧创作生态中，不仅画面可以通过 AI 辅助生成，背景音乐同样可以利用 AI 音乐创作工具来完成。",
+    "headers": "常见的 AI 音乐生成工具 | 从剧情到配乐的制作步骤 | 总结"
+  },
+  "src/content/blog/ai-drama-13-tool-kling.md": {
+    "originalTitle": "可灵(Kling)AI视频生成教程：短剧场景制作指南 - 机场猫",
+    "originalDesc": "专门介绍快手可灵（Kling）AI 视频生成工具的使用方法：如何输入提示词生成短剧场景，以及可灵在AI短剧制作中的实际效果和适用场景。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "**可灵 AI (Kling)** 在视频生成领域表现突出，特别是在处理物理规律模拟和大幅度运镜方面有着不错的表现。对于希望制作高质量 AI 短剧的创作者来说，掌握可灵的图生视频（Image to V",
+    "headers": "为什么推荐 Image to Video（图生视频）？ | 可灵 AI 图生视频操作指南 | 后期处理提示"
+  },
+  "src/content/blog/ai-drama-14-tool-runway.md": {
+    "originalTitle": "Runway 的核心生成功能 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Runway 的核心生成功能 - 机场猫的实际应用场景，包括Runway 的核心生成功能",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "**Runway** 是 AI 视频领域的早期开拓者，也是深受全球创作者喜爱的视频生成与编辑平台。它不仅提供强大的生成模型（如 Gen-2, Gen-3 Alpha），还拥有一套丰富的视频编辑工具，非",
+    "headers": "Runway 的核心生成功能 | 强大的 AI 视频编辑功能 | Runway 创作工作流建议"
+  },
+  "src/content/blog/ai-image-02.md": {
+    "originalTitle": "准备工作：选择合适的 AI 绘 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于准备工作的实际应用场景，包括准备工作：选择合适的 AI 绘画工具",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "你可能正在搭建自己的网站，却苦于没有合适的插图：去图库找，风格总是不统一；请设计师画，预算又不够。其实，借助现在的 AI 工具，即使你**完全不会画画**，也能在几分钟内生成一套专属的网站插画。",
+    "headers": "准备工作：选择合适的 AI 绘画工具 | 第一步：确定你的网站插画风格 | 第二步：写出有效的提示词 (Prompt)"
+  },
+  "src/content/blog/ai-image-03.md": {
+    "originalTitle": "核心方法一：固定并复用“风格提 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心方法一的实际应用场景，包括核心方法一：固定并复用“风格提示词”",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "我们在做网站、写文章或是制作 PPT 时，往往需要不止一张配图。如果第一张图是写实照片，第二张却是卡通插画，视觉上就会非常杂乱。",
+    "headers": "核心方法一：固定并复用“风格提示词” | 核心方法二：使用 Midjourney 的风格参考 (--sref) | 核心方法三：利用 Seed（种子值）固定全局特征"
+  },
+  "src/content/blog/ai-image-05.md": {
+    "originalTitle": "为什么 AI 连简单的字母都写 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么 AI 连简单的字母都写 - 机场猫的实际应用场景，包括为什么 AI 连简单的字母都写不对？",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "当你满心欢喜地让 AI 生成一张“街边咖啡馆”的图片时，却发现招牌上的英文字母扭曲变形，像是某种无法解读的“火星文”。其实，这是所有新手在接触 AI 绘画时都会遇到的问题。",
+    "headers": "为什么 AI 连简单的字母都写不对？ | 如何让 AI 准确生成文字？ | 常见问题与避坑指南"
+  },
+  "src/content/blog/ai-image-06.md": {
+    "originalTitle": "制作 Banner 的两个核心 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于制作 Banner 的两个核心 - 机场猫的实际应用场景，包括制作 Banner 的两个核心要求",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "打开任何一个专业网站，最先映入眼帘的就是顶部的 Banner（横幅）大图。一张高质量的 Banner 不仅能吸引眼球，还能清晰地传达网站的核心信息。",
+    "headers": "制作 Banner 的两个核心要求 | 第一步：生成超宽比例的背景图 | 第二步：在提示词中强制“留白”"
+  },
+  "src/content/blog/ai-image-08.md": {
+    "originalTitle": "AI 放大（Upscale） - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 放大（Upscale） - 机场猫的实际应用场景，包括什么是 AI 放大（Upscale）？",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "目前大多数主流 AI 绘画工具（如 Midjourney、DALL-E 3）默认生成的图片分辨率都不算特别高（通常在 1024x1024 左右）。如果只是发朋友圈完全够用，但如果要在 4K 显示器上看",
+    "headers": "什么是 AI 放大（Upscale）？ | 常见的高清放大方案 | 操作步骤演示（以通用在线工具为例）"
+  },
+  "src/content/blog/ai-image-09.md": {
+    "originalTitle": "为什么 AI 总是画不好手和肢 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么 AI 总是画不好手和肢 - 机场猫的实际应用场景，包括为什么 AI 总是画不好手和肢体？",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "“手是 AI 绘画永远的痛。”",
+    "headers": "为什么 AI 总是画不好手和肢体？ | 预防策略：如何在生成时减少变形？ | 修复策略：生成后发现变形了怎么办？"
+  },
+  "src/content/blog/ai-learning-54.md": {
+    "originalTitle": "核心方法：使用“费曼技巧”指令 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心方法的实际应用场景，包括核心方法：使用“费曼技巧”指令",
+    "category": "ai_usage",
+    "tags": "",
+    "firstPara": "无论是看专业书、读财报，还是学习一门新技术，我们经常会被各种生僻的专业术语搞晕。这时候去搜索，往往搜出来的解释比原词还要难懂。",
+    "headers": "核心方法：使用“费曼技巧”指令 | 进阶技巧：层层递进法 | 常见问题与避坑指南"
+  },
+  "src/content/blog/ai-learning-55.md": {
+    "originalTitle": "核心方法：角色代入与场景限定 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心方法的实际应用场景，包括核心方法：角色代入与场景限定",
+    "category": "ai_usage",
+    "tags": "",
+    "firstPara": "在学习和工作中，我们经常会遇到干巴巴的“定义”。大脑天生讨厌抽象复杂的概念，但对“故事”和“例子”却情有独钟。",
+    "headers": "核心方法：角色代入与场景限定 | 进阶技巧：要求正反例对比 | 常见问题与避坑指南"
+  },
+  "src/content/blog/ai-network-03-instability.md": {
+    "originalTitle": "为什么网络体验会随时间变化 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么网络体验会随时间变化 - 机场猫的实际应用场景，包括为什么网络体验会随时间变化？",
+    "category": "ai_network",
+    "tags": "网络稳定, AI教程, 延迟排障",
+    "firstPara": "很多人在日常使用 AI 工具时都会遇到一个非常头疼的问题：“为什么昨天用得好好的，今天突然就连不上了？”或者“为什么早上很快，到了晚上就卡得连字都弹不出来？”",
+    "headers": "为什么网络体验会随时间变化？ | 导致 AI 访问不稳定的 8 大核心因素 | 网络服务选择指南"
+  },
+  "src/content/blog/ai-network-04-browser-cache.md": {
+    "originalTitle": "清除浏览器缓存解决代理问题：Cache与Cookie清理指南 - 机场猫",
+    "originalDesc": "介绍浏览器缓存和 Cookie 对代理使用的影响：为什么切换节点后有些网站仍显示旧版本或旧地区，以及如何通过清缓存解决代理相关的浏览器兼容问题。",
+    "category": "ai_network",
+    "tags": "网络排障, 浏览器缓存, AI教程",
+    "firstPara": "当你在使用 ChatGPT、Claude 或其他 AI 工具时，如果突然遇到页面白屏、一直在加载中，或者频繁提示“Network Error”，很多人的第一反应是“是不是我的梯子坏了？”或“是不是网络",
+    "headers": "什么是浏览器缓存？为什么它会让 AI 页面崩溃？ | 排查第一招：使用“无痕模式”快速测试 | 排查第二招：彻底清理目标网站的浏览器缓存"
+  },
+  "src/content/blog/ai-network-07-client-dns.md": {
+    "originalTitle": "系统 DNS 与客户端 DNS - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于系统 DNS 与客户端 DNS - 机场猫的实际应用场景，包括系统 DNS 与客户端 DNS 的区别",
+    "category": "ai_network",
+    "tags": "客户端配置, DNS, 网络排障",
+    "firstPara": "在访问全球 AI 服务（如 ChatGPT、Claude、Midjourney 等）时，稳定的网络连接是第一前提。然而，许多用户在配置好网络环境后，仍然会遇到“无法解析域名”或“连接超时”的问题。这往",
+    "headers": "系统 DNS 与客户端 DNS 的区别 | 为什么 AI 服务会因为 DNS 配置不当而连接失败？ | 如何排查 AI 服务连接异常？"
+  },
+  "src/content/blog/ai-network-09-browser-extensions.md": {
+    "originalTitle": "哪些浏览器扩展容易导致问题 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于哪些浏览器扩展容易导致问题 - 机场猫的实际应用场景，包括哪些浏览器扩展容易导致问题？",
+    "category": "ai_network",
+    "tags": "网络排障, 浏览器, AI教程",
+    "firstPara": "在使用 ChatGPT、Claude 等热门 AI 网站时，你是否遇到过页面空白、按钮点击无反应或是频繁报错的情况？很多人第一反应是网络出了问题，但其实，这很可能是你浏览器里的扩展插件在“捣鬼”。",
+    "headers": "哪些浏览器扩展容易导致问题？ | 如何排查与解决？ | 还是不行？可能是网络层面的问题"
+  },
+  "src/content/blog/ai-network-16-ping-vs-ai.md": {
+    "originalTitle": "Ping值低但ChatGPT还是慢？AI工具速度影响因素 - 机场猫",
+    "originalDesc": "本文详细探讨了关于Ping值低但ChatGPT还是慢？AI工具速度影响因素 - 机场猫的实际应用场景，包括Ping 值：仅仅代表数据包到达边缘[节点](/blog/what-is-node/)的时间",
+    "category": "ai_network",
+    "tags": "网络延迟, AI响应速度, 稳定性排障",
+    "firstPara": "很多人在访问 ChatGPT、Claude 等大语言模型服务时，常会遇到一个令人困惑的现象：“我测了网络 Ping 值，明明只有 30ms，为什么 AI 输出文字却像挤牙膏一样慢？”",
+    "headers": "Ping 值：仅仅代表数据包到达边缘[节点](/blog/what-is-node/)的时间 | AI 响应速度：取决于后台 GPU 的推理计算时间 | 为什么网络连接依然至关重要？"
+  },
+  "src/content/blog/ai-network-18-dns-vs-slow.md": {
+    "originalTitle": "DNS 只是“电话簿”查询 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于DNS 只是“电话簿”查询 - 机场猫的实际应用场景，包括DNS 只是“电话簿”查询",
+    "category": "ai_network",
+    "tags": "加载慢, DNS排查, 网络知识",
+    "firstPara": "在排查网络问题时，很多人会首先检查 DNS 解析是否正常。然而，有时候你会发现：域名能够瞬间解析出 IP 地址，但 AI 网页或应用依然加载缓慢，甚至完全打不开。这是为什么呢？",
+    "headers": "DNS 只是“电话簿”查询 | 为什么实际的数据传输会很慢？ | 提升 AI 网络体验的建议"
+  },
+  "src/content/blog/ai-network-19-client-status.md": {
+    "originalTitle": "为什么客户端显示“已连接”却无 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么客户端显示“已连接”却无 - 机场猫的实际应用场景，包括为什么客户端显示“已连接”却无法上网？",
+    "category": "ai_network",
+    "tags": "客户端排障, 虚假连接, 网络教程",
+    "firstPara": "很多新手在使用代理客户端（如 [Clash](/blog/mac-clash-verge-rev-guide/), V2ray 等）时，经常会遇到一个令人困惑的问题：软件界面明明显示“已连接”，[节点",
+    "headers": "为什么客户端显示“已连接”却无法上网？ | 解决步骤与排障指南 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-22-packet-loss.md": {
+    "originalTitle": "代理丢包导致ChatGPT中断？AI工具网络丢包排查 - 机场猫",
+    "originalDesc": "本文详细探讨了关于代理丢包导致ChatGPT中断？AI工具网络丢包排查 - 机场猫的实际应用场景，包括什么是网络丢包？",
+    "category": "ai_network",
+    "tags": "丢包率, 网络拥塞, 稳定性排障",
+    "firstPara": "在使用 ChatGPT、Claude 或 Midjourney 等海外 AI 工具时，你是否经常遇到这样的情况：AI 正在飞速输出文字，突然在半句话卡住，几分钟后直接报错提示“Network Erro",
+    "headers": "什么是网络丢包？ | 为什么丢包会让 AI 对话极度不稳定？ | 造成丢包的根本原因是什么？"
+  },
+  "src/content/blog/ai-network-24-client-dns-leak.md": {
+    "originalTitle": "系统 DNS（OS-level - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于系统 DNS（OS-level - 机场猫的实际应用场景，包括什么是系统 DNS（OS-level DNS）？",
+    "category": "ai_network",
+    "tags": "客户端排障, DNS解析, 进阶知识",
+    "firstPara": "很多网络排障教程都会建议：“遇到网络问题，尝试把 DNS 改成 8.8.8.8 或者 1.1.1.1”。但是，随着各种代理客户端的使用，DNS 的解析流程变得越来越复杂。你修改的到底是系统的 DNS，",
+    "headers": "什么是系统 DNS（OS-level DNS）？ | 什么是客户端 DNS（Client-level DNS）？ | AI 时代：为什么正确配置客户端 DNS 至关重要？"
+  },
+  "src/content/blog/ai-network-25-ai-server-down.md": {
+    "originalTitle": "ChatGPT/Claude服务器宕机如何判断？服务状态检测方法 - 机场猫",
+    "originalDesc": "本文详细探讨了关于ChatGPT/Claude服务器宕机如何判断？服务状态检测方法 - 机场猫的实际应用场景，包括1. 检查 AI 官方服务器是否宕机",
+    "category": "ai_network",
+    "tags": "网络排障, 故障排除, AI使用",
+    "firstPara": "当昨天还能正常使用的 AI 工具（如 ChatGPT、Claude 等）今天突然全军覆没、完全打不开时，很多人的第一反应是去改电脑的网络设置。但这往往会让问题变得更复杂。",
+    "headers": "1. 检查 AI 官方服务器是否宕机 | 2. 确认你的订阅或账户状态 | 3. 检查你的客户端或代理软件是否正在运行"
+  },
+  "src/content/blog/ai-network-29-ai-sudden-disconnect.md": {
+    "originalTitle": "AI对话突然中断怎么办？ChatGPT断线原因与修复 - 机场猫",
+    "originalDesc": "解析 ChatGPT 等 AI 工具对话突然中断的常见原因：网络丢包、节点超时、服务器限制，以及如何通过调整代理设置减少中断频率、保护长对话不丢失。",
+    "category": "ai_network",
+    "tags": "断连排障, 网络断流, 稳定性排查",
+    "firstPara": "在使用 ChatGPT、Claude 等 AI 工具进行深度对话时，最让人沮丧的莫过于正聊得火热，突然屏幕上弹出一个刺眼的 **Network Error**，或是 AI 突然停止输出，假死在原地。",
+    "headers": "现象：突然出现的 Network Error | 根本原因：TCP 连接断开与路由超时 | 临时应对与长久之计"
+  },
+  "src/content/blog/ai-network-30-client-expired.md": {
+    "originalTitle": "表现一：客户端显示“已连接”， - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于表现一的实际应用场景，包括表现一：客户端显示“已连接”，但网速始终为 0",
+    "category": "ai_network",
+    "tags": "客户端配置, 节点过期, 新手排障",
+    "firstPara": "对于经常使用海外 AI 工具（如 ChatGPT、Claude 或 Midjourney）的用户来说，保持网络连接的稳定至关重要。很多新手在刚接触网络代理客户端时，最常遇到的问题就是**[节点](/b",
+    "headers": "表现一：客户端显示“已连接”，但网速始终为 0 | 表现二：AI 网站无法访问，但国内网站秒开 | 表现三：频繁收到超时报错或连接重置"
+  },
+  "src/content/blog/ai-network-32-client-mode.md": {
+    "originalTitle": "“全局模式”与“规则模式” - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于“全局模式”与“规则模式” - 机场猫的实际应用场景，包括什么是“全局模式”与“规则模式”？",
+    "category": "ai_network",
+    "tags": "客户端配置, 规则模式, 代理教程",
+    "firstPara": "在配置网络代理客户端（如 [Clash](/blog/mac-clash-verge-rev-guide/)、v2rayN、Shadowrocket 等）以访问 ChatGPT、Claude 等 AI",
+    "headers": "什么是“全局模式”与“规则模式”？ | 规则模式是如何工作的？（域名匹配原理） | 为什么强烈推荐使用“规则模式”？"
+  },
+  "src/content/blog/ai-network-39-udp-vs-tcp.md": {
+    "originalTitle": "TCP 与 UDP 的核心区别 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于TCP 与 UDP 的核心区别 - 机场猫的实际应用场景，包括TCP 与 UDP 的核心区别",
+    "category": "ai_network",
+    "tags": "UDP, 客户端配置, 网络科普",
+    "firstPara": "在配置网络代理客户端时，我们经常会在设置界面看到“开启 UDP 转发”或类似的选项。这不仅让人好奇：UDP 到底是什么？它与我们常说的 TCP 有什么区别？开启 UDP 对我们的日常使用，尤其是访问 ",
+    "headers": "TCP 与 UDP 的核心区别 | 对 AI 服务的影响：ChatGPT 语音模式的挑战 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-40-ip-leak.md": {
+    "originalTitle": "IP泄漏导致ChatGPT封号？代理IP泄漏检测与防护 - 机场猫",
+    "originalDesc": "解析代理使用中的 IP 泄漏风险：WebRTC 泄漏、DNS 泄漏如何暴露真实 IP，以及如何检测是否存在泄漏、修复配置防止 ChatGPT 等平台识别真实位置。",
+    "category": "ai_network",
+    "tags": "IP泄露, 网络排障, 封号防范",
+    "firstPara": "在访问海外 AI 工具（如 ChatGPT、Claude 等）时，你可能会遇到这样的情况：明明已经连接了代理[节点](/blog/what-is-node/)，但网站依然无情地提示“您所在的国家/地区",
+    "headers": "为什么挂了代理还是会暴露真实 IP？ | 如何检测 IP 是否泄露？ | 如何修复 IP 泄露问题？"
+  },
+  "src/content/blog/ai-network-41-cloudflare-block.md": {
+    "originalTitle": "Cloudflare封锁代理IP？CF防护触发原因与解决方法 - 机场猫",
+    "originalDesc": "解析 Cloudflare 安全检测（CF盾）拦截代理 IP 的原因：数据中心 IP 被 CF 标记为高风险，如何通过更换节点或使用住宅 IP 绕过 Cloudflare 的访问限制。",
+    "category": "ai_network",
+    "tags": "Cloudflare, 盾拦截, 网络排障",
+    "firstPara": "当你在日常使用 ChatGPT、Claude、Midjourney 等海外 AI 服务时，是否经常遇到一个令人崩溃的页面——满屏的“Verify you are human”（证明你是人类），然后要求",
+    "headers": "什么是 Cloudflare 验证机制 (Turnstile / CAPTCHA)？ | 为什么 Cloudflare 总是拦截你的网络节点？ | 治标还是治本？如何有效解决 Cloudflare 拦截"
+  },
+  "src/content/blog/ai-network-42-why-client.md": {
+    "originalTitle": "浏览器插件 vs 独立客户端： - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于浏览器插件 vs 独立客户端的实际应用场景，包括浏览器插件 vs 独立客户端：核心差异在哪？",
+    "category": "ai_network",
+    "tags": "客户端科普, 基础概念, 新手必读",
+    "firstPara": "随着 ChatGPT、Claude 和 Midjourney 等海外 AI 工具的普及，越来越多的人开始探索 AI 的无限可能。然而，很多新手在配置网络环境时经常会问一个问题：“为什么我不能直接在浏览",
+    "headers": "浏览器插件 vs 独立客户端：核心差异在哪？ | 为什么 AI 工具对网络要求如此苛刻？ | 深度分流：保护账号的终极武器"
+  },
+  "src/content/blog/ai-network-47-dns-error.md": {
+    "originalTitle": "DNS 及其对网络连接的影响 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于DNS 及其对网络连接的影响 - 机场猫的实际应用场景，包括什么是 DNS 及其对网络连接的影响",
+    "category": "ai_network",
+    "tags": "DNS排查, 加载慢, 网络基础",
+    "firstPara": "在访问 ChatGPT、Claude 等 AI 网站时，您是否经常遇到浏览器左下角长时间显示“正在解析主机...”，或者直接弹出 `DNS_PROBE_FINISHED_NXDOMAIN` 错误提示？",
+    "headers": "什么是 DNS 及其对网络连接的影响 | 为什么访问 AI 网站容易出现 DNS 解析异常？ | 解决 DNS 解析异常的实用方法"
+  },
+  "src/content/blog/ai-network-51-client-role.md": {
+    "originalTitle": "流量管家：智能分流国内与海外流 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于流量管家的实际应用场景，包括流量管家：智能分流国内与海外流量",
+    "category": "ai_network",
+    "tags": "客户端科普, 流量分流, 进阶知识",
+    "firstPara": "在访问诸如 ChatGPT、Midjourney 或 Claude 等海外优质 AI 服务时，我们通常会在电脑或手机上安装并运行一个“客户端”。很多人将这个客户端简单地理解为“代理软件”，但实际上，它",
+    "headers": "流量管家：智能分流国内与海外流量 | 隐私保护盾：加密数据绕过深度包检测 (DPI) | DNS 守卫：防止 DNS 污染的远程解析"
+  },
+  "src/content/blog/ai-network-59-config-stability.md": {
+    "originalTitle": "为什么客户端配置错误会导致断流 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么客户端配置错误会导致断流 - 机场猫的实际应用场景，包括为什么客户端配置错误会导致断流？",
+    "category": "ai_network",
+    "tags": "客户端配置, 断流排查, 规则优化",
+    "firstPara": "在使用 ChatGPT、Claude、Midjourney 等前沿 AI 工具时，我们经常会遇到网页卡在加载中、对话中途断开，或者干脆提示网络错误的情况。很多用户第一时间会认为是网络[节点](/blo",
+    "headers": "为什么客户端配置错误会导致断流？ | 如何排查与优化配置？ | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-office-44.md": {
+    "originalTitle": "准备工作：选择合适的 AI 工 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于准备工作的实际应用场景，包括准备工作：选择合适的 AI 工具",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "无论是工作中的行业研究报告、长篇新闻，还是学习时的文献资料，阅读长文章常常需要耗费大量时间。现在，借助 AI 工具，你可以让 AI 先帮你“读”一遍，快速提炼出核心观点和结论，极大提升获取信息的效率。",
+    "headers": "准备工作：选择合适的 AI 工具 | 第一步：将文章提供给 AI | 第二步：使用高效的提示词 (Prompt) 提取信息"
+  },
+  "src/content/blog/ai-prompt-62.md": {
+    "originalTitle": "万能提示词公式：BRIC 法则 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于万能提示词公式的实际应用场景，包括万能提示词公式：BRIC 法则",
+    "category": "ai_usage",
+    "tags": "",
+    "firstPara": "在上一篇文章里我们讲了，Prompt 就是你跟 AI 下达的“指令”。",
+    "headers": "万能提示词公式：BRIC 法则 | 把它们组合起来！ | 进阶技巧：持续对话与修正"
+  },
+  "src/content/blog/ai-site-37.md": {
+    "originalTitle": "AI 能帮你做哪些 SEO 检 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 能帮你做哪些 SEO 检 - 机场猫的实际应用场景，包括AI 能帮你做哪些 SEO 检查？",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "网站做好了，但是别人在百度或谷歌上搜索时根本找不到？这就涉及到了 SEO（搜索引擎优化）。以前，这需要专门的 SEO 专家来分析数据、修改标签，但现在，你可以直接让 AI 充当你的免费 SEO 顾问。",
+    "headers": "AI 能帮你做哪些 SEO 检查？ | 具体操作步骤 | 进阶技巧：挖掘长尾词"
+  },
+  "src/content/blog/ai-study-01-efficiency.md": {
+    "originalTitle": "重新定义 AI 在学习中的角色 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于重新定义 AI 在学习中的角色 - 机场猫的实际应用场景，包括重新定义 AI 在学习中的角色",
+    "category": "ai_work",
+    "tags": "学生效率, 学习流, AI导师",
+    "firstPara": "在当今的信息时代，AI 工具已经成为了我们获取知识和提升效率的得力助手。然而，对于许多学生来说，如何正确使用 AI 辅助学习仍是一个亟待解决的问题。我们要明确一点：**AI 是你的助手，而不是替代品。",
+    "headers": "重新定义 AI 在学习中的角色 | 科学的 AI 学习工作流 | 提升 AI 学习体验的小贴士"
+  },
+  "src/content/blog/ai-study-02-exam-plan.md": {
+    "originalTitle": "场景模拟：倒数14天的期末逆袭 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于场景模拟的实际应用场景，包括场景模拟：倒数14天的期末逆袭",
+    "category": "ai_work",
+    "tags": "复习计划, 考试准备, 学生效率",
+    "firstPara": "期末考试临近，面对厚厚的教材和密密麻麻的考纲，你是不是感到毫无头绪，甚至开始焦虑？别慌，AI 就像一位专属的私人导师，能帮你把繁杂的学习任务拆解得清清楚楚。只需要输入你的考试大纲和剩余备考时间，AI ",
+    "headers": "场景模拟：倒数14天的期末逆袭 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-study-05-quiz.md": {
+    "originalTitle": "AI出题测验：用ChatGPT/Claude生成练习题自测 - 机场猫",
+    "originalDesc": "介绍如何用 ChatGPT 或 Claude 为自己生成测验题（Quiz）进行自我检测：通过提供学习材料让 AI 出选择题、填空题或简答题，提高复习效率。",
+    "category": "ai_work",
+    "tags": "随堂测验, 知识检验, 学习效率",
+    "firstPara": "在学习完一个新的章节或一本专业书籍后，我们往往会遇到一个问题：“我真的掌握这些知识了吗？”传统的学习方法中，我们依赖于课后的练习题或是老师布置的作业来检验。但在自学或缺乏习题资源的情况下，AI 成为了",
+    "headers": "为什么要用 AI 制作 Quiz？ | 场景模拟：基于第三章内容的 10 道选择题 | 进阶技巧：简答题与情景模拟"
+  },
+  "src/content/blog/ai-study-08-english.md": {
+    "originalTitle": "AI学英语：用ChatGPT提升英语口语和写作的技巧 - 机场猫",
+    "originalDesc": "介绍如何将 ChatGPT 等 AI 工具用于英语学习：模拟英语对话练习、纠正语法错误、改写英语文章，以及与 AI 对话提升实际语言应用能力。",
+    "category": "ai_work",
+    "tags": "语言学习, 英语口语, 语法纠错",
+    "firstPara": "在当今的数字化时代，人工智能不仅是程序员和设计师的得力助手，更成为了语言学习者的“私人外教”。无论你是想要提高口语流利度、搞懂复杂的语法规则，还是想在真实语境中扩充词汇量，AI 都能为你提供个性化、全",
+    "headers": "开启语音模式，进行真实的口语对练 | 让 AI 成为你的专属语法老师 | 在真实语境中高效扩充词汇量"
+  },
+  "src/content/blog/ai-study-09-paper.md": {
+    "originalTitle": "AI辅助论文写作：ChatGPT帮你完成学术写作的方法 - 机场猫",
+    "originalDesc": "介绍合理使用 ChatGPT 辅助学术论文写作的方法：文献检索辅助、提纲生成、段落改写润色、语法检查，以及学术写作中 AI 使用的边界与注意事项。",
+    "category": "ai_work",
+    "tags": "文献阅读, 学术研究, 大学生必备",
+    "firstPara": "在这个信息爆炸的时代，学术界每天都会产出海量的研究论文。面对几十页、甚至上百页的全英文学术论文，许多研究生和科研人员常常感到“压力山大”。好消息是，AI 工具的出现极大地改变了文献阅读的方式。合理利用",
+    "headers": "利用 AI 提取摘要（Abstract） | 剖析研究方法（Methodology） | 归纳研究结论（Results）"
+  },
+  "src/content/blog/ai-tools-01-chatgpt.md": {
+    "originalTitle": "ChatGPT入门教程：第一次使用ChatGPT怎么开始 - 机场猫",
+    "originalDesc": "面向完全新手的 ChatGPT 入门指南：注册账号、首次对话、免费与付费功能区别，以及如何使用代理访问 ChatGPT 的基础说明。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, AI教程, 网络工具",
+    "firstPara": "ChatGPT 是由 OpenAI 开发的一款人工智能语言模型。它基于强大的自然语言处理技术，能够理解人类的语言并生成流畅、连贯的回答。简单来说，你可以把它看作是一个知识渊博的虚拟助手，能够和你进行对",
+    "headers": "ChatGPT 是什么？ | 第一次使用 ChatGPT 怎么开始？ | 第一次应该问 ChatGPT 什么？"
+  },
+  "src/content/blog/ai-tools-02-claude.md": {
+    "originalTitle": "Claude AI是什么？Anthropic Claude功能与使用入门 - 机场猫",
+    "originalDesc": "介绍 Anthropic 开发的 Claude AI 助手：功能特点、与 ChatGPT 的对比、如何访问 Claude，以及 Claude 对代理 IP 质量的特殊要求。",
+    "category": "ai_tools",
+    "tags": "Claude, AI教程, 网络工具",
+    "firstPara": "随着 AI 技术的不断发展，各种 AI 助手层出不穷。作为广受关注的大语言模型之一，Claude 在逻辑推理、长文本处理和代码编写等方面表现出色。今天就来为您详细介绍 Claude 的基本概念、使用方",
+    "headers": "Claude 是什么？ | Claude 怎么开始使用？ | Claude 适合做什么？"
+  },
+  "src/content/blog/ai-tools-05-chatgpt-first-conversation.md": {
+    "originalTitle": "ChatGPT第一次对话怎么开始？新手首次使用完整指南 - 机场猫",
+    "originalDesc": "面向完全新手：打开 ChatGPT 之后如何开始第一次对话，如何提出好问题，常见的新手误区，以及几个立即上手的实用场景示例。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, AI教程, 对话技巧",
+    "firstPara": "登录成功后，你会看到 ChatGPT 简洁的聊天界面。主要包括三个核心区域：",
+    "headers": "认识 ChatGPT 的聊天界面 | 如何发起第一次对话 | 如何阅读 ChatGPT 的回复"
+  },
+  "src/content/blog/ai-tools-08-claude-what-is-it.md": {
+    "originalTitle": "Claude AI vs ChatGPT：两者有什么不同 - 机场猫",
+    "originalDesc": "对比 Claude AI 与 ChatGPT 的核心差异：回答风格、内容限制、IP 访问要求、长文处理能力，帮助用户选择更适合自己工作场景的 AI 工具。",
+    "category": "ai_tools",
+    "tags": "Claude, AI教程, 新手入门",
+    "firstPara": "Claude 是由人工智能公司 Anthropic 开发的一款先进大语言模型（LLM）。如果说 ChatGPT 是一位全能型的“AI 助手”，那么 Claude 就像是一位更加稳重、细腻且文风自然的“",
+    "headers": "什么是 Claude？ | Claude 的核心优势在哪里？ | 新手如何注册并开始第一次对话？"
+  },
+  "src/content/blog/ai-tools-09-claude-new-chat.md": {
+    "originalTitle": "Claude怎么开始新对话？Claude入门使用完整教程 - 机场猫",
+    "originalDesc": "面向新手介绍如何在 Claude 中开始第一次对话：注册访问方式、界面布局、如何提出第一个问题，以及 Claude 与 ChatGPT 在使用习惯上的主要区别。",
+    "category": "ai_tools",
+    "tags": "Claude, AI教程, 基础操作",
+    "firstPara": "在使用 Claude 时，新建对话是一项最基础但也最重要的操作。很多新手由于不了解 Claude 的上下文机制，习惯在一个对话窗口里反复提问完全不同的问题，导致 AI 的回答出现混乱或“幻觉”。",
+    "headers": "如何在 Claude 中新建对话？ | 为什么要新建对话？（核心原因） | 网络连接与页面加载问题"
+  },
+  "src/content/blog/ai-tools-10-gemini-what-is-it.md": {
+    "originalTitle": "Google Gemini - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Google Gemini - 机场猫的实际应用场景，包括什么是 Google Gemini？",
+    "category": "ai_tools",
+    "tags": "Gemini, Google AI, 新手入门",
+    "firstPara": "Gemini 是由 Google 开发的新一代多模态大语言模型（LLM），也是目前 Google 旗下表现优异大的旗舰 AI 工具。与早期的纯文本模型不同，Gemini 从一开始就被设计为“原生多模态",
+    "headers": "什么是 Google Gemini？ | Gemini 的核心特点 | 第一次使用 Gemini：新手起步指南"
+  },
+  "src/content/blog/ai-tools-11-chatgpt-format.md": {
+    "originalTitle": "ChatGPT输出格式怎么控制？Markdown和JSON格式指定 - 机场猫",
+    "originalDesc": "介绍如何通过 Prompt 指定 ChatGPT 的输出格式：要求以 Markdown、JSON、表格、列表等特定格式输出，满足开发和内容创作不同场景的需求。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, Prompt, 格式化输出",
+    "firstPara": "在使用 ChatGPT 时，很多时候我们不仅需要它给出准确的内容，还需要它按照特定的格式输出，以便直接复制粘贴到代码、文档或表格中。如果你还在手动整理 ChatGPT 的回答，那就太低效了。今天就来教",
+    "headers": "为什么要限制 ChatGPT 的输出格式？ | 常见输出格式及 Prompt 示例 | 复杂格式生成中的网络问题"
+  },
+  "src/content/blog/ai-tools-12-chatgpt-mistakes.md": {
+    "originalTitle": "ChatGPT新手常见错误：这些使用习惯让AI越用越差 - 机场猫",
+    "originalDesc": "盘点 ChatGPT 新手最容易犯的使用错误：问题太模糊、不给背景信息、不追问、不验证答案等，以及如何改变习惯获得更好的 AI 回复质量。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 新手避坑, AI教程",
+    "firstPara": "随着 ChatGPT 的普及，越来越多的人开始尝试使用这款强大的 AI 助手。然而，许多新手在初次使用时往往会陷入一些常见的误区，导致无法充分发挥 ChatGPT 的潜力，甚至得出“它不好用”的结论。",
+    "headers": "1. 盲目信任 AI（未意识到“幻觉”的存在） | 2. 提示词（Prompt）含糊不清 | 3. 不善于利用上下文追问"
+  },
+  "src/content/blog/ai-tools-13-claude-follow-up.md": {
+    "originalTitle": "Claude追问技巧：如何引导Claude深入回答 - 机场猫",
+    "originalDesc": "介绍与 Claude 进行多轮对话追问的技巧：如何基于上一条回复提出更有针对性的问题，引导 Claude 不断深入、完善回答，提升对话质量。",
+    "category": "ai_tools",
+    "tags": "Claude, 对话技巧, 进阶教程",
+    "firstPara": "在使用 Claude 这类拥有超大上下文窗口（Context Window）的 AI 助手时，单次提问往往不足以榨干它的全部潜能。如何通过继续追问（Follow-up）和连续对话，让 Claude 更",
+    "headers": "认识 Claude 的超大上下文窗口 | 怎么在 Claude 中高效继续追问？ | 追问变卡了？关于网络延迟与带宽"
+  },
+  "src/content/blog/ai-tools-15-claude-format.md": {
+    "originalTitle": "Claude输出格式控制：让AI按你要求的结构输出 - 机场猫",
+    "originalDesc": "介绍如何通过 Prompt 控制 Claude 的输出格式：指定 Markdown 结构、表格、代码块、列表等，以及 Claude 在格式控制方面与 ChatGPT 的差异。",
+    "category": "ai_tools",
+    "tags": "Claude, Prompt, 格式化输出",
+    "firstPara": "在日常使用 Claude 的过程中，很多人只是简单地提问并获取文本回答。然而，如果你懂得如何通过巧妙的 Prompt（提示词）让 Claude 按照指定的格式输出，无论是 Markdown 表格、JS",
+    "headers": "为什么要让 Claude 按照指定格式回答？ | 实用技巧与案例：让 Claude 乖乖听话 | 复杂格式生成与网络稳定性注意事项"
+  },
+  "src/content/blog/ai-tools-16-gemini-follow-up.md": {
+    "originalTitle": "Gemini多轮对话技巧：引导Gemini深入展开讨论 - 机场猫",
+    "originalDesc": "介绍与 Google Gemini 进行高质量多轮对话的技巧：如何在上一条回复基础上追问，引导 Gemini 更详细、更深入地探讨特定话题。",
+    "category": "ai_tools",
+    "tags": "Gemini, 对话技巧, AI教程",
+    "firstPara": "在使用 Google 的人工智能助手 Gemini 时，很多人可能只会简单地输入一个问题，得到答案后就结束了对话。但实际上，Gemini 的强大之处在于它的**多轮对话能力**和**上下文记忆**。如",
+    "headers": "理解 Gemini 的上下文记忆 | 常见的追问技巧与示例 | 网络连接与聊天记录加载问题"
+  },
+  "src/content/blog/ai-tools-17-chatgpt-files.md": {
+    "originalTitle": "ChatGPT上传文件功能：如何让AI分析你的文档 - 机场猫",
+    "originalDesc": "介绍 ChatGPT Plus 的文件上传功能：支持上传 PDF、Word、Excel、代码文件，让 AI 进行阅读分析、摘要提取、数据处理，以及对上传内容的最佳提问方式。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 文件处理, 进阶技巧",
+    "firstPara": "随着 ChatGPT 功能的不断进化，上传文件进行数据分析、文档摘要或是代码处理已经成为了高频需求。如果你还不清楚 ChatGPT 怎么上传文件，或者在上传过程中遇到了卡顿和失败的问题，今天就来为你详",
+    "headers": "认识 ChatGPT 的文件上传界面 | 支持的文件格式 | 文件大小限制"
+  },
+  "src/content/blog/ai-tools-18-chatgpt-pdf.md": {
+    "originalTitle": "ChatGPT读取PDF：分析长篇文档和报告的技巧 - 机场猫",
+    "originalDesc": "专门介绍用 ChatGPT 处理 PDF 文档的方法：如何上传 PDF、提出正确的问题引导 AI 提炼关键信息，以及 ChatGPT 在长文档处理上的能力上限和技巧。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, PDF分析, 效率工具",
+    "firstPara": "在当今的信息爆炸时代，我们经常需要处理大量的长篇 PDF 文档，比如研究报告、产品白皮书或是长篇文献。阅读这些文档不仅耗时，还容易遗漏重点。好消息是，ChatGPT 可以成为你的强大助手，帮你快速分析",
+    "headers": "如何将 PDF 上传给 ChatGPT？ | 让 ChatGPT 总结 PDF 的核心要点 | 从 PDF 中提取特定数据与翻译"
+  },
+  "src/content/blog/ai-tools-22-claude-summary.md": {
+    "originalTitle": "Claude 的超大上下文优势 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Claude 的超大上下文优势 - 机场猫的实际应用场景，包括Claude 的超大上下文优势",
+    "category": "ai_tools",
+    "tags": "Claude, 论文阅读, 文档处理",
+    "firstPara": "在当今信息爆炸的时代，我们每天都要面对海量的文章、论文和行业报告。如何快速提取其中的核心价值成为了提高效率的关键。相比于其他 AI 工具，Claude 凭借其惊人的上下文窗口（部分模型支持高达 100",
+    "headers": "Claude 的超大上下文优势 | 如何编写提示词（Prompt）获取高质量总结 | 网络连接与大文本传输的挑战"
+  },
+  "src/content/blog/ai-tools-23-gemini-pdf.md": {
+    "originalTitle": "直接上传 PDF 文件分析 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于直接上传 PDF 文件分析 - 机场猫的实际应用场景，包括直接上传 PDF 文件分析",
+    "category": "ai_tools",
+    "tags": "Gemini, PDF分析, 谷歌文档",
+    "firstPara": "在日常工作和学习中，我们经常需要处理长篇的 PDF 报告、学术论文或行业分析。Google 推出的 Gemini 提供了强大的文档分析功能，特别是借助与 Google Workspace 的深度整合，",
+    "headers": "直接上传 PDF 文件分析 | 使用 Google Drive 深度整合 (@Google Drive) | 确保网络连接畅通"
+  },
+  "src/content/blog/ai-tools-24-chatgpt-role.md": {
+    "originalTitle": "ChatGPT角色扮演Prompt：让AI扮演专家角色提升回答质量 - 机场猫",
+    "originalDesc": "介绍在 ChatGPT 中使用角色扮演（Role Prompting）的技巧：通过让 AI 扮演特定专家角色（如资深律师、资深工程师），显著提升回答的专业程度和实用性。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, Prompt, 角色设定",
+    "firstPara": "在日常使用 ChatGPT 时，你可能遇到过这种情况：它的回答虽然全面，但总觉得“太干瘪”或者“不够专业”。解决这个问题的终极技巧就是——**角色设定（Role-Playing）**。",
+    "headers": "什么是角色设定（Role Prompting）？ | 实用角色设定技巧与示例 | 注意事项：网络环境与长上下文"
+  },
+  "src/content/blog/ai-tools-25-chatgpt-report.md": {
+    "originalTitle": "第一步：准备好你的数据文件 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于第一步的实际应用场景，包括第一步：准备好你的数据文件",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 效率工具, 文件处理",
+    "firstPara": "无论是需要处理几万行的 Excel/CSV 数据表，还是几十页的 PDF 研报，将这些枯燥复杂的资料转化为结构清晰、格式完美的总结报告，往往是一项耗时的工作。幸运的是，通过强大的数据分析和文件处理能力",
+    "headers": "第一步：准备好你的数据文件 | 第二步：上传文件并注意网络环境 | 第三步：编写高质量的 Prompt（提示词）"
+  },
+  "src/content/blog/ai-tools-27-claude-code.md": {
+    "originalTitle": "Claude写代码：为什么程序员越来越偏爱Claude - 机场猫",
+    "originalDesc": "分析程序员从 ChatGPT 转向 Claude 的原因：Claude 在代码生成、代码审查和复杂逻辑推理上的优势，以及如何最大化发挥 Claude 编程辅助能力。",
+    "category": "ai_tools",
+    "tags": "Claude, 编程辅助, 效率工具",
+    "firstPara": "在当今的 AI 编程辅助工具中，Claude 凭借其极其强大的逻辑推理和上下文理解能力，成为了许多资深程序员的“心头好”。相比于其他 AI，Claude 在处理复杂代码逻辑、重构长代码以及发现深层 B",
+    "headers": "为什么程序员更偏爱用 Claude 写代码？ | 如何利用 Claude 进行代码审查与优化 | 确保开发过程中的网络稳定性"
+  },
+  "src/content/blog/ai-tools-28-gemini-workspace.md": {
+    "originalTitle": "Gemini在Google Workspace中的使用：Gmail和Docs整合 - 机场猫",
+    "originalDesc": "介绍 Google Gemini 与 Gmail、Google Docs、Sheets 的深度整合功能：在 Google 生产力套件内直接使用 AI 辅助写作、摘要和数据分析。",
+    "category": "ai_tools",
+    "tags": "Gemini, 效率工具, 学习技巧",
+    "firstPara": "在数字化学习时代，我们每天都会接收到海量的信息。如何高效地整理、归纳并吸收这些资料，成为了许多学习者面临的挑战。Google 的 AI 助手 Gemini，凭借其与 Google Workspace（",
+    "headers": "为什么选择 Gemini 整理资料？ | 实操指南：结合 Google Workspace 的学习法 | 网络环境配置提示"
+  },
+  "src/content/blog/ai-tools-29-chatgpt-outline.md": {
+    "originalTitle": "ChatGPT生成大纲：让AI帮你快速建立文章结构 - 机场猫",
+    "originalDesc": "介绍如何用 ChatGPT 生成文章、报告或演讲的逻辑大纲：提供主题和要求后让 AI 快速建立清晰的层级结构，作为内容创作的起点，减少'空白页恐惧'。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 写作辅助, 效率工具",
+    "firstPara": "在日常的写作中，万事开头难。无论是工作报告、技术博客还是个人分享，一个清晰的文章大纲不仅能帮助你理清思路，还能极大提高后续内容的写作效率。ChatGPT 凭借其强大的逻辑分析和文本结构化能力，是整理大",
+    "headers": "为什么用 ChatGPT 写大纲？ | 如何向 ChatGPT 提问（Prompt 技巧） | 网络延迟（RTT）对生成体验的影响"
+  },
+  "src/content/blog/ai-tools-31-claude-rewrite.md": {
+    "originalTitle": "Claude改写和润色文章：保留个人风格的AI编辑技巧 - 机场猫",
+    "originalDesc": "介绍如何用 Claude 作为编辑角色润色文章：在提升语言质量的同时保留作者原始风格（Voice），以及 Claude 在保留个人写作特色上的优势。",
+    "category": "ai_tools",
+    "tags": "Claude, 写作辅助, 效率工具",
+    "firstPara": "在众多 AI 写作工具中，Claude 以其自然流畅、不带“机器味”的语言风格脱颖而出。如果你有一篇初稿需要修改、润色或重构，Claude 是一个非常理想的得力助手。今天就来教你如何利用 Claude",
+    "headers": "为什么选择 Claude 修改文章？ | 如何让 Claude 帮你修改文章？ | 总结"
+  },
+  "src/content/blog/ai-tools-35-claude-extract.md": {
+    "originalTitle": "Claude信息提取技巧：从文档中精准抽取结构化数据 - 机场猫",
+    "originalDesc": "介绍使用 Claude 从长篇文档、合同、报告中提取关键信息的技巧：如何通过结构化 Prompt 指定提取维度，让 AI 直接输出整理好的数据。",
+    "category": "ai_tools",
+    "tags": "Claude, 长文本处理, 资料整理",
+    "firstPara": "处理长达数百页的 PDF 或研究报告时，传统的人工阅读往往费时费力。随着 Claude 等强大 AI 助手的出现，特别是其支持的超长上下文窗口，我们可以轻松地将海量信息交由 AI 处理。今天就来为你揭",
+    "headers": "为什么选择 Claude 处理长文本？ | 核心技巧：精准提取 Prompt 设计 | 网络连接：上传长文档的必要保障"
+  },
+  "src/content/blog/ai-tools-37-chatgpt-screenshot.md": {
+    "originalTitle": "直接粘贴截图 (Ctrl+V) - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于直接粘贴截图 (Ctrl+V) - 机场猫的实际应用场景，包括直接粘贴截图 (Ctrl+V)",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 效率提升, 问题排查",
+    "firstPara": "无论是遇到让人崩溃的软件报错，还是遇到设计复杂的未知 UI 界面，亦或者是让人头秃的乱码和代码片段，只要一张截图，ChatGPT 就能瞬间化身为你的专属技术客服，帮你分析并解决问题。今天就来带你了解如",
+    "headers": "直接粘贴截图 (Ctrl+V) | 常见应用场景 | 常见问题排查 (Troubleshooting)"
+  },
+  "src/content/blog/ai-tools-38-claude-image.md": {
+    "originalTitle": "Claude图片识别功能：分析截图、图表和文档图片 - 机场猫",
+    "originalDesc": "介绍 Claude 的图片识别和分析能力：上传截图、图表、文档图片后如何提问，Claude 在 OCR 文字提取和视觉内容解析上的实际表现。",
+    "category": "ai_tools",
+    "tags": "Claude, 多模态, 视觉分析",
+    "firstPara": "在当今的人工智能领域，多模态能力已经成为衡量一个大语言模型是否强大的重要标准。很多用户在熟悉了 Claude 出色的文本处理能力后，常常会问一个问题：**Claude 可以分析图片吗？**",
+    "headers": "Claude 的视觉分析能力概览 | 与其他 AI 视觉工具的对比 | 典型应用场景"
+  },
+  "src/content/blog/ai-tools-40-chatgpt-draw.md": {
+    "originalTitle": "ChatGPT 真的可以画图吗 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于ChatGPT 真的可以画图吗 - 机场猫的实际应用场景，包括ChatGPT 真的可以画图吗？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, AI绘画, DALL-E",
+    "firstPara": "答案是肯定的！随着 OpenAI 技术的不断迭代，ChatGPT 已经深度整合了强大的 AI 绘画模型 **DALL-E 3**。这意味着你不再需要学习复杂的绘图软件，也不用记住繁琐的参数和咒语，只需",
+    "headers": "ChatGPT 真的可以画图吗？ | DALL-E 3 与 ChatGPT 的完美结合 | 如何写出高质量的画图提示词？"
+  },
+  "src/content/blog/ai-tools-42-claude-artifacts.md": {
+    "originalTitle": "Claude Artifacts是什么？代码和文档实时预览功能 - 机场猫",
+    "originalDesc": "介绍 Claude Artifacts 功能：在对话窗口中直接预览生成的 HTML/React 代码和文档，支持实时修改和迭代，在 AI 辅助开发和内容创作中的实际价值。",
+    "category": "ai_tools",
+    "tags": "Claude, Artifacts, 效率神器",
+    "firstPara": "随着 AI 大模型的不断进化，Anthropic 推出的 Claude 再次以一项名为 **Artifacts** 的惊艳功能震撼了技术圈。如果你还在为了预览 AI 写的代码而频繁在代码编辑器和浏览器",
+    "headers": "什么是 Claude Artifacts？ | 为什么 Artifacts 是 UI/UX 和原型设计的神器？ | 如何使用 Claude Artifacts？"
+  },
+  "src/content/blog/ai-tools-43-gemini-code.md": {
+    "originalTitle": "Gemini 编程能力初探 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Gemini 编程能力初探 - 机场猫的实际应用场景，包括Gemini 编程能力初探",
+    "category": "ai_tools",
+    "tags": "Gemini, AI编程, 效率工具",
+    "firstPara": "随着 AI 编程助手的普及，Google 推出的 Gemini 家族也加入了这场效率革命。作为 Google AI 战略的核心，Gemini 在处理代码任务时的真实表现究竟如何？它能否与 GPT-4 ",
+    "headers": "Gemini 编程能力初探 | 与 GPT-4 和 Claude 3.5 的中立对比 | 强大的生态整合能力"
+  },
+  "src/content/blog/ai-tools-45-chatgpt-translate.md": {
+    "originalTitle": "ChatGPT翻译功能：比翻译软件更智能的AI翻译技巧 - 机场猫",
+    "originalDesc": "介绍如何用 ChatGPT 进行专业翻译：比普通翻译软件更好地处理语境、专业术语和文化差异，以及通过 Prompt 控制翻译风格（正式/口语/地道）的技巧。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 翻译技巧, 效率提升",
+    "firstPara": "在日常工作和学习中，我们经常需要阅读大量的外文资料。传统的机器翻译软件（如谷歌翻译、百度翻译）虽然速度快，但往往翻译得十分生硬，甚至会出现令人啼笑皆非的错误。而 ChatGPT 的出现，彻底改变了这一",
+    "headers": "技巧一：赋予 ChatGPT 专业角色 | 技巧二：提供文章背景信息 | 技巧三：分段翻译与保持格式排版"
+  },
+  "src/content/blog/ai-tools-47-chatgpt-voice.md": {
+    "originalTitle": "ChatGPT语音对话功能（Voice Mode）使用指南 - 机场猫",
+    "originalDesc": "介绍 ChatGPT 语音对话（Voice Mode）的使用方法：如何开启语音功能、与 AI 进行自然语音对话，以及语音模式在英语练习和口头信息处理中的实际应用。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 语音对话, 效率工具",
+    "firstPara": "在这个信息爆炸的时代，ChatGPT 已经成为了许多人不可或缺的生产力工具。但是，你还在靠打字和它交流吗？ChatGPT 的**语音对话功能（Voice Mode）**将彻底改变你的交互体验！你可以像",
+    "headers": "如何开启 ChatGPT 语音功能？ | 语音对话的神级使用场景 | 注意事项：网络环境至关重要"
+  },
+  "src/content/blog/ai-tools-48-chatgpt-memory.md": {
+    "originalTitle": "ChatGPT 的记忆功能 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于ChatGPT 的记忆功能 - 机场猫的实际应用场景，包括什么是 ChatGPT 的记忆功能？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 个性化, 进阶技巧",
+    "firstPara": "在日常使用 ChatGPT 的过程中，你是否觉得它越来越“懂”你？当你让它写邮件时，它自动使用了你的语气；当你问它食谱时，它主动避开了你过敏的食材。这一切都归功于 ChatGPT 的**记忆功能（Me",
+    "headers": "什么是 ChatGPT 的记忆功能？ | 如何主动让 ChatGPT 记住你的偏好？ | 如何管理和删除 ChatGPT 的记忆？"
+  },
+  "src/content/blog/ai-tools-49-claude-projects.md": {
+    "originalTitle": "Claude Projects - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Claude Projects - 机场猫的实际应用场景，包括什么是 Claude Projects？",
+    "category": "ai_tools",
+    "tags": "Claude, 项目管理, 知识库",
+    "firstPara": "在人工智能工具百花齐放的今天，Claude 凭借其强大的长文本处理能力和细腻的逻辑推理能力脱颖而出。而在其高级功能中，**Claude Projects** 无疑是团队协作和知识管理的一大“杀器”。那",
+    "headers": "什么是 Claude Projects？ | 为什么你需要 Claude Projects？ | 怎么高效使用 Claude Projects？"
+  },
+  "src/content/blog/ai-tools-51-chatgpt-misunderstanding.md": {
+    "originalTitle": "ChatGPT答非所问怎么办？解决AI理解偏差的策略 - 机场猫",
+    "originalDesc": "解析为什么 ChatGPT 有时无法准确理解你的意图：提供的上下文不足、指令模糊、假设不一致，以及通过明确指令让 AI 真正理解需求的实用策略。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提示词工程, 问题排查",
+    "firstPara": "在使用 ChatGPT 的过程中，你是否遇到过这样的情况：明明自己觉得已经说得很清楚了，但 AI 给出的答案却完全是“牛头不对马嘴”？其实，AI 并不是肚子里的蛔虫，它需要明确、清晰的指令才能准确理解",
+    "headers": "让 AI 一步步说明推理过程（思维链 CoT） | 提供少样本示例（Few-Shot 提示） | 设定负面约束条件"
+  },
+  "src/content/blog/ai-tools-52-claude-upload.md": {
+    "originalTitle": "Claude 的文件处理能力 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Claude 的文件处理能力 - 机场猫的实际应用场景，包括什么是 Claude 的文件处理能力？",
+    "category": "ai_tools",
+    "tags": "Claude, 文件处理, 效率神器",
+    "firstPara": "随着人工智能的发展，大语言模型已经不再仅仅是一个聊天机器人，它们更是我们处理信息的得力助手。其中，Claude 凭借其惊人的 200k Token 上下文窗口，在长文本和多文档处理方面表现出了压倒性的",
+    "headers": "什么是 Claude 的文件处理能力？ | 如何上传文件？ | 常见问题与排障（Troubleshooting）"
+  },
+  "src/content/blog/ai-tools-53-claude-refine.md": {
+    "originalTitle": "Claude局部修改技巧：不重新生成只调整特定部分 - 机场猫",
+    "originalDesc": "介绍 Claude 的局部修改对话技巧：如何针对 AI 回复中的某个具体段落或细节进行精准调整，而无需让 AI 全部重新生成，节省时间提升迭代效率。",
+    "category": "ai_tools",
+    "tags": "Claude, 提问技巧, 效率提升",
+    "firstPara": "在使用 Claude 的过程中，我们经常会遇到这样的情况：AI 给出的回答总体框架不错，但某些细节、语气或部分内容还需要调整。很多人的第一反应是重新输入一遍完整的提示词（Prompt），让 AI 重新",
+    "headers": "为什么不要让 AI 重新生成全文？ | 技巧一：明确指定修改范围 | 技巧二：给出明确的修改方向"
+  },
+  "src/content/blog/ai-tools-55-chatgpt-explain.md": {
+    "originalTitle": "用ChatGPT解释复杂概念：费曼技巧与AI学习法 - 机场猫",
+    "originalDesc": "结合费曼技巧（用简单语言解释复杂事物）介绍如何用 ChatGPT 学习和理解难懂概念，包括引导 AI 用比喻、案例逐步解释的 Prompt 技巧。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提示词工程, 学习技巧",
+    "firstPara": "在使用 ChatGPT 学习新知识时，很多人会遇到一个痛点：AI 的回答往往充满了专业术语，读起来像是在看一本晦涩难懂的教科书。其实，这并不是 ChatGPT 的错，而是你没有给它设定正确的“表达方式",
+    "headers": "什么是费曼技巧？ | 魔法提示词 1：向五岁的孩子解释 | 魔法提示词 2：使用生活中的类比"
+  },
+  "src/content/blog/ai-tools-56-chatgpt-format.md": {
+    "originalTitle": "ChatGPT按格式输出：JSON/Markdown/表格结构化输出指南 - 机场猫",
+    "originalDesc": "介绍如何让 ChatGPT 严格按照指定格式输出：通过 Prompt 要求 JSON（适合程序解析）、Markdown 表格（适合阅读）、代码块等特定结构，满足不同使用场景。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 结构化输出, 效率工具",
+    "firstPara": "在使用 ChatGPT 时，很多时候我们不希望它给出大段废话式的长篇大论，而是希望能以特定的格式输出（比如 JSON 用于程序解析，或是 Markdown 表格便于阅读）。今天就来教你如何通过优化 P",
+    "headers": "为什么需要指定 ChatGPT 的输出格式？ | 技巧一：明确指令，使用“强制词” | 技巧二：提供具体的模板（Few-Shot Prompting）"
+  },
+  "src/content/blog/ai-tools-58-chatgpt-table-output.md": {
+    "originalTitle": "ChatGPT生成表格：让AI把信息整理成清晰表格 - 机场猫",
+    "originalDesc": "介绍用 ChatGPT 生成结构化对比表格的方法：通过简单的 Prompt 技巧让 AI 将杂乱信息整理为清晰的 Markdown 表格，适合数据对比和信息汇总场景。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 表格生成, 数据整理",
+    "firstPara": "在日常工作和学习中，我们经常需要让 ChatGPT 帮我们对比数据、整理资料。但如果只输出纯文本，信息往往显得杂乱无章，难以快速提取重点。",
+    "headers": "为什么要让 ChatGPT 输出表格？ | 一句话指令：如何让 AI 生成表格？ | 进阶技巧：指定排版和数据来源"
+  },
+  "src/content/blog/ai-tools-59-chatgpt-prompt-guide.md": {
+    "originalTitle": "ChatGPT提示词结构：写出有逻辑的高质量Prompt - 机场猫",
+    "originalDesc": "介绍写出高质量 ChatGPT Prompt 的结构方法：任务定义、背景说明、约束条件、输出格式四要素框架，解决'AI回答干巴巴'的根本问题。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提示词框架, 进阶教程",
+    "firstPara": "在使用 ChatGPT 时，很多人的痛点是：“为什么 AI 给我的回答总是干巴巴的，或者根本不是我想要的？”",
+    "headers": "1. 角色（Persona）：给 AI 戴上面具 | 2. 任务（Task）：清晰明确的目标 | 3. 背景（Context）：提供充足的信息弹药"
+  },
+  "src/content/blog/ai-tools-60-chatgpt-few-shot.md": {
+    "originalTitle": "Few-Shot Prompting技巧：给例子让ChatGPT按样学样 - 机场猫",
+    "originalDesc": "介绍 Few-Shot Prompting（示例驱动提示）的原理和应用：在 Prompt 中提供2-3个示例，比用文字描述格式更有效地控制 ChatGPT 的输出风格和结构。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提示词工程, Few-Shot",
+    "firstPara": "在与 ChatGPT 交互的过程中，你是否经常遇到这样的情况：你费尽心思写了一大堆要求，但它输出的格式依然差强人意？其实，有一种比“讲道理”更有效的技巧，那就是**直接给例子**（Few-Shot P",
+    "headers": "什么是 Few-Shot Prompting？ | 为什么“给例子”比“提要求”更好用？ | 如何编写高质量的样例提示词？"
+  },
+  "src/content/blog/ai-tools-61-chatgpt-step-by-step.md": {
+    "originalTitle": "让ChatGPT分步骤推理：解决AI计算和逻辑错误 - 机场猫",
+    "originalDesc": "本文详细探讨了关于让ChatGPT分步骤推理的实际应用场景，包括什么是思维链（Chain of Thought, CoT）？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 思维链, 逻辑推理",
+    "firstPara": "在日常使用 ChatGPT 时，你是否遇到过这样的情况：给出一个复杂的数学题或需要多重逻辑推理的任务，AI 却迅速给出一个看似自信实则荒谬的错误答案？",
+    "headers": "什么是思维链（Chain of Thought, CoT）？ | 为什么“分步骤”能减少 AI 的幻觉？ | 如何在实际中使用？"
+  },
+  "src/content/blog/ai-tools-62-chatgpt-revise.md": {
+    "originalTitle": "ChatGPT修改内容技巧：给精准反馈而不是让它重写 - 机场猫",
+    "originalDesc": "介绍向 ChatGPT 给出精准修改反馈的技巧：指出具体问题点（语气/结构/内容准确性）让 AI 进行局部调整，而非模糊地说'重新写一遍'。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 沟通技巧, 内容优化",
+    "firstPara": "在使用 ChatGPT 时，很多人遇到不满意的回答就会直接让它“重新写一遍”。然而，这种做法往往会导致内容越改越偏。事实上，更有效的方法是给予它精准的反馈，指出具体的问题，让它进行局部修改。",
+    "headers": "为什么不要让 ChatGPT “重写”？ | 核心技巧：精准的反馈指令 | 高级用法：建立多轮反馈循环"
+  },
+  "src/content/blog/ai-tools-63-chatgpt-complex.md": {
+    "originalTitle": "ChatGPT处理大任务：分解复杂项目的Prompt策略 - 机场猫",
+    "originalDesc": "本文详细探讨了关于ChatGPT处理大任务的实际应用场景，包括为什么 ChatGPT 搞不定大任务？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 任务拆解, 效率神技",
+    "firstPara": "如果你曾经对 ChatGPT 说过“帮我写一本 10 万字的小说”或者“帮我开发一个完整的电商 App”，结果肯定让你大失所望。它可能会吐出几百字的大纲，或者一段简单的代码，然后就草草收尾了。",
+    "headers": "为什么 ChatGPT 搞不定大任务？ | 什么是任务拆解？ | 实战演示：用 ChatGPT 写小说"
+  },
+  "src/content/blog/ai-tools-65-claude-concise.md": {
+    "originalTitle": "技巧一：明确限制字数和输出格式 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于技巧一的实际应用场景，包括技巧一：明确限制字数和输出格式",
+    "category": "ai_tools",
+    "tags": "Claude, 提示词技巧, 效率提升",
+    "firstPara": "用过 Claude 的人都知道，它的推理能力非常强大，但有时候它也有个“小毛病”：话太多。无论你问什么，它总是习惯性地写一长段开场白，接着是详细的解释，最后还要来一段总结升华。",
+    "headers": "技巧一：明确限制字数和输出格式 | 技巧二：使用 System Prompt (系统提示词) | 技巧三：规定最大句数"
+  },
+  "src/content/blog/ai-tools-67-claude-complex-prompt.md": {
+    "originalTitle": "Claude XML标签Prompt：处理复杂长Prompt的官方推荐方法 - 机场猫",
+    "originalDesc": "介绍 Anthropic 官方推荐的 Claude Prompt 结构化方法——使用 XML 标签系统：为什么 XML 标签能帮助 Claude 精准理解超长、多条件的复杂指令。",
+    "category": "ai_tools",
+    "tags": "Claude, 提示词进阶, XML标签",
+    "firstPara": "在使用 Claude 处理长篇幅或复杂任务时，很多人会发现它有时会遗漏要求或抓错重点。其实，要让 Claude 精准理解几千字的超长复杂 Prompt，Anthropic 官方强烈推荐一种结构化方法：",
+    "headers": "为什么 Claude 需要 XML 标签？ | 核心 XML 标签拆解 | 进阶技巧：多重标签嵌套"
+  },
+  "src/content/blog/ai-tools-70-claude-step-by-step.md": {
+    "originalTitle": "Claude分步推理：让AI展示思考过程减少逻辑错误 - 机场猫",
+    "originalDesc": "本文详细探讨了关于Claude分步推理的实际应用场景，包括什么是 Chain of Thought（思维链）？",
+    "category": "ai_tools",
+    "tags": "Claude, 逻辑推理, 思维链",
+    "firstPara": "在日常使用 AI 的过程中，你是否遇到过这样的情况：让 Claude 写一篇文章它能洋洋洒洒，但一让它做几道数学题或复杂的逻辑推理，它却总是给出似是而非的错误答案？其实，这是因为很多时候大语言模型（L",
+    "headers": "什么是 Chain of Thought（思维链）？ | 为什么要激发 Claude 的思维链？ | 如何让 Claude 展现思考过程？"
+  },
+  "src/content/blog/ai-tools-71-claude-off-topic.md": {
+    "originalTitle": "Claude为什么会乱编数据？AI幻觉原理与防止方法 - 机场猫",
+    "originalDesc": "深入解析 AI 幻觉（Hallucination）的本质：Claude 等大语言模型为何会生成看似合理但实际虚假的信息，以及如何通过 Prompt 设计和验证步骤减少幻觉影响。",
+    "category": "ai_tools",
+    "tags": "Claude, 幻觉抑制, 提示词排障",
+    "firstPara": "AI 幻觉（AI Hallucination）是指人工智能模型在生成文本时，产生看似合理但实际上不正确、与事实不符或完全虚构的信息。即使是像 Claude 这样强大的模型，由于其本质上是基于概率预测下",
+    "headers": "什么是 AI 幻觉？为什么 Claude 会乱编数据？ | 如何限制 Claude，让它学会说“我不知道”？ | 常见问题 (FAQ)"
+  },
+  "src/content/blog/ai-tools-73-claude-compare-files.md": {
+    "originalTitle": "Claude对比多个文档：快速找出合同和文件的差异 - 机场猫",
+    "originalDesc": "介绍如何用 Claude 对比两份长文档（合同不同版本、财报等）：利用 Claude 的长文本能力快速识别关键差异，比人工逐行对比大幅节省时间。",
+    "category": "ai_tools",
+    "tags": "Claude, 文件分析, 效率神器",
+    "firstPara": "在日常工作中，我们经常需要对比两份长文档，例如不同版本的合同、两家公司的财报或更新前后的项目需求说明书。人工逐行比对不仅耗时耗力，还容易遗漏细节。今天我们来探讨如何利用 Claude 强大的长文本处理",
+    "headers": "为什么要用 Claude 比较文档？ | 实操指南：如何让 Claude 高效对比多份文件 | 常见应用场景"
+  },
+  "src/content/blog/ai-tools-74-claude-ocr.md": {
+    "originalTitle": "Claude OCR功能：从图片中精准提取文字内容 - 机场猫",
+    "originalDesc": "介绍如何用 Claude 的视觉能力进行 OCR（光学字符识别）：上传截图或图片后提取文字，保持原有排版格式，以及比传统 OCR 工具更灵活的使用方式。",
+    "category": "ai_tools",
+    "tags": "Claude, OCR, 效率神器",
+    "firstPara": "很多人习惯用专门的 OCR（光学字符识别）软件或微信截图来提取图片中的文字。其实，大语言模型 Claude 拥有强大的多模态视觉能力，不仅能看懂图片，还能完美、精准地提取图片中的文本，甚至保持原有排版",
+    "headers": "Claude 的 OCR 优势在哪里？ | 如何用 Claude 识别图片文字？ | 进阶技巧：处理复杂排版"
+  },
+  "src/content/blog/ai-tools-76-claude-image-error.md": {
+    "originalTitle": "Claude图片识别不准？AI视觉幻觉的原因与应对 - 机场猫",
+    "originalDesc": "分析 Claude 图片识别出现错误（视觉幻觉）的场景：复杂图片信息密度高时为何会'视而不见'或编造细节，以及如何优化上传图片和提问方式减少识图错误。",
+    "category": "ai_tools",
+    "tags": "Claude, 多模态排障, 提示词",
+    "firstPara": "多模态大语言模型（如 Claude）在处理图像时，偶尔会出现“视觉幻觉”。你明明上传了一张包含特定信息的图片，Claude 却可能视而不见，或者煞有介事地编造出图片中根本不存在的细节。这种识图不准的情",
+    "headers": "为什么 Claude 会出现“视觉幻觉”？ | 解决 Claude 识图不准的实用技巧 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-tools-77-claude-coding.md": {
+    "originalTitle": "程序员用Claude写代码：优于ChatGPT的编程场景 - 机场猫",
+    "originalDesc": "从程序员视角分析 Claude 在代码生成、代码审查、复杂逻辑实现上的优势，解释越来越多开发者将日常编程 AI 工具从 ChatGPT 切换为 Claude 的原因。",
+    "category": "ai_tools",
+    "tags": "Claude, 编程辅助, 程序员工具",
+    "firstPara": "在当今的人工智能爆发浪潮中，大语言模型（LLM）成为了程序员们不可或缺的生产力工具。然而，如果你在开发者社区中稍作留意，就会发现一个明显的趋势：越来越多曾经忠实的 ChatGPT 用户，正在将他们的日",
+    "headers": "遥遥领先的代码基准测试表现 (Benchmarks) | 能够吞下整个代码库的超大上下文窗口 | 告别“偷懒”：精确完整的代码生成"
+  },
+  "src/content/blog/ai-tools-78-claude-project-docs.md": {
+    "originalTitle": "Claude整理项目文档：用AI快速消化烂摊子项目 - 机场猫",
+    "originalDesc": "介绍如何用 Claude 处理接手新项目时的大量文档：上传 PRD、会议记录、代码片段，让 AI 梳理项目背景、识别关键决策和潜在问题，快速建立项目认知。",
+    "category": "ai_tools",
+    "tags": "Claude, 项目管理, 效率提升",
+    "firstPara": "接手新项目，或者中途加入一个烂摊子，最让人头疼的莫过于那堆积如山、杂乱无章的项目文档、会议记录、产品需求文档（PRD）和零散的代码片段。理清这些资料可能需要耗费几天甚至几周的时间。然而，借助 Clau",
+    "headers": "为什么选择 Claude 处理项目资料？ | 实战指南：用 Claude 梳理项目脉络 | 进阶技巧：持续迭代你的项目知识库"
+  },
+  "src/content/blog/ai-tools-79-claude-outline.md": {
+    "originalTitle": "Claude生成文章大纲：用AI克服创作初期的'空白页恐惧' - 机场猫",
+    "originalDesc": "介绍如何用 Claude 作为头脑风暴工具快速生成文章大纲：提供主题后让 AI 生成多个结构方向供选择，解决内容创作初期不知从何写起的问题。",
+    "category": "ai_tools",
+    "tags": "Claude, 写作辅助, 内容创作",
+    "firstPara": "面对空白的文档，你是否也曾感到大脑一片空白，不知道从何写起？不管是工作汇报、行业分析还是自媒体长文，一个好的大纲往往决定了文章的成败。今天，我们就来聊聊如何把 Claude 当作你的专属“头脑风暴伙伴",
+    "headers": "为什么选择 Claude 来写大纲？ | 第一步：赋予 Claude “头脑风暴伙伴”的角色 | 第二步：引入 MECE 原则，确保逻辑严密"
+  },
+  "src/content/blog/ai-tools-80-claude-editing.md": {
+    "originalTitle": "Claude编辑润色：保留个人风格同时提升文章质量 - 机场猫",
+    "originalDesc": "介绍让 Claude 扮演资深编辑角色润色文章的方法：在提升语言质量、修正逻辑的同时保留作者原始风格（Voice），而非将内容改造为千篇一律的 AI 腔调。",
+    "category": "ai_tools",
+    "tags": "Claude, 文章润色, 写作辅助",
+    "firstPara": "在当今的内容创作时代，直接让 AI 从零开始生成文章往往会导致内容同质化、缺乏个人特色。更聪明的做法是：你负责提供核心思想和原始草稿，让 Claude 扮演资深编辑的角色，为你润色词句、修正逻辑、优化",
+    "headers": "为什么要让 Claude 润色而不是直接重写？ | 场景一：语法与错别字校对 (Grammar & Typo Checking) | 场景二：调整语气与风格 (Tone Adjustment)"
+  },
+  "src/content/blog/ai-tools-81-gemini-new-chat.md": {
+    "originalTitle": "认识 Gemini 的界面布局 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于认识 Gemini 的界面布局 - 机场猫的实际应用场景，包括认识 Gemini 的界面布局",
+    "category": "ai_tools",
+    "tags": "Gemini, 新手入门, 基础教程",
+    "firstPara": "刚开始使用 Google 的人工智能助手 Gemini？不知道如何开启新的对话，或者想要寻找之前的聊天记录？别担心，这篇文章将带你快速熟悉 Gemini 的界面布局，并教你如何高效地管理你的 AI 对",
+    "headers": "认识 Gemini 的界面布局 | 如何在 Gemini 中新建对话 | Gemini 是如何保存对话记录的？"
+  },
+  "src/content/blog/ai-tools-83-gemini-pdf.md": {
+    "originalTitle": "Gemini分析PDF文件：超长上下文处理文档的技巧 - 机场猫",
+    "originalDesc": "介绍如何利用 Google Gemini 1.5 Pro 的超大上下文窗口处理长篇 PDF 文档：上传步骤、提问技巧，以及 Gemini 在大文档分析上的实际表现。",
+    "category": "ai_tools",
+    "tags": "Gemini, PDF分析, 长文本处理",
+    "firstPara": "在当今信息爆炸的时代，我们每天都需要处理大量的文档、报告和书籍。传统的阅读方式耗时耗力，而随着人工智能的飞速发展，大语言模型成为了我们处理信息的得力助手。其中，Google 推出的 Gemini 1.",
+    "headers": "突破极限：Gemini 1.5 Pro 的 200万 Token 窗口 | 实战指南：如何让 Gemini 为你提取精华 | 为什么选择 Gemini 而不是其他工具？"
+  },
+  "src/content/blog/ai-tools-84-gemini-accurate.md": {
+    "originalTitle": "Gemini回答太浅？让Gemini给出更准确深度回答的技巧 - 机场猫",
+    "originalDesc": "本文详细探讨了关于Gemini回答太浅？让Gemini给出更准确深度回答的技巧 - 机场猫的实际应用场景，包括赋予专家角色 (Act as an Expert)",
+    "category": "ai_tools",
+    "tags": "Gemini, 提示词技巧, 效率提升",
+    "firstPara": "在使用 AI 大语言模型的过程中，你可能会发现有时候 Gemini 的回答显得有些“水”，甚至缺乏深度。其实，要让 Gemini 的回答更加准确和专业，关键在于你如何向它提问。通过掌握一些专属的提示词",
+    "headers": "赋予专家角色 (Act as an Expert) | 提供清晰的背景与上下文 | 善用 Google 搜索整合进行事实核查"
+  },
+  "src/content/blog/ai-tools-87-gemini-extract.md": {
+    "originalTitle": "Gemini信息提取技巧：从长文档中快速提炼关键内容 - 机场猫",
+    "originalDesc": "介绍如何借助 Google Gemini 处理研究报告、会议记录、法律合同等长篇文档，快速提炼摘要、提取关键信息的实用 Prompt 技巧。",
+    "category": "ai_tools",
+    "tags": "Gemini, 资料整理, 效率神器",
+    "firstPara": "在信息爆炸的时代，我们每天都需要处理海量的文字信息，从行业研究报告、冗长的会议记录到复杂的法律合同。面对几十页的繁杂报告，往往不知从何看起。幸运的是，随着 AI 技术的发展，Google 的 Gemi",
+    "headers": "Gemini 提取重点的核心优势 | 实战演练：如何让 Gemini 变身信息提取器 | 提升提取精准度的进阶技巧"
+  },
+  "src/content/blog/ai-video-01-homepage.md": {
+    "originalTitle": "Step 1：确定影片主题 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Step 1的实际应用场景，包括Step 1：确定影片主题",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "很多人看到网站首页的动态影片，会以为需要专业的视频剪辑软件、高昂的素材授权费，甚至是专门的摄影团队。",
+    "headers": "Step 1：确定影片主题 | Step 2：让 AI 帮你写视频脚本 | Step 3：制作分镜表"
+  },
+  "src/content/blog/ai-video-10.md": {
+    "originalTitle": "Image to Video - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Image to Video - 机场猫的实际应用场景，包括什么是 Image to Video (图生视频)？",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "在各大短视频平台上，你可能经常刷到这样的视频：一张原本静态的老照片，里面的人物突然眨了眨眼、转了转头；或者一张风景照，天空中的云彩开始流动，水面泛起波纹。",
+    "headers": "什么是 Image to Video (图生视频)？ | 为什么要用图生视频？ | 主流的图生视频工具"
+  },
+  "src/content/blog/ai-video-12.md": {
+    "originalTitle": "为什么 AI 很难生成自然的动 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么 AI 很难生成自然的动 - 机场猫的实际应用场景，包括为什么 AI 很难生成自然的动作？",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "如果你试过用 AI 生成包含人物的视频，你一定见过这些“恐怖”画面：人物走路顺拐、肢体像橡皮糖一样拉伸、回头时脸部融化……",
+    "headers": "为什么 AI 很难生成自然的动作？ | 策略一：扬长避短，减少复杂动作 | 策略二：用“运镜”代替“动作”"
+  },
+  "src/content/blog/ai-video-13.md": {
+    "originalTitle": "AI视频生成工具对比：Runway/Sora/Kling哪个好 - 机场猫",
+    "originalDesc": "对比主流 AI 视频生成工具（Runway、Sora、Kling 等）的功能特点、生成质量、价格与使用门槛，帮助创作者选择最适合自己需求的平台。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "在使用 AI 制作视频时，很多新手遇到的第一个大坑就是：“为什么我生成第二段视频时，主角的脸就变了？”或者“衣服的颜色怎么跟上一段不一样了？”",
+    "headers": "技巧一：使用“垫图”（Image-to-Video） | 技巧二：在提示词中“锁死”角色特征 | 技巧三：避免过大的动作幅度"
+  },
+  "src/content/blog/ai-video-14.md": {
+    "originalTitle": "方法一：使用专用的镜头提示词 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于方法一的实际应用场景，包括方法一：使用专用的镜头提示词",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "刚开始玩 AI 视频时，大家经常会被 AI “自由发挥”的运镜弄得很头疼：本来只想让角色安静地坐在那，结果镜头一直在旋转；或者本来想要个宏大的航拍，结果镜头只是在原地晃动。",
+    "headers": "方法一：使用专用的镜头提示词 | 方法二：使用平台的“相机控制”功能 | 常见坑点避雷"
+  },
+  "src/content/blog/ai-video-15.md": {
+    "originalTitle": "核心元素 1：打光决定一切 ( - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心元素 1的实际应用场景，包括核心元素 1：打光决定一切 (Lighting)",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "为什么别人用 AI 生成的视频看起来像好莱坞大片，而你生成的视频却像劣质的塑料 3D 动画或者模糊的网图？",
+    "headers": "核心元素 1：打光决定一切 (Lighting) | 核心元素 2：胶片与质感词汇 (Texture & Film) | 核心元素 3：景深与焦点 (Depth of Field)"
+  },
+  "src/content/blog/ai-video-16.md": {
+    "originalTitle": "核心策略：以“静”制“动” ( - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心策略的实际应用场景，包括核心策略：以“静”制“动” (图生视频)",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "无论是卖咖啡豆、卖香水，还是卖小饰品，拍一段好看的产品展示视频通常需要租影棚、买灯光。但现在，用 AI 就能轻松搞定高大上的产品视频。",
+    "headers": "核心策略：以“静”制“动” (图生视频) | 提示词怎么写？ | 使用“局部运动”功能 (Motion Brush)"
+  },
+  "src/content/blog/ai-video-17.md": {
+    "originalTitle": "AI视频制作提示词（Prompt）写法：精准描述生成效果 - 机场猫",
+    "originalDesc": "专门讲解 AI 视频生成 Prompt 的写作技巧：如何描述场景、镜头运动、光线氛围和人物动作，让视频生成结果更接近预期。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "很多高端网站一打开（Hero 区域），就会看到一段充满质感、缓缓播放的动态视频背景，立刻拉满了高级感。用 AI 来制作这样的视频，既省钱又高效。",
+    "headers": "规则一：做减法，不要太复杂 (Minimalist) | 规则二：提前构图，留出写字的空间 (Negative Space) | 规则三：循环播放的秘密 (Looping)"
+  },
+  "src/content/blog/ai-video-18.md": {
+    "originalTitle": "步骤一：坚决不用“文生视频”， - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于步骤一的实际应用场景，包括步骤一：坚决不用“文生视频”，必须“图生视频”",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "玩 AI 视频最大的痛点就是：**太贵了**。不管是按秒收费还是按积分扣费，如果不讲究方法，瞎填提示词盲目“抽卡”，几十美元的额度可能半小时就烧没了。",
+    "headers": "步骤一：坚决不用“文生视频”，必须“图生视频” | 步骤二：提示词做到“极其精准” | 步骤三：善用“首尾帧”控制"
+  },
+  "src/content/blog/ai-video-20.md": {
+    "originalTitle": "失败情况 1：人物/物体严重变 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于失败情况 1的实际应用场景，包括失败情况 1：人物/物体严重变形 (融化/多肢体)",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "每次满怀期待地点击“生成”，结果等了三分钟，出来的视频里人的手长了六根指头，或者原本漂亮的车跑着跑着融化了。这是 AI 视频最让人崩溃的瞬间。",
+    "headers": "失败情况 1：人物/物体严重变形 (融化/多肢体) | 失败情况 2：画面疯狂闪烁 (Flickering) | 失败情况 3：AI 根本不听指令 (毫无动静)"
+  },
+  "src/content/blog/ai-work-02-email.md": {
+    "originalTitle": "场景还原：冗长的客户英文邮件 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于场景还原的实际应用场景，包括场景还原：冗长的客户英文邮件",
+    "category": "ai_work",
+    "tags": "写邮件, 职场沟通, 商务英语",
+    "firstPara": "在日常工作中，我们经常会收到客户发来的超长英文邮件。这些邮件通常包含了多个问题、细节要求，甚至夹杂着一些复杂的行业术语。手动阅读和回复不仅耗时，还容易遗漏关键点。",
+    "headers": "场景还原：冗长的客户英文邮件 | 高效处理工作流：四步搞定邮件回复 | 顺畅使用的网络建议"
+  },
+  "src/content/blog/ai-work-04-report.md": {
+    "originalTitle": "场景还原：令人抓狂的月底总结 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于场景还原的实际应用场景，包括场景还原：令人抓狂的月底总结",
+    "category": "ai_work",
+    "tags": "工作报告, 月度总结, 职场技能",
+    "firstPara": "每到月末或季末，工作总结和汇报总是让人头疼。面对繁杂的数据和零散的工作记录，如何快速梳理出条理清晰、逻辑严密的报告？答案是：利用 AI 辅助你完成报告制作流程。",
+    "headers": "场景还原：令人抓狂的月底总结 | 第一步：让 AI 搭建结构与大纲 | 第二步：人工填入核心数据与事实"
+  },
+  "src/content/blog/ai-work-05-excel.md": {
+    "originalTitle": "用AI写Excel公式：自然语言搞定VLOOKUP和嵌套函数 - 机场猫",
+    "originalDesc": "介绍如何用 ChatGPT 等 AI 工具处理 Excel 复杂公式：不再需要记忆 VLOOKUP、INDEX-MATCH 等函数语法，用自然语言描述需求让 AI 直接生成公式。",
+    "category": "ai_work",
+    "tags": "Excel, 数据处理, 办公技巧",
+    "firstPara": "日常工作中，我们经常需要处理大量凌乱的 Excel 数据。然而，面对复杂的 VLOOKUP、INDEX-MATCH 以及各种嵌套函数，许多人往往感到无从下手。现在，有了 AI 的帮助，你只需要用自然语",
+    "headers": "你的 Excel 救星：用自然语言写公式 | 复杂数据清洗与整理 | 常见问题 (FAQ)"
+  },
+  "src/content/blog/ai-work-06-ppt.md": {
+    "originalTitle": "AI 制作 PPT 的核心思路 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 制作 PPT 的核心思路 - 机场猫的实际应用场景，包括AI 制作 PPT 的核心思路",
+    "category": "ai_work",
+    "tags": "PPT制作, 演讲准备, 职场干货",
+    "firstPara": "制作演示文稿（PPT）往往是职场人的一大痛点。从梳理长篇文档、提炼核心大纲，到构思每一页幻灯片的具体内容，整个过程耗时且费力。很多人为了排版和结构熬夜加班，效果却差强人意。幸运的是，随着 AI 技术的",
+    "headers": "AI 制作 PPT 的核心思路 | 实战场景：将万字报告转化为 PPT 大纲 | AI 辅助 PPT 制作的进阶技巧"
+  },
+  "src/content/blog/ai-workflow-02-student.md": {
+    "originalTitle": "学生AI学习工作流：从课前预习到课后复习的完整方案 - 机场猫",
+    "originalDesc": "为学生整理的完整 AI 学习流程：将 ChatGPT、Claude 等 AI 工具融入预习、听课、复习各个环节，建立系统性 AI 辅助学习习惯提升学习效率。",
+    "category": "ai_work",
+    "tags": "AI学习流, 效率矩阵, 学生进阶",
+    "firstPara": "在人工智能快速发展的今天，如何利用 AI 工具提升学习效率成为了许多学生关注的话题。将 AI 融入日常学习，不应该只是偶尔的“尝鲜”，而是需要建立一套完整、系统的 AI 学习流程，从而实现从课前预习到",
+    "headers": "课前：让 AI 成为你的专属预习导师 | 课中：人机协同的高效课堂笔记 | 课后：打造全自动的复习与测试闭环"
+  },
+  "src/content/blog/ai-writing-21.md": {
+    "originalTitle": "步骤一：不要直接写，先让 AI - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于步骤一的实际应用场景，包括步骤一：不要直接写，先让 AI 列大纲",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "很多人觉得 AI 写文章很蠢，原因在于他们总是对 AI 说：“帮我写一篇关于咖啡的文章，800字”。结果 AI 就会给你一篇充满套话、毫无灵魂的说明文。",
+    "headers": "步骤一：不要直接写，先让 AI 列大纲 | 步骤二：分段生成，提供“素材” | 步骤三：调整基调，赋予人格设定"
+  },
+  "src/content/blog/ai-writing-23.md": {
+    "originalTitle": "技巧一：使用“费曼技巧”提示词 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于技巧一的实际应用场景，包括技巧一：使用“费曼技巧”提示词",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "不管是做科普博主，还是给客户解释复杂的产品原理，我们经常面临一个难题：**怎么把晦涩的专业术语，讲得让普通人或者连老奶奶都能听懂？**",
+    "headers": "技巧一：使用“费曼技巧”提示词 | 技巧二：强制 AI 使用“生活化比喻” | 技巧三：分层次拆解法（从小白到专家）"
+  },
+  "src/content/blog/ai-writing-27.md": {
+    "originalTitle": "AI 生成 Meta 标签的核 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 生成 Meta 标签的核 - 机场猫的实际应用场景，包括AI 生成 Meta 标签的核心规则",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "做网站或写博客，SEO（搜索引擎优化）是绕不开的一环。而其中最基础、最关键的一步，就是写好每个页面的 Meta Title（网页标题）和 Meta Description（网页描述）。它们决定了你的网",
+    "headers": "AI 生成 Meta 标签的核心规则 | 实战：一步到位的 Prompt 模板 | 进阶技巧：批量生成与多语言优化"
+  },
+  "src/content/blog/ai-writing-28.md": {
+    "originalTitle": "第一步：寻找长尾关键词（长尾词 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于第一步的实际应用场景，包括第一步：寻找长尾关键词（长尾词）",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "你用心写了一篇长文，发布在博客上，结果一周过去了，浏览量只有个位数。这通常是因为搜索引擎找不到你，或者认为你的文章不够“相关”。",
+    "headers": "第一步：寻找长尾关键词（长尾词） | 第二步：让 AI 分析搜索意图 | 第三步：将草稿交给 AI 进行 SEO 改造"
+  },
+  "src/content/blog/chatgpt-airport-recommendations.md": {
+    "originalTitle": "ChatGPT机场推荐：2026适合AI服务的机场选购指南 - 机场猫",
+    "originalDesc": "2026年ChatGPT机场推荐。为需要使用ChatGPT、Claude等AI服务的用户推荐高IP质量、原生IP节点的机场。解释AI服务对节点的特殊要求，以及如何避免被ChatGPT封号。",
+    "category": "guides",
+    "tags": "\"ChatGPT\", \"Claude\", \"AI服务\", \"原生IP\", \"机场推荐\"",
+    "firstPara": "这篇文章解决的是：**用什么机场才能稳定访问 ChatGPT / Claude / Gemini 等 AI 服务**，以及如何选择 IP 质量足够好的[节点](/blog/what-is-node/)",
+    "headers": "为什么 ChatGPT 对机场要求更高？ | 什么样的节点适合 ChatGPT？ | 如何判断节点 IP 质量？"
+  },
+  "src/content/blog/clash-airport-recommendations.md": {
+    "originalTitle": "2026 Clash机场推荐：最佳Clash订阅机场整理 - 机场猫",
+    "originalDesc": "2026年Clash机场推荐。整理与Clash/Clash Verge Rev完美兼容的机场，解释订阅格式、协议兼容性、一键导入流程，以及选择Clash机场要注意什么。支持全平台订阅转换。",
+    "category": "guides",
+    "tags": "\"Clash\", \"Clash Verge\", \"机场推荐\", \"客户端\"",
+    "firstPara": "Clash 是目前最流行的代理客户端之一，拥有完善的规则分流、多协议支持和直观的 UI 设计。本文专门为 **使用 Clash 系列客户端**（Clash Verge Rev、Clash Nyanpa",
+    "headers": "Clash 支持什么订阅格式？ | 选择 Clash 机场要注意什么？ | Clash 机场的协议兼容性说明"
+  },
+  "src/content/blog/clash-enable-tun-mode.md": {
+    "originalTitle": "Clash如何开启TUN模式？Windows全局代理配置步骤 - 机场猫",
+    "originalDesc": "图文介绍在 Windows 的 Clash Verge Rev 中开启 TUN 模式的完整步骤：TUN 模式的使用场景，以及开启前需要注意的权限和配置要求。",
+    "category": "openwrt",
+    "tags": "\"教程\", \"Clash\", \"TUN模式\", \"实操指南\"",
+    "firstPara": "在了解了[什么是 TUN 模式](/blog/what-is-tun-mode)的原理后，如果您确实需要接管电脑底层的全部流量（例如为了让命令行工具或某些特殊软件走代理），您可以在 Clash 中开启",
+    "headers": "步骤一：安装服务模式 (Service Mode) | 步骤二：开启 TUN 开关 | 验证 TUN 是否生效"
+  },
+  "src/content/blog/copilot-agents.md": {
+    "originalTitle": "Microsoft Copilot Agents是什么？智能体配置入门 - 机场猫",
+    "originalDesc": "解释 Microsoft Copilot Agents（智能体）的功能：可定制化的 AI 助手，可赋予特定知识库和工作流程，实现特定领域的自动化任务执行。",
+    "category": "ai_official",
+    "tags": "Copilot, Agents, 智能体",
+    "firstPara": "Microsoft Copilot Agents (智能体) 是在 Copilot 体系中扮演特定领域专家的可定制 AI 助手。你可以赋予它们特定的指令和知识库，让它们在特定的工作流程中帮你自动执行任",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-connection-issues.md": {
+    "originalTitle": "Copilot连接失败怎么办？微软Copilot访问问题排查 - 机场猫",
+    "originalDesc": "系统排查 Microsoft Copilot 无法连接的常见原因：代理设置问题、地区访问限制、账号状态异常，以及恢复正常使用的解决步骤。",
+    "category": "ai_official",
+    "tags": "Copilot, 故障排查, 网络连接",
+    "firstPara": "在使用微软 Copilot（原 Bing Chat）的过程中，许多用户会遇到页面一直转圈、提示“无法连接”或者登录账号后没有反应等问题。这往往是因为网络环境、浏览器设置或账号状态异常引起的。今天就来为",
+    "headers": "一、这个功能（问题）是什么？ | 二、在哪里可以找到排查入口？ | 三、怎么排查和解决？"
+  },
+  "src/content/blog/copilot-deep-research.md": {
+    "originalTitle": "Copilot Deep Research怎么用？深度研究功能指南 - 机场猫",
+    "originalDesc": "详解 Microsoft Copilot Deep Research 深度研究功能的使用方法：如何发起研究任务、解读结果、引用来源，以及与普通问答功能的区别。",
+    "category": "ai_official",
+    "tags": "Copilot, 深度研究, Deep Research",
+    "firstPara": "在日常使用 AI 工具时，普通的搜索问答往往只能提供浅层的信息汇总。为了应对更为复杂和专业的研究需求，微软推出了 Copilot Deep Research（深度研究）功能。它能够像一位专业的研究助理",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-how-to-use.md": {
+    "originalTitle": "Microsoft Copilot使用教程：功能介绍与新手入门 - 机场猫",
+    "originalDesc": "Microsoft Copilot 完整入门指南：从什么是 Copilot 到如何在 Windows、Edge、Microsoft 365 中使用，涵盖对话、写作、图片生成等核心功能。",
+    "category": "ai_official",
+    "tags": "Copilot, 基础教程, 微软AI",
+    "firstPara": "Microsoft Copilot 是微软推出的新一代人工智能助手，旨在通过自然语言对话帮助用户提升工作效率、激发创意。无论你是想写邮件、总结文章，还是生成图片、编写代码，Copilot 都能为你提供",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-image-generation.md": {
+    "originalTitle": "Copilot图像生成怎么用？DALL-E 3 AI绘图教程 - 机场猫",
+    "originalDesc": "详解 Microsoft Copilot 集成的 DALL-E 3 图像生成功能使用方法：如何撰写生成提示词、调整图片风格，以及访问 Copilot 图像生成所需的代理配置。",
+    "category": "ai_official",
+    "tags": "Copilot, 图片生成, AI绘画",
+    "firstPara": "Microsoft Copilot 集成了强大的 DALL-E 3 图像生成模型，让每一位用户都能通过简单的自然语言描述生成高质量的图片。无论是设计图、插画还是配图，只需几秒钟即可完成。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-microsoft-365.md": {
+    "originalTitle": "Microsoft 365 Copilot是什么？Word/Excel/Teams使用指南 - 机场猫",
+    "originalDesc": "介绍 Microsoft 365 Copilot 如何与 Word、Excel、PowerPoint、Outlook、Teams 深度整合，实现文档生成、数据分析、邮件起草等生产力自动化功能。",
+    "category": "ai_official",
+    "tags": "Copilot, Microsoft 365, 办公效率",
+    "firstPara": "Microsoft 365 Copilot 是微软推出的一项革命性服务，它将强大的大语言模型与你的 Microsoft Graph 数据（日历、电子邮件、聊天、文档、会议等）以及 Microsoft ",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-pages.md": {
+    "originalTitle": "Copilot Pages是什么？AI协作文档功能使用指南 - 机场猫",
+    "originalDesc": "介绍 Microsoft Copilot Pages 功能：将 AI 对话内容一键转换为可多人实时协作编辑的持久页面，适合团队头脑风暴和 AI 辅助内容创作场景。",
+    "category": "ai_official",
+    "tags": "Copilot, Pages, 团队协作",
+    "firstPara": "微软推出的 Copilot Pages 是一项为团队协作而生的全新功能。它能够将你与 AI 的对话内容一键转换为一个持久存在、可供多人实时共同编辑的页面。告别复制粘贴，你可以直接与团队成员在 AI 生",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-upload-file.md": {
+    "originalTitle": "Copilot上传文件功能：分析PDF和文档的方法 - 机场猫",
+    "originalDesc": "介绍 Microsoft Copilot 的文件上传功能：如何上传 PDF、Word、Excel 等文档让 AI 进行智能分析、总结和关键信息提取。",
+    "category": "ai_official",
+    "tags": "Copilot, 文件分析, PDF总结",
+    "firstPara": "在日常工作和学习中，我们经常需要处理长篇的 PDF 报告、Word 文档或是庞大的 Excel 数据表。微软 Copilot 提供了一项强大的功能：支持用户直接上传文件并对其内容进行智能分析、总结和提",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-voice-vision.md": {
+    "originalTitle": "Copilot语音与视觉功能：Voice和Vision使用指南 - 机场猫",
+    "originalDesc": "介绍 Copilot Voice（语音对话）和 Copilot Vision（视觉分析）两项多模态功能：如何通过语音与 AI 自然对话，以及如何让 AI 分析图片和屏幕内容。",
+    "category": "ai_official",
+    "tags": "Copilot, 语音对话, 视觉分析",
+    "firstPara": "微软 Copilot 推出后，不断在多模态交互上发力。其中，Copilot Voice 让用户可以通过语音与 AI 进行自然流畅的对话，而 Copilot Vision 甚至能“看”到你的屏幕或你上传",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/copilot-what-is.md": {
+    "originalTitle": "Microsoft Copilot是什么？微软AI助手全面介绍 - 机场猫",
+    "originalDesc": "全面介绍 Microsoft Copilot 的定位与功能：基于 GPT-4 的 AI 助手，深度整合微软生态系统，涵盖撰写文档、总结网页、生成代码、AI 绘图等场景。",
+    "category": "ai_official",
+    "tags": "Copilot, 新手入门, 微软AI",
+    "firstPara": "Microsoft Copilot 是由微软推出的人工智能助手，它将强大的大型语言模型（如 GPT-4）与你的网络搜索和日常办公软件深度整合。无论是撰写文档、总结网页、生成代码，还是创建图像，Copi",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/dedicated-line-airport-recommendations.md": {
+    "originalTitle": "2026专线机场推荐：IPLC/IEPL全专线机场整理 - 机场猫",
+    "originalDesc": "2026年专线机场推荐。整理提供IPLC/IEPL全专线节点的机场，解释专线与中转的区别、晚高峰表现、低延迟特点，以及什么人群适合购买专线机场。",
+    "category": "guides",
+    "tags": "\"专线\", \"IPLC\", \"IEPL\", \"低延迟\", \"机场推荐\"",
+    "firstPara": "\"专线机场\"是指使用 **IPLC（国际私用出租线路）或 IEPL（国际以太网专线）**的机场。相比普通的公网中转，专线机场的最大优势是**不走 GFW，晚高峰不受封锁影响，延迟极低且非常稳定**。",
+    "headers": "IPLC 和 IEPL 是什么？ | 专线 vs 中转：区别是什么？ | 专线机场的价格区间"
+  },
+  "src/content/blog/grok-app.md": {
+    "originalTitle": "Grok手机版怎么用？在X(Twitter)上使用Grok AI - 机场猫",
+    "originalDesc": "介绍如何在 X（原 Twitter）移动客户端中使用 Grok AI：无需下载独立应用，访问步骤与对代理 IP 地区的要求。",
+    "category": "ai_official",
+    "tags": "Grok, 手机端, App教程",
+    "firstPara": "想要在手机上随时随地与 Grok 交流？目前，Grok 已经深度集成在 X（原 Twitter）的移动客户端中，无需下载独立的应用程序即可体验。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/grok-connection-issues.md": {
+    "originalTitle": "Grok AI连接失败怎么办？xAI Grok访问问题排查 - 机场猫",
+    "originalDesc": "针对 Grok AI（xAI）访问连接失败的排查指南：代理节点选择、X平台账号状态、地区访问限制等常见问题的解决方法。",
+    "category": "ai_official",
+    "tags": "Grok, 故障排查, 网络连接",
+    "firstPara": "在使用 xAI 推出的 Grok 时，可能会遇到页面无法加载、频繁掉线或提示无权限等问题。这些连接异常通常与网络环境、账号状态或浏览器设置有关。通过逐步排查，大部分问题都能很快得到解决。",
+    "headers": "一、这个功能（问题）是什么？ | 二、在哪里可以找到排查入口？ | 三、怎么排查和解决？"
+  },
+  "src/content/blog/grok-file-processing.md": {
+    "originalTitle": "Grok文件处理功能：上传PDF和文档进行AI分析 - 机场猫",
+    "originalDesc": "介绍 Grok 的文件处理能力：支持上传 PDF、表格、代码文件，AI 协助提炼摘要、提取关键信息或数据分析，提升工作和学习效率的使用技巧。",
+    "category": "ai_official",
+    "tags": "Grok, 文件处理, 数据分析",
+    "firstPara": "在日常工作和学习中，我们经常需要处理长篇文档、数据表格或复杂的代码文件。Grok 提供了强大的文件处理能力，允许用户上传各种类型的文件，并让 AI 协助提炼摘要、提取关键信息或进行数据分析。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/grok-how-to-use.md": {
+    "originalTitle": "Grok AI怎么用？xAI Grok使用入门教程 - 机场猫",
+    "originalDesc": "手把手介绍如何使用 Grok AI：功能特点、如何访问 X 平台实时数据、与 ChatGPT 的使用差异，以及对代理节点的地区要求。",
+    "category": "ai_official",
+    "tags": "Grok, 使用教程, 基础操作",
+    "firstPara": "Grok 是 xAI 推出的人工智能模型，以幽默和直言不讳的风格著称，并且可以直接访问 X (Twitter) 平台的实时数据。今天就来手把手教你如何快速上手使用 Grok。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/grok-prompt-guide.md": {
+    "originalTitle": "Grok提示词写法：如何发挥Grok的幽默与反叛特性 - 机场猫",
+    "originalDesc": "专为 Grok 定制的 Prompt 写作指南：利用 Grok 的幽默感和较少内容限制的特点，针对不同场景编写能够激发最佳回答的提示词技巧。",
+    "category": "ai_official",
+    "tags": "Grok, Prompt, 提问技巧",
+    "firstPara": "想要充分发挥 xAI 旗下人工智能 Grok 的潜力，掌握正确的提问方式（Prompt）至关重要。Grok 相比其他 AI 最独特的一点，在于它被设计得更具幽默感且较少受到传统内容的限制（“反叛”精神",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/grok-what-is.md": {
+    "originalTitle": "Grok AI是什么？xAI旗下幽默AI助手完整介绍 - 机场猫",
+    "originalDesc": "介绍马斯克旗下 xAI 公司推出的 Grok AI 助手：幽默风格、反叛特性、实时访问 X 平台数据的独特能力，以及与 ChatGPT/Claude 的核心差异。",
+    "category": "ai_official",
+    "tags": "Grok, xAI, 新手入门",
+    "firstPara": "由马斯克（Elon Musk）旗下 xAI 公司打造的 Grok，是一款以幽默感、反叛精神见长的 AI 助手。与传统 AI 最大的不同在于，Grok 能够实时访问和分析 X（原 Twitter）平台上",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/guide-12.md": {
+    "originalTitle": "流媒体解锁是什么？Netflix/Disney+原生IP要求 - 机场猫",
+    "originalDesc": "解释流媒体解锁的技术原理：Netflix、Disney+ 等平台通过 IP 归属地判断用户地区，为何需要原生 IP 才能真正解锁内容，以及如何判断节点是否支持解锁。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "在选购云服务器或[机场](/blog/what-is-airport-proxy/)线路时，商家常把「BGP 多线」或「动态 BGP」作为高端卖点。很多人第一次看到 BGP 会误以为它是一种特殊的物理",
+    "headers": "基本概念 | 进一步理解 | 实际应用：为什么你需要关心 BGP？"
+  },
+  "src/content/blog/guide-13.md": {
+    "originalTitle": "订阅转换工具是什么？如何将机场订阅转为Clash格式 - 机场猫",
+    "originalDesc": "解释订阅转换（Subconverter）的作用：将机场提供的 SS/VMess 订阅格式转换为 Clash YAML 格式，并提供使用注意事项与安全建议。",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "在跨境网络与企业互联场景中，**[专线](/blog/iplc-iepl-bgp-explained/)（如 IPLC、IEPL）**被公认为网络稳定性的天花板。与千家万户共享、晚高峰极易拥堵丢包的普",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-17.md": {
+    "originalTitle": "手机代理怎么设置？iOS和Android全平台配置指南 - 机场猫",
+    "originalDesc": "面向手机用户的代理配置完整指南：iOS 使用 Shadowrocket，Android 使用 v2rayNG 或 Clash Meta，从下载安装到导入订阅的全步骤教程。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "Speedtest [测速](/blog/how-to-test-node-speed/)跑满几百兆、延迟只有几毫秒，但实际看视频和玩游戏时却依然频繁缓冲卡顿。测速软件测出的多线程峰值带宽，并不能代表",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/hiddify-airport-recommendations.md": {
+    "originalTitle": "2026 Hiddify机场推荐：Hiddify Next订阅与机场选择指南 - 机场猫",
+    "originalDesc": "面向 Hiddify Next 用户说明机场订阅选择方法，介绍协议兼容、订阅导入及节点使用注意事项，并结合机场猫现有数据提供机场选择参考。",
+    "category": "guides",
+    "tags": "\"Hiddify\", \"客户端\", \"机场推荐\", \"节点\"",
+    "firstPara": "在跨平台的代理客户端中，Hiddify Next 凭借其出色的多端一致性体验、友好的 UI 和强大的底层协议支持，迅速成为了许多极客和新手的共同选择。如何为这个新兴的热门客户端寻找合适的[机场](/r",
+    "headers": "Hiddify / Hiddify Next是什么 | Hiddify支持机场订阅吗 | 哪些协议适合 Hiddify"
+  },
+  "src/content/blog/ios-loon-guide.md": {
+    "originalTitle": "Loon客户端基础进阶教程 | Clash配置 - 机场猫 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Loon客户端基础进阶教程 | Clash配置 - 机场猫 - 机场猫的实际应用场景，包括什么是 Loon？",
+    "category": "clients",
+    "tags": "\"教程\", \"客户端\", \"Loon\", \"iOS\"",
+    "firstPara": "在 iOS 代理软件的圈子里，Loon 常被称为“平民版的 Surge”。它在 App Store 售价为 $5.99 美元，比 Quantumult X 便宜，但却提供了极为接近 Surge 的使用",
+    "headers": "什么是 Loon？ | 第一步：一键导入机场订阅 | 第二步：使用策略组 (Policy Group) 分流"
+  },
+  "src/content/blog/ios-quantumultx-guide.md": {
+    "originalTitle": "Quantumult进阶教程 | Clash配置 - 机场猫 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Quantumult进阶教程 | Clash配置 - 机场猫 - 机场猫的实际应用场景，包括什么是 Quantumult X？",
+    "category": "clients",
+    "tags": "\"教程\", \"客户端\", \"Quantumult X\", \"圈X\", \"iOS\"",
+    "firstPara": "Quantumult X（常被玩家称为“圈X”）是 iOS 平台上功能最为强大的网络代理工具之一。与主打简单易用的 Shadowrocket（小火箭）不同，Quantumult X 提供了极其深度的自",
+    "headers": "什么是 Quantumult X？ | 步骤一：导入机场订阅节点 | 步骤二：开启代理并选择模式"
+  },
+  "src/content/blog/ios-surge-guide.md": {
+    "originalTitle": "Surgefor进阶教程 | Clash配置 - 机场猫 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Surgefor进阶教程 | Clash配置 - 机场猫 - 机场猫的实际应用场景，包括什么是 Surge？",
+    "category": "clients",
+    "tags": "\"教程\", \"客户端\", \"Surge\", \"iOS\"",
+    "firstPara": "Surge 是苹果生态（iOS / macOS）中在本站测试的品牌中属于表现较好的选项、历史最悠久、也是价格最昂贵的网络工具。它最初仅仅是一个代理软件，但经过多年的迭代，如今的 Surge 更像是一个",
+    "headers": "什么是 Surge？ | 核心概念：Profile（配置文件） | 步骤一：一键导入托管配置 (Managed Profile)"
+  },
+  "src/content/blog/iplc-iepl-bgp-explained.md": {
+    "originalTitle": "IPLC、IEPL和BGP是什么？三种线路类型完整解析 - 机场猫",
+    "originalDesc": "一文厘清机场营销中最常见的三类线路术语：IPLC（国际私有专线）、IEPL（国际以太网专线）、BGP多线中转——技术差异、价格区别与适用场景。",
+    "category": "routing",
+    "tags": "\"概念解析\", \"IPLC\", \"线路深度科普\"",
+    "firstPara": "在阅读[《什么是[节点](/blog/what-is-node/)？》](/blog/what-is-node)时，我们初步了解了节点的基本概念。",
+    "headers": "1. 什么是 IPLC 与 IEPL 专线？ | 2. 什么是 BGP 中转？ | 3. 究竟该如何选择？"
+  },
+  "src/content/blog/mac-clash-verge-rev.md": {
+    "originalTitle": "Clash Verge Rev是什么？macOS代理客户端介绍 - 机场猫",
+    "originalDesc": "介绍 Clash Verge Rev 的定位与特点：基于 Tauri 框架的现代化代理客户端，与其他 Clash 分叉的区别，以及在 macOS 上的安装和基础配置。",
+    "category": "client_archive",
+    "tags": "Clash Verge Rev, Mac客户端, 网络工具, 教程",
+    "firstPara": "[Clash](/blog/mac-clash-verge-rev-guide/) Verge Rev 是一款基于 Tauri 框架开发的现代化网络客户端应用。它拥有简洁直观的图形化用户界面（GUI）",
+    "headers": "Clash Verge Rev 是什么？ | Mac 应该下载哪个版本？ | 怎么查看 Mac 是 M 系列还是 Intel？"
+  },
+  "src/content/blog/native-ip-airport-recommendations.md": {
+    "originalTitle": "2026原生IP机场推荐：原生IP节点有什么用、怎么选 - 机场猫",
+    "originalDesc": "解释机场原生 IP 的实际用途、与广播 IP 的区别，以及哪些使用场景值得选择原生 IP，并结合机场猫现有品牌资料整理相关机场参考。",
+    "category": "guides",
+    "tags": "\"原生IP\", \"机场推荐\", \"科普\", \"节点\"",
+    "firstPara": "在挑选[机场](/reviews/)时，许多高端用户会特别关注节点是否标注为“原生 IP”。对于日常上网而言，这似乎是个陌生的词汇，但对于海外业务、流媒体解锁以及复杂的 AI 平台使用者来说，IP 质",
+    "headers": "什么是原生IP | 原生IP和广播IP有什么区别 | 原生IP的主要优势"
+  },
+  "src/content/blog/netflix-airport-recommendations.md": {
+    "originalTitle": "2026 Netflix机场推荐：流媒体解锁机场怎么选 - 机场猫",
+    "originalDesc": "整理 Netflix 与流媒体用户选择机场时需要关注的 IP、节点地区、线路稳定性及解锁能力，并结合机场猫现有资料提供流媒体机场选择参考。",
+    "category": "guides",
+    "tags": "\"Netflix\", \"流媒体\", \"机场推荐\", \"解锁\"",
+    "firstPara": "观看海外流媒体是许多用户使用代理节点的核心需求之一。不管是 Netflix、Disney+ 还是 HBO Max，这类平台对于网络环境的检测标准越来越严格。挑选一个合适的[机场](/reviews/)",
+    "headers": "Netflix 为什么会限制部分代理节点 | 流媒体机场最重要的 5 个指标 | 原生IP是不是一定能解锁Netflix"
+  },
+  "src/content/blog/nodes-timeout-troubleshooting.md": {
+    "originalTitle": "节点全部Timeout怎么办？代理断线完整排查步骤 - 机场猫",
+    "originalDesc": "本文详细探讨了关于节点全部Timeout怎么办？代理断线完整排查步骤 - 机场猫的实际应用场景，包括1. 确认是“部分超时”还是“全部超时”",
+    "category": "routing",
+    "tags": "\"教程\", \"网络排错\", \"节点故障\", \"Timeout\"",
+    "firstPara": "在使用代理服务时，最让人焦虑的报错莫过于在客户端里点击“延迟测试”时，所有的[节点](/blog/what-is-node)都齐刷刷地飘红，显示 `Timeout` 或 `Error`。此时，您通常会",
+    "headers": "1. 确认是“部分超时”还是“全部超时” | 2. 检查订阅状态与更新时间 | 3. 核对设备系统时间"
+  },
+  "src/content/blog/perplexity-citations.md": {
+    "originalTitle": "Perplexity引用标注功能：如何验证AI回答的可信度 - 机场猫",
+    "originalDesc": "介绍 Perplexity 的引用标注（Citations）功能：如何追溯 AI 回答的信息来源，验证答案的真实性，避免 AI '幻觉'，以及引用来源的查阅方法。",
+    "category": "ai_official",
+    "tags": "Perplexity, 引用来源, 信息查证",
+    "firstPara": "在使用 AI 搜索工具时，我们常常会怀疑：它给出的答案到底靠不靠谱？有没有胡编乱造（幻觉）？为了解决这个问题，Perplexity 提供了一个非常实用的功能——引用标注（Citations）。通过这个",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-connection-issues.md": {
+    "originalTitle": "Perplexity连接问题排查：网页白屏或加载失败怎么办 - 机场猫",
+    "originalDesc": "系统排查 Perplexity AI 搜索工具连接失败的原因：从代理设置到服务器状态，提供分步骤的诊断方法，帮你快速恢复正常使用。",
+    "category": "ai_official",
+    "tags": "Perplexity, 故障排查, 网络连接",
+    "firstPara": "在使用 Perplexity 进行 AI 搜索时，你可能会偶尔遇到网页无法加载、App 提示网络错误，或者搜索请求一直在转圈加载的情况。今天就来带你系统地排查这些连接问题，帮助你快速恢复正常使用。",
+    "headers": "一、这个功能（问题）是什么？ | 二、在哪里可以找到排查入口？ | 三、怎么排查和解决？"
+  },
+  "src/content/blog/perplexity-how-to-use.md": {
+    "originalTitle": "Perplexity AI怎么用？零基础上手AI搜索引擎 - 机场猫",
+    "originalDesc": "从零开始了解 Perplexity：AI 问答搜索引擎的工作方式、如何提问获取带引用来源的回答，以及 Perplexity 与传统搜索引擎的实际使用差异。",
+    "category": "ai_official",
+    "tags": "Perplexity, 使用教程, 基础操作",
+    "firstPara": "Perplexity AI 是一款颠覆传统的“答案引擎（Answer Engine）”。它将人工智能与搜索引擎结合，你只需用自然语言提问，它就能直接为你提供整理好的答案，并附带引用来源，极大地提高了获",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-pro-search.md": {
+    "originalTitle": "Perplexity Pro Search是什么？高级深度搜索功能详解 - 机场猫",
+    "originalDesc": "详解 Perplexity Pro Search 的工作方式：针对复杂问题进行多步骤深度检索，如同研究助手一样主动搜集、筛选、整理信息，以及与普通搜索的区别。",
+    "category": "ai_official",
+    "tags": "Perplexity, Pro Search, 深度搜索",
+    "firstPara": "Perplexity Pro Search 是 Perplexity 提供的高级搜索功能，能够针对复杂问题进行多步骤、深度的信息检索与推理。它不仅仅是简单地返回搜索结果，还会像一位研究助手一样，主动为",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-projects.md": {
+    "originalTitle": "Perplexity Projects功能：创建专属AI知识库工作空间 - 机场猫",
+    "originalDesc": "介绍 Perplexity Projects（项目空间）功能：为不同任务创建专属工作区，设置自定义 AI 指令并上传参考文件，构建聚焦特定领域的 AI 知识库。",
+    "category": "ai_official",
+    "tags": "Perplexity, Projects, 工作空间",
+    "firstPara": "Perplexity Projects（项目空间）是 Perplexity 推出的一项强大功能，允许你为不同的任务、主题或工作流创建专属的工作区。通过设定自定义的 AI 指令并上传特定的参考文件，你可",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-prompt-guide.md": {
+    "originalTitle": "Perplexity提示词技巧：如何问出更精准的AI搜索结果 - 机场猫",
+    "originalDesc": "专为 Perplexity 整理的提问（Prompt）技巧：如何通过合理构建查询词激发更深度的信息检索能力，获取更有深度、更有引用来源的回答。",
+    "category": "ai_official",
+    "tags": "Perplexity, Prompt, 提问技巧",
+    "firstPara": "想要在使用 Perplexity 时获得更精准、更有深度的回答，关键在于你如何向它提问，也就是如何编写 Prompt（提示词）。合理的提问技巧能够激发 Perplexity 更强大的检索和整合能力。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-upload-file.md": {
+    "originalTitle": "Perplexity上传文件功能：让AI分析总结长篇文档 - 机场猫",
+    "originalDesc": "介绍 Perplexity 的文件上传功能（PDF、TXT等）：如何让 AI 快速总结长篇报告、提取核心数据或翻译文档，大幅提升处理文档的工作效率。",
+    "category": "ai_official",
+    "tags": "Perplexity, 文件上传, PDF分析",
+    "firstPara": "Perplexity 不仅是一个强大的 AI 搜索引擎，还支持直接上传文档（如 PDF、TXT 等文件）并对其进行深度分析。无论是需要快速总结长篇报告，还是提取核心数据，这项功能都能极大提升你的工作效",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-vs-search.md": {
+    "originalTitle": "Perplexity vs 谷歌搜索：AI搜索与传统搜索的区别 - 机场猫",
+    "originalDesc": "深度对比 Perplexity AI 搜索与 Google 等传统搜索引擎的本质差异：AI 直接给答案 vs 返回网页列表，各自适用的搜索场景与优劣势分析。",
+    "category": "ai_official",
+    "tags": "Perplexity, 搜索引擎, 核心差异",
+    "firstPara": "如今，当我们想要获取信息时，除了传统的搜索引擎，像 Perplexity 这样的 AI 搜索引擎也越来越流行。但它们到底有什么区别？为什么很多人开始转向 AI 搜索？今天就来为你详细对比。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/perplexity-what-is.md": {
+    "originalTitle": "Perplexity是什么？颠覆传统的AI答案引擎介绍 - 机场猫",
+    "originalDesc": "本文详细探讨了关于Perplexity是什么？颠覆传统的AI答案引擎介绍 - 机场猫的实际应用场景，包括一、这个功能是什么？",
+    "category": "ai_official",
+    "tags": "Perplexity, AI搜索引擎, 新手入门",
+    "firstPara": "在信息爆炸的时代，我们每天都需要进行大量的网络搜索。传统的搜索引擎往往只能提供一堆网页链接，需要我们自己去点击、阅读和总结。而现在，一款名为 Perplexity 的工具正在改变这一切。它将人工智能与",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/poe-how-to-use.md": {
+    "originalTitle": "Poe AI平台怎么用？ChatGPT/Claude聚合平台使用教程 - 机场猫",
+    "originalDesc": "介绍 Poe 平台的使用方法：在一个界面内与 ChatGPT、Claude、Gemini 等多款主流 AI 模型对话切换，以及 Poe 的订阅方案和对代理 IP 的访问要求。",
+    "category": "ai_official",
+    "tags": "Poe, 使用教程, 基础操作",
+    "firstPara": "Poe（Platform for Open Exploration）是一个汇集了各种前沿 AI 模型（如 ChatGPT、Claude、Google Gemini 等）的聚合对话平台，让用户能够在一个",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/poe-image-video-bots.md": {
+    "originalTitle": "Poe图像和视频生成Bot：一站体验多款AI绘图工具 - 机场猫",
+    "originalDesc": "介绍如何在 Poe 平台一站式体验图像和视频生成 AI 工具，无需在多个平台分别订阅，通过 Poe 聚合访问各类图像/视频生成 Bot 的方法。",
+    "category": "ai_official",
+    "tags": "Poe, 图片生成, 视频生成",
+    "firstPara": "在 AI 工具爆发的今天，很多人为了使用不同的图像或视频生成功能，不得不在多个平台之间来回切换并分别订阅。其实，通过 Poe 平台，你可以一站式体验到市面上许多优质的图像和视频生成工具，无需到处开通会",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/poe-memory.md": {
+    "originalTitle": "Poe记忆功能：让AI记住偏好 vs 无痕对话模式 - 机场猫",
+    "originalDesc": "介绍 Poe 的 Memory（记忆）功能与无痕对话模式：如何让 AI 记住个人偏好避免重复说明，以及何时切换到隐私保护的无痕对话模式。",
+    "category": "ai_official",
+    "tags": "Poe, 记忆功能, 临时聊天",
+    "firstPara": "在日常使用 AI 的过程中，我们常常会遇到两种截然不同的需求：一种是希望 AI 能够记住我们的个人偏好和背景信息，免去每次都要重复解释的麻烦；另一种则是出于隐私考虑，希望进行一次“阅后即焚”的无痕对话",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/poe-what-is.md": {
+    "originalTitle": "Poe是什么？Quora推出的AI模型聚合平台介绍 - 机场猫",
+    "originalDesc": "介绍 Poe 平台的定位与特点：由 Quora 推出的多款顶尖 AI 模型聚合应用，在一个界面内无缝切换 ChatGPT、Claude、Gemini，以及访问所需的代理要求。",
+    "category": "ai_official",
+    "tags": "Poe, AI聚合平台, 新手入门",
+    "firstPara": "Poe 是由知名问答社区 Quora 推出的一款强大的 AI 模型聚合平台。它将全球顶尖的多个 AI 大语言模型（如 ChatGPT、Claude、Google Gemini 等）整合在一个应用中，让",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/quantumult-x-airport-recommendations.md": {
+    "originalTitle": "2026 Quantumult X机场推荐：圈X订阅机场选择指南 - 机场猫",
+    "originalDesc": "为 Quantumult X 与圈X用户整理机场选择思路，重点介绍订阅兼容、协议支持、iOS使用场景及机场挑选方法，并结合现有品牌资料提供参考。",
+    "category": "guides",
+    "tags": "\"Quantumult X\", \"客户端\", \"机场推荐\", \"iOS\"",
+    "firstPara": "Quantumult X（常被国内用户简称为“圈X”）作为 iOS 平台上最顶级的网络调试与代理工具之一，凭借其强大的脚本支持、重写功能（Rewrite）和出色的 UI 设计，吸引了大量重度网络用户。",
+    "headers": "Quantumult X 用户选机场和普通用户有什么不同 | Quantumult X 常见协议支持 | 选机场重点看什么"
+  },
+  "src/content/blog/shadowrocket-airport-recommendations.md": {
+    "originalTitle": "2026 Shadowrocket机场推荐：iOS小火箭适配机场 - 机场猫",
+    "originalDesc": "2026年Shadowrocket机场推荐。为iOS用户整理与Shadowrocket（小火箭）完美兼容的机场，解释订阅格式、协议支持、导入流程，以及选购iOS机场的注意事项。",
+    "category": "guides",
+    "tags": "\"Shadowrocket\", \"iOS\", \"小火箭\", \"机场推荐\"",
+    "firstPara": "Shadowrocket（小火箭）是 iOS 平台上使用最广泛的代理工具。本文专门为 **iPhone / iPad 用户**整理与 Shadowrocket 兼容性最佳的机场推荐。",
+    "headers": "Shadowrocket 支持什么协议？ | iOS 机场的特殊注意事项 | 选择 Shadowrocket 机场要注意什么？"
+  },
+  "src/content/blog/shadowrocket-guide.md": {
+    "originalTitle": "Shadowrocket（小火箭）配置教程：iOS代理完整使用指南 - 机场猫",
+    "originalDesc": "iOS 用户的 Shadowrocket 完整配置指南：如何获取非大陆 Apple ID、下载安装 Shadowrocket、导入机场订阅链接，以及日常使用中的常见问题解决。",
+    "category": "network",
+    "tags": "\"教程\", \"客户端\", \"Shadowrocket\", \"iOS\"",
+    "firstPara": "Shadowrocket（俗称“小火箭”）是 iOS 平台上历史最悠久、使用最广泛的网络代理客户端之一。它不仅支持几乎所有的现代协议，且界面简洁易用。",
+    "headers": "使用前需要准备什么？ | 一、如何添加与更新订阅 | 二、如何选择节点与代理模式"
+  },
+  "src/content/blog/sing-box-airport-recommendations.md": {
+    "originalTitle": "2026 sing-box机场推荐：适合sing-box的订阅机场怎么选 - 机场猫",
+    "originalDesc": "围绕 sing-box 用户如何选择机场展开，说明协议兼容、订阅格式、客户端导入与线路选择，并结合机场猫现有品牌资料整理适合 sing-box 使用的机场选择。",
+    "category": "guides",
+    "tags": "\"sing-box\", \"客户端\", \"机场推荐\", \"节点\"",
+    "firstPara": "在使用现代代理工具时，很多用户开始将目光转向性能更为出色且配置更为纯粹的内核。对于追求极限性能和现代网络协议的用户而言，选择一个能够完美契合的[机场](/reviews/)节点至关重要。",
+    "headers": "sing-box 是什么 | sing-box 选择机场最重要看什么 | 哪些协议更适合 sing-box"
+  },
+  "src/content/blog/tools-05.md": {
+    "originalTitle": "Shadowsocks协议测试工具：SS节点连通性验证 - 机场猫",
+    "originalDesc": "针对 Shadowsocks（SS）协议的专项测试方法：如何验证 SS 节点是否正常工作，常见的连接失败原因排查，以及调试工具的使用。",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "刚接触 sing-box 时，最容易让人头疼的往往不是软件本身，而是配置和日志里层出不穷的专业名词：Inbound、Outbound、TUN 模式、Fake-IP、流量嗅探……把这些核心概念搞清楚，后",
+    "headers": "基本概念：四大核心基础术语 | 进一步理解：进阶技术与功能术语 | 实际应用：利用术语快速排查日常问题"
+  },
+  "src/content/blog/tools-12.md": {
+    "originalTitle": "V2Ray/VMess协议节点测试与连通性验证方法 - 机场猫",
+    "originalDesc": "针对 VMess/VLESS 等 V2Ray 系协议的连通性测试方法，帮助验证 V2Ray 节点是否正常工作，常见错误的排查思路。",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "网上的 WireGuard 一键脚本和二手教程虽然能帮你快速搭起环境，但一旦遇到参数报错或版本迭代，往往很难定位根本原因。其实 WireGuard 的官方文档和白皮书极为精简，只要掌握了核心板块的查阅",
+    "headers": "基本概念：官方资料库的组织全貌与设计哲学 | 进一步理解：手把手拆解四大核心版块 | 官方标准密钥生成流程"
+  },
+  "src/content/blog/tools-13.md": {
+    "originalTitle": "OpenVPN是什么？企业级VPN协议原理与使用场景 - 机场猫",
+    "originalDesc": "解析 OpenVPN 的技术特点：基于 SSL/TLS 的企业级 VPN 标准，拥有二十年行业应用历史。介绍其工作原理和与 WireGuard 等新协议的对比。",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "即便在新一代轻量协议辈出的今天，**OpenVPN** 依然是企业远程接入和各类网络设备上应用最广泛的工业级标准之一。凭借成熟的 SSL/TLS 握手协议与极其灵活的证书认证体系，它统治了安全网络隧道",
+    "headers": "基本概念：认识网络安全领域的常青树 | 进一步理解：支撑 OpenVPN 稳健运行的三大支柱 | 实际应用：OpenVPN 活跃在哪些典型场景？"
+  },
+  "src/content/blog/tools-14.md": {
+    "originalTitle": "OpenVPN配置文件(.ovpn)解析：核心参数看懂指南 - 机场猫",
+    "originalDesc": "用通俗语言解读 .ovpn 配置文件的核心参数含义：连接指令、路由规则、内嵌证书密钥的作用，帮助你在遇到连接失败时自行排查。",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "配置 OpenVPN 远程办公或安全通道时，管理员通常会发来一个 `.ovpn` 格式的配置文件。用文本编辑器打开它，里面塞满了各种连接指令、路由规则和内嵌的证书密钥——搞懂这些核心参数的含义，遇到连",
+    "headers": "基本概念：什么是 OpenVPN 配置文件？ | 进一步理解：逐行拆解一份标准的 `.ovpn` 文件 | ========== 1. 基础连接与工作模式 =========="
+  },
+  "src/content/blog/tools-15.md": {
+    "originalTitle": "WireGuard vs OpenVPN：两种VPN协议哪个更好 - 机场猫",
+    "originalDesc": "深度对比 WireGuard 与 OpenVPN 在性能、配置复杂度、安全性和网络穿透力上的差异，帮助你根据实际使用场景（远程办公/家庭/企业）做出最合适的选择。",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "在选择搭建安全 VPN 隧道时，很多人最纠结的莫过于 **WireGuard** 和 **OpenVPN**：一边是极简、飞快的内核级现代新秀，另一边是功能完备、生态成熟的企业级老牌王者。两者在性能、",
+    "headers": "基本概念：两大协议的时代背景与设计哲学 | 进一步理解：六大关键维度的技术深度对比 | 实际应用：新手与团队的技术选型建议"
+  },
+  "src/content/blog/tools-16.md": {
+    "originalTitle": "Tailscale是什么？无需公网IP的异地组网工具 - 机场猫",
+    "originalDesc": "介绍 Tailscale 的工作原理：基于 WireGuard 的网状组网技术，无需公网 IP 和复杂配置，即可把分散在各地的设备连入同一个专属虚拟局域网。",
+    "category": "network",
+    "tags": "",
+    "firstPara": "想在外网随时访问家里的 NAS、管理远程服务器或连回办公室局域网，但在过去，申请公网 IP、做端口映射和配置 DDNS 极其折腾。**Tailscale** 通过基于 WireGuard 的网状组网技",
+    "headers": "基本概念：什么是 Tailscale？ | 进一步理解：Tailscale 到底是如何工作的？ | 实际应用：Tailscale 能用来做什么？"
+  },
+  "src/content/blog/tools-17.md": {
+    "originalTitle": "WireGuard与Tailscale的关系：底层协议与上层封装 - 机场猫",
+    "originalDesc": "厘清 WireGuard 和 Tailscale 的关系：WireGuard 是底层 VPN 协议（发动机），Tailscale 是在其之上实现了自动密钥分发和 NAT 穿透的完整组网平台。",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "很多人在接触异地组网时，常会疑惑：既然已经有了飞快的 WireGuard，为什么还要用 Tailscale？简单来说，WireGuard 是一台优质的底层「发动机」，而 Tailscale 则是在其之",
+    "headers": "基本概念：发动机与整车的关系 | 进一步理解：原生 WireGuard 的痛点与 Tailscale 的解决方案 | 实际应用：该选原生 WireGuard 还是 Tailscale？"
+  },
+  "src/content/blog/tools-18.md": {
+    "originalTitle": "Tailscale Exit Node配置：借用远程设备的出口网络 - 机场猫",
+    "originalDesc": "介绍 Tailscale Exit Node 的配置方法：在公共 Wi-Fi 或需要借用家中宽带 IP 时，如何开启出口节点将所有流量加密转发到指定设备再访问公网。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "默认情况下，Tailscale 只会在你访问网内设备时走加密隧道，日常网页流量依然直连。但在公共 Wi-Fi 等不安全环境下，或者需要借用家中宽带 IP 上网时，通过开启 **Exit Node（出口",
+    "headers": "基本概念：什么是 Exit Node？ | 进一步理解：Exit Node 的工作流程与核心机制 | 实际应用：Exit Node 的典型使用场景"
+  },
+  "src/content/blog/tools-19.md": {
+    "originalTitle": "Tailscale Subnet Router：让整个内网设备都可远程访问 - 机场猫",
+    "originalDesc": "介绍 Tailscale Subnet Router（子网路由）的配置方法：让无法安装客户端的 NAS、打印机、摄像头等内网设备，通过路由宣告在外网直接访问。",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "家里的 NAS 和电脑可以轻松安装 Tailscale，但网络打印机、监控摄像头、智能家居网关等设备根本无法安装客户端。借助 **Tailscale Subnet Router（子网路由）**，只需在",
+    "headers": "基本概念：什么是 Subnet Router？ | 进一步理解：Subnet Router 是如何工作的？ | 实际应用：Subnet Router 的绝佳使用场景"
+  },
+  "src/content/blog/tools-32.md": {
+    "originalTitle": "Hysteria2协议测试：UDP加速节点性能验证 - 机场猫",
+    "originalDesc": "专门针对 Hysteria2 协议节点的性能测试方法：UDP 加速机制如何工作，如何验证 Hysteria2 节点的连通性，以及与 TCP 协议的实测速度对比。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "当 Ping 测出高延迟或丢包时，它只能告诉你终点响应慢，却无法定位到底是家里的 Wi-Fi、运营商骨干网还是跨国海缆出了问题。**Traceroute（Windows 下为 Tracert）** 能",
+    "headers": "基本概念 | 进一步理解 | 追踪到目标 IP 或域名"
+  },
+  "src/content/blog/tun-mode-no-internet.md": {
+    "originalTitle": "开启TUN模式后断网怎么办？TUN模式断网修复指南 - 机场猫",
+    "originalDesc": "专门解决 TUN 模式开启后整台电脑断网的问题：分析 TUN 模式修改系统路由表导致断网的原因，以及通过关闭 TUN 模式或调整路由配置恢复网络的步骤。",
+    "category": "troubleshoot",
+    "tags": "\"网络排错\", \"TUN模式\", \"断网排查\"",
+    "firstPara": "[TUN 模式](/blog/what-is-tun-mode)是一把锋利的双刃剑。虽然它能强制接管底层流量，但因为其强行修改了系统路由表，一旦配置不当，极易导致整台电脑瞬间失去互联网连接——无论是国",
+    "headers": "1. 确认是否同时开启了系统代理 | 2. 检查“服务模式”是否运行异常 | 3. 排查与其他网络软件的冲突"
+  },
+  "src/content/blog/v2rayn-airport-recommendations.md": {
+    "originalTitle": "2026 v2rayN机场推荐：Windows/Android v2ray适配机场 - 机场猫",
+    "originalDesc": "2026年v2rayN机场推荐。为Windows和Android用户整理与v2rayN/v2rayNG兼容的机场，解释订阅格式、协议支持、导入流程，以及选购v2ray机场的注意事项。",
+    "category": "guides",
+    "tags": "\"v2rayN\", \"v2rayNG\", \"Windows\", \"Android\", \"机场推荐\"",
+    "firstPara": "v2rayN（Windows）和 v2rayNG（Android）是两款基于 V2Ray / Xray 内核的代理客户端，在不想使用 [Clash](/blog/mac-clash-verge-rev",
+    "headers": "v2rayN / v2rayNG 支持什么协议？ | v2rayN vs Clash：应该怎么选？ | 选择 v2ray 机场要注意什么？"
+  },
+  "src/content/blog/v2rayng-guide.md": {
+    "originalTitle": "v2rayNG使用教程：Android安卓代理完整配置指南 - 机场猫",
+    "originalDesc": "Android 用户的 v2rayNG 完整配置指南：如何下载安装 v2rayNG、导入机场订阅链接、设置规则分流，以及常见连接问题的排查方法。",
+    "category": "streaming",
+    "tags": "\"教程\", \"客户端\", \"v2rayNG\", \"Android\"",
+    "firstPara": "v2rayNG 是 Android（安卓）平台上极其经典、轻量且开源的网络代理客户端，支持绝大多数现代代理协议。",
+    "headers": "使用前需要准备什么？ | 一、下载与安装 | 二、如何导入订阅与更新[节点](/blog/what-is-node/)"
+  },
+  "src/content/blog/adv-01.md": {
+    "originalTitle": "网络路由是什么？数据包如何在互联网中寻路 - 机场猫",
+    "originalDesc": "从零理解网络路由的工作原理：数据包如何在路由器之间接力转发、如何选择最优路径，以及路由对代理节点选择的实际影响。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "当你在浏览器里点开一个链接，数据包并不会直接飞到目标服务器，而是要在沿途成百上千台路由器之间不断接力。这个为每个数据包「指引方向并选择较佳路径」的过程，就是网络路由（Routing）。",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-02.md": {
+    "originalTitle": "ASN自治系统是什么？运营商网络的底层逻辑 - 机场猫",
+    "originalDesc": "深入解析 ASN（自治系统编号）是什么，不同运营商如何通过 ASN 管理各自的网络，以及 ASN 对跨境代理速度的影响。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "互联网并不是一整张铁板一块的网络，而是由全球数万个独立的自治网络（Autonomous System, AS）拼接而成的。要让数据在这张庞大的网络之网中准确穿梭，每个拥有独立路由策略的网络实体都必须拥",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-03.md": {
+    "originalTitle": "BGP协议是什么？互联网全局路由调度原理 - 机场猫",
+    "originalDesc": "通俗解释 BGP（边界网关协议）的工作原理——它不是物理线路，而是互联网的全球导航系统，负责在各运营商网络间动态计算最优路径。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "很多人第一次接触 BGP（边界网关协议）时，容易把它误当成某种更快的物理线路。实际上，BGP 的核心角色是互联网的全球导航调度系统，负责在成千上万个自治网络（ASN）之间交换路由表，并动态计算出跨网通",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-04.md": {
+    "originalTitle": "BGP多线机房是什么？为什么比单线贵但更值 - 机场猫",
+    "originalDesc": "解析 BGP 多线机房的核心优势：同时接入电信、联通、移动三大骨干网，通过动态路由让不同运营商的用户自动走最优路径，有效降低跨网延迟。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "购买云服务器或中转[节点](/blog/what-is-node/)时，「BGP 多线机房」往往比普通单线或双线要贵上不少。它的核心优势在于让服务器同时接入电信、联通、移动等多个主流运营商骨干网，并通",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-06.md": {
+    "originalTitle": "中转节点是什么？为什么中转比直连更快更稳 - 机场猫",
+    "originalDesc": "解答经典疑惑：明明直连距离近，为何中转反而更快？揭示国内优质 BGP 机房作为中转跳板的技术原理，及其在代理场景中的实际价值。",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "很多人第一次接触「中转[节点](/blog/what-is-node/)」时都会疑惑：直连海外服务器明明物理距离最近，为什么多经过一个国内中转机房反而更快更稳？因为普通公网跨境直连极易遭遇跨运营商结算",
+    "headers": "基本概念 | 进一步理解：直连 vs 中转 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-07.md": {
+    "originalTitle": "代理链路入口节点与出口节点有什么区别 - 机场猫",
+    "originalDesc": "完整解析代理链路中的入口节点与出口节点分工：入口负责国内接收流量，出口负责海外发送请求，两者如何协作影响连接质量与 IP 归属。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "在一条完整的中转或[专线](/blog/iplc-iepl-bgp-explained/)代理链路中，数据传输通常由两类分工明确的服务器协同完成：负责在国内接收本地设备流量的「入口[节点](/blog",
+    "headers": "基本概念 | 进一步理解：它们各自的作用 | 常见分类 / 特征组合"
+  },
+  "src/content/blog/adv-09.md": {
+    "originalTitle": "IPLC是什么？国际私有租用线路的原理与优势 - 机场猫",
+    "originalDesc": "深度解析 IPLC（国际私有租用线路）的技术本质：物理跨境点对点内网专线，不经过 GFW，延迟极低，为何被认为是跨境代理的稳定性天花板。",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "在跨境网络连接中，IPLC（International Private Leased Circuit，国际私有租用线路）被公认为稳定性的天花板。它的本质是一条跨越国境的点对点内网物理[专线](/blo",
+    "headers": "基本概念 | 进一步理解：IPLC 的神奇之处 | 实际应用"
+  },
+  "src/content/blog/adv-10.md": {
+    "originalTitle": "IEPL是什么？IEPL与IPLC的区别详解 - 机场猫",
+    "originalDesc": "清楚区分 IEPL（国际以太网专线）与 IPLC 的技术差异：两者同属内网物理专线，均不过 GFW，但底层实现技术不同，选购时该如何取舍？",
+    "category": "network",
+    "tags": "",
+    "firstPara": "IEPL（International Ethernet Private Line，国际以太网[专线](/blog/iplc-iepl-bgp-explained/)）常与 IPLC 并列出现，让许多用",
+    "headers": "基本概念 | 进一步理解：它和 IPLC 有什么区别？ | 实际应用"
+  },
+  "src/content/blog/adv-12.md": {
+    "originalTitle": "CMI中国移动国际网络解析：骨干网与香港节点优势 - 机场猫",
+    "originalDesc": "解析 CMI（中国移动国际网络，AS58453）在香港及亚太地区的布局优势，以及为何'移动走 CMI'成为用户选购节点的重要参考依据。",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "在跨境网络优化中常有「电信走 CN2，联通走 9929，移动走 CMI」的经验说法。CMI（China Mobile International，中国移动国际）是中国移动在全球布局的核心骨干网络（AS",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-16.md": {
+    "originalTitle": "网络拥塞是什么？为什么晚高峰节点会变慢 - 机场猫",
+    "originalDesc": "用高速公路堵车的比喻解析网络拥塞的原理：数据包超过路由器队列极限后被丢弃，触发 TCP 降速与重传，导致晚高峰节点延迟飙升的底层机制。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "当运营商或服务商回复「当前线路拥塞」时，其本质就像早晚高峰的高速公路堵车：短时间内涌入[节点](/blog/what-is-node/)的数据包总量超过了路由器队列或物理光纤的承载极限。一旦路由器缓冲",
+    "headers": "基本概念 | 进一步理解 | 常见类型与分类"
+  },
+  "src/content/blog/adv-26.md": {
+    "originalTitle": "测速跑满但视频还是卡？多线程vs单线程测速的真相 - 机场猫",
+    "originalDesc": "解释为何测速结果亮眼但体验依然差：主流测速工具测的是多线程并发峰值，而游戏/视频等真实场景关注单线程延迟和抖动，两者评价维度完全不同。'单线程吞吐量'才能真正判断代理线路质量。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "很多人习惯用[测速](/blog/how-to-test-node-speed/)软件跑出的「千兆带宽」来衡量网络好坏，但往往会遇到测速指针飙满、实际看视频打游戏却依然卡顿的怪现象。这是因为大多数测速",
+    "headers": "基本概念：测速到底在测什么？ | 进一步理解：决定实际体验的多维度指标 | 实际应用：不同场景下的核心需求"
+  },
+  "src/content/blog/adv-27.md": {
+    "originalTitle": "如何判断代理线路稳定性？丢包率与持续Ping检测 - 机场猫",
+    "originalDesc": "讲解如何通过持续 Ping、MTR 路由追踪在高峰期测量丢包率和延迟抖动，得出一条代理线路在实际使用中的真实稳定性评分，而非只看峰值带宽。'峰值带宽'更重要的是长期稳定性。介绍通过持续 Ping 测试、MTR 链路追踪等工具，客观评估一条网络线路在24小时内的真实稳定表现。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "比起瞬间能跑多高的「峰值带宽」，网络在长时间运行下的「稳定性」才是决定使用体验的关键。判断一条线路是否真正稳定，不能只看单次[测速](/blog/how-to-test-node-speed/)，而是",
+    "headers": "基本概念：什么是网络稳定性？ | 进一步理解：影响稳定性的深层原因 | 实际应用：如何自己动手测试稳定性？"
+  },
+  "src/content/blog/ai-drama-02-workflow.md": {
+    "originalTitle": "AI短剧制作完整流程：从剧本到成片的工作流 - 机场猫",
+    "originalDesc": "系统介绍使用 AI 工具制作短剧的完整工作流程：剧本生成、分镜设计、AI 绘图、视频合成，帮助创作者从零建立高效的 AI 短剧制作管线。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "随着 AI 视频工具的门槛逐渐降低，越来越多的人开始尝试自己制作“AI 短剧”。很多初学者可能认为只需要给 AI 丢一句话，就能直接生成一部完整的视频。但实际上，要制作一部逻辑连贯、画面精美的 AI ",
+    "headers": "相关文章"
+  },
+  "src/content/blog/ai-drama-04-character.md": {
+    "originalTitle": "AI短剧角色一致性：如何让主角始终保持同一张脸 - 机场猫",
+    "originalDesc": "本文详细探讨了关于AI短剧角色一致性的实际应用场景，包括相关文章",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "在传统的影视制作中，一旦选定了演员，只要他不主动去整容，角色的长相在整部剧中自然是一致的。但在 AI 生成视频的世界里，“角色一致性（Character Consistency）”却是一个困扰很多新手",
+    "headers": "相关文章"
+  },
+  "src/content/blog/ai-drama-08-dialogue.md": {
+    "originalTitle": "AI短剧台词生成：用AI写出自然的角色对白 - 机场猫",
+    "originalDesc": "介绍如何利用 ChatGPT 等 AI 工具生成 AI 短剧中的角色台词，避免机械感，写出符合人物性格和剧情节奏的自然对话。",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "俗话说，影视作品是“视听语言”的艺术。当你好不容易通过 AI 生成了精美的视频画面后，如果仅仅配上无聊的默片字幕，观众的体验将大打折扣。",
+    "headers": "相关文章"
+  },
+  "src/content/blog/ai-network-08-routing-issue.md": {
+    "originalTitle": "什么是网络丢包？丢包对代理和游戏的实际影响 - 机场猫",
+    "originalDesc": "用信件投递的比喻解释网络丢包的原理：数据包在传输中丢失如何影响视频播放、游戏延迟和 AI 工具使用，以及如何判断是否存在丢包问题。",
+    "category": "ai_network",
+    "tags": "丢包, 网络线路, 网络排障",
+    "firstPara": "想象一下，你写了一封信，分成了好几页，装在不同的信封里寄给远方的朋友。朋友需要收到所有的信封，才能完整读懂你的信。如果在这个过程中，邮递员不小心弄丢了其中一个信封，你的朋友就读不到完整的内容了。",
+    "headers": "什么是网络丢包？ | 丢包对日常使用的影响 | AI 工具中的“重灾区”：丢包的表现"
+  },
+  "src/content/blog/ai-network-58-differentiate-issues.md": {
+    "originalTitle": "如何区分网络问题还是平台问题？代理故障诊断思路 - 机场猫",
+    "originalDesc": "梳理代理使用中常见的两类故障来源：本地网络或节点问题 vs AI/流媒体平台自身故障，帮助快速判断问题出在哪里，避免无效排查。",
+    "category": "ai_network",
+    "tags": "故障排查, 断开问题, 新手必读",
+    "firstPara": "在使用 ChatGPT、Claude 或其他 AI 服务时，偶尔会遇到突然断开连接、无法发送消息或页面加载失败的情况。这时候很多人的第一反应往往是抱怨：“又卡了！”或者“这个[节点](/blog/wh",
+    "headers": "引言 | 技巧一：查看官方状态页面（Status Page） | 技巧二：测试同节点下其他海外网站是否流畅"
+  },
+  "src/content/blog/ai-study-07-exam-prep.md": {
+    "originalTitle": "AI辅助备考：用ChatGPT高效准备考试的方法 - 机场猫",
+    "originalDesc": "系统介绍如何用 ChatGPT 进行考试备考：整理考点、生成模拟题、解析错题、制定复习计划，让 AI 成为你的个人备考助教。",
+    "category": "ai_work",
+    "tags": "期末复习, 考前冲刺, 学生工具",
+    "firstPara": "期末考试即将来临，堆积如山的复习资料和不知从何下手的无力感总是让人焦虑。如今，随着人工智能技术的飞速发展，AI 已经不仅仅是解答难题的工具，它更能化身为你的“超级助教”，帮你制定复习计划、整理繁杂笔记",
+    "headers": "一、 海量笔记一键归纳与知识图谱构建 | 二、 自动生成复习卡片 (Flashcards) | 三、 模拟测试与论文题演练 (Simulating Essay Questions)"
+  },
+  "src/content/blog/ai-tools-04-chatgpt-what-is-it.md": {
+    "originalTitle": "ChatGPT是什么？零基础理解AI对话工具 - 机场猫",
+    "originalDesc": "用最通俗的语言解释 ChatGPT 是什么：阅读了海量文章的虚拟助手，可以回答问题、写作、编程，以及与普通搜索引擎的本质区别。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, AI教程, 新手入门",
+    "firstPara": "简单来说，ChatGPT 就像是一个极其聪明的“虚拟对话助手”。它阅读了互联网上数以亿计的文章、书籍和网页，因此拥有了庞大的知识储备。你可以把它想象成一个无所不知的朋友，随时准备回答你的问题。",
+    "headers": "什么是 ChatGPT？ | ChatGPT 能帮你做什么？ | 它的局限性：你必须知道的“坑”"
+  },
+  "src/content/blog/ai-tools-30-chatgpt-rewrite.md": {
+    "originalTitle": "ChatGPT改写文章：润色和优化已有内容的技巧 - 机场猫",
+    "originalDesc": "介绍用 ChatGPT 改写和润色已有内容的正确方式：通过精确的指令控制改写程度（仅改语气/全面重构），保留核心意思的同时提升文章质量。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 写作润色, 文字处理",
+    "firstPara": "在日常的工作与学习中，我们经常需要对文字进行改写。无论是为了让邮件显得更正式、将长篇大论精简成摘要，还是为了在社交媒体上发布引人注目的短文，改写都是一项高频需求。随着人工智能的发展，利用 ChatGP",
+    "headers": "为什么要用 ChatGPT 进行改写？ | 场景一：转换文字语调 (Tone Adjustment) | 场景二：调整文字篇幅 (Length Adjustment)"
+  },
+  "src/content/blog/ai-tools-39-gemini-summary.md": {
+    "originalTitle": "Gemini总结和摘要功能：快速处理长文章的技巧 - 机场猫",
+    "originalDesc": "介绍 Google Gemini 的文章总结和摘要能力：如何提供长文让 Gemini 快速提炼关键点，控制摘要输出的格式和详细程度。",
+    "category": "ai_tools",
+    "tags": "Gemini, 文章总结, 效率工具",
+    "firstPara": "在信息大爆炸的今天，每天都有大量的文章、报告和新闻需要阅读。如何快速从一篇几万字的长文中提取核心价值？Gemini 作为一款强大的 AI 助手，在长文本总结方面表现优异。今天就来教你如何使用 Gemi",
+    "headers": "为什么选择 Gemini 总结长文？ | 将长文章输入 Gemini 的方法 | 高效的 Prompt 提示词技巧"
+  },
+  "src/content/blog/ai-tools-50-chatgpt-mistakes.md": {
+    "originalTitle": "这些习惯让ChatGPT越用越差：常见新手误区 - 机场猫",
+    "originalDesc": "深入分析导致 ChatGPT 使用效果差的常见习惯：问题不具体、不提供背景、不验证回答、不追问等，以及养成高质量使用习惯的实用建议。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 避坑指南, 新手教程",
+    "firstPara": "为什么别人用 ChatGPT 能写出爆款文章、高效完成工作，而你生成的全是一眼 AI 的废话，甚至经常“翻车”？其实，这并不意味着 AI 不够聪明，而是你可能在无意中踩中了一些新手常见的雷区。",
+    "headers": "1. 提示词过于宽泛，缺乏具体目标 | 2. 忘记提供背景信息 (Context) | 3. 把它当成搜索引擎，而不是推理引擎"
+  },
+  "src/content/blog/ai-tools-64-claude-new-chat.md": {
+    "originalTitle": "Claude新对话最佳实践：如何开启高质量对话 - 机场猫",
+    "originalDesc": "分享在 Claude 中开启新对话时的最佳实践：提供足够背景信息、设置角色、分段输入长文，让 Claude 从第一条回复就达到最高质量。",
+    "category": "ai_tools",
+    "tags": "Claude, 基础教程, 新手入门",
+    "firstPara": "在使用 Claude 等先进的 AI 模型时，很多新手用户最常犯的错误之一就是把所有的需求都堆积在一个对话窗口中。这不仅会让 AI 的回答变得越来越混乱，还会极大地影响你的工作效率。今天就来详细介绍如",
+    "headers": "引言 | 为什么要新建对话？ | 如何在 Claude 中新建对话"
+  },
+  "src/content/blog/ai-tools-86-gemini-image.md": {
+    "originalTitle": "Gemini看图功能：上传图片进行AI分析和解读 - 机场猫",
+    "originalDesc": "介绍 Google Gemini 的多模态图片分析功能：如何上传照片、图表、外语菜单或数学题图，让 AI 进行识别、分析和解答。",
+    "category": "ai_tools",
+    "tags": "Gemini, 多模态, 图像识别",
+    "firstPara": "作为 Google 表现优异大的 AI 模型，Gemini 不仅精通文字，在视觉和多模态能力上也表现卓越。无论是生活中的风景照片、外语菜单，还是复杂的图表、数学题目，Gemini 都能轻松“看懂”并给",
+    "headers": "Gemini 图片上传限制与要求 | 强大的识图功能与应用场景 | 常见问题 (FAQ)"
+  },
+  "src/content/blog/ai-work-08-communication.md": {
+    "originalTitle": "高情商职场沟通：用AI帮你写得体的异议和回复 - 机场猫",
+    "originalDesc": "介绍如何借助 AI 工具提升职场沟通技巧：在工作群或邮件中提出异议、拒绝请求或表达意见时，如何用 AI 润色语气，做到既专业又不得罪人。",
+    "category": "ai_work",
+    "tags": "职场情商, 话术润色, 办公沟通",
+    "firstPara": "在职场中，沟通是一门艺术。有时候，我们需要在工作群或者邮件中提出异议，但又担心自己的语气太过生硬，一不小心就得罪了同事或客户。现在，借助 AI，你可以轻松化解这种尴尬，让沟通变得既专业又充满“高情商”",
+    "headers": "职场沟通中的痛点：情绪与专业的平衡 | AI 如何帮你润色话术？ | 使用 AI 辅助沟通的建议"
+  },
+  "src/content/blog/clash-routing-rules.md": {
+    "originalTitle": "Clash分流规则如何应用？规则集配置实战教程 - 机场猫",
+    "originalDesc": "从理论到实操：如何在 Clash 客户端中配置和应用分流规则，使用预置规则集或自定义规则控制哪些流量走代理、哪些直连。",
+    "category": "routing",
+    "tags": "\"教程\", \"Clash\", \"分流规则\", \"实操指南\"",
+    "firstPara": "在理解了[什么是分流规则](/blog/what-are-routing-rules)之后，我们来看看如何在具体的客户端中应用它们。",
+    "headers": "什么是代理组 (Proxy Groups)？ | 基础配置步骤 | 验证规则是否生效"
+  },
+  "src/content/blog/grok-modes.md": {
+    "originalTitle": "Grok对话模式怎么切换？幽默模式与正式模式区别 - 机场猫",
+    "originalDesc": "介绍 Grok 内置的多种对话模式：正式解决问题模式、幽默/讽刺模式等，如何根据需求切换模式，以及各模式在实际对话中的表现差异。",
+    "category": "ai_official",
+    "tags": "Grok, 模式切换, Fun模式",
+    "firstPara": "Grok 最具特色的地方之一，就是它内置了不同的对话模式。你可以让它正经地帮你解决编程问题，也可以切换模式，让它用幽默甚至带点讽刺的语调和你开玩笑。掌握如何切换这些模式，能让你的 AI 对话体验更加丰",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/guide-02.md": {
+    "originalTitle": "节点是什么？机场节点与订阅链接的关系 - 机场猫",
+    "originalDesc": "新手必读：节点是代理服务器的实体，订阅链接是管理节点的入口，详解两者关系，以及为什么不能随意分享自己的订阅链接。",
+    "category": "advanced_conf",
+    "tags": "",
+    "firstPara": "在由数以亿计的设备构成的互联网中，任何两台机器想要精准通信，都必须依赖一套全球唯一的寻址系统——这就是 **IP 地址（Internet Protocol Address）**。它就像是数字世界里的真",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-03.md": {
+    "originalTitle": "订阅链接是什么？如何正确使用和更新节点订阅 - 机场猫",
+    "originalDesc": "详解机场订阅链接的工作方式：从购买机场获得订阅链接，导入客户端，到自动更新节点——面向新手的完整操作流程说明。",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "在挑选海外服务器或代理[节点](/blog/what-is-node/)时，我们经常会看到「原生 IP」、「广播 IP」、「机房 IP」和「住宅 IP」等专业术语。虽然它们在网络层都是合法的 IP 地",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/guide-05.md": {
+    "originalTitle": "机场怎么选？2026稳定机场选择与防坑指南 - 机场猫",
+    "originalDesc": "总结选购机场的核心评估维度：线路质量、晚高峰表现、运营历史、价格合理性、是否支持月付试用，以及常见的机场选购陷阱。",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "全世界数十亿台不同厂商、不同操作系统的设备之所以能在互联网上无缝互通，核心就在于统一遵循着**网络协议（Network Protocol）**。协议就像是网络世界的通用语言与交通法规，严格规范了数据在",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-06.md": {
+    "originalTitle": "代理软件TUN模式是什么？全局流量接管原理 - 机场猫",
+    "originalDesc": "解析代理客户端 TUN（虚拟网卡）模式的工作原理：与系统代理的区别，TUN 如何实现真正的全局流量接管，以及何时需要开启 TUN 模式。",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "**服务器（Server）**本质上就是 7x24 小时不间断运行、性能更强劲且拥有固定公网 IP 的专业计算机。无论你在网上浏览网页、观看流媒体视频，还是运行后台业务与网络代理，所有数据的集中存储、",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-07.md": {
+    "originalTitle": "代理模式有哪些？全局/规则/直连模式区别 - 机场猫",
+    "originalDesc": "详细对比代理软件的三种工作模式：全局代理（所有流量走节点）、规则模式（按规则分流）、直连模式，以及各自的适用场景和配置建议。",
+    "category": "network",
+    "tags": "",
+    "firstPara": "如今搭建网站、运行服务或配置海外代理[节点](/blog/what-is-node/)时，极少有人再去采购笨重的物理主机，而是直接在云服务商处购买**云服务器（VPS / ECS）**。云服务器通过虚",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-11.md": {
+    "originalTitle": "代理节点连不上怎么办？网络故障排查指南 - 机场猫",
+    "originalDesc": "面向遭遇节点全部断线、无法连接的用户，梳理排查步骤：确认本地网络→更新订阅→切换节点→检查防火墙→联系客服，帮助快速定位问题所在。",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "明明[测速](/blog/how-to-test-node-speed/)显示几百兆带宽、Ping 延迟也很低，但玩游戏时却频频遭遇卡顿甚至掉线，看直播画面也经常崩坏——这种隐蔽且破坏性极强的网络问题",
+    "headers": "基本概念 | 进一步理解 | 实际应用：丢包的破坏力"
+  },
+  "src/content/blog/guide-16.md": {
+    "originalTitle": "为什么别人网络快我却慢？运营商路由与地区差异解析 - 机场猫",
+    "originalDesc": "解析同一服务不同用户速度差异的根本原因：地理距离、运营商骨干网路由、跨网互联、最后一公里质量，帮你理解为什么换个网络环境体验截然不同。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "同一个网络服务，朋友用起来飞快，换到你家却卡顿频发，很多人第一反应是服务商在搞「区别对待」。但网络体验是端到端的复杂系统工程，本地运营商接入、骨干网路由规划与物理距离，都会直接拉开实际体验差距。",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/guide-18.md": {
+    "originalTitle": "机场跑路怎么防？选机场避免资金损失的技巧 - 机场猫",
+    "originalDesc": "新手防坑指南：如何辨别高跑路风险的机场，建议优先月付而非年付，以及机场跑路后的应对方式，将资金风险降到最低。",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "排查网络故障、配置局域网设备或确认代理连接状态时，第一步往往是查看当前 IP。但许多新手常把网卡分配的内网私有 IP（如 192.168.x.x）与对外通信的公网 IP 混淆，导致排障时走很多弯路。",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/guide-19.md": {
+    "originalTitle": "优惠码和折扣怎么用？机场省钱技巧整理 - 机场猫",
+    "originalDesc": "整理机场优惠码的使用规则，季付年付的折算方式，以及如何通过合理的付费周期在不牺牲安全性的前提下最大化省钱。",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "游戏操作延迟、音视频会议频繁卡顿或网页响应迟钝，往往不是因为带宽不够，而是高延迟和丢包在作祟。想要精准定位问题出在本地路由、运营商骨干网还是远端服务器，系统自带的 Ping 和 Traceroute ",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/guide-20.md": {
+    "originalTitle": "第一次买机场怎么选？完整新手购买流程 - 机场猫",
+    "originalDesc": "面向完全零基础的新手，给出从了解机场→选择客户端→选择合适套餐→月付试用→导入订阅的完整购买与上手流程，避免常见错误。",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "面对直连、BGP 中转、IPLC [专线](/blog/iplc-iepl-bgp-explained/)等五花八门的技术名词，以及从几元到上百元不等的月费，选购网络服务时很容易陷入「买便宜怕跑路、买",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/how-to-test-node-speed.md": {
+    "originalTitle": "如何测试代理节点速度？完整节点体检方法 - 机场猫",
+    "originalDesc": "讲解如何对代理节点进行全面体检：轻度测试（延迟）、中度测试（单线程下载）、重度测试（多线程并发），结合不同测试工具综合评估节点实际质量。",
+    "category": "routing",
+    "tags": "\"教程\", \"测速指南\", \"节点测试\"",
+    "firstPara": "在理解了 [低延迟为什么不等于高网速](/blog/low-latency-slow-speed) 之后，许多用户会问：既然 Ping 值不绝对靠谱，那我应该怎么测试一个[节点](/blog/what",
+    "headers": "1. 轻度测试：客户端内的 URL Test (延迟测试) | 2. 中度测试：使用 Speedtest 进行吞吐量测速 | 3. 重度测试：流媒体的“统计信息” (真实体验)"
+  },
+  "src/content/blog/poe-manage-chat.md": {
+    "originalTitle": "Poe聊天记录管理：如何删除和整理对话历史 - 机场猫",
+    "originalDesc": "介绍 Poe 平台聊天记录的管理方法：如何有效组织大量 Bot 对话列表，以及删除包含隐私信息的聊天记录的完整操作步骤。",
+    "category": "ai_official",
+    "tags": "Poe, 聊天管理, 隐私保护",
+    "firstPara": "在使用 Poe 的过程中，我们通常会与各种不同的 AI 机器人（Bots）产生大量的聊天记录。随着时间推移，对话列表可能会变得拥挤，或者包含一些涉及隐私的信息。今天就来教你如何有效地管理和彻底删除 P",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/proxy-not-working-troubleshooting-hub.md": {
+    "originalTitle": "代理连不上网怎么办？连接故障综合排查中心 - 机场猫",
+    "originalDesc": "代理配置完成但 Google 仍打不开？系统梳理代理连接失败的各类原因和对应排查方向，帮你从几十个可能的故障环节中精准定位问题所在。",
+    "category": "troubleshoot",
+    "tags": "\"排错\", \"网络故障\", \"代理连不上\", \"诊断导航\"",
+    "firstPara": "当您信心满满地配置好代理客户端，按下“开启”按钮，却发现 Google 依然打不开时，这无疑是最令人挫败的时刻。",
+    "headers": "症状一：完全获取不到[节点](/blog/what-is-node/)，列表是空的 | 症状二：测速全红，所有节点显示 Timeout (超时) | 症状三：只有部分网站打不开 (如能上 Google，打不开 Netflix)"
+  },
+  "src/content/blog/subscription-no-nodes.md": {
+    "originalTitle": "订阅链接导入后没有节点？空列表问题排查指南 - 机场猫",
+    "originalDesc": "解决新手常见问题：订阅链接复制进客户端后界面无反应或节点列表为空——逐步排查订阅格式错误、链接失效、客户端版本问题等常见原因。",
+    "category": "routing",
+    "tags": "\"教程\", \"网络排错\", \"订阅链接\", \"常见问题\"",
+    "firstPara": "对于刚接触网络代理的新手来说，把[订阅链接](/blog/what-is-subscription)复制进客户端并点击导入后，期待着看到一长串[节点](/blog/what-is-node/)列表，结",
+    "headers": "1. 检查订阅链接是否复制完整或正确 | 2. 检查套餐是否已经失效或过期 | 3. 检查本地网络连接是否正常"
+  },
+  "src/content/blog/tools-01.md": {
+    "originalTitle": "IP地址查询工具使用指南：查看当前出口IP - 机场猫",
+    "originalDesc": "介绍如何使用在线 IP 查询工具查看当前代理出口 IP 的归属地、运营商信息，验证节点是否真的在预期国家和地区生效。",
+    "category": "network",
+    "tags": "",
+    "firstPara": "提到代理核心工具，很多人首先想到的是早期的 Shadowsocks、v2ray-core 或 [Clash](/blog/mac-clash-verge-rev-guide/)。但随着新协议演进与轻量",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/tools-02.md": {
+    "originalTitle": "DNS泄漏检测工具使用方法：检查代理DNS设置 - 机场猫",
+    "originalDesc": "详细说明如何使用 DNS 泄漏检测工具判断代理是否正确接管 DNS 请求，避免真实 DNS 服务器暴露本地位置，以及发现泄漏后的修复方式。",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "在挑选代理工具时，很多用户都会纠结：既然 **[Clash](/blog/mac-clash-verge-rev-guide/)** 的生态已经如此成熟，为什么还要转向 **sing-box**？两者",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/tools-04.md": {
+    "originalTitle": "节点延迟测试工具：在线Ping测速与连通性检测 - 机场猫",
+    "originalDesc": "介绍在代理环境下测试节点延迟的在线工具和方法：从 Ping 测试到 HTTP 连通性检测，帮助快速判断当前节点的实际响应速度。",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "如果所有流量都不加区分地走代理，国内网站容易变慢且频触风控；如果全部直连，海外资源又无法访问。想要实现「国内直连、海外加速、广告拦截」，核心就在于 sing-box 的 `route` 模块及其分流规",
+    "headers": "基本概念 | 进一步理解：规则的核心机制与匹配维度 | 实际应用"
+  },
+  "src/content/blog/top-4-recommended-airports.md": {
+    "originalTitle": "2026最稳定4款机场推荐：晚高峰实测精选 - 机场猫",
+    "originalDesc": "综合日常稳定性、晚高峰测速、流媒体解锁和 AI 工具支持等多维度实测，精选推荐当前体验最稳的 4 家机场服务商，包含详细的选择建议。",
+    "category": "review_archive",
+    "tags": "",
+    "firstPara": "选[机场](/blog/what-is-airport-proxy/)最怕晚高峰卡顿和频繁断连。综合日常稳定性、晚高峰[测速](/blog/low-latency-slow-speed/)、流媒体解锁",
+    "headers": "🥇 Top 1：微风网络 (Breeze) | 🥈 Top 2：飞猫云 | 🥉 Top 3：sogo云"
+  },
+  "src/content/blog/adv-08.md": {
+    "originalTitle": "专线网络的真正含义：物理隔离与独享带宽解析 - 机场猫",
+    "originalDesc": "本文详细探讨了关于专线网络的真正含义的实际应用场景，包括基本概念",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "在网络服务中，「[专线](/blog/iplc-iepl-bgp-explained/)」常被当成稳定低延迟的代名词，但它的真正技术定义是运营商为特定客户单独划拨或物理隔离的专属通信链路。与成千上万普",
+    "headers": "基本概念 | 进一步理解：专线的核心特征 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-15.md": {
+    "originalTitle": "带宽与吞吐量的区别：为什么千兆宽带却下载很慢 - 机场猫",
+    "originalDesc": "本文详细探讨了关于带宽与吞吐量的区别的实际应用场景，包括基本概念",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "很多用户办理了千兆宽带，下载某些海外资源时却依然只有几百 KB/s，原因就在于混淆了「带宽」与「实际吞吐量」。带宽（Bandwidth）代表的是网络管道的理论最大承载能力，而吞吐量（Throughpu",
+    "headers": "基本概念 | 进一步理解：理想与现实的差距 | 常见类型 / 单位换算误区"
+  },
+  "src/content/blog/adv-17.md": {
+    "originalTitle": "晚高峰网络为什么变慢？PON共享带宽原理解析 - 机场猫",
+    "originalDesc": "本文详细探讨了关于晚高峰网络为什么变慢？PON共享带宽原理解析 - 机场猫的实际应用场景，包括基本概念：理解“网络晚高峰”",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "白天[测速](/blog/how-to-test-node-speed/)能轻松跑满几百兆，一到每晚 8 点至 11 点就频繁转圈、延迟飙升——这种「晚高峰网络变慢」是公网共享机制的必然结果。其根本原",
+    "headers": "基本概念：理解“网络晚高峰” | 进一步理解：网络变慢的深层原因 | 常见误区"
+  },
+  "src/content/blog/adv-21.md": {
+    "originalTitle": "原生IP是什么？注册地与物理机房一致才算原生 - 机场猫",
+    "originalDesc": "本文详细探讨了关于原生IP是什么？注册地与物理机房一致才算原生 - 机场猫的实际应用场景，包括基本概念",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "选购境外 VPS 或[节点](/blog/what-is-node/)时，商家常把「原生 IP（Native IP）」当作核心卖点加价。所谓原生 IP，指的是该 IP 地址的注册机构（Whois 注册",
+    "headers": "基本概念 | 进一步理解 | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-22.md": {
+    "originalTitle": "独享IP与共享IP有什么区别？哪个更适合你 - 机场猫",
+    "originalDesc": "本文详细探讨了关于独享IP与共享IP有什么区别？哪个更适合你 - 机场猫的实际应用场景，包括基本概念",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "购买网络代理或云服务器时，「独享 IP」的价格通常是「共享 IP」的数倍。共享 IP 是指成百上千名用户共用同一个公网出口 IP，极易因为「邻居」的滥用行为（如批量群发、爬虫触发风控）导致整个 IP ",
+    "headers": "基本概念 | 进一步理解：它们是如何工作的？ | 常见类型 / 分类"
+  },
+  "src/content/blog/adv-25.md": {
+    "originalTitle": "如何看穿机场营销话术？专线术语避坑完整指南 - 机场猫",
+    "originalDesc": "本文详细探讨了关于如何看穿机场营销话术？专线术语避坑完整指南 - 机场猫的实际应用场景，包括基本概念",
+    "category": "routing",
+    "tags": "",
+    "firstPara": "挑选 VPS 或网络代理服务时，商家往往会堆砌「家宽原生 IP」、「IPLC 优质[专线](/blog/iplc-iepl-bgp-explained/)」、「三网 BGP 入口」等各种高大上的专业术",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/ai-drama-11-tools.md": {
+    "originalTitle": "剧本创作与分镜工具 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于剧本创作与分镜工具 - 机场猫的实际应用场景，包括1. 剧本创作与分镜工具",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "想要制作一部 AI 短剧，选择合适的工具是第一步。当前的 AI 短剧制作流程通常被拆分为多个环节，每个环节都有其对应的专业工具。",
+    "headers": "1. 剧本创作与分镜工具 | 2. 画面与视频生成工具 (创作端核心) | 3. 声音处理工具（配音与配乐）"
+  },
+  "src/content/blog/ai-drama-12-tool-jimeng.md": {
+    "originalTitle": "核心功能：图片与视频生成 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心功能的实际应用场景，包括核心功能：图片与视频生成",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "在 AI 创作工具箱中，**即梦 AI (Jimeng)** 是国内较受关注的视觉创作平台之一。它不仅支持高质量的文本生成图片，还支持文本/图片生成视频功能，非常适合国内创作者用来制作 AI 短剧素材",
+    "headers": "核心功能：图片与视频生成 | 创作建议 | 相关文章"
+  },
+  "src/content/blog/ai-drama-15-full-case.md": {
+    "originalTitle": "阶段一：剧本与分镜设计 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于阶段一的实际应用场景，包括阶段一：剧本与分镜设计",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "了解了众多理论和工具之后，我们将通过一个微型实战案例，带你梳理一部 AI 短剧从 0 到 1 的全过程。",
+    "headers": "阶段一：剧本与分镜设计 | 阶段二：画面生成 (作图) | 阶段三：视频生成 (让图片动起来)"
+  },
+  "src/content/blog/ai-image-04.md": {
+    "originalTitle": "ai image - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于ai image - 机场猫的实际应用场景，包括方案一：使用 Midjourney 的角色参考 (--cref)",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "在制作小说推文、连环画或是品牌虚拟代言人时，最大的痛点就是：**AI 每次生成的脸都不一样**。上一秒还是瓜子脸，下一秒就变圆脸了。",
+    "headers": "方案一：使用 Midjourney 的角色参考 (--cref) | 方案二：给人物“起个特殊的名字” | 方案三：后期换脸法"
+  },
+  "src/content/blog/ai-image-07.md": {
+    "originalTitle": "博客封面图的三大要素 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于博客封面图的三大要素 - 机场猫的实际应用场景，包括博客封面图的三大要素",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "无论是写个人博客、公众号文章还是知乎专栏，一张好看的封面图能极大提升点击率。如果你厌倦了千篇一律的免费图库，用 AI 定制封面图绝对是你的较佳选择。",
+    "headers": "博客封面图的三大要素 | 常用封面风格与提示词公式 | 制作流程建议"
+  },
+  "src/content/blog/ai-network-01-connection-issue.md": {
+    "originalTitle": "第一步：检查本地网络 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于第一步的实际应用场景，包括第一步：检查本地网络",
+    "category": "ai_network",
+    "tags": "网络排障, AI教程, 网络连接",
+    "firstPara": "随着人工智能工具的普及，无论是 ChatGPT、Claude 还是 Midjourney，在日常使用中，很多人都曾遇到过“AI 工具连接不上”、“页面打不开”或“加载缓慢”等问题。这些连接问题往往由多",
+    "headers": "第一步：检查本地网络 | 第二步：检查浏览器 | 第三步：检查 DNS"
+  },
+  "src/content/blog/ai-network-02-client-config.md": {
+    "originalTitle": "客户端配置指南 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于客户端配置指南 - 机场猫的实际应用场景，包括什么是客户端？",
+    "category": "ai_network",
+    "tags": "客户端, 网络配置, AI教程",
+    "firstPara": "客户端（Client）在网络通信中，是相较于服务端（Server）而言的。简单来说，客户端就是安装在你设备（如电脑、手机）上的软件，它负责向网络上的服务器发送请求，并接收和展示服务器返回的数据。在访问",
+    "headers": "什么是客户端？ | 为什么 AI 工具可能需要网络客户端？ | 配置前需要准备什么？"
+  },
+  "src/content/blog/ai-network-10-client-rules.md": {
+    "originalTitle": "网络客户端分流规则 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于网络客户端分流规则 - 机场猫的实际应用场景，包括什么是网络客户端分流规则？",
+    "category": "ai_network",
+    "tags": "客户端配置, 代理规则, 网络知识",
+    "firstPara": "在配置网络连接以访问全球服务时，你可能经常听到“[分流规则](/blog/what-are-routing-rules/)”、“代理规则”等词汇。那么，什么是网络客户端规则？为什么它对访问 ChatG",
+    "headers": "什么是网络客户端分流规则？ | 规则是如何进行匹配的？ | 为什么规则对 AI 服务如此重要？"
+  },
+  "src/content/blog/ai-network-11-rtt-meaning.md": {
+    "originalTitle": "RTT - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于RTT - 机场猫的实际应用场景，包括什么是 RTT？",
+    "category": "ai_network",
+    "tags": "网络知识, 延迟, RTT",
+    "firstPara": "RTT 是 **Round Trip Time** 的缩写，中文全称是“往返时延”。简单来说，它衡量的是一个数据包从你的电脑出发，到达目标服务器，然后再返回到你的电脑所需要的总时间。",
+    "headers": "什么是 RTT？ | 为什么 AI 用户需要关注 RTT？ | 常见问题 (FAQ)"
+  },
+  "src/content/blog/ai-network-12-client-diff.md": {
+    "originalTitle": "浏览器配置指南 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于浏览器配置指南 - 机场猫的实际应用场景，包括什么是浏览器？",
+    "category": "ai_network",
+    "tags": "客户端配置, 基础概念, 网络工具",
+    "firstPara": "在接触海外 AI 服务（如 ChatGPT、Claude、Midjourney 等）的过程中，许多新手用户常常会对“网络客户端”和“浏览器”的概念感到混淆。这两者在我们的上网过程中都扮演着不可或缺的角",
+    "headers": "什么是浏览器？ | 什么是网络代理客户端？ | 为什么访问 AI 网站前必须先配置好客户端？"
+  },
+  "src/content/blog/ai-network-13-route-congestion.md": {
+    "originalTitle": "网络线路拥塞 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于网络线路拥塞 - 机场猫的实际应用场景，包括什么是网络线路拥塞？",
+    "category": "ai_network",
+    "tags": "网络拥塞, 网络线路, 稳定性排障",
+    "firstPara": "每当夜幕降临，尤其是晚上 8 点到 11 点的“晚高峰”时段，你是否发现自己的 AI 工具突然变得极其缓慢？发送一条指令要转圈半天，生成一半的文本突然断开，甚至直接提示“Network Error”。",
+    "headers": "什么是网络线路拥塞？ | 国际出口带宽瓶颈：为什么 AI 尤为严重？ | 遇到线路拥塞该怎么办？"
+  },
+  "src/content/blog/ai-network-14-client-import.md": {
+    "originalTitle": "配置文件导入 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于配置文件导入 - 机场猫的实际应用场景，包括什么是配置文件导入？",
+    "category": "ai_network",
+    "tags": "客户端配置, 新手入门, 网络教程",
+    "firstPara": "对于刚接触海外 AI 服务的用户，学习如何将配置文件正确导入到网络客户端中，是成功连接的第一步。今天就来为您详细讲解配置导入的原理和具体操作。",
+    "headers": "什么是配置文件导入？ | 配置文件从哪里来？ | 通用配置导入步骤"
+  },
+  "src/content/blog/ai-network-15-client-config-error.md": {
+    "originalTitle": "常见原因分析 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于常见原因分析 - 机场猫的实际应用场景，包括常见原因分析",
+    "category": "ai_network",
+    "tags": "客户端排障, 配置失败, 网络排查",
+    "firstPara": "在配置网络代理客户端时，最常遇到的问题之一就是“配置导入失败”或“订阅更新失败”。这类错误通常会导致客户端无法正常工作，从而影响我们访问 AI 服务或进行其他需要特定网络环境的活动。今天就来为您详细解",
+    "headers": "常见原因分析 | 排查与解决建议 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-20-clash-intro.md": {
+    "originalTitle": "Clash - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Clash - 机场猫的实际应用场景，包括什么是 Clash？",
+    "category": "ai_network",
+    "tags": "客户端配置, Clash教程, 新手入门",
+    "firstPara": "随着各类前沿 AI 工具（如 ChatGPT、Claude、Midjourney 等）的爆发，越来越多人开始接触海外网络环境。而在配置网络连接时，“[Clash](/blog/mac-clash-ve",
+    "headers": "什么是 Clash？ | 新手必读：四大核心概念解析 | AI 工具网络优化：为什么推荐使用“规则模式”？"
+  },
+  "src/content/blog/ai-network-21-node-status.md": {
+    "originalTitle": "在线与离线的基础定义 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于在线与离线的基础定义 - 机场猫的实际应用场景，包括在线与离线的基础定义",
+    "category": "ai_network",
+    "tags": "节点排查, 客户端配置, 网络排障",
+    "firstPara": "在使用各种网络代理客户端访问 ChatGPT、Claude 等 AI 网站时，我们经常会在软件界面上看到[节点](/blog/what-is-node/)的各种状态：有的显示“在线”，有的显示“离线”",
+    "headers": "在线与离线的基础定义 | 为什么显示在线却无法上网？ | 如何排查节点故障？"
+  },
+  "src/content/blog/ai-network-23-client-routing.md": {
+    "originalTitle": "智能分流（规则模式） - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于智能分流（规则模式） - 机场猫的实际应用场景，包括什么是智能分流（规则模式）？",
+    "category": "ai_network",
+    "tags": "客户端配置, 代理规则, 智能分流",
+    "firstPara": "在日常使用网络代理客户端（如 [Clash](/blog/mac-clash-verge-rev-guide/)、V2Ray 等）时，你可能会发现一个有趣的现象：当你访问百度、淘宝等国内网站时，网络速",
+    "headers": "什么是智能分流（规则模式）？ | 为什么国内网站不需要（也不应该）走代理？ | 为什么 ChatGPT 等 AI 网站必须走代理？"
+  },
+  "src/content/blog/ai-network-26-ai-server-load.md": {
+    "originalTitle": "AI 服务端高负载 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 服务端高负载 - 机场猫的实际应用场景，包括什么是 AI 服务端高负载？",
+    "category": "ai_network",
+    "tags": "服务器负载, 稳定性排障, AI报错",
+    "firstPara": "在使用 ChatGPT、Claude 等优质 AI 模型时，有时候明明自己的网络极度流畅，看 4K 视频也不卡顿，但 AI 就是经常报错或者中断生成。遇到这种情况，很可能是遇到了“服务端高负载”。今天",
+    "headers": "什么是 AI 服务端高负载？ | 网络不行 vs 平台崩了：如何分辨？ | 总结"
+  },
+  "src/content/blog/ai-network-27-browser-incognito.md": {
+    "originalTitle": "无痕模式 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于无痕模式 - 机场猫的实际应用场景，包括什么是无痕模式？",
+    "category": "ai_network",
+    "tags": "无痕模式, 浏览器排障, 网络排查",
+    "firstPara": "在访问海外 AI 网站（如 ChatGPT、Claude、Midjourney 等）时，我们偶尔会遇到打不开页面、无尽加载或是奇怪的网络报错。这时候，许多懂行的老手都会建议你：“先用浏览器的无痕模式试",
+    "headers": "什么是无痕模式？ | 如何利用无痕模式进行网络排障？ | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-28-route-check.md": {
+    "originalTitle": "“断流”现象 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于“断流”现象 - 机场猫的实际应用场景，包括什么是“断流”现象？",
+    "category": "ai_network",
+    "tags": "网络断流, 稳定性排障, 客户端排查",
+    "firstPara": "在日常使用 ChatGPT、Claude 等大语言模型时，你是否遇到过这种令人抓狂的情况：客户端明明显示“连接成功”，网络[测速](/blog/how-to-test-node-speed/)也有速度",
+    "headers": "什么是“断流”现象？ | 为什么会出现客户端“假在线”？ | 如何有效解决断流问题？"
+  },
+  "src/content/blog/ai-network-31-dns-slow.md": {
+    "originalTitle": "为什么 DNS ：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么 DNS 的实际应用场景，包括为什么 DNS 解析如此重要？",
+    "category": "ai_network",
+    "tags": "DNS延迟, 网络排障, 稳定性问题",
+    "firstPara": "在当今的高速网络时代，很多人发现自己拉了千兆宽带，但在访问各种 AI 平台或服务时，依然会遇到加载极慢、频繁报错、甚至直接打不开页面的情况。此时，问题往往不在于你的带宽，而在于一个经常被忽视的基础网络",
+    "headers": "为什么 DNS 解析如此重要？ | DNS 慢导致 AI 极度不稳定的具体表现 | 如何解决 DNS 延迟问题？"
+  },
+  "src/content/blog/ai-network-33-network-jitter.md": {
+    "originalTitle": "网络抖动（Jitter） - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于网络抖动（Jitter） - 机场猫的实际应用场景，包括什么是网络抖动（Jitter）？",
+    "category": "ai_network",
+    "tags": "网络抖动, 稳定性排障, 延迟排查",
+    "firstPara": "很多人在排查网络问题时，只盯着 Ping 值（延迟）。但有时你发现 Ping 只有 30ms，却依然卡顿甚至断流，这就涉及到了一个隐藏的杀手：**网络抖动（Jitter）**。",
+    "headers": "什么是网络抖动（Jitter）？ | 为什么网络抖动会摧毁 AI 使用体验？ | 如何解决网络抖动问题？"
+  },
+  "src/content/blog/ai-network-34-client-update.md": {
+    "originalTitle": "为什么节点信息会发生变化 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么节点信息会发生变化 - 机场猫的实际应用场景，包括为什么节点信息会发生变化？",
+    "category": "ai_network",
+    "tags": "节点维护, 客户端配置, 网络排障",
+    "firstPara": "在使用 AI 网络客户端时，许多用户经常会遇到这样一个问题：“昨天还能流畅访问的[节点](/blog/what-is-node/)，为什么今天就全部超时连接不上了？” 其实，这往往不是你的网络出了问题",
+    "headers": "为什么节点信息会发生变化？ | 客户端更新订阅的较佳实践 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-36-isp-throttle.md": {
+    "originalTitle": "QoS 限速 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于QoS 限速 - 机场猫的实际应用场景，包括什么是 QoS 限速？",
+    "category": "ai_network",
+    "tags": "网络限速, QoS, 稳定性排障",
+    "firstPara": "在访问 ChatGPT、Claude 或 Midjourney 等海外 AI 服务时，很多用户都会遇到一个令人困惑的现象：白天网络流畅、[测速](/blog/how-to-test-node-spee",
+    "headers": "什么是 QoS 限速？ | 为什么晚高峰跨国网络“惨不忍睹”？ | 运营商限速如何导致 AI 加载极度不稳定？"
+  },
+  "src/content/blog/ai-network-37-client-log.md": {
+    "originalTitle": "为什么要看运行日志 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么要看运行日志 - 机场猫的实际应用场景，包括为什么要看运行日志？",
+    "category": "ai_network",
+    "tags": "客户端排障, 日志分析, 进阶教程",
+    "firstPara": "在使用各种网络代理客户端访问 ChatGPT 或 Claude 时，如果网页突然打不开，很多新手的反应是“梯子坏了”或者“[节点](/blog/what-is-node/)挂了”。但实际上，网络连接是",
+    "headers": "为什么要看运行日志？ | 常见客户端日志报错与排查指南 | 总结"
+  },
+  "src/content/blog/ai-network-38-native-ip.md": {
+    "originalTitle": "原生 IP 与广播 IP - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于原生 IP 与广播 IP - 机场猫的实际应用场景，包括什么是原生 IP 与广播 IP？",
+    "category": "ai_network",
+    "tags": "原生IP, 封号防范, 网络知识",
+    "firstPara": "在探讨如何稳定访问 ChatGPT、Claude 等海外优质 AI 服务时，你一定会频繁听到一个词汇：“原生 IP”（Native IP）。许多新手因为不了解 IP 类型的差异，随便使用代理或[机场]",
+    "headers": "什么是原生 IP 与广播 IP？ | 为什么访问海外 AI 网站必须使用原生 IP？ | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-43-random-drop.md": {
+    "originalTitle": "现象：突发性的连接中断 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于现象的实际应用场景，包括现象：突发性的连接中断",
+    "category": "ai_network",
+    "tags": "断连排障, 偶尔掉线, 网络波动",
+    "firstPara": "在使用 ChatGPT、Claude 等海外 AI 服务时，你可能遇到过这样的情况：前一秒还在顺畅对话，下一秒网页突然白屏，或者一直转圈加载不出内容，刷新后甚至提示无法访问网站。这种偶尔打不开、网络“",
+    "headers": "现象：突发性的连接中断 | 深层原因分析 | 解决方案：追求高可用性"
+  },
+  "src/content/blog/ai-network-44-loading-forever.md": {
+    "originalTitle": "为什么会出现无限加载 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么会出现无限加载 - 机场猫的实际应用场景，包括为什么会出现无限加载？",
+    "category": "ai_network",
+    "tags": "加载慢, 网络排障, 白屏问题",
+    "firstPara": "当你尝试访问海外知名的 AI 网站（如 ChatGPT、Claude 等）时，是否遇到过页面一直转圈、白屏，或者加载条卡在 99% 就是进不去的情况？这种“无限加载”的体验非常折磨人。今天就来带你深入",
+    "headers": "为什么会出现无限加载？ | 如何解决加载进不去的问题？ | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-45-spin-forever.md": {
+    "originalTitle": "为什么会一直转圈 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么会一直转圈 - 机场猫的实际应用场景，包括为什么会一直转圈？",
+    "category": "ai_network",
+    "tags": "加载慢, 断流排查, 网络知识",
+    "firstPara": "相信很多用户在使用 ChatGPT 的时候，都遇到过这样的情况：把精心准备的 Prompt 发送出去，结果等了半天，网页上那个灰色的加载圈一直转个不停，最后只能无奈刷新页面重新输入。发出去的问题像石沉",
+    "headers": "为什么会一直转圈？ | 如何排查和解决问题？ | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-network-46-browser-cache.md": {
+    "originalTitle": "为什么要用无痕模式来测试 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么要用无痕模式来测试 - 机场猫的实际应用场景，包括为什么要用无痕模式来测试？",
+    "category": "ai_network",
+    "tags": "缓存问题, 浏览器排障, 基础教程",
+    "firstPara": "在访问各类 AI 网站时，经常会遇到网页卡在加载页面、显示空白或无限重定向的情况。很多人的第一反应是：“是不是我的[节点](/blog/what-is-node/)坏了？”于是疯狂切换节点，结果还是打",
+    "headers": "为什么要用无痕模式来测试？ | 排查步骤：一分钟锁定问题根源 | 总结"
+  },
+  "src/content/blog/ai-network-48-client-dns.md": {
+    "originalTitle": "系统 DNS - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于系统 DNS - 机场猫的实际应用场景，包括什么是系统 DNS？",
+    "category": "ai_network",
+    "tags": "客户端配置, DNS知识, 进阶教程",
+    "firstPara": "在使用各种网络代理客户端（如 [Clash](/blog/mac-clash-verge-rev-guide/)、v2rayN 等）时，你可能会注意到软件内部也有复杂的 DNS 设置。这让很多人感到困",
+    "headers": "什么是系统 DNS？ | 什么是客户端 DNS？ | 系统 DNS 和客户端 DNS 的核心区别"
+  },
+  "src/content/blog/ai-network-49-node-status.md": {
+    "originalTitle": "客户端如何测试节点可用性 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于客户端如何测试节点可用性 - 机场猫的实际应用场景，包括客户端如何测试节点可用性？",
+    "category": "ai_network",
+    "tags": "客户端配置, 节点维护, 线路排查",
+    "firstPara": "在使用各类网络客户端（如 v2rayN、[Clash](/blog/mac-clash-verge-rev-guide/) 等）时，你可能会注意到[节点](/blog/what-is-node/)列表",
+    "headers": "客户端如何测试节点可用性？ | 为什么节点会变成“离线”状态？ | 节点在线率：检验服务商运维质量的试金石"
+  },
+  "src/content/blog/ai-network-50-what-is-client.md": {
+    "originalTitle": "网络代理客户端 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于网络代理客户端 - 机场猫的实际应用场景，包括什么是网络代理客户端？",
+    "category": "ai_network",
+    "tags": "客户端科普, 基础概念, 新手必读",
+    "firstPara": "在接触 AI 网络连接、国际网络加速或者阅读各种教程时，你一定经常看到“客户端”、“[Clash](/blog/mac-clash-verge-rev-guide/)”、“v2rayN”等词汇。如果你",
+    "headers": "什么是网络代理客户端？ | 为什么你需要代理客户端？ | 常见的代理客户端有哪些？"
+  },
+  "src/content/blog/ai-network-52-client-config-file.md": {
+    "originalTitle": "一、配置文件究竟 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于一、配置文件究竟 - 机场猫的实际应用场景，包括一、配置文件究竟是什么？",
+    "category": "ai_network",
+    "tags": "客户端配置, 订阅文件, 新手进阶",
+    "firstPara": "当我们使用网络代理工具（如 [Clash](/blog/mac-clash-verge-rev-guide/)、v2rayN 或 Surge）时，通常只需要导入一串“订阅链接”就可以开始使用了。但是，",
+    "headers": "一、配置文件究竟是什么？ | 二、Proxies：节点列表 | 三、Proxy Groups：策略组"
+  },
+  "src/content/blog/ai-network-53-import-failed.md": {
+    "originalTitle": "订阅链接被屏蔽或网络不通 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于订阅链接被屏蔽或网络不通 - 机场猫的实际应用场景，包括订阅链接被屏蔽或网络不通",
+    "category": "ai_network",
+    "tags": "客户端排障, 订阅失败, 配置问题",
+    "firstPara": "在刚购买了新的网络代理服务（如[机场](/blog/what-is-airport-proxy/)订阅）后，很多用户第一步需要做的事情就是将配置文件导入到客户端中。然而，有时你会遇到“导入报错”或“配",
+    "headers": "订阅链接被屏蔽或网络不通 | 客户端版本过低 | 配置文件格式不兼容"
+  },
+  "src/content/blog/ai-network-54-speed-varies.md": {
+    "originalTitle": "现象：过山车般的网络体验 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于现象的实际应用场景，包括现象：过山车般的网络体验",
+    "category": "ai_network",
+    "tags": "不稳定排查, 晚高峰, 体验波动",
+    "firstPara": "很多用户在使用 ChatGPT、Claude、Midjourney 等海外 AI 工具时，常常会遇到这样的情况：上午或下午网络非常顺畅，对话秒回，图片生成速度极快；但一到了晚上 8 点到 11 点，情",
+    "headers": "现象：过山车般的网络体验 | 核心原因：公共国际链路的“晚高峰拥堵” | 如何解决：告别公共链路，转向专线服务"
+  },
+  "src/content/blog/ai-network-56-packet-loss.md": {
+    "originalTitle": "什么是网络丢包？丢包如何影响AI工具使用体验 - 机场猫",
+    "originalDesc": "解析网络丢包（Packet Loss）的原理和对 ChatGPT 等 AI 工具的影响：为何丢包会导致 AI 回答中断或加载失败，以及如何通过节点选择降低丢包率。",
+    "category": "ai_network",
+    "tags": "丢包排查, 加载慢, 网络科普",
+    "firstPara": "当我们使用 ChatGPT、Claude 或 Midjourney 等海外 AI 工具时，经常会遇到网页加载缓慢、对话卡顿甚至完全无法打开的情况。很多人第一反应是“是不是延迟太高了？”然而，比高延迟更",
+    "headers": "什么是网络丢包（Packet Loss）？ | 为什么丢包会让 AI 工具加载极其缓慢？ | 5% 的丢包率意味着什么？"
+  },
+  "src/content/blog/ai-network-57-network-path.md": {
+    "originalTitle": "网络路由 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于网络路由 - 机场猫的实际应用场景，包括什么是网络路由？",
+    "category": "ai_network",
+    "tags": "网络线路, 体验差异, 进阶科普",
+    "firstPara": "在使用各类网络加速服务访问 ChatGPT、Claude 等海外 AI 网站时，你可能遇到过这样的困惑：明明都是标明了“美国[节点](/blog/what-is-node/)”，为什么有的节点网页秒开",
+    "headers": "什么是网络路由？ | 优质线路的价值所在 | 为什么 BGP 路由与中转机房很重要？"
+  },
+  "src/content/blog/ai-prompt-61.md": {
+    "originalTitle": "Prompt - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Prompt - 机场猫的实际应用场景，包括什么是 Prompt？",
+    "category": "ai_usage",
+    "tags": "",
+    "firstPara": "自从 ChatGPT 火了之后，网上到处都是一个英文单词：**Prompt**。",
+    "headers": "什么是 Prompt？ | 为什么 Prompt 这么重要？ | 提示词工程 (Prompt Engineering) 又是什么？"
+  },
+  "src/content/blog/ai-prompt-63.md": {
+    "originalTitle": "误区一：指令太短、太模糊 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于误区一的实际应用场景，包括误区一：指令太短、太模糊",
+    "category": "ai_usage",
+    "tags": "",
+    "firstPara": "你满怀期待地打开 ChatGPT 或文心一言，输入一句话：“帮我写个请假条”，结果它给你洋洋洒洒写了八百字，文风还像个古代官员上奏折。你可能会觉得：“这 AI 怎么跟个智障一样？”",
+    "headers": "误区一：指令太短、太模糊 | 误区二：一句话塞了太多任务 | 误区三：没有限制“不该做什么”"
+  },
+  "src/content/blog/ai-prompt-64.md": {
+    "originalTitle": "ai prompt - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于ai prompt - 机场猫的实际应用场景，包括万能 Prompt 公式：角色 + 背景 + 任务 + 要求 + 输出格式",
+    "category": "ai_usage",
+    "tags": "",
+    "firstPara": "每次看到别人用 AI 写出惊艳的文章、做出漂亮的数据表，自己去试的时候，AI 却总是答非所问？这通常是因为你的 Prompt（提示词）缺少了关键信息。",
+    "headers": "万能 Prompt 公式：角色 + 背景 + 任务 + 要求 + 输出格式 | 把公式拼起来：一个完整的优秀案例 | 总结"
+  },
+  "src/content/blog/ai-site-31.md": {
+    "originalTitle": "ai site - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于ai site - 机场猫的实际应用场景，包括方案一：使用专用的 AI 建站平台（最简单，推荐新手）",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "在过去，建立一个网站需要懂 HTML、CSS、JavaScript，或者至少得花几天时间去摸索复杂的 WordPress 后台。而现在，随着 AI 技术的普及，只要你会打字，会提需求，就能在几十分钟内",
+    "headers": "方案一：使用专用的 AI 建站平台（最简单，推荐新手） | 方案二：大模型 + 可视化编辑器（更高自由度） | 注意事项：不要盲目追求功能"
+  },
+  "src/content/blog/ai-site-36.md": {
+    "originalTitle": "前期准备：选择合适的工具 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于前期准备的实际应用场景，包括前期准备：选择合适的工具",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "你可能已经有一个通过模板搭建好的博客，或者是一个企业官网，但想要修改里面的一段文字颜色、调整一下图片位置，甚至想加一个“回到顶部”的按钮，却因为不懂代码无从下手。",
+    "headers": "前期准备：选择合适的工具 | 零基础修改网站的三步法 | 常见坑点与注意事项"
+  },
+  "src/content/blog/ai-site-39.md": {
+    "originalTitle": "准备工作 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于准备工作 - 机场猫的实际应用场景，包括准备工作",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "做网站最让人抓狂的时刻是什么？——“为什么这个按钮点不动？”、“为什么手机上看文字全挤在一起了？”",
+    "headers": "准备工作 | 排查 Bug 的三板斧 | 常见排坑"
+  },
+  "src/content/blog/ai-study-03-notes.md": {
+    "originalTitle": "课堂笔记的“灾难现场” - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于课堂笔记的“灾难现场” - 机场猫的实际应用场景，包括课堂笔记的“灾难现场”",
+    "category": "ai_work",
+    "tags": "整理笔记, 学习技巧, 知识管理",
+    "firstPara": "无论是在大学课堂还是在公司培训中，我们经常遇到这样的情况：台上讲得飞快，台下奋笔疾书。可是课后回头看自己的笔记，常常是字迹潦草、逻辑混乱、重点不清，有些地方甚至连自己都看不懂写了什么。",
+    "headers": "课堂笔记的“灾难现场” | 让 AI 成为你的专属“知识整理大师” | 实战指令参考（Prompt）"
+  },
+  "src/content/blog/ai-study-06-mistakes.md": {
+    "originalTitle": "告别手抄，一键录入错题 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于告别手抄，一键录入错题 - 机场猫的实际应用场景，包括告别手抄，一键录入错题",
+    "category": "ai_work",
+    "tags": "错题整理, 举一反三, 学习复盘",
+    "firstPara": "无论是学生党备考，还是职场人考证，“错题本”都是不可或缺的学习利器。然而，传统的错题本整理起来费时费力，手抄题目不仅枯燥，还容易陷入“只抄不练”的伪努力陷阱。",
+    "headers": "告别手抄，一键录入错题 | 深度剖析，找出错误根源 | 举一反三，生成变式题巩固"
+  },
+  "src/content/blog/ai-tools-03-gemini.md": {
+    "originalTitle": "Gemini - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Gemini - 机场猫的实际应用场景，包括Gemini 是什么？",
+    "category": "ai_tools",
+    "tags": "Gemini, AI教程, 网络工具",
+    "firstPara": "Gemini 是由 Google 推出的一款强大的人工智能助手。它基于 Google 先进的大型语言模型，能够理解和处理文本、代码、图像、音频等多种形式的信息。无论您是需要日常助手、创意写作伙伴，还是",
+    "headers": "Gemini 是什么？ | Gemini 怎么开始使用？ | Gemini 可以用来做什么？"
+  },
+  "src/content/blog/ai-tools-06-chatgpt-ask-correctly.md": {
+    "originalTitle": "坏提示词 vs 好提示词 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于坏提示词 vs 好提示词 - 机场猫的实际应用场景，包括坏提示词 vs 好提示词",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提问技巧, Prompt",
+    "firstPara": "在使用 ChatGPT 时，很多人会觉得它的回答“不够好”或者“不是我想要的”。其实，这往往是因为提问的方式不对。向 AI 提问就像是向一位新员工布置任务，你给的信息越明确，它交出的答卷就越漂亮。",
+    "headers": "坏提示词 vs 好提示词 | 提问万能公式：任务 + 背景 + 输出格式 | 复杂长提示词与网络连接"
+  },
+  "src/content/blog/ai-tools-07-chatgpt-follow-up.md": {
+    "originalTitle": "上下文记忆 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于上下文记忆 - 机场猫的实际应用场景，包括什么是上下文记忆？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提问技巧, 对话进阶",
+    "firstPara": "很多人在使用 ChatGPT 时，往往习惯于“一问一答”的模式。如果 ChatGPT 给出的第一个答案不尽如人意，就会认为 AI “不够聪明”。实际上，ChatGPT 最大的优势之一就是其强大的**上",
+    "headers": "什么是上下文记忆？ | 追问的实用技巧与示例 | 网络连通性对长对话的影响"
+  },
+  "src/content/blog/ai-tools-14-gemini-ask.md": {
+    "originalTitle": "提问的核心公式 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于提问的核心公式 - 机场猫的实际应用场景，包括提问的核心公式",
+    "category": "ai_tools",
+    "tags": "Gemini, Prompt, 提问公式",
+    "firstPara": "想要让 Google Gemini 给出精准、有用的回答，掌握提问的技巧至关重要。很多人抱怨 AI 给出的答案“太虚”或者“不相关”，往往是因为没有提供足够的上下文。今天就来为你拆解向 Gemini ",
+    "headers": "提问的核心公式 | 实用场景与案例 | 提升 Gemini 回答质量的小技巧"
+  },
+  "src/content/blog/ai-tools-19-claude-pdf.md": {
+    "originalTitle": "Claude读取PDF和长文档：超长文本处理技巧 - 机场猫",
+    "originalDesc": "介绍 Claude 处理 PDF 和长文档的能力：比较 Claude 与 ChatGPT 在长文本处理上的差异，以及如何引导 Claude 从长篇资料中提炼所需信息。",
+    "category": "ai_tools",
+    "tags": "Claude, PDF分析, 长文本处理",
+    "firstPara": "在当今的 AI 领域，处理长文本已经成为了各大语言模型比拼的关键能力。而 Claude（尤其是 Claude 3 家族系列）凭借其超大的上下文窗口优势，在长文档分析、特别是长篇 PDF 阅读方面，表现",
+    "headers": "为什么选择 Claude 分析长文档？ | 如何高效向 Claude 提问（Prompt 技巧） | 注意事项：网络连通性与上传问题"
+  },
+  "src/content/blog/ai-tools-26-claude-long-text.md": {
+    "originalTitle": "发挥超长上下文窗口的潜力 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于发挥超长上下文窗口的潜力 - 机场猫的实际应用场景，包括发挥超长上下文窗口的潜力",
+    "category": "ai_tools",
+    "tags": "Claude, 效率工具, 资料整理",
+    "firstPara": "在当今的信息爆炸时代，我们每天都会接收到海量的信息。如何高效地整理和消化这些碎片化的资料，成为了提升工作效率的关键。作为一款以“超长上下文窗口”闻名的 AI 语言模型，Claude 无疑是我们处理大量",
+    "headers": "发挥超长上下文窗口的潜力 | Claude 如何在海量文本中保持上下文 | 网络环境对长文本处理的影响"
+  },
+  "src/content/blog/ai-tools-33-chatgpt-compare.md": {
+    "originalTitle": "准备与上传文件 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于准备与上传文件 - 机场猫的实际应用场景，包括准备与上传文件",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 文件处理, 效率提升",
+    "firstPara": "在日常工作与学习中，我们经常需要对比两份文件的内容，例如修改前后的合同条款、两个版本的代码或者两份财务报表。如果人工逐字核对，不仅费时费力，还容易遗漏。幸运的是，ChatGPT 强大的文件处理能力可以",
+    "headers": "准备与上传文件 | 编写高效的对比提示词 (Prompt) | 网络连接注意事项"
+  },
+  "src/content/blog/ai-tools-34-chatgpt-table.md": {
+    "originalTitle": "一、 上传与读取表格文件 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于一、 上传与读取表格文件 - 机场猫的实际应用场景，包括一、 上传与读取表格文件",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 数据分析, 职场技能",
+    "firstPara": "在日常办公中，我们经常需要处理大量的表格数据。过去，这需要熟练掌握 Excel 函数或 Python 编程。现在，借助 ChatGPT 的高级数据分析（Advanced Data Analysis）功",
+    "headers": "一、 上传与读取表格文件 | 二、 提取规律与计算指标 | 三、 生成总结报告与可视化"
+  },
+  "src/content/blog/ai-tools-41-chatgpt-gpts.md": {
+    "originalTitle": "ChatGPT GPTs - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于ChatGPT GPTs - 机场猫的实际应用场景，包括什么是 ChatGPT GPTs？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, GPTs, 效率工具",
+    "firstPara": "如果你觉得自己写出来的 Prompt 总是差点意思，或者每次都要重复输入长串背景信息，那么 **GPTs（自定义 GPT）** 就是为你量身定制的功能。GPTs 是 OpenAI 推出的一种定制化 C",
+    "headers": "什么是 ChatGPT GPTs？ | 如何在 GPT 商店中寻找并使用 GPTs？ | 注意事项：网络代理与外部 API"
+  },
+  "src/content/blog/ai-tools-44-chatgpt-math.md": {
+    "originalTitle": "ChatGPT解数学题：数学问题正确提问方法 - 机场猫",
+    "originalDesc": "介绍如何用 ChatGPT 解决数学问题：通过要求 AI 分步骤展示解题过程（Chain of Thought），减少直觉错误，以及对 ChatGPT 数学能力的准确预期。",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 数学解题, 学习辅导",
+    "firstPara": "近年来，AI 技术的突飞猛进让人惊叹，特别是 ChatGPT 这一类大型语言模型，已经成为了许多人日常生活和工作中的得力助手。不过，很多家长和学生可能会问：**ChatGPT 的数学解题能力究竟怎么样",
+    "headers": "算术与基础代数：零失误的“计算器” | 几何与逻辑推理：理解力惊人 | 高等数学与微积分：大学生的好帮手"
+  },
+  "src/content/blog/ai-tools-46-claude-api.md": {
+    "originalTitle": "API - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于API - 机场猫的实际应用场景，包括什么是 API？",
+    "category": "ai_tools",
+    "tags": "Claude, API教程, 进阶知识",
+    "firstPara": "随着人工智能技术的普及，越来越多的人开始接触并使用 Claude 等 AI 工具。但在交流讨论中，你可能会经常听到“API”、“API 密钥”这样的词汇。什么是 Claude API？它和我们平时用的",
+    "headers": "什么是 API？ | 网页版和 API 版有什么区别？ | 普通人能用 API 吗？如何使用？"
+  },
+  "src/content/blog/ai-tools-54-chatgpt-followup.md": {
+    "originalTitle": "为什么要利用上下文追问 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么要利用上下文追问 - 机场猫的实际应用场景，包括为什么要利用上下文追问？",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提示词技巧, 效率提升",
+    "firstPara": "很多人在使用 ChatGPT 时都有一个习惯：问完一个问题，得到回答后，如果想了解更多，就又去开启一个新的对话。其实，这完全没有必要！ChatGPT 强大的能力之一就是能够记住当前对话的**上下文（C",
+    "headers": "为什么要利用上下文追问？ | 常见的追问技巧与示例 | FAQ：关于 ChatGPT 追问的常见问题"
+  },
+  "src/content/blog/ai-tools-57-chatgpt-concise.md": {
+    "originalTitle": "技巧一：明确限制字数 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于技巧一的实际应用场景，包括技巧一：明确限制字数",
+    "category": "ai_tools",
+    "tags": "ChatGPT, 提示词优化, 效率提升",
+    "firstPara": "你是否受够了 ChatGPT 每次回答问题时都要加上冗长的开头和“总而言之”之类的结尾？这些套话不仅浪费时间，还让内容充满了“AI 感”。如果你想让 ChatGPT 只输出最核心的干货，今天就来教你几",
+    "headers": "技巧一：明确限制字数 | 技巧二：禁止使用客套话 | 技巧三：挤掉水分，只要干货"
+  },
+  "src/content/blog/ai-tools-66-claude-mistakes.md": {
+    "originalTitle": "提示词过于简略或模糊 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于提示词过于简略或模糊 - 机场猫的实际应用场景，包括1. 提示词过于简略或模糊",
+    "category": "ai_tools",
+    "tags": "Claude, 避坑指南, 提示词工程",
+    "firstPara": "很多人初次接触 Claude，可能会觉得“不够惊艳”或者“总是答非所问”。其实，Claude 是一款逻辑推理能力极强、非常适合处理长文本和复杂任务的 AI 模型，如果你觉得它不好用，很可能是不小心踩中",
+    "headers": "1. 提示词过于简略或模糊 | 2. 忽略 XML 标签的强大结构化能力 | 3. 低效消耗上下文窗口"
+  },
+  "src/content/blog/ai-tools-68-claude-format.md": {
+    "originalTitle": "为什么需要结构化输出 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么需要结构化输出 - 机场猫的实际应用场景，包括为什么需要结构化输出？",
+    "category": "ai_tools",
+    "tags": "Claude, 结构化输出, 效率工具",
+    "firstPara": "在日常使用 AI 的过程中，我们不仅希望 Claude 能给出自然语言的回答，更希望它能输出直接可用、可以直接复制到 Excel、代码或数据库中的结构化数据。将 Claude 作为一个“数据清洗”或“",
+    "headers": "为什么需要结构化输出？ | 核心技巧：明确指令与限定标签 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-tools-69-claude-few-shot.md": {
+    "originalTitle": "Few-Shot - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Few-Shot - 机场猫的实际应用场景，包括什么是 Few-Shot？",
+    "category": "ai_tools",
+    "tags": "Claude, 提示词技巧, Few-Shot",
+    "firstPara": "在使用 Claude 这样的强大 AI 时，你是否经常遇到这样的情况：虽然你已经描述得很清楚，但 AI 生成的内容总是差了那么一点点“味道”？这时候，你就需要用到 **Few-Shot（少样本提示）*",
+    "headers": "什么是 Few-Shot？ | 为什么 Few-Shot 对 Claude 特别有效？ | 实战演练：如何给 Claude 写 Few-Shot 提示词？"
+  },
+  "src/content/blog/ai-tools-72-claude-complex-task.md": {
+    "originalTitle": "为什么要拆解长篇写作任务 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么要拆解长篇写作任务 - 机场猫的实际应用场景，包括为什么要拆解长篇写作任务？",
+    "category": "ai_tools",
+    "tags": "Claude, 长文写作, 任务拆解",
+    "firstPara": "很多人以为只要对着 AI 说一句“帮我写一篇 5000 字的深度长文”，就能立刻得到完美的成品。但事实是，包括 Claude 在内的大语言模型，在面对过度庞大且模糊的任务时，往往会输出结构松散、内容空",
+    "headers": "为什么要拆解长篇写作任务？ | 第一步：构建骨架，输出高质量大纲 | 第二步：分段击破，逐节撰写初稿"
+  },
+  "src/content/blog/ai-tools-82-gemini-upload.md": {
+    "originalTitle": "方法一：直接上传本地文件 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于方法一的实际应用场景，包括方法一：直接上传本地文件",
+    "category": "ai_tools",
+    "tags": "Gemini, 文件处理, Google Workspace",
+    "firstPara": "随着 AI 技术的不断迭代，Google 旗下的 Gemini 已经具备了强大的多模态（Multimodal）处理能力。除了常规的文字对话，你还可以直接让它帮你阅读、分析和总结各种格式的文件。",
+    "headers": "方法一：直接上传本地文件 | 方法二：使用 @Google Drive 扩展直接读取云端文件 | 常见问题解答 (FAQ)"
+  },
+  "src/content/blog/ai-tools-85-gemini-format.md": {
+    "originalTitle": "技巧一：明确指定输出格式 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于技巧一的实际应用场景，包括技巧一：明确指定输出格式",
+    "category": "ai_tools",
+    "tags": "Gemini, 结构化输出, 效率工具",
+    "firstPara": "在日常使用 AI 的过程中，你是否也遇到过这种情况：AI 给出的回答全是一大段密密麻麻的文字，找重点找得眼花缭乱？其实，要想让 Gemini 输出整齐易读的结果，只需要在提问时加一句话即可。",
+    "headers": "技巧一：明确指定输出格式 | 技巧二：Gemini 杀手锏——一键导出 Google Sheets | 总结"
+  },
+  "src/content/blog/ai-video-11.md": {
+    "originalTitle": "核心区别对比 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于核心区别对比 - 机场猫的实际应用场景，包括核心区别对比",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "刚接触 AI 视频的新手，打开像 Runway 或 Kling 这样的工具时，通常会面临两个选项：**Text to Video（文本生成视频，简称 T2V）** 和 **Image to Video",
+    "headers": "核心区别对比 | 深入解析：何时该用 Text to Video (文生视频)？ | 深入解析：何时该用 Image to Video (图生视频)？"
+  },
+  "src/content/blog/ai-video-21-hongguo-short-drama.md": {
+    "originalTitle": "AI 短剧 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 短剧 - 机场猫的实际应用场景，包括什么是 AI 短剧？",
+    "category": "ai_media",
+    "tags": "",
+    "firstPara": "如果你最近关注过国内的下沉娱乐市场，一定会听到一个名字——**红果短剧**（字节跳动旗下的免费短剧 App）。它凭借“看剧免费还能赚钱”的模式，迅速成为了目前国内最流行的短剧平台。",
+    "headers": "什么是 AI 短剧？ | 为什么选择红果短剧？ | AI 短剧实操工作流"
+  },
+  "src/content/blog/ai-work-03-meeting.md": {
+    "originalTitle": "⚠️ 重要安全提醒 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于⚠️ 重要安全提醒 - 机场猫的实际应用场景，包括⚠️ 重要安全提醒",
+    "category": "ai_work",
+    "tags": "会议记录, 效率提升, 办公神器",
+    "firstPara": "开完一小时的会，还要花两小时写纪要？在职场中，会议是不可避免的环节，但整理会议记录却常常让人头疼。现在，我们可以利用 AI 工具，将这项耗时的工作轻松化解。今天就来教你如何利用 AI 从杂乱的语音转文",
+    "headers": "⚠️ 重要安全提醒 | 场景：一小时会议，三分钟搞定纪要 | 网络环境注意事项"
+  },
+  "src/content/blog/ai-work-07-meeting-prep.md": {
+    "originalTitle": "为什么跨部门汇报这么难 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么跨部门汇报这么难 - 机场猫的实际应用场景，包括为什么跨部门汇报这么难？",
+    "category": "ai_work",
+    "tags": "会议准备, 向上管理, 职场进阶",
+    "firstPara": "在职场中，跨部门会议或向上汇报往往是最让人头疼的环节。你的听众可能是对业务细节不太了解的高管，也可能是关注点截然不同的其他部门同事。如何确保你的方案不仅逻辑严密，还能经得起各方视角的审视？今天我们就来",
+    "headers": "为什么跨部门汇报这么难？ | 让 AI 扮演“挑剔的高管” | 根据反馈打磨你的汇报逻辑"
+  },
+  "src/content/blog/ai-workflow-01-setup.md": {
+    "originalTitle": "AI 办公工作流 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于AI 办公工作流 - 机场猫的实际应用场景，包括什么是 AI 办公工作流？",
+    "category": "ai_work",
+    "tags": "AI工作流, 效率矩阵, 进阶指南",
+    "firstPara": "在今天，使用 AI 辅助工作早已不再是什么新鲜事，但仅仅把它当成“升级版搜索引擎”或者“聊天机器人”却远未发挥出它最大的潜能。真正的效率飞跃，来源于建立一套专属的 **AI 办公工作流 (AI Wor",
+    "headers": "什么是 AI 办公工作流？ | 串联工具：打造无缝体验的关键 | 开始建立你的首个工作流"
+  },
+  "src/content/blog/ai-writing-26.md": {
+    "originalTitle": "第一步：准备好你的源素材 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于第一步的实际应用场景，包括第一步：准备好你的源素材",
+    "category": "ai_tutorial",
+    "tags": "",
+    "firstPara": "无论是写一篇详尽的教程、发布一款新产品，还是建一个落地页，FAQ（常见问题解答）都是必不可少的模块。它能直接解决用户的疑虑，减少客服压力，甚至有助于 SEO 优化。",
+    "headers": "第一步：准备好你的源素材 | 第二步：使用精准的提示词生成 FAQ | 第三步：扩展和优化 FAQ"
+  },
+  "src/content/blog/appletv-proxy-clients-guide.md": {
+    "originalTitle": "前置准备：外区 Apple I：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于前置准备的实际应用场景，包括前置准备：外区 Apple ID",
+    "category": "streaming",
+    "tags": "\"教程\", \"Apple TV\", \"tvOS\", \"流媒体解锁\"",
+    "firstPara": "在过去，想要在客厅的 Apple TV 上流畅观看 YouTube、Netflix 或 Disney+，用户必须具备较强的网络动手能力——通常需要购买昂贵的硬路由刷写 OpenWrt，或者在局域网内部",
+    "headers": "前置准备：外区 Apple ID | tvOS 客户端选型指南 | 基础配置与订阅同步"
+  },
+  "src/content/blog/cheap-airport-recommendations.md": {
+    "originalTitle": "2026便宜机场推荐：低价、高性价比稳定机场整理 - 机场猫",
+    "originalDesc": "2026年最新便宜机场推荐。整理了低价、高性价比且稳定的机场，适合学生党、小流量用户、月付试用党。解释什么价位算便宜、低价机场的风险，以及月付vs年付的选择逻辑。",
+    "category": "guides",
+    "tags": "\"便宜机场\", \"高性价比\", \"学生党\", \"月付\"",
+    "firstPara": "如果你对\"便宜机场\"感兴趣，说明你在意成本，这是完全合理的。本文帮你厘清：什么价位算真正便宜、低价机场存在哪些风险、月付 vs 年付应该怎么选，以及目前最值得考虑的几款便宜机场推荐。",
+    "headers": "什么价位算\"便宜\"机场？ | 低价机场容易出现的问题 | 月付 vs 年付：什么时候该升级？"
+  },
+  "src/content/blog/clash-01.md": {
+    "originalTitle": "clash - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于clash - 机场猫的实际应用场景，包括基本概念：什么是客户端与服务端？",
+    "category": "client_archive",
+    "tags": "",
+    "firstPara": "很多人刚接触代理服务时会有疑问：既然已经购买了[节点](/blog/what-is-node/)，为什么还要在手机或电脑上安装 [Clash](/blog/mac-clash-verge-rev-gu",
+    "headers": "基本概念：什么是客户端与服务端？ | 进一步理解：网络客户端到底在干什么？ | 常见类型：五花八门的客户端生态"
+  },
+  "src/content/blog/clash-verge-rev-guide.md": {
+    "originalTitle": "安装前需要准备什么：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于安装前需要准备什么的实际应用场景，包括安装前需要准备什么？",
+    "category": "starter",
+    "tags": "\"教程\", \"客户端\", \"Clash Verge Rev\", \"Windows\"",
+    "firstPara": "[Clash](/blog/mac-clash-verge-rev-guide/) Verge Rev 是目前 Windows 平台上最主流且功能强大的网络代理客户端之一。它基于高效的 Meta 内核",
+    "headers": "安装前需要准备什么？ | 一、安装与打开客户端 | 二、如何导入与更新订阅"
+  },
+  "src/content/blog/client-download-ios.md": {
+    "originalTitle": "向客服获取免费外区账号：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于向客服获取免费外区账号的实际应用场景，包括1. 向客服获取免费外区账号",
+    "category": "review_archive",
+    "tags": "iOS客户端, iPhone, 下载教程",
+    "firstPara": "如果你使用的是 iPhone 或 iPad，可以按照下面的步骤获取并配置 iOS 客户端。",
+    "headers": "1. 向客服获取免费外区账号 | 2. 输入专属码 | 3. 登录官网账号"
+  },
+  "src/content/blog/first-post.md": {
+    "originalTitle": "为什么选择 Astro：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么选择 Astro的实际应用场景，包括为什么选择 Astro？",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "搭建一个兼顾优秀加载速度与高自由度定制的技术博客，Astro 搭配 Tailwind CSS 是目前前端生态中最优雅的方案之一。借助 Astro 的「零 JS 群岛架构」与 Tailwind 的原子化",
+    "headers": "为什么选择 Astro？ | 代码示例 | 使用 Tailwind 设置样式"
+  },
+  "src/content/blog/first-time-proxy-guide.md": {
+    "originalTitle": "步骤 1：获取订阅信息：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于步骤 1的实际应用场景，包括步骤 1：获取订阅信息",
+    "category": "client_adv",
+    "tags": "\"教程\", \"新手入门\", \"操作指南\"",
+    "firstPara": "恭喜您迈出了第一步，成功购买了[代理服务（[机场](/blog/what-is-airport-proxy/)）](/blog/what-is-airport-proxy)的套餐。",
+    "headers": "步骤 1：获取订阅信息 | 步骤 2：选择并安装客户端 | 步骤 3：导入订阅与更新[节点](/blog/what-is-node/)"
+  },
+  "src/content/blog/gaming-proxy-tun-udp.md": {
+    "originalTitle": "为什么网页正常，但游戏不正常：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么网页正常，但游戏不正常的实际应用场景，包括为什么网页正常，但游戏不正常？",
+    "category": "troubleshoot",
+    "tags": "\"网络排错\", \"游戏代理\", \"TUN模式\", \"UDP转发\"",
+    "firstPara": "在网络排错区，经常会有用户提出这样的疑问：",
+    "headers": "为什么网页正常，但游戏不正常？ | 什么是 TUN 模式？它在排查中的作用 | 开启 TUN 依然连不上？UDP 转发是关键"
+  },
+  "src/content/blog/grok-realtime-search.md": {
+    "originalTitle": "Grok实时搜索功能：直接访问X平台最新信息 - 机场猫",
+    "originalDesc": "介绍 Grok 实时搜索 X（Twitter）平台的独特能力：如何使用 Grok 获取最新热点资讯、追踪实时事件，以及 Grok 搜索与 Perplexity 等工具的适用场景对比。",
+    "category": "ai_official",
+    "tags": "Grok, 实时搜索, 信息查询",
+    "firstPara": "Grok 最大的亮点之一，就是能够实时访问并搜索 X（原 Twitter）平台上的最新信息。这意味着它可以获取比大多数传统大语言模型更新、更及时的资讯。今天就来教你如何使用 Grok 的实时搜索功能。",
+    "headers": "一、这个功能是什么？ | 二、在哪里可以找到？ | 三、怎么使用？"
+  },
+  "src/content/blog/guide-01.md": {
+    "originalTitle": "机场是什么？代理订阅服务完全新手入门 - 机场猫",
+    "originalDesc": "本文详细探讨了关于机场是什么？代理订阅服务完全新手入门 - 机场猫的实际应用场景，包括基本概念",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "日常上网或玩游戏时，大家常把「这条线路很稳」或「线路太拉跨」挂在嘴边。所谓**网络线路**，本质上就是数据包从你的本地设备出发，跨越本地运营商、骨干网路由器、海底光缆乃至国际网关最终抵达目标服务器的物",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-04.md": {
+    "originalTitle": "科学上网客户端怎么选？各平台推荐对比 - 机场猫",
+    "originalDesc": "对比各平台的主流科学上网客户端：Windows 推荐 Clash Verge Rev，macOS 同样适用，iOS 首选 Shadowrocket，Android 推荐 v2rayNG，帮助新手快速定位。",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "在计算机网络与软件架构中，**客户端（Client）**是指安装在用户本地设备上、直接面向用户操作并负责向远端服务器发起通信请求的程序。无论你手机上的微信 App、电脑上的 Chrome 浏览器，还是",
+    "headers": "基本概念 | 进一步理解 | 常见类型"
+  },
+  "src/content/blog/guide-10.md": {
+    "originalTitle": "节点延迟高怎么办？代理速度慢的排查方法 - 机场猫",
+    "originalDesc": "本文详细探讨了关于节点延迟高怎么办？代理速度慢的排查方法 - 机场猫的实际应用场景，包括基本概念",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "外服联机对战中的人物瞬移、视频会议中的声音慢半拍，或者打开海外网页时的明显卡顿，罪魁祸首往往不是带宽不足，而是**网络延迟（Latency / Ping 值）**过高。延迟衡量的是一个数据包从本地发出",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/how-to-choose-an-airport-guide.md": {
+    "originalTitle": "机场怎么选？避开常见陷阱的机场选购指南 - 机场猫",
+    "originalDesc": "本文详细探讨了关于机场怎么选？避开常见陷阱的机场选购指南 - 机场猫的实际应用场景，包括1. 稳定性比极速更重要：看透“线路营销”",
+    "category": "starter",
+    "tags": "\"指南\", \"机场怎么选\", \"购买决策\", \"防坑指南\"",
+    "firstPara": "在了解了[什么是机场](/blog/what-is-airport-proxy)之后，摆在您面前的第一个难题就是：**“市面上有成百上千家服务商，我到底该买哪一个？”**",
+    "headers": "1. 稳定性比极速更重要：看透“线路营销” | 2. 流量计费与带宽限制 | 3. 设备数量限制"
+  },
+  "src/content/blog/is-proxy-safe-privacy-guide.md": {
+    "originalTitle": "代理服务器在网络链路中的位置：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于代理服务器在网络链路中的位置的实际应用场景，包括代理服务器在网络链路中的位置",
+    "category": "Security",
+    "tags": "\"安全与隐私\", \"HTTPS\", \"数据加密\", \"网络科普\"",
+    "firstPara": "在配置好代理客户端并成功连接海外网络后，许多新手内心会升起一丝担忧：",
+    "headers": "代理服务器在网络链路中的位置 | HTTPS 时代：代理服务商“看不见”什么？ | 服务商“能看见”什么元数据 (Metadata)？"
+  },
+  "src/content/blog/low-latency-slow-speed.md": {
+    "originalTitle": "低延迟 ≠ 高下载速度：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于低延迟 ≠ 高下载速度的实际应用场景，包括低延迟 ≠ 高下载速度",
+    "category": "routing",
+    "tags": "\"教程\", \"节点知识\", \"测速排障\"",
+    "firstPara": "在配置好代理客户端后，很多用户习惯性地点击“延迟测试”。当看到某个节点的延迟只有 30ms 甚至显示为绿色时，便满心欢喜地连接。",
+    "headers": "低延迟 ≠ 高下载速度 | 影响代理实际速度的核心因素 | 如何正确评估节点质量？"
+  },
+  "src/content/blog/mac-clash-verge-rev-guide.md": {
+    "originalTitle": "一、下载与安装 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于一、下载与安装 - 机场猫的实际应用场景，包括一、下载与安装",
+    "category": "daily",
+    "tags": "\"教程\", \"Mac\", \"Clash Verge Rev\", \"TUN模式\"",
+    "firstPara": "在阅读了[《Mac 电脑代理客户端推荐与选择指南》](/blog/mac-proxy-clients-guide)后，如果您选择了 **Clash Verge Rev**，本文将指引您在 macOS ",
+    "headers": "一、下载与安装 | 二、导入订阅配置 | 三、开启代理与选择模式"
+  },
+  "src/content/blog/mac-client-comparison.md": {
+    "originalTitle": "引言配置指南 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于引言配置指南 - 机场猫的实际应用场景，包括引言",
+    "category": "client_archive",
+    "tags": "Mac客户端对比, Clash Verge Rev, sing-box, Stash, 网络工具",
+    "firstPara": "在 macOS 环境下，选择一款合适的网络客户端对于提升工作效率和日常使用体验至关重要。当前市场上，[Clash](/blog/mac-clash-verge-rev-guide/) Verge Re",
+    "headers": "引言 | 核心对比概览 | 各客户端详细介绍与特点"
+  },
+  "src/content/blog/mac-proxy-clients-guide.md": {
+    "originalTitle": "mac proxy clien：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于mac proxy clien的实际应用场景，包括1. 免费开源的现代首选：Clash Verge Rev",
+    "category": "streaming",
+    "tags": "\"Mac\", \"客户端推荐\", \"Clash Verge\", \"Surge\"",
+    "firstPara": "当您完成了[第一次购买代理服务](/blog/first-time-proxy-guide)后，下一步就是下载客户端。",
+    "headers": "1. 免费开源的现代首选：Clash Verge Rev | 2. 优质极客的商业标杆：Surge for Mac | 3. 极简与跨平台的后起之秀：Hiddify / Karing"
+  },
+  "src/content/blog/mac-sing-box.md": {
+    "originalTitle": "sing-box - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于sing-box - 机场猫的实际应用场景，包括sing-box 是什么？",
+    "category": "client_archive",
+    "tags": "sing-box, Mac客户端, 网络工具, 教程",
+    "firstPara": "sing-box 是一个通用的网络工具平台，不仅提供了强大的底层核心，还为各大操作系统提供了官方的图形化客户端（GUI）。它以轻量、高性能和支持多种现代网络协议而闻名。通过 sing-box 图形化客",
+    "headers": "sing-box 是什么？ | Mac 可以使用 sing-box 吗？ | sing-box Mac 怎么下载？"
+  },
+  "src/content/blog/mac-stash.md": {
+    "originalTitle": "Stash - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于Stash - 机场猫的实际应用场景，包括Stash 是什么？",
+    "category": "client_archive",
+    "tags": "Stash, Mac客户端, 网络工具, 教程",
+    "firstPara": "Stash 是一款专为 Apple 平台设计的网络代理客户端工具，支持 iOS、iPadOS、macOS 以及 tvOS。作为一款功能强大的网络调试与路由工具，它拥有丰富的规则系统，能够帮助用户灵活管",
+    "headers": "Stash 是什么？ | Stash Mac 怎么下载？ | Stash Mac 怎么安装？"
+  },
+  "src/content/blog/phone-works-pc-fails.md": {
+    "originalTitle": "严格对齐电脑的系统时间：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于严格对齐电脑的系统时间的实际应用场景，包括1. 严格对齐电脑的系统时间",
+    "category": "troubleshoot",
+    "tags": "\"网络排错\", \"设备故障\", \"系统环境\"",
+    "firstPara": "在网络排障区，这是一个极为经典且容易让人抓狂的问题：",
+    "headers": "1. 严格对齐电脑的系统时间 | 2. 检查电脑端的客户端代理状态 | 3. 防火墙与第三方杀毒软件拦截"
+  },
+  "src/content/blog/poe-connection-issues.md": {
+    "originalTitle": "一、这个功能（问题）：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于一、这个功能（问题）的实际应用场景，包括一、这个功能（问题）是什么？",
+    "category": "ai_official",
+    "tags": "Poe, 故障排查, 网络连接",
+    "firstPara": "在使用 Poe 的过程中，部分用户可能会遇到网页无法访问、App 界面无限转圈或发送消息后提示请求超时的连接问题。这些情况通常由网络环境、代理设置或官方服务器状态引起。今天就来为你提供最全面的排查与解",
+    "headers": "一、这个功能（问题）是什么？ | 二、在哪里可以找到排查入口？ | 三、怎么排查和解决？"
+  },
+  "src/content/blog/proxy-modes-guide.md": {
+    "originalTitle": "代理模式 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于代理模式 - 机场猫的实际应用场景，包括什么是代理模式？",
+    "category": "routing",
+    "tags": "\"教程\", \"新手入门\", \"代理模式\"",
+    "firstPara": "当您成功将[订阅链接](/blog/what-is-subscription)导入客户端后，您会面临一个关键的选择：**代理模式**（Proxy Mode）。",
+    "headers": "什么是代理模式？ | 三种核心模式的区别与场景 | 新手应该如何选择？"
+  },
+  "src/content/blog/some-sites-not-loading.md": {
+    "originalTitle": "确认代理模式是否正确：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于确认代理模式是否正确的实际应用场景，包括1. 确认代理模式是否正确",
+    "category": "client_adv",
+    "tags": "\"网络排错\", \"规则分流\", \"部分断网\"",
+    "firstPara": "使用代理客户端时，最棘手的问题往往不是彻底断网，而是“薛定谔的连通性”：",
+    "headers": "1. 确认代理模式是否正确 | 2. 检查分流规则是否存在误判 | 3. 确认是否被目标网站拦截（节点 IP 限制）"
+  },
+  "src/content/blog/subscription-conversion-safety-guide.md": {
+    "originalTitle": "为什么在线转换存在巨大风险：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于为什么在线转换存在巨大风险的实际应用场景，包括为什么在线转换存在巨大风险？",
+    "category": "starter",
+    "tags": "\"教程\", \"排错\", \"订阅转换\", \"安全风险\"",
+    "firstPara": "在您了解了[什么是订阅链接](/blog/what-is-subscription)后，随着使用需求的升级，您可能会遇到以下痛点：",
+    "headers": "为什么在线转换存在巨大风险？ | 如何安全地处理订阅转换？ | 版本说明"
+  },
+  "src/content/blog/tcp-vs-udp-proxy.md": {
+    "originalTitle": "TCP 与 UDP 的本质区别：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于TCP 与 UDP 的本质区别的实际应用场景，包括TCP 与 UDP 的本质区别",
+    "category": "client_adv",
+    "tags": "\"概念解析\", \"TCP\", \"UDP\", \"网络协议\"",
+    "firstPara": "在探讨[代理如何接管游戏](/blog/gaming-proxy-tun-udp)等进阶话题时，我们不可避免地会遇到两个英文缩写：**TCP** 和 **UDP**。",
+    "headers": "TCP 与 UDP 的本质区别 | 数据包收发逻辑对比图解 | 这对代理客户端有什么影响？"
+  },
+  "src/content/blog/tools-06.md": {
+    "originalTitle": "tools 06 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 06 - 机场猫的实际应用场景，包括基本概念：认识 sing-box 的定位与角色",
+    "category": "daily",
+    "tags": "",
+    "firstPara": "很多新手第一次听说 **sing-box**，往往是在各种技术论坛或客户端更新日志里，但一打开文档看到密密麻麻的 JSON 配置就容易被劝退。其实只要搞清楚「内核与图形界面」的分工，按照合理的路线去了",
+    "headers": "基本概念：认识 sing-box 的定位与角色 | 进一步理解：新手认识 sing-box 的四个阶段 | 实际应用：新手开启 sing-box 的实用指南"
+  },
+  "src/content/blog/tools-07.md": {
+    "originalTitle": "tools 07 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 07 - 机场猫的实际应用场景，包括基本概念：极简主义的现代网络隧道",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "提到 VPN，很多人首先想到的是 OpenVPN 或 IPsec 那种动辄几十万行代码、配置繁琐且握手缓慢的老旧方案。而 **WireGuard** 则反其道而行之，凭借仅约 4000 行的极简内核代",
+    "headers": "基本概念：极简主义的现代网络隧道 | 进一步理解：WireGuard 的颠覆性核心特性 | 实际应用：WireGuard 的典型使用场景"
+  },
+  "src/content/blog/tools-08.md": {
+    "originalTitle": "tools 08 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 08 - 机场猫的实际应用场景，包括基本概念：网络三层与虚拟网卡模型",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "很多人第一次用 WireGuard 时，最大的直观感受就是「快」：点下开关瞬间连通，没有漫长的握手加载圈，切网时甚至连视频通话都不会中断。这种近乎无感的体验，背后其实依赖了一套极其精简的虚拟网卡与密钥",
+    "headers": "基本概念：网络三层与虚拟网卡模型 | 进一步理解：深入 WireGuard 的四大运行核心机制 | 实际应用：以一份典型配置文件拆解工作全流程"
+  },
+  "src/content/blog/tools-09.md": {
+    "originalTitle": "tools 09 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 09 - 机场猫的实际应用场景，包括基本概念：非对称加密与密钥对的通俗比喻",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "配过 OpenVPN 或 IPsec 的人，大多被 CA 根证书、CSR 签名和 X.509 证书链折磨过。而在 WireGuard 里，所有复杂的认证体系都被精简成了类似 SSH 的一串公钥和私钥—",
+    "headers": "基本概念：非对称加密与密钥对的通俗比喻 | 进一步理解：公钥与私钥在 WireGuard 中如何协同工作 | 实际应用：密钥的生成、配置与管理实操"
+  },
+  "src/content/blog/tools-10.md": {
+    "originalTitle": "tools 10 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 10 - 机场猫的实际应用场景，包括基本概念：传统 VPN 协议的历史脉络与痛点",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "从上世纪的 PPTP、L2TP，到企业级标配 IPsec 和老牌开源主力 OpenVPN，再到如今备受推崇的 **WireGuard**，VPN 技术经历了几代演进。为什么大家都在呼吁迁移到 Wire",
+    "headers": "基本概念：传统 VPN 协议的历史脉络与痛点 | 进一步理解：WireGuard 与传统协议的五大核心维度对比 | 实际应用：不同场景下的技术选型指南"
+  },
+  "src/content/blog/tools-11.md": {
+    "originalTitle": "tools 11 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 11 - 机场猫的实际应用场景，包括基本概念：初识 WireGuard 的独特设计",
+    "category": "daily",
+    "tags": "",
+    "firstPara": "第一次上手 WireGuard 时，很多人都会遇到几个反直觉的坑：明明显示已连接却打不开网页、没有账号密码只靠几串密钥、或者搞不清 AllowedIPs 到底该填什么。这里整理了新手在配置和日常排错中",
+    "headers": "基本概念：初识 WireGuard 的独特设计 | 进一步理解：新手最常踩坑的四大技术疑问 | 实际应用：新手排错与配置自检指南"
+  },
+  "src/content/blog/tools-21.md": {
+    "originalTitle": "TCP/UDP协议在代理中的差异与选择建议 - 机场猫",
+    "originalDesc": "对比 TCP 与 UDP 协议在代理场景中的优劣：TCP 稳定但延迟较高，UDP 快速但可能被 QoS 限速，以及 Hysteria2/QUIC 等 UDP 代理协议的使用场景。",
+    "category": "network",
+    "tags": "",
+    "firstPara": "当网络出现莫名其妙的断流、丢包或协议握手失败时，常规的 Ping 和[测速](/blog/how-to-test-node-speed/)工具往往只能告诉你「通不通」，却说不清底层到底发生了什么。**",
+    "headers": "基本概念：认识网络嗅探神器 | 进一步理解：Wireshark 的工作原理与界面构成 | 实际应用：Wireshark 能用来做什么？"
+  },
+  "src/content/blog/tools-22.md": {
+    "originalTitle": "IP纯净度检测工具：判断节点IP是否被风控标记 - 机场猫",
+    "originalDesc": "本文详细探讨了关于IP纯净度检测工具的实际应用场景，包括基本概念：什么是网络抓包？",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "排查网络故障或调试接口时，网络工程师和开发人员最常挂在嘴边的一句话就是「抓个包看看」。所谓的**网络抓包**，本质上就是把进出网卡的数据包原封不动地复制一份，以此观察三次握手、重传丢包以及应用层请求的",
+    "headers": "基本概念：什么是网络抓包？ | 进一步理解：网络抓包的底层机制与运作流程 | 实际应用：抓包在现实中的核心用武之地"
+  },
+  "src/content/blog/tools-24.md": {
+    "originalTitle": "tools 4 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 4 - 机场猫的实际应用场景，包括基本概念：安装与前期准备",
+    "category": "troubleshoot",
+    "tags": "",
+    "firstPara": "第一次打开 Wireshark，面对密密麻麻的网卡列表和一启动就疯狂刷屏的数据包，很多新手都会觉得无从下手。其实只要选对网卡接口、学会启停控制并看懂主界面三大面板，几分钟就能跑通你的第一次抓包分析。",
+    "headers": "基本概念：安装与前期准备 | 进一步理解：新手标准操作“五步法” | 实际应用：你的第一个实验——抓取并分析一次完整的 DNS 解析"
+  },
+  "src/content/blog/tools-25.md": {
+    "originalTitle": "tools 5 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 5 - 机场猫的实际应用场景，包括基本概念：什么是 Display Filter？",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "用 Wireshark 抓包时，最头疼的就是刚点一下网页刷新，屏幕上就涌入了几千甚至上万个数据包。如果靠肉眼逐行去翻，无异于大海捞针。而**显示过滤器（Display Filter）**就是帮你从海量",
+    "headers": "基本概念：什么是 Display Filter？ | 进一步理解：Display Filter 的核心语法结构 | 实际应用：日常排障高频过滤秘籍与小技巧"
+  },
+  "src/content/blog/tools-26.md": {
+    "originalTitle": "tools 6 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 6 - 机场猫的实际应用场景，包括基本概念：DNS 是什么？",
+    "category": "network",
+    "tags": "",
+    "firstPara": "互联网上的计算机在互相通信时，只认由数字组成的 IP 地址，而人类习惯记忆的是字母域名。**DNS（域名系统）** 扮演的就是整个互联网的「电话簿」，在毫秒之间把我们输入的域名精准翻译成服务器对应的 ",
+    "headers": "基本概念：DNS 是什么？ | 进一步理解：DNS 是如何组织与工作的？ | 实际应用：DNS 如何影响我们的日常上网？"
+  },
+  "src/content/blog/tools-27.md": {
+    "originalTitle": "tools 7 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 7 - 机场猫的实际应用场景，包括基本概念：什么是 DNS 解析与四大核心角色？",
+    "category": "streaming",
+    "tags": "",
+    "firstPara": "当你在浏览器敲下回车键后的短短几毫秒里，系统其实已经在幕后完成了一场跨越全球的接力寻址。所谓 **DNS 解析**，就是本地缓存、递归解析器、根服务器以及权威 DNS 之间分工协作，把域名一步步还原为",
+    "headers": "基本概念：什么是 DNS 解析与四大核心角色？ | 进一步理解：一次完整 DNS 解析的 8 个步骤 | 递归查询 vs 迭代查询：两者的区别是什么？"
+  },
+  "src/content/blog/tools-28.md": {
+    "originalTitle": "tools 8 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 8 - 机场猫的实际应用场景，包括基本概念：什么是 DNS over HTTPS (DoH)？",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "虽然绝大多数网站都开启了 HTTPS 加密，但在建立连接之前发起的传统 DNS 查询往往依然是明文传输的，极易被运营商或公共网络监听甚至劫持。**DNS over HTTPS（DoH）** 的做法正是",
+    "headers": "基本概念：什么是 DNS over HTTPS (DoH)？ | 进一步理解：DoH 带来了哪些核心优势？ | 实际应用：主流设备与软件如何开启 DoH？"
+  },
+  "src/content/blog/tools-29.md": {
+    "originalTitle": "tools 9 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 9 - 机场猫的实际应用场景，包括基本概念：什么是 DNS over TLS (DoT)？",
+    "category": "performance",
+    "tags": "",
+    "firstPara": "在安卓系统的「私人 DNS」设置或软路由配置中，你经常会看到基于 TLS 加密的 DNS 选项。这就是与 DoH 并驾齐驱的另一大加密解析标准——**DNS over TLS（DoT）**。它直接通过",
+    "headers": "基本概念：什么是 DNS over TLS (DoT)？ | 进一步理解：DoT 与 DoH 的全方位对比 | 实际应用：在日常设备中如何使用 DoT？"
+  },
+  "src/content/blog/tools-30.md": {
+    "originalTitle": "tools 30 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 30 - 机场猫的实际应用场景，包括基本概念：DNS 故障的典型症状与特征",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "微信能正常收发消息，甚至游戏也能玩，但浏览器里的所有网页就是死活打不开——遇到这种现象，十有八九是 **DNS 解析** 出了问题。掌握几条简单的命令和排查步骤，几分钟内就能确认并解决绝大多数 DNS",
+    "headers": "基本概念：DNS 故障的典型症状与特征 | 进一步理解：导致 DNS 出现问题的深层原因 | 实际应用：4 步极速排查与修复实战指南"
+  },
+  "src/content/blog/tools-31.md": {
+    "originalTitle": "tools 31 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 31 - 机场猫的实际应用场景，包括基本概念",
+    "category": "network",
+    "tags": "",
+    "firstPara": "不管是排查网络连通性还是测试游戏延迟，「Ping 一下」几乎是所有人最先想到的操作。**Ping** 命令基于底层的 ICMP 协议，通过向目标主机发送探测包并计算往返时间（RTT），让我们能在几秒钟",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/tools-33.md": {
+    "originalTitle": "tools 33 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 33 - 机场猫的实际应用场景，包括基本概念",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "想知道某个域名具体解析到了哪些 IP、是否被运营商劫持，或者想换个 DNS 服务器验证解析结果时，系统自带的 **nslookup** 就是最直接的诊断工具。只需一行命令，就能直接向指定 DNS 服务",
+    "headers": "基本概念 | 进一步理解 | 强制让谷歌公共 DNS (8.8.8.8) 来解析该域名"
+  },
+  "src/content/blog/tools-34.md": {
+    "originalTitle": "tools 34 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 34 - 机场猫的实际应用场景，包括基本概念",
+    "category": "openwrt",
+    "tags": "",
+    "firstPara": "想查本机的局域网 IP、找路由器的网关地址，或者在改了 Hosts 后需要刷新系统 DNS 缓存，系统内置的 **ipconfig（Windows）/ ifconfig（macOS/Linux）** ",
+    "headers": "基本概念 | 进一步理解 | 1. 放弃并释放当前获取的 IP 地址"
+  },
+  "src/content/blog/tools-35.md": {
+    "originalTitle": "tools 35 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于tools 35 - 机场猫的实际应用场景，包括基本概念",
+    "category": "starter",
+    "tags": "",
+    "firstPara": "在命令行调试 API 接口、测试网页响应头或验证网络代理是否生效时，**curl** 是最直接、最高效的瑞士军刀。它去掉了浏览器的渲染负担，以毫秒级的速度完成最纯粹的底层 HTTP/HTTPS 请求与",
+    "headers": "基本概念 | 进一步理解 | 实际应用"
+  },
+  "src/content/blog/what-are-routing-rules.md": {
+    "originalTitle": "分流规则 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于分流规则 - 机场猫的实际应用场景，包括分流规则是什么？",
+    "category": "routing",
+    "tags": "\"教程\", \"节点知识\", \"分流规则\", \"概念解析\"",
+    "firstPara": "在了解了[代理模式的区别](/blog/proxy-modes-guide)后，您会知道“规则模式”是绝大多数情况下的最优选。",
+    "headers": "分流规则是什么？ | 规则的常见匹配方式 | 实际影响"
+  },
+  "src/content/blog/what-is-airport-proxy.md": {
+    "originalTitle": "“机场”到底 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于“机场”到底 - 机场猫的实际应用场景，包括“机场”到底是什么？",
+    "category": "troubleshoot",
+    "tags": "\"教程\", \"新手入门\", \"机场科普\"",
+    "firstPara": "在了解网络代理时，您可能经常会在讨论区看到大家提及：“哪个[机场](/blog/what-is-airport-proxy/)好用？”、“求推荐一个稳定的机场”。",
+    "headers": "“机场”到底是什么？ | 代理节点的工作原理是什么？ | “机场”和传统的 VPN 有什么区别？"
+  },
+  "src/content/blog/what-is-dns-proxy.md": {
+    "originalTitle": "代理场景下的 DNS ：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于代理场景下的 DNS 的实际应用场景，包括代理场景下的 DNS 解析路径",
+    "category": "client_adv",
+    "tags": "\"概念解析\", \"DNS\", \"网络知识\"",
+    "firstPara": "在网络世界中，**DNS (Domain Name System)** 被称为互联网的“电话簿”。",
+    "headers": "代理场景下的 DNS 解析路径 | 现代客户端是如何处理的？ | 常见的 DNS 异常现象"
+  },
+  "src/content/blog/what-is-node.md": {
+    "originalTitle": "节点 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于节点 - 机场猫的实际应用场景，包括什么是节点？",
+    "category": "routing",
+    "tags": "\"教程\", \"新手入门\", \"节点知识\"",
+    "firstPara": "在了解了[什么是机场](/blog/what-is-airport-proxy)之后，您在客户端里看到最多的词一定就是“[节点](/blog/what-is-node/)”。",
+    "headers": "什么是节点？ | 节点名称通常包含哪些信息？ | 核心参数：延迟、带宽与流量"
+  },
+  "src/content/blog/what-is-subscription.md": {
+    "originalTitle": "订阅链接 - 机场猫：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于订阅链接 - 机场猫的实际应用场景，包括什么是订阅链接？",
+    "category": "streaming",
+    "tags": "\"教程\", \"新手入门\", \"订阅链接\"",
+    "firstPara": "在您购买了网络代理服务（[获取了代理节点](/blog/what-is-node)）之后，接下来的第一步，通常是将这些[节点](/blog/what-is-node/)导入到您的手机或电脑中。",
+    "headers": "什么是订阅链接？ | 订阅链接通常包含什么？ | 如何获取并导入订阅链接？"
+  },
+  "src/content/blog/what-is-tun-mode.md": {
+    "originalTitle": "传统“系统代理”的痛点：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于传统“系统代理”的痛点的实际应用场景，包括什么是传统“系统代理”的痛点？",
+    "category": "openwrt",
+    "tags": "\"教程\", \"网络配置\", \"TUN模式\", \"底层原理\"",
+    "firstPara": "在探讨[代理模式怎么选](/blog/proxy-modes-guide)时，我们提到了“规则模式”和“全局模式”。但随着客户端技术的升级，您可能会在软件的高级设置中看到另一个高频词汇：**TUN 模",
+    "headers": "什么是传统“系统代理”的痛点？ | 什么是 TUN 模式？ | TUN 模式的优势与劣势"
+  },
+  "src/content/blog/windows-v2rayn-guide.md": {
+    "originalTitle": "一、软件获取与安装：核心概念与配置实战指南",
+    "originalDesc": "本文详细探讨了关于一、软件获取与安装的实际应用场景，包括一、软件获取与安装",
+    "category": "troubleshoot",
+    "tags": "\"教程\", \"Windows\", \"v2rayN\", \"代理软件\"",
+    "firstPara": "虽然 [Clash](/blog/mac-clash-verge-rev-guide/) 系客户端目前大行其道，但在 Windows 平台上，**v2rayN** 凭借着极其轻量的体积、极低的内存占用",
+    "headers": "一、软件获取与安装 | 二、导入[机场](/blog/what-is-airport-proxy/)订阅 | 三、节点测试与选择"
+  }
+}

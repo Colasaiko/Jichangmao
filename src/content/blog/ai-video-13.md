@@ -1,5 +1,5 @@
 ---
-title: "AI视频生成工具对比：Runway/Sora/Kling哪个好 - 机场猫"
+title: "AI视频生成工具对比：Runway/Sora/K - 机场猫"
 description: "对比主流 AI 视频生成工具（Runway、Sora、Kling 等）的功能特点、生成质量、价格与使用门槛，帮助创作者选择最适合自己需求的平台。"
 keywords: "AI视频生成工具,Runway AI,Sora,Kling AI视频"
 pubDate: 2026-05-04

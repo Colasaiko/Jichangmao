@@ -1,5 +1,5 @@
 ---
-title: "Claude图片识别功能：分析截图、图表和文档图片 - 机场猫"
+title: "Claude图片识别功能：分析截图、图表和文档图 - 机场猫"
 description: "介绍 Claude 的图片识别和分析能力：上传截图、图表、文档图片后如何提问，Claude 在 OCR 文字提取和视觉内容解析上的实际表现。"
 keywords: "Claude图片识别,Claude看图,Claude OCR,Claude图片分析"
 pubDate: 2026-04-04

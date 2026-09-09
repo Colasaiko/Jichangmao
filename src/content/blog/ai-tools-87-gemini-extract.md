@@ -1,5 +1,5 @@
 ---
-title: "Gemini信息提取技巧：从长文档中快速提炼关键内容 - 机场猫"
+title: "Gemini信息提取技巧：从长文档中快速提炼关键 - 机场猫"
 description: "介绍如何借助 Google Gemini 处理研究报告、会议记录、法律合同等长篇文档，快速提炼摘要、提取关键信息的实用 Prompt 技巧。"
 keywords: "Gemini信息提取,Gemini长文档处理,Gemini提炼摘要,AI文档处理"
 pubDate: 2026-05-02

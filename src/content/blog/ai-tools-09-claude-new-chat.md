@@ -1,5 +1,5 @@
 ---
-title: "Claude怎么开始新对话？Claude入门使用完整教程 - 机场猫"
+title: "Claude怎么开始新对话？Claude入门使用 - 机场猫"
 description: "面向新手介绍如何在 Claude 中开始第一次对话：注册访问方式、界面布局、如何提出第一个问题，以及 Claude 与 ChatGPT 在使用习惯上的主要区别。"
 keywords: "Claude新手入门,Claude使用教程,Claude怎么用,Claude第一次使用"
 pubDate: 2026-03-19

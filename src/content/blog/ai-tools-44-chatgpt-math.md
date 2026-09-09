@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT解数学题：数学问题正确提问方法 - 机场猫"
-description: "介绍如何用 ChatGPT 解决数学问题：通过要求 AI 分步骤展示解题过程（Chain of Thought），减少直觉错误，以及对 ChatGPT 数学能力的准确预期。"
+description: "介绍如何用 ChatGPT 解决数学问题：通过要求 AI 分步骤展示解题过程（Chain of Thought），减少直觉错误，以及对 ChatGPT 数学"
 keywords: "ChatGPT解数学,ChatGPT数学问题,AI解题,ChatGPT计算"
 pubDate: 2026-04-08
 author: "机场猫编辑部"

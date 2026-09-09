@@ -1,6 +1,6 @@
 ---
-title: "Clash Verge Rev是什么？macOS代理客户端介绍 - 机场猫"
-description: "介绍 Clash Verge Rev 的定位与特点：基于 Tauri 框架的现代化代理客户端，与其他 Clash 分叉的区别，以及在 macOS 上的安装和基础配置。"
+title: "Clash Verge Rev是什么？macOS - 机场猫"
+description: "介绍 Clash Verge Rev 的定位与特点：基于 Tauri 框架的现代化代理客户端，与其他 Clash 分叉的区别，以及在 macOS 上的安装和"
 keywords: "Clash Verge Rev,Clash客户端,Clash Verge,macOS代理客户端"
 pubDate: 2026-06-23
 author: "机场猫编辑部"

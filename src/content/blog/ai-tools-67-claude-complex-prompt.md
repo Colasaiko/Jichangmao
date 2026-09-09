@@ -1,6 +1,6 @@
 ---
-title: "Claude XML标签Prompt：处理复杂长Prompt的官方推荐方法 - 机场猫"
-description: "介绍 Anthropic 官方推荐的 Claude Prompt 结构化方法——使用 XML 标签系统：为什么 XML 标签能帮助 Claude 精准理解超长、多条件的复杂指令。"
+title: "Claude XML标签Prompt - 机场猫"
+description: "介绍 Anthropic 官方推荐的 Claude Prompt 结构化方法——使用 XML 标签系统：为什么 XML 标签能帮助 Claude 精准理解超"
 keywords: "Claude XML标签,Claude复杂Prompt,Claude Prompt结构化,Anthropic Prompt"
 pubDate: 2026-04-20
 author: "机场猫编辑部"

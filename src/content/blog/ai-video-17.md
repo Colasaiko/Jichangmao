@@ -1,6 +1,6 @@
 ---
-title: "AI视频制作提示词（Prompt）写法：精准描述生成效果 - 机场猫"
-description: "专门讲解 AI 视频生成 Prompt 的写作技巧：如何描述场景、镜头运动、光线氛围和人物动作，让视频生成结果更接近预期。"
+title: "AI视频制作提示词（Prompt）写法 - 机场猫"
+description: "专门讲解 AI 视频生成 Prompt 的写作技巧：如何描述场景、镜头运动、光线氛围和人物动作，让视频生成结果更接近预期。，涵盖规则一：做减法，"
 keywords: "AI视频Prompt,视频生成提示词,Runway Prompt,AI视频描述词"
 pubDate: 2026-05-07
 category: "ai_media"

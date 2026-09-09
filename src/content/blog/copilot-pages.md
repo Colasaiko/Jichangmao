@@ -1,6 +1,6 @@
 ---
-title: "Copilot Pages是什么？AI协作文档功能使用指南 - 机场猫"
-description: "介绍 Microsoft Copilot Pages 功能：将 AI 对话内容一键转换为可多人实时协作编辑的持久页面，适合团队头脑风暴和 AI 辅助内容创作场景。"
+title: "Copilot Pages是什么？AI协作文档功 - 机场猫"
+description: "介绍 Microsoft Copilot Pages 功能：将 AI 对话内容一键转换为可多人实时协作编辑的持久页面，适合团队头脑风暴和 AI 辅助内容创作"
 keywords: "Copilot Pages,Copilot协作文档,Microsoft Copilot功能,AI协作"
 pubDate: 2026-06-04
 author: "机场猫编辑部"

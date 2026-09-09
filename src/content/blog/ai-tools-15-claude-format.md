@@ -1,6 +1,6 @@
 ---
-title: "Claude输出格式控制：让AI按你要求的结构输出 - 机场猫"
-description: "介绍如何通过 Prompt 控制 Claude 的输出格式：指定 Markdown 结构、表格、代码块、列表等，以及 Claude 在格式控制方面与 ChatGPT 的差异。"
+title: "Claude输出格式控制：让AI按你要求的结构输 - 机场猫"
+description: "介绍如何通过 Prompt 控制 Claude 的输出格式：指定 Markdown 结构、表格、代码块、列表等，以及 Claude 在格式控制方面与 Cha"
 keywords: "Claude输出格式,Claude格式控制,Claude Markdown,Claude结构化输出"
 pubDate: 2026-03-22
 author: "机场猫编辑部"

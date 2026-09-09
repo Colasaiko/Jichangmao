@@ -1,6 +1,6 @@
 ---
-title: 'tools 06 - 机场猫：核心概念与配置实战指南'
-description: '本文详细探讨了关于tools 06 - 机场猫的实际应用场景，包括基本概念：认识 sing-box 的定位与角色、进一步理解：新手认识 sing-box 的四个阶段、实际应用：新手开启 sing-box 的实用指南等核心环节，帮助读者快速了解配置流程与注意事项，解决常见使用问题。'
+title: "tools 06 - 机场猫：核心概念与配置实战指南"
+description: "本文介绍tools 06 - 机场猫，涵盖基本概念：认识 sing-box 的定位与角色与进一步理解：新手认识 sing-box 的四个阶段等内容，帮助您理解。"
 keywords: "tools 06,tools 06教程,机场猫"
 pubDate: 2026-08-04
 author: "机场猫编辑部"

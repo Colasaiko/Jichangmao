@@ -1,6 +1,6 @@
 ---
 title: "AI短剧台词生成：用AI写出自然的角色对白 - 机场猫"
-description: "介绍如何利用 ChatGPT 等 AI 工具生成 AI 短剧中的角色台词，避免机械感，写出符合人物性格和剧情节奏的自然对话。"
+description: "介绍如何利用 ChatGPT 等 AI 工具生成 AI 短剧中的角色台词，避免机械感，写出符合人物性格和剧情节奏的自然对话。，涵盖相关文章，帮助您快速了解并掌握"
 keywords: "AI短剧台词,AI写对白,AI剧本对话,短剧台词生成"
 pubDate: 2026-01-20
 category: "ai_media"

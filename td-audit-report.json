@@ -1,0 +1,30 @@
+{
+  "total": 443,
+  "indexable": 442,
+  "titleShort": [],
+  "titleLong": [],
+  "descShort": [],
+  "descLong": [],
+  "missingDesc": [],
+  "missingTitle": [],
+  "duplicateTitle": {
+    "向客服获取免费外区账号：核心概念与配置实战指南": [
+      "/blog/client-download-ios/index.html",
+      "/download/ios/index.html"
+    ],
+    "下载客户端：核心概念与配置实战指南 - 机场猫": [
+      "/blog/client-download-mac/index.html",
+      "/download/mac/index.html"
+    ]
+  },
+  "duplicateDesc": {
+    "本文介绍向客服获取免费外区账号，涵盖1. 向客服获取免费外区账号与2. 输入专属码等内容，帮助您理解相关原理与实际配置方法，适合新手与进阶用户参考，助您解决日。": [
+      "/blog/client-download-ios/index.html",
+      "/download/ios/index.html"
+    ],
+    "本文介绍下载客户端，涵盖1. 下载客户端与2. 解压并打开等内容，帮助您理解相关原理与实际配置方法，适合新手与进阶用户参考，助您解决日常使用问题。": [
+      "/blog/client-download-mac/index.html",
+      "/download/mac/index.html"
+    ]
+  }
+}

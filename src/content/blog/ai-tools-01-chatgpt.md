@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT入门教程：第一次使用ChatGPT怎么开始 - 机场猫"
-description: "面向完全新手的 ChatGPT 入门指南：注册账号、首次对话、免费与付费功能区别，以及如何使用代理访问 ChatGPT 的基础说明。"
+title: "ChatGPT入门教程：第一次使用ChatGPT - 机场猫"
+description: "面向完全新手的 ChatGPT 入门指南：注册账号、首次对话、免费与付费功能区别，以及如何使用代理访问 ChatGPT 的基础说明。，，帮助您快速了解并掌握相关"
 keywords: "ChatGPT入门,ChatGPT使用教程,ChatGPT新手,ChatGPT怎么用"
 pubDate: 2026-03-15
 author: "机场猫编辑部"

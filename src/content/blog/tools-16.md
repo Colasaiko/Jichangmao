@@ -1,5 +1,5 @@
 ---
-title: "Tailscale是什么？无需公网IP的异地组网工具 - 机场猫"
+title: "Tailscale是什么？无需公网IP的异地组网 - 机场猫"
 description: "介绍 Tailscale 的工作原理：基于 WireGuard 的网状组网技术，无需公网 IP 和复杂配置，即可把分散在各地的设备连入同一个专属虚拟局域网。"
 keywords: "Tailscale是什么,Tailscale使用,异地组网,WireGuard组网"
 pubDate: 2026-08-09

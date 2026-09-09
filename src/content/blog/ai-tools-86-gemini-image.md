@@ -1,6 +1,6 @@
 ---
 title: "Gemini看图功能：上传图片进行AI分析和解读 - 机场猫"
-description: "介绍 Google Gemini 的多模态图片分析功能：如何上传照片、图表、外语菜单或数学题图，让 AI 进行识别、分析和解答。"
+description: "介绍 Google Gemini 的多模态图片分析功能：如何上传照片、图表、外语菜单或数学题图，让 AI 进行识别、分析和解答。，涵盖Gemini 图片上传"
 keywords: "Gemini看图,Gemini图片分析,Google AI视觉,Gemini多模态"
 pubDate: 2026-05-01
 author: "机场猫编辑部"

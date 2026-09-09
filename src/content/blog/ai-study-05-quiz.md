@@ -1,5 +1,5 @@
 ---
-title: "AI出题测验：用ChatGPT/Claude生成练习题自测 - 机场猫"
+title: "AI出题测验：用ChatGPT/Claude生成 - 机场猫"
 description: "介绍如何用 ChatGPT 或 Claude 为自己生成测验题（Quiz）进行自我检测：通过提供学习材料让 AI 出选择题、填空题或简答题，提高复习效率。"
 keywords: "AI出练习题,ChatGPT出题,AI测验,AI辅助学习"
 pubDate: 2026-03-12

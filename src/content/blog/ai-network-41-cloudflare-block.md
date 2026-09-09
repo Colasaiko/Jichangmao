@@ -1,6 +1,6 @@
 ---
-title: "Cloudflare封锁代理IP？CF防护触发原因与解决方法 - 机场猫"
-description: "解析 Cloudflare 安全检测（CF盾）拦截代理 IP 的原因：数据中心 IP 被 CF 标记为高风险，如何通过更换节点或使用住宅 IP 绕过 Cloudflare 的访问限制。"
+title: "Cloudflare封锁代理IP？CF防护触发原 - 机场猫"
+description: "解析 Cloudflare 安全检测（CF盾）拦截代理 IP 的原因：数据中心 IP 被 CF 标记为高风险，如何通过更换节点或使用住宅 IP 绕过 Clo"
 keywords: "Cloudflare封锁代理,CF防护,Cloudflare拦截IP,CF盾"
 pubDate: 2026-02-22
 author: "机场猫编辑部"

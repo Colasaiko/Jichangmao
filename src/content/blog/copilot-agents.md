@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Copilot Agents是什么？智能体配置入门 - 机场猫"
+title: "Microsoft Copilot Agents - 机场猫"
 description: "解释 Microsoft Copilot Agents（智能体）的功能：可定制化的 AI 助手，可赋予特定知识库和工作流程，实现特定领域的自动化任务执行。"
 keywords: "Copilot Agents,Microsoft Copilot智能体,Copilot自动化,AI智能体"
 pubDate: 2026-05-31

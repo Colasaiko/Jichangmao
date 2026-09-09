@@ -1,5 +1,5 @@
 ---
-title: "清除浏览器缓存解决代理问题：Cache与Cookie清理指南 - 机场猫"
+title: "清除浏览器缓存解决代理问题：Cache与Cook - 机场猫"
 description: "介绍浏览器缓存和 Cookie 对代理使用的影响：为什么切换节点后有些网站仍显示旧版本或旧地区，以及如何通过清缓存解决代理相关的浏览器兼容问题。"
 keywords: "清除浏览器缓存,Cache清理,代理浏览器问题,Cookie清理"
 pubDate: 2026-02-01

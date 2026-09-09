@@ -1,5 +1,5 @@
 ---
-title: "v2rayNG使用教程：Android安卓代理完整配置指南 - 机场猫"
+title: "v2rayNG使用教程：Android安卓代理完 - 机场猫"
 description: "Android 用户的 v2rayNG 完整配置指南：如何下载安装 v2rayNG、导入机场订阅链接、设置规则分流，以及常见连接问题的排查方法。"
 keywords: "v2rayNG教程,v2rayNG使用,安卓代理配置,v2rayNG配置"
 pubDate: 2026-08-27

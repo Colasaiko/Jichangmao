@@ -1,5 +1,5 @@
 ---
-title: "Grok文件处理功能：上传PDF和文档进行AI分析 - 机场猫"
+title: "Grok文件处理功能：上传PDF和文档进行AI分 - 机场猫"
 description: "介绍 Grok 的文件处理能力：支持上传 PDF、表格、代码文件，AI 协助提炼摘要、提取关键信息或数据分析，提升工作和学习效率的使用技巧。"
 keywords: "Grok文件处理,Grok上传PDF,Grok文档分析,AI文件分析"
 pubDate: 2026-06-08

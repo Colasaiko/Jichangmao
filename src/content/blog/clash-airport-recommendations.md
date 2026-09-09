@@ -1,6 +1,6 @@
 ---
-title: "2026 Clash机场推荐：最佳Clash订阅机场整理 - 机场猫"
-description: "2026年Clash机场推荐。整理与Clash/Clash Verge Rev完美兼容的机场，解释订阅格式、协议兼容性、一键导入流程，以及选择Clash机场要注意什么。支持全平台订阅转换。"
+title: "2026 Clash机场推荐：最佳Clash订阅 - 机场猫"
+description: "2026年Clash机场推荐。整理与Clash/Clash Verge Rev完美兼容的机场，解释订阅格式、协议兼容性、一键导入流程，以及选择Clash机场"
 keywords: "Clash机场推荐,Clash订阅机场推荐,Clash节点推荐,Clash Verge推荐,Clash机场,Clash机场2026"
 pubDate: 2026-09-08
 author: "机场猫编辑部"

@@ -1,6 +1,6 @@
 ---
 title: "这些习惯让ChatGPT越用越差：常见新手误区 - 机场猫"
-description: "深入分析导致 ChatGPT 使用效果差的常见习惯：问题不具体、不提供背景、不验证回答、不追问等，以及养成高质量使用习惯的实用建议。"
+description: "深入分析导致 ChatGPT 使用效果差的常见习惯：问题不具体、不提供背景、不验证回答、不追问等，以及养成高质量使用习惯的实用建议。，，帮助您快速了解并掌握相关"
 keywords: "ChatGPT使用误区,ChatGPT坏习惯,ChatGPT提升效果,ChatGPT使用技巧"
 pubDate: 2026-04-11
 author: "机场猫编辑部"
