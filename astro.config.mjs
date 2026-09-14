@@ -17,12 +17,14 @@ const getSitemapDates = () => {
         const slug = file.replace(/\.mdx?$/, '');
         
         let lastMod = null;
-        const updatedMatch = content.match(/updatedDate:\s*([0-9]{4}-[0-9]{2}-[0-9]{2})/);
+        const updatedMatch = content.match(/updatedDate:\s*(?:['"]?)([0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[0-9:.]+Z)?)(?:['"]?)/);
+        const pubMatch = content.match(/pubDate:\s*(?:['"]?)([0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[0-9:.]+Z)?)(?:['"]?)/);
         if (updatedMatch) {
           lastMod = new Date(updatedMatch[1]);
+        } else if (pubMatch) {
+          lastMod = new Date(pubMatch[1]);
         }
-        
-        if (lastMod) {
+        if (lastMod && !isNaN(lastMod.getTime())) {
           const isReview = content.includes("category: \"品牌介绍\"") || content.includes("category: \"机场测评\"");
           const prefix = isReview ? 'evaluations' : 'blog';
           dates[`/${prefix}/${slug}/`] = lastMod.toISOString();
