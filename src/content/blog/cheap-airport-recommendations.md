@@ -64,42 +64,42 @@ tags: ["便宜机场", "高性价比", "学生党", "月付"]
 - **月付起步**：¥18.00
 - **协议支持**：SS
 - **为什么适合**：月付起步约 ¥18，全IPLC专线，2.5Gbps 速率，8折优惠码（JLY888），性价比高
-- **官网注册**：[极连云 官网（含优惠链接）](https://1jdhjfeeef.jilianat.homes/#/?code=nrPTQT2i)
+- **官网注册**：[极连云 官网（含优惠链接）](https://kdjhao.jlyvipaff.com/#/?code=nrPTQT2i)
 
 ### 2. 光年梯
 - **线路类型**：全程IPLC、原生IP
 - **月付起步**：¥18.00
 - **协议支持**：SS
 - **为什么适合**：月付起步约 ¥18，全程IPLC专线，原生IP解锁，预算控制方便
-- **官网注册**：[光年梯 官网（含优惠链接）](https://vv3dbvb.guangnianertt1.homes/#/?code=k0rrn5UQ)
+- **官网注册**：[光年梯 官网（含优惠链接）](https://ggmq.gntaff.com/#/?code=k0rrn5UQ)
 
 ### 3. 光速云
 - **线路类型**：IPLC、高带宽
 - **月付起步**：¥23.00
 - **协议支持**：SS
 - **为什么适合**：月付起步约 ¥23，全球IPLC，单节点 2.5Gbps，解锁 Netflix/ChatGPT
-- **官网注册**：[光速云 官网（含优惠链接）](https://v5g.gggoltt.xyz/#/?code=GKfXFvJh)
+- **官网注册**：[光速云 官网（含优惠链接）](https://mdlky.gsyaff.com/#/?code=GKfXFvJh)
 
 ### 4. 可信云
 - **线路类型**：全IEPL、不限设备
 - **月付起步**：¥15.00
 - **协议支持**：SS
 - **为什么适合**：有 ¥15/月 月付小包，全IEPL专线，不限设备，适合轻度用户
-- **官网注册**：[可信云 官网（含优惠链接）](https://asfasf.kexintztz2.sbs/#/?code=PY3isazT)
+- **官网注册**：[可信云 官网（含优惠链接）](https://work.kosingaff.com/#/?code=PY3isazT)
 
 ### 5. 速界机场
 - **线路类型**：全IPLC、性价比
 - **月付起步**：¥15.00
 - **协议支持**：SS
 - **为什么适合**：有 ¥15/月 单月试用包，全IPLC专线，适合先试用再决定是否续费，有8折优惠码（sujie888）
-- **官网注册**：[速界机场 官网（含优惠链接）](https://linktest.tzztssuujj.xyz/#/?code=q1enwrOd)
+- **官网注册**：[速界机场 官网（含优惠链接）](https://work.speedworldaff.cc/#/?code=q1enwrOd)
 
 ### 6. 边缘节点
 - **线路类型**：全IPLC、超高性价比
 - **月付起步**：¥15.00
 - **协议支持**：SS
 - **为什么适合**：有 ¥15 月付体验包，全IPLC专线，最高 2.5Gbps，有8折优惠码（xk808）
-- **官网注册**：[边缘节点 官网（含优惠链接）](https://bcbhk40y.ztymforedge.lol/#/?code=FhNDD3Sa)
+- **官网注册**：[边缘节点 官网（含优惠链接）](https://work.edgenovaaff.cc/#/?code=etUBOp4S)
 
 - **查看完整推荐 →** [2026机场推荐排行榜](/reviews/)
 - **专线版本 →** [专线机场推荐：IPLC/IEPL机场整理](/blog/dedicated-line-airport-recommendations/)

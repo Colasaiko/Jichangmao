@@ -36,7 +36,7 @@ author: "机场猫编辑部"
 
 **免责建议**：虽然该品牌在我们的评测周期内表现出了极高的稳定性，但我们依然建议广大网友在首次购买时，优先选择 **“月付”或“季付”** 套餐进行试水，满意后再考虑续费。
 
-[👉 前往 灵动云 官方网站了解最新套餐与活动](https://asfawsf.lingdongyunttt.homes/#/?code=TIMwZeIR)
+[👉 前往 灵动云 官方网站了解最新套餐与活动](https://varnexa.lingdongaff.com/#/?code=TIMwZeIR)
 
 
 ## 常见问题 (FAQ & AEO)

@@ -65,7 +65,7 @@ featured: true
 
 * **核心特色**：VLESS 协议，企业级 IEPL 专线（三网优化），支持企业级定制，多设备不限量，AI 全环境支持。
 * **优惠码**：`lingmao`（**8折优惠**）
-* **👉 官方直达链接**：[点击注册 sogo云](https://asfdgd.sogotztz2.sbs/#/?code=JvxcPy2A)
+* **👉 官方直达链接**：[点击注册 sogo云](https://wzjc.sogoyunaff.cc/#/?code=JvxcPy2A)
 
 ### 套餐与价格表
 
@@ -85,7 +85,7 @@ featured: true
 
 * **核心特色**：BGP 多线智能调度 + 专线级出口架构，高性能 SS 协议，不限设备，流媒体及 AI 完整解锁。
 * **优惠码**：`mm88`（**8折优惠**）
-* **👉 官方直达链接**：[点击注册暮光加速](https://asfawsf.twilightttt.sbs/#/?code=1eGqV85O)
+* **👉 官方直达链接**：[点击注册暮光加速](https://varnexa.twilightaff.com/#/?code=1eGqV85O)
 
 ### 套餐与价格表
 
