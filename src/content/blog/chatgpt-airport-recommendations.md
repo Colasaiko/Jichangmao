@@ -1,6 +1,6 @@
 ---
-title: "ChatGPT机场推荐：2026适合AI服务的机 - 机场猫"
-description: "2026年ChatGPT机场推荐。为需要使用ChatGPT、Claude等AI服务的用户推荐高IP质量、原生IP节点的机场。解释AI服务对节点的特殊要求，"
+title: "2026支持ChatGPT机场推荐：稳定防封 - 机场猫"
+description: "频繁遭遇风控或拒绝访问？本文汇总了2026年支持ChatGPT机场推荐名单，结合原生IP鉴定与连通性测试，为您筛选出适合AI工具长期稳定使用的优质节点网络。"
 keywords: "ChatGPT机场推荐,Claude机场推荐,AI服务机场推荐,ChatGPT节点推荐"
 pubDate: 2026-09-08
 author: "机场猫编辑部"
@@ -12,6 +12,13 @@ tags: ["ChatGPT", "Claude", "AI服务", "原生IP", "机场推荐"]
 这篇文章解决的是：**用什么机场才能稳定访问 ChatGPT / Claude / Gemini 等 AI 服务**，以及如何选择 IP 质量足够好的[节点](/blog/what-is-node/)，避免被封号。
 
 > 注意：本文与 ChatGPT 使用技巧、Prompt 写法**完全无关**。如果你在找 Prompt 教程，请通过[知识指南](/guides/)搜索。
+
+## AI 解锁支持等级分类
+
+为确保您的账号安全，本站将 AI 解锁支持划分为以下等级：
+1. **本站近期测试通过**：在近期测试中可顺利连通 ChatGPT / Claude 等严格风控工具。
+2. **官方明确提供解锁服务**：商家在公告或特性列表中承诺原生支持。
+3. **暂无独立验证**：新上线或未经过长期大流量测试的节点。
 
 ## 为什么 ChatGPT 对机场要求更高？
 

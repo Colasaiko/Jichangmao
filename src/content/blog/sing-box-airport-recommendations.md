@@ -1,6 +1,6 @@
 ---
-title: "2026 sing-box机场推荐 - 机场猫"
-description: "围绕 sing-box 用户如何选择机场展开，说明协议兼容、订阅格式、客户端导入与线路选择，并结合机场猫现有品牌资料整理适合 sing-box 使用的机场选择。"
+title: "2026优质sing-box机场推荐：新一代核心 - 机场猫"
+description: "追求极致轻量化与多协议支持？本文整理了完美兼容2026年新型sing-box机场推荐名单，详细解析其底层优势与极客配置方案，帮您打造极速稳定的网络环境。"
 keywords: "sing-box机场推荐,singbox机场推荐,sing-box订阅机场,sing-box节点推荐,sing-box机场,sing-box订阅推荐"
 pubDate: 2026-09-08
 updatedDate: 2026-09-08
