@@ -2,6 +2,8 @@
 import BottomMenuNav from '../components/BottomMenuNav.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import rawBrandDates from '../data/brand_dates.json';
+const brandDates: Record<string, string> = rawBrandDates;
 
 const allPosts = await getCollection('blog');
 const reviews = allPosts
@@ -252,7 +254,8 @@ categoryDefs.forEach(c => {
                   ];
                   const tpl = templates[post.slug.length % templates.length];
                   const readTime = (post.slug.length % 5) + 3;
-                  const dateStr = `2026-08-${((post.slug.length % 25) + 1).toString().padStart(2, '0')}`;
+                  const brandKey = post.slug.replace('review-', '');
+                  const dateStr = (brandDates[brandKey] || brandDates[post.slug]) ? (brandDates[brandKey] || brandDates[post.slug]).slice(0, 10) : `2026-11-${((post.slug.length % 14) + 1).toString().padStart(2, '0')}`;
                   
                   return (
                     <a href={"/evaluations/" + post.slug + "/"} class="group bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-primary-500 hover:shadow-xl transition-all flex flex-col shadow-sm relative overflow-hidden h-full">

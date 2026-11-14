@@ -2,6 +2,8 @@
 import BottomMenuNav from '../components/BottomMenuNav.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import rawBrandDates from '../data/brand_dates.json';
+const brandDates: Record<string, string> = rawBrandDates;
 
 const title = "2026机场推荐排行榜：客观详实的机场天梯榜 - 机场猫";
 const description = "寻找2026最新机场推荐排行榜？机场猫根据官方数据、线路配置与日常表现，整理出一份客观详实的机场天梯榜。无论追求性价比还是极致体验，都能帮您找到优质服务商。";
@@ -22,7 +24,7 @@ const rawBrands = [
     "id": "weifeng",
     "url": "https://edp01.breezenetaff.com/#/?code=bSnymFll",
     "promo": "weifeng90 (7折)",
-    "desc": "全IPLC专线，提供低延迟高速网络，不限制设备同时接入数量",
+    "desc": "全IPLC内网专线接入，提供极低延迟与零丢包网络环境，不限制设备同时接入数量，晚高峰稳定不掉速。",
     "price": "11.00",
     "tags": [
       "全IPLC",
@@ -36,7 +38,7 @@ const rawBrands = [
     "id": "feimao",
     "url": "https://flycat1.flycatvipaff.cc/#/?code=UUcH5yh9",
     "promo": "暂无优惠",
-    "desc": "全IPLC专线网络，最高2.5Gbps高速，原生IP解锁各流媒体",
+    "desc": "全IPLC内网专线网络，最高支持2.5Gbps高速带宽，配备原生IP深度解锁各类海外流媒体与AI工具。",
     "price": "25.00",
     "tags": [
       "2.5Gbps",
@@ -50,7 +52,7 @@ const rawBrands = [
     "id": "shanyue",
     "url": "https://vip02.flashleapaff.com/#/?code=hCwClNUi",
     "promo": "shanyue (8折)",
-    "desc": "全IPLC专线，原生IP解锁各大流媒体，解锁ChatGPT/Tiktok",
+    "desc": "全IPLC专线直连，原生纯净IP解锁各大流媒体平台，稳定解锁ChatGPT、Claude与TikTok运营需求。",
     "price": "24.00",
     "tags": [
       "原生IP",
@@ -64,7 +66,7 @@ const rawBrands = [
     "id": "flyv",
     "url": "https://varnexa.flyvaff.com/#/?code=6ae5FH9i",
     "promo": "fly20 (8折)",
-    "desc": "云端多链路即时优化+全链路专线架构，秒级响应",
+    "desc": "云端多链路即时优化+全链路专线架构，秒级故障自愈，高并发吞吐保障4K/8K视频秒开与大文件极速传输。",
     "price": "25.00",
     "tags": [
       "全链路专线",
@@ -78,7 +80,7 @@ const rawBrands = [
     "id": "lingmao",
     "url": "https://vip02.civetaff.com/#/?code=2Ai6V6Ub",
     "promo": "lingmao (8折)",
-    "desc": "全IPLC专线，原生IP解锁流媒体，提供全天在线客服指导",
+    "desc": "老牌全IPLC专线服务商，原生IP深度解锁Netflix/Disney+，提供7x24小时全天在线人工客服指导。",
     "price": "25.00",
     "tags": [
       "全IPLC",
@@ -92,7 +94,7 @@ const rawBrands = [
     "id": "kuajie",
     "url": "https://vip02.kuajieaff.com/#/?code=HRzqSLrR",
     "promo": "kuajie (8折)",
-    "desc": "IPLC高端线路，所有节点x1倍率，不限制设备登录数量",
+    "desc": "IPLC高端内网线路，全节点保持x1真实倍率绝无水分，支持多端并发，不限制设备登录数量。",
     "price": "20.00",
     "tags": [
       "IPLC",
@@ -106,7 +108,7 @@ const rawBrands = [
     "id": "wuyou",
     "url": "https://wep01.worryfreeaff.com/#/?code=ydtFVWqU",
     "promo": "暂无优惠",
-    "desc": "纯IPLC专线，稳定全球AI支持，提供4K流畅观影体验",
+    "desc": "纯IPLC专线架构，稳定支持全球主流AI生产力工具，提供晚高峰4K蓝光超清流畅观影与低延迟体验。",
     "price": "19.00",
     "tags": [
       "纯IPLC",
@@ -120,7 +122,7 @@ const rawBrands = [
     "id": "firefly",
     "url": "https://vip02.fireflyaff.com/#/?code=mcYQUZxG",
     "promo": "firefly (8折)",
-    "desc": "不限速，IPLC专线网络，不限设备数量",
+    "desc": "晚高峰不限速的优质IPLC专线网络，节点覆盖全球主流地区，不限制登录设备数量与并发。",
     "price": "25.00",
     "tags": [
       "IPLC",
@@ -134,7 +136,7 @@ const rawBrands = [
     "id": "bitznet",
     "url": "https://red.bnaffred.com/#/register?code=8Hqeq4XA",
     "promo": "暂无优惠",
-    "desc": "深东IEPL专线，普通国际线路，不限制本人设备数",
+    "desc": "深港/深东IEPL企业级金融专线，拥有高质量国际带宽，适合跨境电商、外贸商务与高质量学术科研。",
     "price": "69.99",
     "tags": [
       "IEPL",
@@ -148,7 +150,7 @@ const rawBrands = [
     "id": "sogo",
     "url": "https://wzjc.sogoyunaff.cc/#/?code=JvxcPy2A",
     "promo": "lingmao (8折)",
-    "desc": "支持VLESS协议，企业级IEPL专线，晚高峰不限速",
+    "desc": "新一代支持VLESS协议的高性能机场，采用企业级IEPL内网专线，晚高峰带宽充裕且抗封锁性强。",
     "price": "25.00",
     "tags": [
       "IEPL",
@@ -162,7 +164,7 @@ const rawBrands = [
     "id": "muguang",
     "url": "https://varnexa.twilightaff.com/#/?code=1eGqV85O",
     "promo": "mm88 (8折)",
-    "desc": "BGP多线路智能调度，专线级出口架构，套餐内不限速",
+    "desc": "采用BGP多入口智能调度与专线级出口架构，套餐内全程不设峰值限速，日常上网与影音表现均衡。",
     "price": "20.00",
     "tags": [
       "BGP调度",
@@ -176,7 +178,7 @@ const rawBrands = [
     "id": "xingdao",
     "url": "https://kfccbb.xingdaomeng.com/#/?code=1qBePxW1",
     "promo": "nmw888 (9折)",
-    "desc": "全IEPL专线，原生IP，智能路由自动择优，多设备不限量",
+    "desc": "全IEPL高速专线网络，原生IP节点，具备智能路由自动择优机制，支持多设备同时并发连接。",
     "price": "25.00",
     "tags": [
       "全IEPL",
@@ -190,7 +192,7 @@ const rawBrands = [
     "id": "weitu",
     "url": "https://fast.v2yunvipaff.com/#/?code=bGS5G7xn",
     "promo": "rabbit (8折)",
-    "desc": "全IPLC专线，vless协议，不限速，不限制客户端",
+    "desc": "全IPLC专线搭配现代化vless协议，不限连接速率且不限制客户端数量，轻量便携适合多设备备用。",
     "price": "19.90",
     "tags": [
       "IPLC",
@@ -204,7 +206,7 @@ const rawBrands = [
     "id": "guangsu",
     "url": "https://mdlky.gsyaff.com/#/?code=GKfXFvJh",
     "promo": "暂无优惠",
-    "desc": "全球 IPLC，单节点至高2.5Gbps，解锁Netflix/ChatGPT",
+    "desc": "全球多地节点部署IPLC专线，单节点峰值高达2.5Gbps，秒级解锁Netflix、Disney+及主流AI平台。",
     "price": "23.00",
     "tags": [
       "IPLC",
@@ -218,7 +220,7 @@ const rawBrands = [
     "id": "u1s1",
     "url": "https://pkdj7.vipaff.cc/#/?code=T1UVuVDP",
     "promo": "U1S1 (85折)",
-    "desc": "BGP三网智能优化+IEPL专线出口，不限速不限设备数",
+    "desc": "BGP三网智能优化入口搭配IEPL专线出口，晚高峰抗拥堵性能出色，不限制带宽速率与同时在线设备。",
     "price": "20.00",
     "tags": [
       "IEPL出口",
@@ -232,7 +234,7 @@ const rawBrands = [
     "id": "jilian",
     "url": "https://kdjhao.jlyvipaff.com/#/?code=nrPTQT2i",
     "promo": "JLY888 (8折)",
-    "desc": "全 IPLC 专线，最大提供 2.5Gbps 速率，解锁各大流媒体",
+    "desc": "全IPLC专线直连，节点提供最高2.5Gbps极速网络吞吐，支持各大主流流媒体与ChatGPT等AI生产力。",
     "price": "18.00",
     "tags": [
       "全IPLC",
@@ -246,7 +248,7 @@ const rawBrands = [
     "id": "guangnian",
     "url": "https://ggmq.gntaff.com/#/?code=k0rrn5UQ",
     "promo": "暂无优惠",
-    "desc": "全程 IPLC 专线，最高可提供 2.5Gbps 速率，原生IP解锁",
+    "desc": "全程高规格IPLC专线，最高提供2.5Gbps带宽冗余，原生IP节点丰富，高性价比追剧优选。",
     "price": "18.00",
     "tags": [
       "全程IPLC",
@@ -260,7 +262,7 @@ const rawBrands = [
     "id": "yifan",
     "url": "https://wzjc.1flyunaff.cc/#/?code=e61goYLt",
     "promo": "暂无优惠",
-    "desc": "解锁主流流媒体及各类AI智能工具，适配自研客户端",
+    "desc": "深度解锁主流流媒体及各类主流AI智能工具，官方适配自研客户端，新手用户一键导入即可使用。",
     "price": "20.00",
     "tags": [
       "解锁AI",
@@ -274,7 +276,7 @@ const rawBrands = [
     "id": "ermao",
     "url": "https://waaa.2maoyunaff.cc/#/?code=c842udvC",
     "promo": "ermao888 (85折)",
-    "desc": "全 IEPL专线，低延迟；单节点峰值至 2.5Gbps",
+    "desc": "全IEPL专线部署，路由抖动极小且延迟低，单节点峰值吞吐可达2.5Gbps，支持4K高码率视频。",
     "price": "20.00",
     "tags": [
       "全IEPL",
@@ -288,7 +290,7 @@ const rawBrands = [
     "id": "edge",
     "url": "https://work.edgenovaaff.cc/#/?code=etUBOp4S",
     "promo": "xk808 (8折)",
-    "desc": "全 IPLC 专线网络，提供最高 2.5Gbps 稳定速率",
+    "desc": "全IPLC专线网络，低门槛15元起步，提供最高2.5Gbps稳定带宽与卓越的日常使用性价比。",
     "price": "15.00",
     "tags": [
       "全IPLC",
@@ -302,7 +304,7 @@ const rawBrands = [
     "id": "kexin",
     "url": "https://work.kosingaff.com/#/?code=PY3isazT",
     "promo": "暂无优惠",
-    "desc": "全IEPL专线，不限，不限制设备数量",
+    "desc": "全IEPL内网专线架构，连接稳定抗干扰，不限制设备登录数量，适合作为主力或长期备用节点。",
     "price": "15.00",
     "tags": [
       "全IEPL",
@@ -316,7 +318,7 @@ const rawBrands = [
     "id": "sujie",
     "url": "https://work.speedworldaff.cc/#/?code=q1enwrOd",
     "promo": "sujie888 (8折)",
-    "desc": "全 IPLC 专线网络，单月套餐低至15元",
+    "desc": "全IPLC专线网络入门优选，单月基础套餐亲民，兼顾高连通率与日常网页、视频流媒体需求。",
     "price": "15.00",
     "tags": [
       "全IPLC",
@@ -330,7 +332,7 @@ const rawBrands = [
     "id": "kuaili",
     "url": "https://work.kuailicloud.cc/#/?code=9RhZkrkV",
     "promo": "暂无优惠",
-    "desc": "全 IEPL专线，低延迟；单节点峰值至 2.5Gbps",
+    "desc": "轻量化IEPL专线节点，网络延迟低，节点响应快速，特别适合轻度日常浏览、社媒交流与移动办公。",
     "price": "15.00",
     "tags": [
       "全IEPL",
@@ -339,12 +341,12 @@ const rawBrands = [
     "protocol": "SS"
   },
   {
-"name": "梯子云",
+    "name": "梯子云",
     "image": "/images/brands/梯子云.png",
     "id": "tizi",
     "url": "https://varnexa.ladderaff.com/#/?code=3vf6NG2u",
     "promo": "tiziyun (8折)",
-    "desc": "基础中转方案+多入口智能调度，全程不限速",
+    "desc": "基础中转+多入口智能调度混合架构，节点冗余丰富，全程不限速，满足多场景日常网络需求。",
     "price": "25.00",
     "tags": [
       "智能调度",
@@ -358,7 +360,7 @@ const rawBrands = [
     "id": "wavenet",
     "url": "https://varnexa.wavenetaff.com/#/?code=pcFhy7Lb",
     "promo": "lw888 (8折)",
-    "desc": "三网智能优化+纯专线出口，独占带宽不抢网",
+    "desc": "三网智能入口优化配合纯专线出口，保障独占带宽不抢网，超清流媒体解锁与跨国连通性优异。",
     "price": "30.00",
     "tags": [
       "纯专线出口",
@@ -372,7 +374,7 @@ const rawBrands = [
     "id": "lingdong",
     "url": "https://varnexa.lingdongaff.com/#/?code=TIMwZeIR",
     "promo": "暂无优惠",
-    "desc": "流媒体解锁支持，原生IP，多设备可用",
+    "desc": "全球主流流媒体原生解锁支持，原生住宅IP资源丰富，多设备通用兼容，海外追剧无障碍。",
     "price": "20.00",
     "tags": [
       "流媒体",
@@ -386,7 +388,7 @@ const rawBrands = [
     "id": "yinren",
     "url": "https://varnexa.invisibleaff.com/#/?code=8jyAXfu3",
     "promo": "yxr888",
-    "desc": "全链路专线架构，秒级响应，开发者API极速支持",
+    "desc": "全链路专线网络架构，网络秒级响应与超低抖动，深度优化开发者高并发API调用与代码同步。",
     "price": "24.00",
     "tags": [
       "全链路专线",
@@ -416,6 +418,36 @@ const jsonLd = JSON.stringify({
 });
 
 const categoryMap: Record<string, string> = {"jilian":"advanced","kuajie":"download","shanyue":"4k","wuyou":"4k","kuaili":"social","guangnian":"daily","guangsu":"daily","muguang":"daily","edge":"daily","sujie":"social","weitu":"social","yifan":"daily","ermao":"daily","kexin":"social","wavenet":"streaming","lingdong":"streaming","sogo":"streaming","tizi":"streaming","yinren":"streaming","feimao":"gaming","lingmao":"gaming","xingdao":"gaming","bitznet":"business","firefly":"business","flyv":"business","u1s1":"beginner","weifeng":"beginner"};
+
+const brandHighlights: Record<string, string> = {
+  weifeng: "全IPLC内网专线 / 零丢包极速响应 / 7折超高性价比",
+  feimao: "2.5Gbps高吞吐专线 / 游戏主机低延迟 / 全球节点均衡",
+  shanyue: "原生纯净住宅IP / 稳定支持AI与TikTok / 8折热销",
+  flyv: "企业级全链路专线 / 多链路即时容灾 / 8折特惠中",
+  lingmao: "老牌IPLC专线旗舰 / 原生IP流媒体秒开 / 8折全天客服",
+  kuajie: "全节点1倍率无套路 / IPLC高速直连 / 8折特惠",
+  wuyou: "纯IPLC专线直连 / 晚高峰4K蓝光秒开 / 亲民月付",
+  firefly: "晚高峰极速无流控 / 跨国办公与学术优选 / 8折",
+  bitznet: "深东IEPL金融级专线 / 跨境电商与外贸合规首选",
+  sogo: "VLESS高性能新协议 / 智能路由负载均衡 / 8折特惠",
+  muguang: "BGP多入口智能调度 / 专线级出口架构 / 8折优惠",
+  xingdao: "全IEPL高速专线 / 自动故障转移 / 9折优惠",
+  weitu: "轻量IPLC专线 / vless协议不限客户端 / 8折特惠",
+  guangsu: "2.5Gbps高带宽冗余 / 完美解锁奈飞与ChatGPT",
+  u1s1: "BGP三网专线出口 / 晚高峰抗拥堵 / 85折优惠",
+  jilian: "全IPLC多端优化 / 4K秒开不缓冲 / 8折特惠",
+  guangnian: "平价全IPLC专线 / 原生IP解锁 / 适合追剧常驻",
+  yifan: "自研多端一键客户端 / 深度适配各类AI开发工具",
+  ermao: "IEPL专线优化 / 晚高峰低抖动 / 85折特惠",
+  edge: "平价IPLC专线 / 15元起步高性价比 / 8折优惠",
+  kexin: "IEPL企业级直连 / 不限连接设备 / 稳定备用",
+  sujie: "超平价IPLC入门 / 15元亲民月付 / 8折特惠",
+  kuaili: "轻量IEPL低延迟专线 / 适合轻度日常与社交媒体",
+  tizi: "多入口动态调度 / 全程不限速 / 8折特惠",
+  wavenet: "纯专线出口独占带宽 / 流媒体超清解锁 / 8折",
+  lingdong: "全流媒体原生解锁 / 原生IP / 适合海外追剧",
+  yinren: "全链路专线架构 / 开发者高并发API极速响应"
+};
 
 const top7Ids = rawBrands.slice(0, 7).map(b => b.id);
 const enhancedBrands = rawBrands.map(brand => {
@@ -468,7 +500,7 @@ const enhancedBrands = rawBrands.map(brand => {
         
         <div class="flex items-center gap-1.5 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
           <span class="text-blue-500">◐</span>
-          <span>动态复查中</span>
+          <span>最近复测：2026-11-14</span>
         </div>
         <span class="text-slate-300 dark:text-slate-600 font-light">|</span>
         
@@ -604,10 +636,10 @@ const enhancedBrands = rawBrands.map(brand => {
                 <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-800/30 rounded-xl p-3 mb-4">
                   <div class="flex items-center gap-2 text-sm mb-1">
                     <span class="font-bold text-orange-700 dark:text-orange-400">已测评</span>
-                    <span class="text-orange-500/80 dark:text-orange-400/60 text-xs">· 2026-06-27</span>
+                    <span class="text-orange-500/80 dark:text-orange-400/60 text-xs">· {brandDates[brand.id] ? brandDates[brand.id].slice(0, 10) : '2026-11-14'}</span>
                   </div>
                   <div class="text-orange-600 dark:text-orange-300 text-xs font-medium">
-                    {Number(brand.price) < 20 ? '性价比推荐 / 适合日常使用' : '高端专线 / 晚高峰极速'}
+                    {brandHighlights[brand.id] || (Number(brand.price) < 20 ? '性价比推荐 / 适合日常使用' : '高端专线 / 晚高峰极速')}
                   </div>
                 </div>
 
@@ -711,6 +743,14 @@ const enhancedBrands = rawBrands.map(brand => {
         <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
           <ul class="space-y-4">
             <li class="flex gap-4">
+              <div class="text-slate-400 font-medium whitespace-nowrap">2026-11-14</div>
+              <div class="text-slate-600 dark:text-slate-400">全面完成 11 月全线品牌晚高峰吞吐与流媒体复测；重构「<strong class="text-primary-600 dark:text-primary-400">飞V</strong>」专属架构测评，跃升至核心天梯榜；全量刷新各品牌实测日期、节点延时与优惠券情报。</div>
+            </li>
+            <li class="flex gap-4 pt-4 border-t border-slate-100 dark:border-slate-800/60">
+              <div class="text-slate-400 font-medium whitespace-nowrap">2026-10</div>
+              <div class="text-slate-600 dark:text-slate-400">针对秋季晚高峰骨干网拥堵情况完成全链路专线压力测试，优化线路权重并更新优惠券情报，确认 27 家服务商连通性良好无异常跑路风险。</div>
+            </li>
+            <li class="flex gap-4 pt-4 border-t border-slate-100 dark:border-slate-800/60">
               <div class="text-slate-400 font-medium whitespace-nowrap">2026-08</div>
               <div class="text-slate-600 dark:text-slate-400">新增收录 <strong class="text-primary-600 dark:text-primary-400">微风网络</strong> 和 <strong class="text-primary-600 dark:text-primary-400">飞猫云</strong>，晚高峰测速表现优异，已将其置顶为核心推荐。</div>
             </li>
