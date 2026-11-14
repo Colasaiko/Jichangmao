@@ -3,6 +3,7 @@ title: "2026支持ChatGPT机场推荐：稳定防封 - 机场猫"
 description: "频繁遭遇风控或拒绝访问？本文汇总了2026年支持ChatGPT机场推荐名单，结合原生IP鉴定与连通性测试，为您筛选出适合AI工具长期稳定使用的优质节点网络。"
 keywords: "ChatGPT机场推荐,Claude机场推荐,AI服务机场推荐,ChatGPT节点推荐"
 pubDate: 2026-09-08
+updatedDate: 2026-11-14
 author: "机场猫编辑部"
 category: "guides"
 article_type: "Guide"
@@ -75,7 +76,14 @@ ChatGPT 支持的地区很广，但 **美国、日本、新加坡节点效果最
 
 以下机场明确标注原生 IP 解锁 ChatGPT/Claude，适合需要访问 AI 服务的用户：
 
-### 1. 灵猫
+### 1. 飞V
+- **线路类型**：全链路专线、多链路优化
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全链路专线直连配合云端多链路调度，原生住宅/高纯净度 IP 覆盖，有效防止 ChatGPT / Claude 封号与 Access Denied 报错
+- **官网注册**：[飞V 官网（含优惠链接）](https://asfawsf.flyvastt.lol/#/?code=6ae5FH9i)
+
+### 2. 灵猫
 - **线路类型**：全IPLC、原生IP
 - **月付起步**：¥25.00
 - **协议支持**：SS

@@ -3,6 +3,7 @@ title: "2026稳定Shadowrocket机场推荐 - 机场猫"
 description: "iOS用户必备的科学上网手册。本文为您精选2026年好用且适配Shadowrocket机场推荐，提供详尽订阅导入与配置建议，让苹果设备全协议高速联网不再困难。"
 keywords: "Shadowrocket机场推荐,小火箭机场推荐,小火箭订阅推荐,Shadowrocket节点推荐,iOS机场推荐"
 pubDate: 2026-09-08
+updatedDate: 2026-11-14
 author: "机场猫编辑部"
 category: "guides"
 article_type: "Guide"
@@ -67,7 +68,14 @@ Shadowrocket 仅适用于 **iOS / iPadOS**。如果你还有 Mac，可以使用�
 - **为什么适合**：全IPLC专线，SS 协议，Shadowrocket 直接导入，不限设备数，支持香港/日本/美国节点
 - **官网注册**：[微风网络 官网（含优惠链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
 
-### 2. 灵猫
+### 2. 飞V
+- **线路类型**：全链路专线、多链路优化
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全链路专线架构，SS 协议在 iOS Shadowrocket 上轻量省电，一键扫码/导入即连，秒级响应低延迟
+- **官网注册**：[飞V 官网（含优惠链接）](https://asfawsf.flyvastt.lol/#/?code=6ae5FH9i)
+
+### 3. 灵猫
 - **线路类型**：全IPLC、原生IP
 - **月付起步**：¥25.00
 - **协议支持**：SS

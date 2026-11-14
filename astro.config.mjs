@@ -7,7 +7,12 @@ import path from 'path';
 
 // Parse all blog posts to get their last modified dates
 const getSitemapDates = () => {
-  const dates = {};
+  const dates = {
+    '/': '2026-11-14T00:00:00.000Z',
+    '/reviews/': '2026-11-14T00:00:00.000Z',
+    '/evaluations/': '2026-11-14T00:00:00.000Z',
+    '/guides/': '2026-11-14T00:00:00.000Z',
+  };
   try {
     const blogDir = path.resolve('src/content/blog');
     const files = fs.readdirSync(blogDir);
@@ -25,7 +30,7 @@ const getSitemapDates = () => {
           lastMod = new Date(pubMatch[1]);
         }
         if (lastMod && !isNaN(lastMod.getTime())) {
-          const isReview = content.includes("category: \"品牌介绍\"") || content.includes("category: \"机场测评\"");
+          const isReview = content.includes("category: \"品牌介绍\"") || content.includes("category: '品牌介绍'") || content.includes("category: \"机场测评\"");
           const prefix = isReview ? 'evaluations' : 'blog';
           dates[`/${prefix}/${slug}/`] = lastMod.toISOString();
         }

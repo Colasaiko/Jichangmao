@@ -1,6 +1,6 @@
 # SEO 关键词地图 v2 (seo-keyword-map.md)
 > 本文件规定全站每个关键词的归属页面，防止多个页面竞争同一词（关键词内耗）。
-> 更新时间：2026-09-08
+> 更新时间：2026-11-14
 > 新增文章或修改 SEO 前，必须先对照本表确认关键词归属。
 
 ---
@@ -145,3 +145,7 @@
 ### /blog/hiddify-airport-recommendations/
 **Primary Keyword**: Hiddify机场推荐
 **Secondary Keywords**: Hiddify Next机场, Hiddify订阅, Hiddify节点推荐, Hiddify机场, Hiddify Next订阅
+
+### /blog/surge-airport-recommendations/
+**Primary Keyword**: Surge机场推荐
+**Secondary Keywords**: Surge订阅机场, Surge节点推荐, Surge5机场推荐, Surge专线机场, Mac Surge机场

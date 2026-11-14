@@ -3,6 +3,7 @@ title: "2026好用的Clash机场推荐：节点一键导入 - 机场猫"
 description: "还在寻找高兼容性的订阅链接？本文为您精选2026年好用的Clash机场推荐，提供各大品牌协议适配详情，助您在电脑和手机端轻松完成一键导入，畅享高速网络。"
 keywords: "Clash机场推荐,Clash订阅机场推荐,Clash节点推荐,Clash Verge推荐,Clash机场,Clash机场2026"
 pubDate: 2026-09-08
+updatedDate: 2026-11-14
 author: "机场猫编辑部"
 category: "guides"
 article_type: "Guide"
@@ -94,7 +95,14 @@ Clash 使用 **YAML 格式的订阅文件**，支持以下协议：
 - **为什么适合**：BGP+IEPL 专线出口，SS 协议，Clash 全平台兼容，不限设备数
 - **官网注册**：[U1S1 官网（含优惠链接）](https://pkdj7.vipaff.cc/#/?code=T1UVuVDP)
 
-### 6. 灵猫
+### 6. 飞V
+- **线路类型**：全链路专线、多链路优化
+- **月付起步**：¥25.00
+- **协议支持**：SS
+- **为什么适合**：全链路专线架构配合云端即时优化引擎，秒级响应，Clash/Clash Verge 原生配置一键导入，低延迟防抖动
+- **官网注册**：[飞V 官网（含优惠链接）](https://asfawsf.flyvastt.lol/#/?code=6ae5FH9i)
+
+### 7. 灵猫
 - **线路类型**：全IPLC、原生IP
 - **月付起步**：¥25.00
 - **协议支持**：SS
