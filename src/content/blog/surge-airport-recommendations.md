@@ -51,10 +51,10 @@ tags: ["Surge", "macOS", "iOS", "机场推荐", "专线"]
 
 ### 3. 微风网络 (Weifeng)
 - **线路类型**：全 IPLC 专线、不限设备
-- **月付起步**：¥11.00
+- **月付起步**：¥25.00
 - **协议支持**：SS (Shadowsocks)
 - **为什么适合 Surge**：高性价比的 IPLC 专线之选，不限制同时在线设备数量。对于同时在 Mac、iPhone、iPad 上部署 Surge 的多设备苹果全家桶用户极具吸引力。
-- **优惠码**：`weifeng90`（7 折优惠）
+- **优惠码**：`weifeng90`（9 折优惠）
 - **官网注册**：[👉 微风网络 官网（含专属优惠直达链接）](https://edp01.breezenetaff.com/#/?code=bSnymFll)
 
 ### 4. 闪跃 (Shanyue)
